@@ -17,7 +17,7 @@ public class Schemes_SchemeUsersPage {
     
     @FindBy(xpath="//span[text()=' Prev ']")private WebElement PrevPageBtn;
     
-	//Rule-3:Create a constructor to initilise these elements
+	//Rule-3:Create a constructor to initilise elements
     
 	public Schemes_SchemeUsersPage(WebDriver driver)
 	{

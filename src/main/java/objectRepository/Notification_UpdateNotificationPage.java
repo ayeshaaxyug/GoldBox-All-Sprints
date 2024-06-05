@@ -5,7 +5,10 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
-public class Notification_UpdateNotificationPage {
+import genericUtility.FMS_BaseClass;
+import genericUtility.WebDriverUtility;
+
+public class Notification_UpdateNotificationPage extends FMS_BaseClass{
 
 	//Rule-1 :- Finding WebElements Using @FindBy Annotations
 
@@ -17,7 +20,10 @@ public class Notification_UpdateNotificationPage {
     
     @FindBy(xpath="//h1[.='Update Notification']/../following-sibling::div//input[@placeholder='Enter Type']")private WebElement TypeEdt;
     
-    @FindBy(xpath="//h1[.='Update Notification']/../following-sibling::div/button[.='Update']")private WebElement AddBtn;
+    @FindBy(xpath="//h1[.='Update Notification']/../following-sibling::div/button[.='Update']")private WebElement UpdateBtn;
+    
+    @FindBy(xpath="(//div[.='  Notification Updated Successfully '])[2]")private WebElement UpdateSuccessMsg;
+    
     
     
 	//Rule-2:- Create a constructor to initilise these elements
@@ -45,16 +51,49 @@ public class Notification_UpdateNotificationPage {
 	}
 
 
+	
 	public WebElement getTypeEdt() {
 		return TypeEdt;
 	}
 
-
-	public WebElement getAddBtn() {
-		return AddBtn;
-	}
+	
 	
 
+	public WebElement getUpdateSuccessMsg() {
+		return UpdateSuccessMsg;
+	}
+
+
+	public WebElement getUpdateBtn() {
+		return UpdateBtn;
+	}
+	
+	
 	// Rule-4 :- Create Business Library
+	
+	public void updateNotification(String UpdateTitle, String UpdateMessage, String UpdateType) throws Exception
+	{
+		WebDriverUtility wUtil = new WebDriverUtility();
+		
+		Thread.sleep(1000);
+		TitleEdt.clear();
+		Thread.sleep(1000);
+		TitleEdt.sendKeys(UpdateTitle);
+		Thread.sleep(1000);
+		MessageEdt.clear();
+		Thread.sleep(1000);
+		MessageEdt.sendKeys(UpdateMessage);
+		Thread.sleep(2000);
+		UpdateBtn.click();
+		Thread.sleep(1000);
+		if(UpdateSuccessMsg.isDisplayed())
+		{
+			wUtil.takeScreenShot(sDriver, "g_Notification Updated Successfully");
+		}
+		else
+		{
+			System.out.println("Notification Not Updated");
+		}
+	}
 	
 }

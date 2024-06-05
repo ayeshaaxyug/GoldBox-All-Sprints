@@ -22,6 +22,7 @@ public class JavaUtility {
 				Num++;
 			}
 			return Num;
+			
 		}
 		
 		
@@ -39,7 +40,7 @@ public class JavaUtility {
 		 * This Method Will Return System Date In Format
 		 * @return
 		 */
-		public String getSystemDateInFormat() 
+		public String getSystemDateInFormat()
 		{
 			Date d=new Date();
 			String dArr []=d.toString().split(" ");

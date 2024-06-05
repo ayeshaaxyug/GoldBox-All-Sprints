@@ -14,7 +14,11 @@ public class Events_EventsRequestsPage {
     @FindBy(xpath="(//button[.='Info'])[1]")private WebElement ActionInfoBtn;
     
     @FindBy(xpath="//div[@class='mat-mdc-select-trigger ng-tns-c14-32']")private WebElement StatusUpdateDrpDwn;
-  
+    
+    @FindBy(xpath="//span[text()=' Prev ']")private WebElement PreviousPageBtn;
+    
+    @FindBy(xpath="//a[text()=' Next ']")private WebElement NextPageBtn;
+    
   
 	//Rule-3:Create a constructor to initilise these elements
     
@@ -39,7 +43,19 @@ public class Events_EventsRequestsPage {
 	public WebElement getStatusUpdateDrpDwn() {
 		return StatusUpdateDrpDwn;
 	}
+
+
+	public WebElement getPreviousPageBtn() {
+		return PreviousPageBtn;
+	}
+
+
+	public WebElement getNextPageBtn() {
+		return NextPageBtn;
+	}
 	
+	
+		
 	//Create Business Libraries
 	
 }

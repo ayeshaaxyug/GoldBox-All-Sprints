@@ -1,16 +1,14 @@
 package objectRepository;
 
-import java.io.IOException;
-
+import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
-import org.testng.asserts.SoftAssert;
-
+import genericUtility.FMS_BaseClass;
 import genericUtility.WebDriverUtility;
 
-public class NotificationListPage {
+public class NotificationListPage extends FMS_BaseClass {
 
 	//Rule-1 :- Finding WebElements Using @FindBy Annotations
 
@@ -75,8 +73,29 @@ public class NotificationListPage {
 
 	// Rule-4 :- Create Business Library
 	public void searchedInvalidNotification(String NotificationSearchValue) throws Exception
-	{		
+	{	
 		SearchEdt.sendKeys(NotificationSearchValue);
 	}
+	
+	public void clickOnParticularNotificationMsgViewBtn(WebDriver driver, String Title)
+	{
+		driver.findElement(By.xpath("(//td[.='"+Title+"'])[1]/following-sibling::td/button[.=' View ']")).click();
+	}
+	public void clickOnParticularNotificationEditButton(WebDriver driver, String Title)
+	{
+		driver.findElement(By.xpath("(//td[.='"+Title+"'])[1]/following-sibling::td/following-sibling::td/button[.=' Edit ']")).click();
+	}
+	
+	public void deleteParticularNotification(WebDriver driver, String Title)
+	{
+		driver.findElement(By.xpath("(//td[.='"+Title+"'])[1]/following-sibling::td/following-sibling::td/button[@class='btn-sm btn-edit bg-danger']")).click();
+	}
+	
+	public void sendParticularNotification(WebDriver driver, String Title)
+	{
+		driver.findElement(By.xpath("(//td[.='"+Title+"'])[1]/following-sibling::td/following-sibling::td/button[.=' Send ']")).click();
+	}
+	
+	
 	
 }

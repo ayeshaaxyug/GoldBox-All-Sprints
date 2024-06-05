@@ -100,7 +100,7 @@ public class FMS_BaseClass {
 			System.out.println("---Login successfully---");
 		}
         
-	@AfterMethod(groups={"sprint-1","Sprint-2"})
+//	@AfterMethod(groups={"sprint-1","Sprint-2"})
 		public void amConfig() throws Exception
 		{
 //			ExcelFileUtility eUtil = new ExcelFileUtility();
@@ -116,7 +116,7 @@ public class FMS_BaseClass {
 		    System.out.println("Logout Successfully");
 		}
         
-	@AfterClass(groups={"sprint-1","Sprint-2"})
+//	@AfterClass(groups={"sprint-1","Sprint-2"})
 		public void acConfig() throws InterruptedException
 		{
 		try 

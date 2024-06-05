@@ -1,21 +1,27 @@
 package objectRepository;
 
+import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
-public class Users_UserListPage {
+public class Users_UserList_AllUsersPage {
 
 	//Finding WebElements Using @FindBy Annotations
 
 	@FindBy(xpath="//input[@placeholder='Search...']")private WebElement SearchEdt;
 	
+	//Based on user id it should perform action we have to make it dynamic use this xpath
+	//td[.='3142']/following-sibling::td/button[.='View']
+	@FindBy(xpath="(//button[.='View'])[1]")private WebElement RefferedUserViewBtn;
+	
+	//Based on user id it should perform action we have to make it dynamic use this xpath
 	//td[.='3114']/following-sibling::td/button[.='Info']
     @FindBy(xpath="(//button[.='Info'])[1]")private WebElement InfoBtn;
     
-    //Based on user id it should perform action we have to make it dynamic by taking xpath
-  //td[.='2556']/following-sibling::td/button[.='Info']/..//div[@class='mdc-switch__icons']
+    //Based on user id it should perform action we have to make it dynamic use this xpath
+    //td[.='2556']/following-sibling::td/button[.='Info']/..//div[@class='mdc-switch__icons']
     @FindBy(xpath="//div[@class='mdc-switch__icons']")private WebElement EnableDisableBootStrapBtn;
     
     @FindBy(xpath="//a[text()=' Next ']")private WebElement NextPageBtn;
@@ -25,7 +31,7 @@ public class Users_UserListPage {
   
 	//Rule-3:Create a constructor to initilise these elements
     
-	public Users_UserListPage(WebDriver driver)
+	public Users_UserList_AllUsersPage(WebDriver driver)
 	{
 		PageFactory.initElements(driver, this);
 	}
@@ -36,7 +42,12 @@ public class Users_UserListPage {
 		return SearchEdt;
 	}
 
+	
+	public WebElement getRefferedUserViewBtn() {
+		return RefferedUserViewBtn;
+	}
 
+	
 	public WebElement getInfoBtn() {
 		return InfoBtn;
 	}
@@ -59,7 +70,22 @@ public class Users_UserListPage {
 	
 	//Business Libraries
 	
+	public void clickOnReferredUserViewBtn(WebDriver driver, String UserId)
+	{
+		driver.findElement(By.xpath("//td[.='"+UserId+"']/following-sibling::td/button[.='View']")).click();
+	}
 	
+	
+	public void clickOnActionsInfoBtn(WebDriver driver, String UserId)
+	{
+		driver.findElement(By.xpath("//td[.='"+UserId+"']/following-sibling::td/button[.='Info']")).click();
+	}
+	
+	
+	public void clickOnActionsBootStrapBtn(WebDriver driver, String UserId)
+	{
+		driver.findElement(By.xpath("//td[.='"+UserId+"']/following-sibling::td/button[.='Info']/..//div[@class='mdc-switch__icons']")).click();
+	}
 	
 	//Based on user id it should perform action we have to make it dynamic by taking xpath
     //@FindBy(xpath="//td[.='2556']/following-sibling::td/button[.='Info']/..//div[@class='mdc-switch__ripple']")private WebElement EnableDisableBootStrapBtn ;
