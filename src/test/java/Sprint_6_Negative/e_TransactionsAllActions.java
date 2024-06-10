@@ -242,7 +242,7 @@ public class e_TransactionsAllActions extends FMS_BaseClass {
 			Thread.sleep(2000);
 			String Msg = driver.findElement(By.xpath("(//div[.=' No results found '])[2]")).getText();
 			wUtility.takeScreenShot(driver, "j_"+Msg);
-			Thread.sleep(2000);
+			Thread.sleep(5000);
 		
 		}
 	
