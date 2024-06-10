@@ -2,15 +2,18 @@ package Sprint_6_Negative;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
+import org.testng.annotations.Listeners;
 import org.testng.annotations.Test;
 import genericUtility.ExcelFileUtility;
 import genericUtility.FMS_BaseClass;
 import genericUtility.JavaUtility;
 import genericUtility.WebDriverUtility;
 import objectRepository.DashboardPage;
+import objectRepository.Events_EventRequest_StatusUpdatePage;
 import objectRepository.Events_EventsRequestsPage;
 import objectRepository.Events_EventsRequests_EventDetailsPage;
 
+@Listeners(genericUtility.ListnersImplementationClass.class)
 public class g_EventsAllActions extends FMS_BaseClass {
 
 	WebDriverUtility wUtility = new WebDriverUtility();
@@ -18,10 +21,10 @@ public class g_EventsAllActions extends FMS_BaseClass {
 	ExcelFileUtility eUtility = new ExcelFileUtility();
 	
 	@Test
-	public void eventsAllActions_Test() throws Exception
+	public void eventsAllActionsTest() throws Exception
 	{
-		String SearchValue = eUtility.readDataFromExcel("Sprint-6 Negative", 14, 1);
-		
+		String SearchValue = eUtility.readDataFromExcel("Sprint-6 Negative", 40, 1);
+		String SearchValue1 = eUtility.readDataFromExcel("Sprint-6 Negative", 40, 2);
 		//1 Search Feild
 		
 		Thread.sleep(4000);
@@ -30,9 +33,20 @@ public class g_EventsAllActions extends FMS_BaseClass {
 		Events_EventsRequestsPage eerPage = new Events_EventsRequestsPage(driver);
 		eerPage.getSearchEdt().sendKeys(SearchValue);
 		Thread.sleep(2000);
-		String EventNotFound = driver.findElement(By.xpath("//h5[.='No matching records found']")).getText();
-		wUtility.takeScreenShot(driver, EventNotFound);
-		Thread.sleep(2000)
+		eerPage.getSearchEdt().clear();
+		Thread.sleep(2000);
+		eerPage.getSearchEdt().sendKeys(SearchValue1);
+		WebElement EventNotFound = driver.findElement(By.xpath("//h5[.='No matching records found']"));
+		String Msg = EventNotFound.getText();
+		if(EventNotFound.isDisplayed())
+		{
+			wUtility.takeScreenShot(driver, "a_Searching Invalid Event");
+		}
+		else
+		{
+			System.out.println("Event Displayed");
+		}
+		
 		
 		//2 Next -- Prev Button
 		
@@ -73,9 +87,26 @@ public class g_EventsAllActions extends FMS_BaseClass {
 		Thread.sleep(4000);		
 		driver.navigate().back();		
 		Thread.sleep(2000);
-		eerPage.getStatusUpdateDrpDwn().click();
+		for(;;)
+		{
+			try 
+			{
+				Thread.sleep(2000);
+				eerPage.getStatusUpdateDrpDwn().click();
+				break;
+			} 
+			catch (Exception e) 
+			{
+				Thread.sleep(2000);
+				eerPage.getNextPageBtn().click();
+			}
+		}
+		
 		Thread.sleep(2000);
-		driver.findElement(By.xpath("//span[.='Cancelled']")).click();
+		Events_EventRequest_StatusUpdatePage eersuPage = new Events_EventRequest_StatusUpdatePage(driver);
+		eersuPage.getCancelledLnk().click();
+		Thread.sleep(5000);
+		
 	}
 	
 	

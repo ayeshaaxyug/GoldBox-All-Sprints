@@ -2,6 +2,7 @@ package Sprint_6_Negative;
 
 import java.io.IOException;
 import org.openqa.selenium.By;
+import org.openqa.selenium.WebElement;
 import org.testng.annotations.Listeners;
 import org.testng.annotations.Test;
 import genericUtility.ExcelFileUtility;
@@ -22,9 +23,10 @@ public class e_TransactionsAllActions extends FMS_BaseClass {
 		PropertyFileUtility pUtility = new PropertyFileUtility();
 		
 		@Test
-		public void Transactions()throws InterruptedException, IOException
+		public void TransactionsAllActionsTest()throws InterruptedException, IOException
 		{
 			String SearchValue = eUtility.readDataFromExcel("Sprint-6 Negative", 19, 1);
+			String SearchValue1 = eUtility.readDataFromExcel("Sprint-6 Negative", 19, 2);
 			String FromDate =  eUtility.readDataFromExcel("Sprint-6 Negative", 21, 1);
 			String ExpireDate = eUtility.readDataFromExcel("Sprint-6 Negative", 22, 1);
 			String MobileNumber = eUtility.readDataFromExcel("Sprint-6 Negative", 23, 1);
@@ -43,9 +45,22 @@ public class e_TransactionsAllActions extends FMS_BaseClass {
 			TransactionsPage tpage = new TransactionsPage(driver);
 			tpage.getSearchEdt().sendKeys(SearchValue);
 			Thread.sleep(2000);
-			String TransactionNotFound = driver.findElement(By.xpath("//h5[.='No records found']")).getText();
-			wUtility.takeScreenShot(driver, "a_"+TransactionNotFound);
+			tpage.getSearchEdt().clear();
 			Thread.sleep(2000);
+			tpage.getSearchEdt().sendKeys(SearchValue1);
+			Thread.sleep(2000);
+			WebElement TransactionNotFound = driver.findElement(By.xpath("//h5[.='No records found']"));
+			String TransactionNotFoundMsg = TransactionNotFound.getText();
+			if (TransactionNotFound.isDisplayed()) 
+			{
+				Thread.sleep(1000);
+				wUtility.takeScreenShot(driver, "a_"+TransactionNotFoundMsg);
+			} 
+			else 
+			{
+				System.out.println("Transaction Displayed");
+			}
+			
 			
 			//2 Export To Excel
 			
@@ -223,10 +238,10 @@ public class e_TransactionsAllActions extends FMS_BaseClass {
 			Thread.sleep(2000);
 			tfPage.getTransactionIdEdt().sendKeys(TransactionId);
 			Thread.sleep(2000);
-			tfPage.getSearchBtn().click();
+			tfPage.getSearchBtn().click();  // //div[@aria-label='1 transactions filtered']
 			Thread.sleep(2000);
-			String AllActions = driver.findElement(By.xpath("//div[@aria-label='1 transactions filtered']")).getText();
-			wUtility.takeScreenShot(driver, "j_"+AllActions);
+			String Msg = driver.findElement(By.xpath("(//div[.=' No results found '])[2]")).getText();
+			wUtility.takeScreenShot(driver, "j_"+Msg);
 			Thread.sleep(2000);
 		
 		}

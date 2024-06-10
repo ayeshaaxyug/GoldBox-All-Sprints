@@ -12,11 +12,14 @@ public class Users_UserKycPage {
     @FindBy(xpath="//input[@placeholder='Search...']")private WebElement SearchEdt;
     
     //Here UserName is Going to make dynamic because based on username we are going to perform action
-    @FindBy(xpath="(//td[.='kondalu ra menu']/..//td/div/button[.='View'])[1]")private WebElement AadharImgViewBtn;
+    //(//td[.='kondalu ra menu']/..//td/div/button[.='View'])[1]
+    @FindBy(xpath="(//button[.='View'])[1]")private WebElement AadharImgViewBtn;
     
-    @FindBy(xpath="(//td[.='kondalu ra menu']/..//td/div/button[.='View'])[2]")private WebElement PanImgViewBtn;
+    //Here UserName is Going to make dynamic because based on username we are going to perform action
+    //(//td[.='kondalu ra menu']/..//td/div/button[.='View'])[2]
+    @FindBy(xpath="(//button[.='View'])[2]")private WebElement PanImgViewBtn;
     
-    @FindBy(xpath="(//td[.='kondalu ra menu']/..//td/div/button[.='View'])[1]/../../following-sibling::td//div[@class='mdc-switch__ripple']")private WebElement StatusBootStrapBtn;
+    @FindBy(xpath="(//span[.='Inactive'])[1]")private WebElement StatusDrpDwn;
 	
     @FindBy(xpath="//a[text()=' Next ']")private WebElement NextPageBtn;
     
@@ -43,8 +46,8 @@ public class Users_UserKycPage {
 		return PanImgViewBtn;
 	}
 
-	public WebElement getStatusBootStrapBtn() {
-		return StatusBootStrapBtn;
+	public WebElement getStatusDrpDwn() {
+		return StatusDrpDwn;
 	}
 	
 	public WebElement getNextPageBtn() {

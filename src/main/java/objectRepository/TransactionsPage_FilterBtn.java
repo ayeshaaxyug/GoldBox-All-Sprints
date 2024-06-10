@@ -19,7 +19,7 @@ public class TransactionsPage_FilterBtn {
 	
 	@FindBy(xpath ="//mat-select[@placeholder='Select type']") private WebElement SelectTypeDrpDwn;
 	
-	@FindBy(xpath ="//mat-label[.='Mobile number']") private WebElement MobileNumberEdt;
+	@FindBy(xpath ="//input[@placeholder='Mobile number']") private WebElement MobileNumberEdt;
 	
 	@FindBy(xpath ="//input[@placeholder='Transaction ID']") private WebElement TransactionIdEdt;
 	

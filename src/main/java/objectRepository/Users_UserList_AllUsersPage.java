@@ -70,21 +70,49 @@ public class Users_UserList_AllUsersPage {
 	
 	//Business Libraries
 	
-	public void clickOnReferredUserViewBtn(WebDriver driver, String UserId)
+	public void clickOnReferredUserViewBtn(WebDriver driver, String UserId) throws Exception
 	{
-		driver.findElement(By.xpath("//td[.='"+UserId+"']/following-sibling::td/button[.='View']")).click();
+		for(;;)
+		{
+			try {
+				driver.findElement(By.xpath("//td[.='"+UserId+"']/following-sibling::td/button[.='View']")).click();
+				break;
+			} catch (Exception e) {
+				NextPageBtn.click();
+				Thread.sleep(3000);
+			}
+		}
 	}
 	
 	
-	public void clickOnActionsInfoBtn(WebDriver driver, String UserId)
+	public void clickOnActionsInfoBtn(WebDriver driver, String UserId) throws Exception
 	{
-		driver.findElement(By.xpath("//td[.='"+UserId+"']/following-sibling::td/button[.='Info']")).click();
+		for(;;)
+		{
+			try {
+				driver.findElement(By.xpath("//td[.='"+UserId+"']/following-sibling::td/button[.='Info']")).click();
+				break;
+			} catch (Exception e) {
+				NextPageBtn.click();
+				Thread.sleep(3000);
+			}
+		}
 	}
 	
 	
-	public void clickOnActionsBootStrapBtn(WebDriver driver, String UserId)
+	public void clickOnActionsBootStrapBtn(WebDriver driver, String UserId) throws Exception
 	{
-		driver.findElement(By.xpath("//td[.='"+UserId+"']/following-sibling::td/button[.='Info']/..//div[@class='mdc-switch__icons']")).click();
+		for(;;)
+		{
+			try {
+				driver.findElement(By.xpath("//td[.='"+UserId+"']/following-sibling::td/button[.='Info']/..//div[@class='mdc-switch__icons']")).click();
+				break;
+			} catch (Exception e) {
+				NextPageBtn.click();
+				Thread.sleep(3000);
+			}
+		}
+		
 	}
 	
 	//Based on user id it should perform action we have to make it dynamic by taking xpath

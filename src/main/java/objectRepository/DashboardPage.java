@@ -176,6 +176,8 @@ public class DashboardPage {
 	
 	public void checkingTransactionReport(WebDriver driver, String StartYear, String StartDate, String StartMonth,  String EndDate) throws Exception
 	{
+		WebDriverUtility wUtil = new WebDriverUtility();
+		
 		Thread.sleep(2000);
 		TransactionsReportCalendarBtn.click();
 		Thread.sleep(2000);
@@ -196,6 +198,10 @@ public class DashboardPage {
 		EndDateEdt.click();
 		Thread.sleep(2000);
 		EndDateEdt.sendKeys(EndDate);
+		Thread.sleep(2000);
+		wUtil.scrollPageDown(1000);
+		Thread.sleep(2000);
+		wUtil.takeScreenShot(driver, "a_Searching Invalid Transaction Report");
 		
 		
 		

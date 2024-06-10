@@ -2,6 +2,7 @@ package Sprint_6_Negative;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
+import org.testng.annotations.Listeners;
 import org.testng.annotations.Test;
 
 import genericUtility.ExcelFileUtility;
@@ -11,6 +12,7 @@ import genericUtility.WebDriverUtility;
 import objectRepository.DashboardPage;
 import objectRepository.TradingPage;
 
+@Listeners(genericUtility.ListnersImplementationClass.class)
 public class f_TradingAllActions extends FMS_BaseClass {
 
 	WebDriverUtility wUtility = new WebDriverUtility();
@@ -19,10 +21,10 @@ public class f_TradingAllActions extends FMS_BaseClass {
 //	PropertyFileUtility pUtility = new PropertyFileUtility();
 	
 	@Test
-	public void Trading()throws Exception
+	public void TradingAllActionsTest()throws Exception
 	{
-		
-		String SearchValue = eUtility.readDataFromExcel("Sprint-6 Negative", 14, 1);
+		String SearchValue = eUtility.readDataFromExcel("Sprint-6 Negative", 37, 1);
+		String SearchValue1 = eUtility.readDataFromExcel("Sprint-6 Negative", 37, 2);
 		
 		//1 SearchFeild
 		
@@ -32,10 +34,22 @@ public class f_TradingAllActions extends FMS_BaseClass {
 		Thread.sleep(2000);
 		TradingPage trdPage = new TradingPage(driver);
 		trdPage.getSearchEdt().sendKeys(SearchValue);
+		Thread.sleep(3000);
+		trdPage.getSearchEdt().clear();
 		Thread.sleep(2000);
-		String TradingNotFound = driver.findElement(By.xpath("//h5[.='No records found']")).getText();
-		wUtility.takeScreenShot(driver, TradingNotFound);
+		trdPage.getSearchEdt().sendKeys(SearchValue1);
 		Thread.sleep(2000);
+		WebElement TradingNotFound = driver.findElement(By.xpath("//h5[.='No records found']"));
+		Thread.sleep(2000);
+		if (TradingNotFound.isDisplayed()) 
+		{
+			wUtility.takeScreenShot(driver, "a_Searched Invalid Trade");
+		}
+		else 
+		{
+			System.out.println("Trade Displayed");
+		}
+		
 		
 		//2 Export To Excel
 		

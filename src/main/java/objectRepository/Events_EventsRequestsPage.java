@@ -13,7 +13,7 @@ public class Events_EventsRequestsPage {
     
     @FindBy(xpath="(//button[.='Info'])[1]")private WebElement ActionInfoBtn;
     
-    @FindBy(xpath="//div[@class='mat-mdc-select-trigger ng-tns-c14-32']")private WebElement StatusUpdateDrpDwn;
+    @FindBy(xpath="(//span[.='Completed'])[1]")private WebElement StatusUpdateDrpDwn;
     
     @FindBy(xpath="//span[text()=' Prev ']")private WebElement PreviousPageBtn;
     

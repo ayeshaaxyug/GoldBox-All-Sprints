@@ -26,9 +26,10 @@ public class d_NotificationAllActions extends FMS_BaseClass {
 	JavaUtility jUtil = new JavaUtility();
 	
 	@Test
-	public void notificationsTest() throws Exception
+	public void notificationsAllActionsTest() throws Exception
 	{
 		String NotificationSearchValue = eUtil.readDataFromExcel("Sprint-6 Negative", 6, 1);
+		String NotificationSearchValue1 = eUtil.readDataFromExcel("Sprint-6 Negative", 6, 2);
 		String Title = eUtil.readDataFromExcel("Sprint-6 Negative", 9, 1);
 		String Message = eUtil.readDataFromExcel("Sprint-6 Negative", 10, 1);
 		String Type = eUtil.readDataFromExcel("Sprint-6 Negative", 11, 1);
@@ -45,6 +46,10 @@ public class d_NotificationAllActions extends FMS_BaseClass {
 		NotificationListPage nlPage = new NotificationListPage(driver);
 		nlPage.searchedInvalidNotification(NotificationSearchValue);
 		WebDriverUtility wUtil = new WebDriverUtility();
+		Thread.sleep(3000);
+		nlPage.getSearchEdt().clear();
+		Thread.sleep(2000);
+		nlPage.searchedInvalidNotification(NotificationSearchValue1);
 		Thread.sleep(1000);
 		WebElement NoRecordsFoundMsg = driver.findElement(By.xpath("//h5[.='No records found']"));
 		Thread.sleep(1000);
