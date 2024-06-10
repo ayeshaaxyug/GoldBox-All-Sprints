@@ -5,6 +5,8 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
+import genericUtility.WebDriverUtility;
+
 public class Events_EventRequest_StatusUpdatePage {
 
 	//Finding WebElements Using @FindBy Annotations
@@ -63,4 +65,11 @@ public class Events_EventRequest_StatusUpdatePage {
 	
 	//Create Business Libraries
 	
+	public void eventStatusUpdation(WebDriver driver)
+	{
+		WebDriverUtility wUtil = new WebDriverUtility();
+		
+		wUtil.waitForElementToBeClickable(driver, CancelledLnk);
+		CancelledLnk.click();
+	}
 }

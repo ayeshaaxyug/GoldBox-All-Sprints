@@ -101,10 +101,9 @@ public class g_EventsAllActions extends FMS_BaseClass {
 				eerPage.getNextPageBtn().click();
 			}
 		}
-		
-		Thread.sleep(2000);
+		Thread.sleep(3000);
 		Events_EventRequest_StatusUpdatePage eersuPage = new Events_EventRequest_StatusUpdatePage(driver);
-		eersuPage.getCancelledLnk().click();
+		eersuPage.eventStatusUpdation(driver);
 		Thread.sleep(5000);
 		
 	}

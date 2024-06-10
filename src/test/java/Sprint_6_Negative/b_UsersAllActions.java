@@ -111,7 +111,7 @@ public class b_UsersAllActions extends FMS_BaseClass {
 		Thread.sleep(2000);
 		Users_UserKyc_StatusDrpDwnPage uusdPage = new Users_UserKyc_StatusDrpDwnPage(driver);
 		uusdPage.getRejectedLnk().click();
-		Thread.sleep(6000);
+		Thread.sleep(5000);
 	}
 	
 }

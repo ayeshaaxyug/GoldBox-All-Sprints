@@ -5,6 +5,8 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
+import genericUtility.WebDriverUtility;
+
 public class Users_UserKyc_StatusDrpDwnPage {
 
 	//Finding WebElements Using @FindBy Annotations
@@ -43,5 +45,13 @@ public class Users_UserKyc_StatusDrpDwnPage {
 	}
 	
 	//Business Libraries
+	
+	public void eventStatusUpdate(WebDriver driver)
+	{
+		WebDriverUtility wUtil = new WebDriverUtility();
+		
+		wUtil.waitForElementToBeClickable(driver, RejectedLnk);
+		RejectedLnk.click();
+	}
 	
 }
