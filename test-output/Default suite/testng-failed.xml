@@ -3,17 +3,17 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="Sprint_6_Negative.b_UsersAllActions">
+      <class name="Sprint_6_Negative.g_EventsAllActions">
         <methods>
           <include name="asConfig"/>
           <include name="bmConfig"/>
+          <include name="eventsAllActionsTest"/>
           <include name="amConfig"/>
           <include name="bcConfig"/>
-          <include name="userKyc"/>
           <include name="bsConfig"/>
           <include name="acConfig"/>
         </methods>
-      </class> <!-- Sprint_6_Negative.b_UsersAllActions -->
+      </class> <!-- Sprint_6_Negative.g_EventsAllActions -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
