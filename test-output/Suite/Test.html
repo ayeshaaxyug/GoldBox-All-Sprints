@@ -57,9 +57,9 @@ function toggleAllBoxes() {
 <tr>
 <td>Tests passed/Failed/Skipped:</td><td>5/1/1</td>
 </tr><tr>
-<td>Started on:</td><td>Mon Jun 10 16:16:26 IST 2024</td>
+<td>Started on:</td><td>Mon Jun 10 16:48:27 IST 2024</td>
 </tr>
-<tr><td>Total time:</td><td>660 seconds (660347 ms)</td>
+<tr><td>Total time:</td><td>775 seconds (775452 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -76,16 +76,101 @@ function toggleAllBoxes() {
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='Sprint_6_Negative.b_UsersAllActions.amConfig()'><b>amConfig</b><br>Test class: Sprint_6_Negative.b_UsersAllActions</td>
-<td><div><pre>org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element &lt;button type=&quot;button&quot; class=&quot;swal2-confirm swal2-styled swal2-default-outline&quot; aria-label=&quot;&quot; style=&quot;display: inline-block; background-color: rgb(99, 9, 20);&quot;&gt;...&lt;/button&gt; is not clickable at point (715, 457). Other element would receive the click: &lt;div _ngcontent-ghi-c1=&quot;&quot; class=&quot;global-loader ng-star-inserted&quot;&gt;...&lt;/div&gt;
+<td title='Sprint_6_Negative.e_TransactionsAllActions.amConfig()'><b>amConfig</b><br>Test class: Sprint_6_Negative.e_TransactionsAllActions</td>
+<td><div><pre>org.openqa.selenium.WebDriverException: disconnected: unable to send message to renderer
+  (failed to check if window was closed: disconnected: not connected to DevTools)
   (Session info: chrome=125.0.6422.142)
 Build info: version: &apos;4.14.1&apos;, revision: &apos;03f8ede370&apos;
 System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;18.0.1.1&apos;
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [fcf857ecd0004c8d768795f56f3b2d9b, clickElement {id=f.E79ECA9CA722F2E22E27E25BA9486BF0.d.37B0AB2B2E5902DE6009D3DDFD387602.e.277}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 125.0.6422.142, chrome: {chromedriverVersion: 125.0.6422.141 (4b1e8393712..., userDataDir: C:\WINDOWS\TEMP\scoped_dir2...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:59669}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:59669/devtoo..., se:cdpVersion: 125.0.6422.142, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Element: [[ChromeDriver: chrome on windows (fcf857ecd0004c8d768795f56f3b2d9b)] -&gt; xpath: //button[.=&apos;Yes, Logout!&apos;]]
-Session ID: fcf857ecd0004c8d768795f56f3b2d9b
+Command: [f454bf3c04b61d2d407dfaab4dba9d00, clickElement {id=f.709C88CE41E770E4E5E7F3DE88B16924.d.24FE7F76A3237710B998CE2AF17BCEE8.e.862}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 125.0.6422.142, chrome: {chromedriverVersion: 125.0.6422.141 (4b1e8393712..., userDataDir: C:\WINDOWS\TEMP\scoped_dir9...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:61019}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:61019/devtoo..., se:cdpVersion: 125.0.6422.142, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (f454bf3c04b61d2d407dfaab4dba9d00)] -&gt; xpath: //span[@class=&apos;user-name&apos;]]
+Session ID: f454bf3c04b61d2d407dfaab4dba9d00
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:52)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:200)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:175)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:602)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:224)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:77)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
+	at jdk.proxy2/jdk.proxy2.$Proxy20.click(Unknown Source)
+	at genericUtility.FMS_BaseClass.amConfig(FMS_BaseClass.java:111)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+... Removed 25 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace883838279", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace883838279'><pre>org.openqa.selenium.WebDriverException: disconnected: unable to send message to renderer
+  (failed to check if window was closed: disconnected: not connected to DevTools)
+  (Session info: chrome=125.0.6422.142)
+Build info: version: &apos;4.14.1&apos;, revision: &apos;03f8ede370&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;18.0.1.1&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [f454bf3c04b61d2d407dfaab4dba9d00, clickElement {id=f.709C88CE41E770E4E5E7F3DE88B16924.d.24FE7F76A3237710B998CE2AF17BCEE8.e.862}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 125.0.6422.142, chrome: {chromedriverVersion: 125.0.6422.141 (4b1e8393712..., userDataDir: C:\WINDOWS\TEMP\scoped_dir9...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:61019}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:61019/devtoo..., se:cdpVersion: 125.0.6422.142, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (f454bf3c04b61d2d407dfaab4dba9d00)] -&gt; xpath: //span[@class=&apos;user-name&apos;]]
+Session ID: f454bf3c04b61d2d407dfaab4dba9d00
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:67)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:483)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:52)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:200)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:175)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:602)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:224)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:77)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:577)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
+	at jdk.proxy2/jdk.proxy2.$Proxy20.click(Unknown Source)
+	at genericUtility.FMS_BaseClass.amConfig(FMS_BaseClass.java:111)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:577)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:69)
+	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:361)
+	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:296)
+	at org.testng.internal.invokers.TestInvoker.runConfigMethods(TestInvoker.java:816)
+	at org.testng.internal.invokers.TestInvoker.runAfterConfigurations(TestInvoker.java:785)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:761)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:962)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:806)
+	at org.testng.TestRunner.run(TestRunner.java:601)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:433)
+	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:471)
+	at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:58)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+</pre></div></td>
+<td>127</td>
+<td>Sprint_6_Negative.e_TransactionsAllActions@6150c3ec</td></tr>
+<tr>
+<td title='Sprint_6_Negative.b_UsersAllActions.amConfig()'><b>amConfig</b><br>Test class: Sprint_6_Negative.b_UsersAllActions</td>
+<td><div><pre>org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element &lt;button type=&quot;button&quot; class=&quot;swal2-confirm swal2-styled swal2-default-outline&quot; aria-label=&quot;&quot; style=&quot;display: inline-block; background-color: rgb(99, 9, 20);&quot;&gt;...&lt;/button&gt; is not clickable at point (715, 457). Other element would receive the click: &lt;div _ngcontent-wtn-c1=&quot;&quot; class=&quot;global-loader ng-star-inserted&quot;&gt;...&lt;/div&gt;
+  (Session info: chrome=125.0.6422.142)
+Build info: version: &apos;4.14.1&apos;, revision: &apos;03f8ede370&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;18.0.1.1&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [86ec9e2d15dee6ad8043c9b6267046a5, clickElement {id=f.8AD62546288CEC36A162906FCD488AC8.d.4FEB0C0F5F669A9252EBCADA8FAED7DB.e.278}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 125.0.6422.142, chrome: {chromedriverVersion: 125.0.6422.141 (4b1e8393712..., userDataDir: C:\WINDOWS\TEMP\scoped_dir2...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:60692}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:60692/devtoo..., se:cdpVersion: 125.0.6422.142, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (86ec9e2d15dee6ad8043c9b6267046a5)] -&gt; xpath: //button[.=&apos;Yes, Logout!&apos;]]
+Session ID: 86ec9e2d15dee6ad8043c9b6267046a5
 	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
 	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
 	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:52)
@@ -104,16 +189,16 @@ Session ID: fcf857ecd0004c8d768795f56f3b2d9b
 	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
 	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
 	at java.base/java.lang.Thread.run(Thread.java:833)
-... Removed 25 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace2145056716", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace2145056716'><pre>org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element &lt;button type=&quot;button&quot; class=&quot;swal2-confirm swal2-styled swal2-default-outline&quot; aria-label=&quot;&quot; style=&quot;display: inline-block; background-color: rgb(99, 9, 20);&quot;&gt;...&lt;/button&gt; is not clickable at point (715, 457). Other element would receive the click: &lt;div _ngcontent-ghi-c1=&quot;&quot; class=&quot;global-loader ng-star-inserted&quot;&gt;...&lt;/div&gt;
+... Removed 25 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace636265874", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace636265874'><pre>org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element &lt;button type=&quot;button&quot; class=&quot;swal2-confirm swal2-styled swal2-default-outline&quot; aria-label=&quot;&quot; style=&quot;display: inline-block; background-color: rgb(99, 9, 20);&quot;&gt;...&lt;/button&gt; is not clickable at point (715, 457). Other element would receive the click: &lt;div _ngcontent-wtn-c1=&quot;&quot; class=&quot;global-loader ng-star-inserted&quot;&gt;...&lt;/div&gt;
   (Session info: chrome=125.0.6422.142)
 Build info: version: &apos;4.14.1&apos;, revision: &apos;03f8ede370&apos;
 System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;18.0.1.1&apos;
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [fcf857ecd0004c8d768795f56f3b2d9b, clickElement {id=f.E79ECA9CA722F2E22E27E25BA9486BF0.d.37B0AB2B2E5902DE6009D3DDFD387602.e.277}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 125.0.6422.142, chrome: {chromedriverVersion: 125.0.6422.141 (4b1e8393712..., userDataDir: C:\WINDOWS\TEMP\scoped_dir2...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:59669}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:59669/devtoo..., se:cdpVersion: 125.0.6422.142, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Element: [[ChromeDriver: chrome on windows (fcf857ecd0004c8d768795f56f3b2d9b)] -&gt; xpath: //button[.=&apos;Yes, Logout!&apos;]]
-Session ID: fcf857ecd0004c8d768795f56f3b2d9b
+Command: [86ec9e2d15dee6ad8043c9b6267046a5, clickElement {id=f.8AD62546288CEC36A162906FCD488AC8.d.4FEB0C0F5F669A9252EBCADA8FAED7DB.e.278}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 125.0.6422.142, chrome: {chromedriverVersion: 125.0.6422.141 (4b1e8393712..., userDataDir: C:\WINDOWS\TEMP\scoped_dir2...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:60692}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:60692/devtoo..., se:cdpVersion: 125.0.6422.142, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (86ec9e2d15dee6ad8043c9b6267046a5)] -&gt; xpath: //button[.=&apos;Yes, Logout!&apos;]]
+Session ID: 86ec9e2d15dee6ad8043c9b6267046a5
 	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:67)
 	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
 	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:483)
@@ -170,17 +255,22 @@ Session ID: fcf857ecd0004c8d768795f56f3b2d9b
 <td><b>Instance</b></td>
 </tr>
 <tr>
+<td title='Sprint_6_Negative.b_UsersAllActions.acConfig()'><b>acConfig</b><br>Test class: Sprint_6_Negative.b_UsersAllActions</td>
+<td></td>
+<td>0</td>
+<td>Sprint_6_Negative.b_UsersAllActions@3b69e7d1</td></tr>
+<tr>
+<td title='Sprint_6_Negative.e_TransactionsAllActions.acConfig()'><b>acConfig</b><br>Test class: Sprint_6_Negative.e_TransactionsAllActions</td>
+<td></td>
+<td>0</td>
+<td>Sprint_6_Negative.e_TransactionsAllActions@6150c3ec</td></tr>
+<tr>
 <td title='Sprint_6_Negative.b_UsersAllActions.bmConfig()'><b>bmConfig</b><br>Test class: Sprint_6_Negative.b_UsersAllActions</td>
 <td></td>
 <td>0</td>
 <td>Sprint_6_Negative.b_UsersAllActions@3b69e7d1</td></tr>
 <tr>
 <td title='Sprint_6_Negative.b_UsersAllActions.amConfig()'><b>amConfig</b><br>Test class: Sprint_6_Negative.b_UsersAllActions</td>
-<td></td>
-<td>0</td>
-<td>Sprint_6_Negative.b_UsersAllActions@3b69e7d1</td></tr>
-<tr>
-<td title='Sprint_6_Negative.b_UsersAllActions.acConfig()'><b>acConfig</b><br>Test class: Sprint_6_Negative.b_UsersAllActions</td>
 <td></td>
 <td>0</td>
 <td>Sprint_6_Negative.b_UsersAllActions@3b69e7d1</td></tr>
@@ -200,9 +290,9 @@ Session ID: fcf857ecd0004c8d768795f56f3b2d9b
 Build info: version: &apos;4.14.1&apos;, revision: &apos;03f8ede370&apos;
 System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;18.0.1.1&apos;
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [fcf857ecd0004c8d768795f56f3b2d9b, getAlertText {}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 125.0.6422.142, chrome: {chromedriverVersion: 125.0.6422.141 (4b1e8393712..., userDataDir: C:\WINDOWS\TEMP\scoped_dir2...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:59669}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:59669/devtoo..., se:cdpVersion: 125.0.6422.142, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: fcf857ecd0004c8d768795f56f3b2d9b
+Command: [86ec9e2d15dee6ad8043c9b6267046a5, getAlertText {}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 125.0.6422.142, chrome: {chromedriverVersion: 125.0.6422.141 (4b1e8393712..., userDataDir: C:\WINDOWS\TEMP\scoped_dir2...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:60692}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:60692/devtoo..., se:cdpVersion: 125.0.6422.142, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 86ec9e2d15dee6ad8043c9b6267046a5
 	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
 	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
 	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:52)
@@ -220,15 +310,15 @@ Session ID: fcf857ecd0004c8d768795f56f3b2d9b
 	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
 	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
 	at java.base/java.lang.Thread.run(Thread.java:833)
-... Removed 18 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1138135139", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1138135139'><pre>org.openqa.selenium.NoAlertPresentException: no such alert
+... Removed 18 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1556829047", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1556829047'><pre>org.openqa.selenium.NoAlertPresentException: no such alert
   (Session info: chrome=125.0.6422.142)
 Build info: version: &apos;4.14.1&apos;, revision: &apos;03f8ede370&apos;
 System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;18.0.1.1&apos;
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [fcf857ecd0004c8d768795f56f3b2d9b, getAlertText {}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 125.0.6422.142, chrome: {chromedriverVersion: 125.0.6422.141 (4b1e8393712..., userDataDir: C:\WINDOWS\TEMP\scoped_dir2...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:59669}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:59669/devtoo..., se:cdpVersion: 125.0.6422.142, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: fcf857ecd0004c8d768795f56f3b2d9b
+Command: [86ec9e2d15dee6ad8043c9b6267046a5, getAlertText {}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 125.0.6422.142, chrome: {chromedriverVersion: 125.0.6422.141 (4b1e8393712..., userDataDir: C:\WINDOWS\TEMP\scoped_dir2...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:60692}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:60692/devtoo..., se:cdpVersion: 125.0.6422.142, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 86ec9e2d15dee6ad8043c9b6267046a5
 	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:67)
 	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
 	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:483)
@@ -277,30 +367,30 @@ Session ID: fcf857ecd0004c8d768795f56f3b2d9b
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='Sprint_6_Negative.d_NotificationAllActions.notificationsAllActionsTest()'><b>notificationsAllActionsTest</b><br>Test class: Sprint_6_Negative.d_NotificationAllActions</td>
-<td></td>
-<td>77</td>
-<td>Sprint_6_Negative.d_NotificationAllActions@1573f9fc</td></tr>
-<tr>
-<td title='Sprint_6_Negative.a_DashboardAllActions.dashboardTransactionReportsTest()'><b>dashboardTransactionReportsTest</b><br>Test class: Sprint_6_Negative.a_DashboardAllActions</td>
-<td></td>
-<td>27</td>
-<td>Sprint_6_Negative.a_DashboardAllActions@6025e1b6</td></tr>
-<tr>
 <td title='Sprint_6_Negative.f_TradingAllActions.TradingAllActionsTest()'><b>TradingAllActionsTest</b><br>Test class: Sprint_6_Negative.f_TradingAllActions</td>
 <td></td>
-<td>31</td>
+<td>30</td>
 <td>Sprint_6_Negative.f_TradingAllActions@5542c4ed</td></tr>
 <tr>
 <td title='Sprint_6_Negative.e_TransactionsAllActions.TransactionsAllActionsTest()'><b>TransactionsAllActionsTest</b><br>Test class: Sprint_6_Negative.e_TransactionsAllActions</td>
 <td></td>
-<td>197</td>
+<td>196</td>
 <td>Sprint_6_Negative.e_TransactionsAllActions@6150c3ec</td></tr>
+<tr>
+<td title='Sprint_6_Negative.a_DashboardAllActions.dashboardTransactionReportsTest()'><b>dashboardTransactionReportsTest</b><br>Test class: Sprint_6_Negative.a_DashboardAllActions</td>
+<td></td>
+<td>26</td>
+<td>Sprint_6_Negative.a_DashboardAllActions@6025e1b6</td></tr>
 <tr>
 <td title='Sprint_6_Negative.g_EventsAllActions.eventsAllActionsTest()'><b>eventsAllActionsTest</b><br>Test class: Sprint_6_Negative.g_EventsAllActions</td>
 <td></td>
 <td>46</td>
 <td>Sprint_6_Negative.g_EventsAllActions@815b41f</td></tr>
+<tr>
+<td title='Sprint_6_Negative.d_NotificationAllActions.notificationsAllActionsTest()'><b>notificationsAllActionsTest</b><br>Test class: Sprint_6_Negative.d_NotificationAllActions</td>
+<td></td>
+<td>76</td>
+<td>Sprint_6_Negative.d_NotificationAllActions@1573f9fc</td></tr>
 </table><p>
 <table width='100%' border='1' class='invocation-skipped'>
 <tr><td colspan='4' align='center'><b>SKIPPED TESTS</b></td></tr>
@@ -312,15 +402,15 @@ Session ID: fcf857ecd0004c8d768795f56f3b2d9b
 </tr>
 <tr>
 <td title='Sprint_6_Negative.b_UsersAllActions.userKyc()'><b>userKyc</b><br>Test class: Sprint_6_Negative.b_UsersAllActions</td>
-<td><div><pre>org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element &lt;button type=&quot;button&quot; class=&quot;swal2-confirm swal2-styled swal2-default-outline&quot; aria-label=&quot;&quot; style=&quot;display: inline-block; background-color: rgb(99, 9, 20);&quot;&gt;...&lt;/button&gt; is not clickable at point (715, 457). Other element would receive the click: &lt;div _ngcontent-ghi-c1=&quot;&quot; class=&quot;global-loader ng-star-inserted&quot;&gt;...&lt;/div&gt;
+<td><div><pre>org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element &lt;button type=&quot;button&quot; class=&quot;swal2-confirm swal2-styled swal2-default-outline&quot; aria-label=&quot;&quot; style=&quot;display: inline-block; background-color: rgb(99, 9, 20);&quot;&gt;...&lt;/button&gt; is not clickable at point (715, 457). Other element would receive the click: &lt;div _ngcontent-wtn-c1=&quot;&quot; class=&quot;global-loader ng-star-inserted&quot;&gt;...&lt;/div&gt;
   (Session info: chrome=125.0.6422.142)
 Build info: version: &apos;4.14.1&apos;, revision: &apos;03f8ede370&apos;
 System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;18.0.1.1&apos;
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [fcf857ecd0004c8d768795f56f3b2d9b, clickElement {id=f.E79ECA9CA722F2E22E27E25BA9486BF0.d.37B0AB2B2E5902DE6009D3DDFD387602.e.277}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 125.0.6422.142, chrome: {chromedriverVersion: 125.0.6422.141 (4b1e8393712..., userDataDir: C:\WINDOWS\TEMP\scoped_dir2...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:59669}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:59669/devtoo..., se:cdpVersion: 125.0.6422.142, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Element: [[ChromeDriver: chrome on windows (fcf857ecd0004c8d768795f56f3b2d9b)] -&gt; xpath: //button[.=&apos;Yes, Logout!&apos;]]
-Session ID: fcf857ecd0004c8d768795f56f3b2d9b
+Command: [86ec9e2d15dee6ad8043c9b6267046a5, clickElement {id=f.8AD62546288CEC36A162906FCD488AC8.d.4FEB0C0F5F669A9252EBCADA8FAED7DB.e.278}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 125.0.6422.142, chrome: {chromedriverVersion: 125.0.6422.141 (4b1e8393712..., userDataDir: C:\WINDOWS\TEMP\scoped_dir2...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:60692}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:60692/devtoo..., se:cdpVersion: 125.0.6422.142, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (86ec9e2d15dee6ad8043c9b6267046a5)] -&gt; xpath: //button[.=&apos;Yes, Logout!&apos;]]
+Session ID: 86ec9e2d15dee6ad8043c9b6267046a5
 	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
 	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
 	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:52)
@@ -339,16 +429,16 @@ Session ID: fcf857ecd0004c8d768795f56f3b2d9b
 	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
 	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
 	at java.base/java.lang.Thread.run(Thread.java:833)
-... Removed 25 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1211194693", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1211194693'><pre>org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element &lt;button type=&quot;button&quot; class=&quot;swal2-confirm swal2-styled swal2-default-outline&quot; aria-label=&quot;&quot; style=&quot;display: inline-block; background-color: rgb(99, 9, 20);&quot;&gt;...&lt;/button&gt; is not clickable at point (715, 457). Other element would receive the click: &lt;div _ngcontent-ghi-c1=&quot;&quot; class=&quot;global-loader ng-star-inserted&quot;&gt;...&lt;/div&gt;
+... Removed 25 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace612374018", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace612374018'><pre>org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element &lt;button type=&quot;button&quot; class=&quot;swal2-confirm swal2-styled swal2-default-outline&quot; aria-label=&quot;&quot; style=&quot;display: inline-block; background-color: rgb(99, 9, 20);&quot;&gt;...&lt;/button&gt; is not clickable at point (715, 457). Other element would receive the click: &lt;div _ngcontent-wtn-c1=&quot;&quot; class=&quot;global-loader ng-star-inserted&quot;&gt;...&lt;/div&gt;
   (Session info: chrome=125.0.6422.142)
 Build info: version: &apos;4.14.1&apos;, revision: &apos;03f8ede370&apos;
 System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;18.0.1.1&apos;
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [fcf857ecd0004c8d768795f56f3b2d9b, clickElement {id=f.E79ECA9CA722F2E22E27E25BA9486BF0.d.37B0AB2B2E5902DE6009D3DDFD387602.e.277}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 125.0.6422.142, chrome: {chromedriverVersion: 125.0.6422.141 (4b1e8393712..., userDataDir: C:\WINDOWS\TEMP\scoped_dir2...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:59669}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:59669/devtoo..., se:cdpVersion: 125.0.6422.142, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Element: [[ChromeDriver: chrome on windows (fcf857ecd0004c8d768795f56f3b2d9b)] -&gt; xpath: //button[.=&apos;Yes, Logout!&apos;]]
-Session ID: fcf857ecd0004c8d768795f56f3b2d9b
+Command: [86ec9e2d15dee6ad8043c9b6267046a5, clickElement {id=f.8AD62546288CEC36A162906FCD488AC8.d.4FEB0C0F5F669A9252EBCADA8FAED7DB.e.278}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 125.0.6422.142, chrome: {chromedriverVersion: 125.0.6422.141 (4b1e8393712..., userDataDir: C:\WINDOWS\TEMP\scoped_dir2...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:60692}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:60692/devtoo..., se:cdpVersion: 125.0.6422.142, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (86ec9e2d15dee6ad8043c9b6267046a5)] -&gt; xpath: //button[.=&apos;Yes, Logout!&apos;]]
+Session ID: 86ec9e2d15dee6ad8043c9b6267046a5
 	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:67)
 	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
 	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:483)
