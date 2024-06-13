@@ -1,4 +1,4 @@
-package Sprint_7_Positive_Negative;
+package Sprint_7_Positive;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
