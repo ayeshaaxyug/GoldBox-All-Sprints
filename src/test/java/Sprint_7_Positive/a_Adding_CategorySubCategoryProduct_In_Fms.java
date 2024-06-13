@@ -28,7 +28,7 @@ import objectRepository.Ecommerce_SubCategory_AddSubcategoryPage;
 import objectRepository.Ecommerce_SubCategory_EditSubcategoryPage;
 import objectRepository.LoginPage;
 
-public class a_Adding_Category_In_Fms extends FMS_BaseClass {
+public class a_Adding_CategorySubCategoryProduct_In_Fms extends FMS_BaseClass {
 
 	ExcelFileUtility eUtil = new ExcelFileUtility();
 	JavaUtility jUtil = new JavaUtility();

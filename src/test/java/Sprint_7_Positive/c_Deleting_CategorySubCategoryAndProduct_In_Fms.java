@@ -6,7 +6,7 @@ import genericUtility.FMS_BaseClass;
 import objectRepository.DashboardPage;
 import objectRepository.EcommercePage;
 
-public class c_Deleting_Category_In_Fms extends FMS_BaseClass {
+public class c_Deleting_CategorySubCategoryAndProduct_In_Fms extends FMS_BaseClass {
 
 	@Test
 	public void deletingCategorySubCategoryProductInFmsTest() throws Exception
@@ -16,7 +16,7 @@ public class c_Deleting_Category_In_Fms extends FMS_BaseClass {
 		dbPage.getEcommerceDrpDwn().click();
 		Thread.sleep(2000);
 		EcommercePage ecPage = new EcommercePage(driver);
-		ecPage.getCategoryLnk();
+		ecPage.getProductsLnk();
 		
 	}
 	
