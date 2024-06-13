@@ -127,10 +127,8 @@ public class Ecommerce_Products_AddProductsPage {
     
 	public void AddingProduct(WebDriver driver, String ProductName, String VaPercent, String Price, String Size, String Weight, String Description, String ImagePath) throws Exception
 	{
-		Robot r = new Robot();
-		
 		Thread.sleep(2000);
-		wUtil.handleDropdownByVisibleText("Rings" , CategoryDrpDwn);
+		wUtil.handleDropdownByVisibleText("Chain" , CategoryDrpDwn);
 		Thread.sleep(2000);
 		wUtil.handleDropdownByIndex(SubCategoryDrpDwn, 1);
 		Thread.sleep(2000);
@@ -145,7 +143,7 @@ public class Ecommerce_Products_AddProductsPage {
 		wUtil.handleDropdownByIndex(TypeDrpDwn, 1);
 		Thread.sleep(2000);
 		PriceEdt.sendKeys(Price);
-		Thread.sleep(2000);
+		Thread.sleep(2000); 
 		SizeEdt.sendKeys(Size);
 		Thread.sleep(2000);
 		WeightEdt.sendKeys(Weight);

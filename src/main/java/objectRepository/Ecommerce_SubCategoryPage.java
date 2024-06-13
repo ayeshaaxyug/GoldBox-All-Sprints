@@ -70,10 +70,10 @@ public class Ecommerce_SubCategoryPage {
 		driver.findElement(By.xpath("//td[.='"+SubCategoryName+"']/following-sibling::td/button[.=' Edit ']")).click();
 	}
 	
-	public void clickOnParticularCategoryBootstrapBtn(WebDriver driver, String SubCategoryName) throws Exception
+	public void clickOnParticularCategoryBootstrapBtn(WebDriver driver, String EditSubCategoryName) throws Exception
 	{
 		Thread.sleep(1000);
-		driver.findElement(By.xpath("//td[.='"+SubCategoryName+"']/following-sibling::td//div[@class='mdc-switch__icons']")).click();
+		driver.findElement(By.xpath("//td[.='"+EditSubCategoryName+"']/following-sibling::td//div[@class='mdc-switch__icons']")).click();
 	}
 	
 	public void clickOnParticularSubCategoryDeleteBtn(WebDriver driver, String SubCategoryName) throws Exception

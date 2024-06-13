@@ -14,8 +14,8 @@ import objectRepository.Ecommerce_Category_EditCategoryPage;
 
 @Listeners(genericUtility.ListnersImplementationClass.class)
 public class A_ECommerce_Category_All_Actions extends FMS_BaseClass {
-	ExcelFileUtility eUtil = new ExcelFileUtility();
 	
+	ExcelFileUtility eUtil = new ExcelFileUtility();
 	JavaUtility jUtil = new JavaUtility();
 	
 	@Test(groups = "sprint-3", priority = 1)
@@ -23,6 +23,7 @@ public class A_ECommerce_Category_All_Actions extends FMS_BaseClass {
 	{
 		String CategoryName = "Chains1"+jUtil.getRandomNum();
 		String ImagePath = eUtil.readDataFromExcel("ImagePath", 0, 1);
+		String EditCategoryName = "EditChains"+jUtil.getRandomNum();
 		
         Thread.sleep(3000);
         
@@ -43,6 +44,15 @@ public class A_ECommerce_Category_All_Actions extends FMS_BaseClass {
         
         Ecommerce_Category_AddCategoryPage eccacPage = new Ecommerce_Category_AddCategoryPage(driver);
         eccacPage.addCategory(driver, CategoryName,ImagePath);
+        
+        Thread.sleep(2000);
+        
+        eccPage.clickOnParticularCategoryEditBtn(driver, CategoryName);
+        
+        Thread.sleep(2000);
+        
+        Ecommerce_Category_EditCategoryPage eccecPage = new Ecommerce_Category_EditCategoryPage(driver);
+        eccecPage.editCategory(driver, EditCategoryName, ImagePath);
         
 	}
 	

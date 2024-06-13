@@ -22,7 +22,6 @@ public class JavaUtility {
 				Num++;
 			}
 			return Num;
-			
 		}
 		
 		

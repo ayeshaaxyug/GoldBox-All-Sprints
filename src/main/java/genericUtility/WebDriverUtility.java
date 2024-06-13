@@ -37,6 +37,7 @@ public class WebDriverUtility {
 	{
 		driver.manage().window().maximize();
 	}
+	
 	/**
 	 * This method will minimize the window 
 	 * @param driver
@@ -45,6 +46,7 @@ public class WebDriverUtility {
 	{
 		driver.manage().window().minimize();
 	}
+	
 	/**
 	 * This method will wait until webpage loaded
 	 * @param driver
@@ -53,6 +55,7 @@ public class WebDriverUtility {
 	{
 		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(30));
 	}
+	
 	/**
 	 * This method will wait until element is clickable
 	 * @param driver
@@ -62,6 +65,7 @@ public class WebDriverUtility {
 		WebDriverWait wait=new WebDriverWait(driver,Duration.ofSeconds(100));
 		wait.until(ExpectedConditions.elementToBeClickable(element));
 	}
+	
 	/**
 	 * This method will wait until element is visible
 	 * @param driver
@@ -72,7 +76,6 @@ public class WebDriverUtility {
 		wait.until(ExpectedConditions.visibilityOf(element));
 	}
 	
-	
 	/**
 	 * This method will wait until alert is present
 	 * @param driver
@@ -82,6 +85,7 @@ public class WebDriverUtility {
 		WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(100));
 		wait.until(ExpectedConditions.alertIsPresent());
 	}
+	
 	/**
 	 * This method will handle dropdown by its index 
 	 * @param driver

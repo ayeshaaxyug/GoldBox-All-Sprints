@@ -23,7 +23,7 @@ public class ListnersImplementationClass implements ITestListener
 {
 	ExtentReports report;
 	ExtentTest test;
-	public void onTestStart(ITestResult result) 
+	public void onTestStart(ITestResult result)
 	{
 		String methodName=result.getMethod().getMethodName();
 	

@@ -1,115 +1,47 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="10" total="17" passed="5" failed="1" skipped="1">
+<testng-results ignored="0" total="1" passed="0" failed="1" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2024-06-10T16:48:27 IST" name="Suite" finished-at="2024-06-10T17:01:22 IST" duration-ms="775452">
+  <suite started-at="2024-06-13T14:24:09 IST" name="Default suite" finished-at="2024-06-13T14:26:58 IST" duration-ms="168681">
     <groups>
     </groups>
-    <test started-at="2024-06-10T16:48:27 IST" name="Test" finished-at="2024-06-10T17:01:22 IST" duration-ms="775452">
-      <class name="Sprint_6_Negative.d_NotificationAllActions">
-        <test-method is-config="true" signature="bcConfig()[pri:0, instance:Sprint_6_Negative.d_NotificationAllActions@1573f9fc]" started-at="2024-06-10T16:53:48 IST" name="bcConfig" finished-at="2024-06-10T16:53:50 IST" duration-ms="1827" status="PASS">
+    <test started-at="2024-06-13T14:24:09 IST" name="Default test" finished-at="2024-06-13T14:26:58 IST" duration-ms="168681">
+      <class name="Sprint_7_Positive_Negative.a_Adding_Category_In_Fms">
+        <test-method is-config="true" signature="bsConfig()[pri:0, instance:Sprint_7_Positive_Negative.a_Adding_Category_In_Fms@45752059]" started-at="2024-06-13T14:24:09 IST" name="bsConfig" finished-at="2024-06-13T14:24:09 IST" duration-ms="8" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- bsConfig -->
+        <test-method is-config="true" signature="bcConfig()[pri:0, instance:Sprint_7_Positive_Negative.a_Adding_Category_In_Fms@45752059]" started-at="2024-06-13T14:24:09 IST" name="bcConfig" finished-at="2024-06-13T14:24:14 IST" duration-ms="4317" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- bcConfig -->
-        <test-method is-config="true" signature="bmConfig()[pri:0, instance:Sprint_6_Negative.d_NotificationAllActions@1573f9fc]" started-at="2024-06-10T16:53:50 IST" name="bmConfig" finished-at="2024-06-10T16:54:07 IST" duration-ms="17394" status="PASS">
+        <test-method is-config="true" signature="bmConfig()[pri:0, instance:Sprint_7_Positive_Negative.a_Adding_Category_In_Fms@45752059]" started-at="2024-06-13T14:24:14 IST" name="bmConfig" finished-at="2024-06-13T14:24:31 IST" duration-ms="17347" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- bmConfig -->
-        <test-method signature="notificationsAllActionsTest()[pri:0, instance:Sprint_6_Negative.d_NotificationAllActions@1573f9fc]" started-at="2024-06-10T16:54:07 IST" name="notificationsAllActionsTest" finished-at="2024-06-10T16:55:23 IST" duration-ms="76268" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- notificationsAllActionsTest -->
-        <test-method is-config="true" signature="amConfig()[pri:0, instance:Sprint_6_Negative.d_NotificationAllActions@1573f9fc]" started-at="2024-06-10T16:55:23 IST" name="amConfig" finished-at="2024-06-10T16:55:35 IST" duration-ms="11933" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- amConfig -->
-        <test-method is-config="true" signature="acConfig()[pri:0, instance:Sprint_6_Negative.d_NotificationAllActions@1573f9fc]" started-at="2024-06-10T16:55:35 IST" name="acConfig" finished-at="2024-06-10T16:55:37 IST" duration-ms="1378" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- acConfig -->
-      </class> <!-- Sprint_6_Negative.d_NotificationAllActions -->
-      <class name="Sprint_6_Negative.f_TradingAllActions">
-        <test-method is-config="true" signature="bcConfig()[pri:0, instance:Sprint_6_Negative.f_TradingAllActions@5542c4ed]" started-at="2024-06-10T16:52:44 IST" name="bcConfig" finished-at="2024-06-10T16:52:47 IST" duration-ms="3231" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- bcConfig -->
-        <test-method is-config="true" signature="bmConfig()[pri:0, instance:Sprint_6_Negative.f_TradingAllActions@5542c4ed]" started-at="2024-06-10T16:52:47 IST" name="bmConfig" finished-at="2024-06-10T16:53:05 IST" duration-ms="17437" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- bmConfig -->
-        <test-method signature="TradingAllActionsTest()[pri:0, instance:Sprint_6_Negative.f_TradingAllActions@5542c4ed]" started-at="2024-06-10T16:53:05 IST" name="TradingAllActionsTest" finished-at="2024-06-10T16:53:35 IST" duration-ms="30361" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- TradingAllActionsTest -->
-        <test-method is-config="true" signature="amConfig()[pri:0, instance:Sprint_6_Negative.f_TradingAllActions@5542c4ed]" started-at="2024-06-10T16:53:35 IST" name="amConfig" finished-at="2024-06-10T16:53:47 IST" duration-ms="11735" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- amConfig -->
-        <test-method is-config="true" signature="acConfig()[pri:0, instance:Sprint_6_Negative.f_TradingAllActions@5542c4ed]" started-at="2024-06-10T16:53:47 IST" name="acConfig" finished-at="2024-06-10T16:53:48 IST" duration-ms="1372" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- acConfig -->
-      </class> <!-- Sprint_6_Negative.f_TradingAllActions -->
-      <class name="Sprint_6_Negative.g_EventsAllActions">
-        <test-method is-config="true" signature="bcConfig()[pri:0, instance:Sprint_6_Negative.g_EventsAllActions@815b41f]" started-at="2024-06-10T16:51:23 IST" name="bcConfig" finished-at="2024-06-10T16:51:27 IST" duration-ms="3234" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- bcConfig -->
-        <test-method is-config="true" signature="bmConfig()[pri:0, instance:Sprint_6_Negative.g_EventsAllActions@815b41f]" started-at="2024-06-10T16:51:27 IST" name="bmConfig" finished-at="2024-06-10T16:51:44 IST" duration-ms="17438" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- bmConfig -->
-        <test-method signature="eventsAllActionsTest()[pri:0, instance:Sprint_6_Negative.g_EventsAllActions@815b41f]" started-at="2024-06-10T16:51:44 IST" name="eventsAllActionsTest" finished-at="2024-06-10T16:52:31 IST" duration-ms="46738" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- eventsAllActionsTest -->
-        <test-method is-config="true" signature="amConfig()[pri:0, instance:Sprint_6_Negative.g_EventsAllActions@815b41f]" started-at="2024-06-10T16:52:31 IST" name="amConfig" finished-at="2024-06-10T16:52:42 IST" duration-ms="11560" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- amConfig -->
-        <test-method is-config="true" signature="acConfig()[pri:0, instance:Sprint_6_Negative.g_EventsAllActions@815b41f]" started-at="2024-06-10T16:52:42 IST" name="acConfig" finished-at="2024-06-10T16:52:44 IST" duration-ms="1399" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- acConfig -->
-      </class> <!-- Sprint_6_Negative.g_EventsAllActions -->
-      <class name="Sprint_6_Negative.e_TransactionsAllActions">
-        <test-method is-config="true" signature="bcConfig()[pri:0, instance:Sprint_6_Negative.e_TransactionsAllActions@6150c3ec]" started-at="2024-06-10T16:55:37 IST" name="bcConfig" finished-at="2024-06-10T16:55:41 IST" duration-ms="4145" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- bcConfig -->
-        <test-method is-config="true" signature="bmConfig()[pri:0, instance:Sprint_6_Negative.e_TransactionsAllActions@6150c3ec]" started-at="2024-06-10T16:55:41 IST" name="bmConfig" finished-at="2024-06-10T16:55:58 IST" duration-ms="17394" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- bmConfig -->
-        <test-method signature="TransactionsAllActionsTest()[pri:0, instance:Sprint_6_Negative.e_TransactionsAllActions@6150c3ec]" started-at="2024-06-10T16:55:58 IST" name="TransactionsAllActionsTest" finished-at="2024-06-10T16:59:15 IST" duration-ms="196455" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- TransactionsAllActionsTest -->
-        <test-method is-config="true" signature="amConfig()[pri:0, instance:Sprint_6_Negative.e_TransactionsAllActions@6150c3ec]" started-at="2024-06-10T16:59:15 IST" name="amConfig" finished-at="2024-06-10T17:01:22 IST" duration-ms="127587" status="FAIL">
-          <exception class="org.openqa.selenium.WebDriverException">
+        <test-method signature="a_addingCategorySubCategoryAndProductTest()[pri:0, instance:Sprint_7_Positive_Negative.a_Adding_Category_In_Fms@45752059]" started-at="2024-06-13T14:24:31 IST" name="a_addingCategorySubCategoryAndProductTest" finished-at="2024-06-13T14:26:45 IST" duration-ms="134216" status="FAIL">
+          <exception class="org.openqa.selenium.ElementNotInteractableException">
             <message>
-              <![CDATA[disconnected: unable to send message to renderer
-  (failed to check if window was closed: disconnected: not connected to DevTools)
+              <![CDATA[element not interactable
   (Session info: chrome=125.0.6422.142)
 Build info: version: '4.14.1', revision: '03f8ede370'
 System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '18.0.1.1'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [f454bf3c04b61d2d407dfaab4dba9d00, clickElement {id=f.709C88CE41E770E4E5E7F3DE88B16924.d.24FE7F76A3237710B998CE2AF17BCEE8.e.862}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 125.0.6422.142, chrome: {chromedriverVersion: 125.0.6422.141 (4b1e8393712..., userDataDir: C:\WINDOWS\TEMP\scoped_dir9...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:61019}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:61019/devtoo..., se:cdpVersion: 125.0.6422.142, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Element: [[ChromeDriver: chrome on windows (f454bf3c04b61d2d407dfaab4dba9d00)] -> xpath: //span[@class='user-name']]
-Session ID: f454bf3c04b61d2d407dfaab4dba9d00]]>
+Command: [65e7570bad60a7425c46beba3a8fc43f, clickElement {id=f.7AF94A70BAB2A79E8FE52166D30A6500.d.62762469A74CBA91F4086E5A472CAF69.e.987}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 125.0.6422.142, chrome: {chromedriverVersion: 125.0.6422.141 (4b1e8393712..., userDataDir: C:\WINDOWS\TEMP\scoped_dir9...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:59249}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:59249/devtoo..., se:cdpVersion: 125.0.6422.142, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (65e7570bad60a7425c46beba3a8fc43f)] -> xpath: //a[text()='Products']]
+Session ID: 65e7570bad60a7425c46beba3a8fc43f]]>
             </message>
             <full-stacktrace>
-              <![CDATA[org.openqa.selenium.WebDriverException: disconnected: unable to send message to renderer
-  (failed to check if window was closed: disconnected: not connected to DevTools)
+              <![CDATA[org.openqa.selenium.ElementNotInteractableException: element not interactable
   (Session info: chrome=125.0.6422.142)
 Build info: version: '4.14.1', revision: '03f8ede370'
 System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '18.0.1.1'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [f454bf3c04b61d2d407dfaab4dba9d00, clickElement {id=f.709C88CE41E770E4E5E7F3DE88B16924.d.24FE7F76A3237710B998CE2AF17BCEE8.e.862}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 125.0.6422.142, chrome: {chromedriverVersion: 125.0.6422.141 (4b1e8393712..., userDataDir: C:\WINDOWS\TEMP\scoped_dir9...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:61019}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:61019/devtoo..., se:cdpVersion: 125.0.6422.142, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Element: [[ChromeDriver: chrome on windows (f454bf3c04b61d2d407dfaab4dba9d00)] -> xpath: //span[@class='user-name']]
-Session ID: f454bf3c04b61d2d407dfaab4dba9d00
+Command: [65e7570bad60a7425c46beba3a8fc43f, clickElement {id=f.7AF94A70BAB2A79E8FE52166D30A6500.d.62762469A74CBA91F4086E5A472CAF69.e.987}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 125.0.6422.142, chrome: {chromedriverVersion: 125.0.6422.141 (4b1e8393712..., userDataDir: C:\WINDOWS\TEMP\scoped_dir9...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:59249}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:59249/devtoo..., se:cdpVersion: 125.0.6422.142, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (65e7570bad60a7425c46beba3a8fc43f)] -> xpath: //a[text()='Products']]
+Session ID: 65e7570bad60a7425c46beba3a8fc43f
 at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:67)
 at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
 at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:483)
@@ -125,89 +57,8 @@ at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:77)
 at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
 at java.base/java.lang.reflect.Method.invoke(Method.java:577)
 at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
-at jdk.proxy2/jdk.proxy2.$Proxy20.click(Unknown Source)
-at genericUtility.FMS_BaseClass.amConfig(FMS_BaseClass.java:111)
-at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
-at java.base/java.lang.reflect.Method.invoke(Method.java:577)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:69)
-at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:361)
-at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:296)
-at org.testng.internal.invokers.TestInvoker.runConfigMethods(TestInvoker.java:816)
-at org.testng.internal.invokers.TestInvoker.runAfterConfigurations(TestInvoker.java:785)
-at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:761)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
-at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
-at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:962)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
-at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
-at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-at org.testng.TestRunner.privateRun(TestRunner.java:806)
-at org.testng.TestRunner.run(TestRunner.java:601)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:433)
-at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:471)
-at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:58)
-at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
-at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
-at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
-at java.base/java.lang.Thread.run(Thread.java:833)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.WebDriverException -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- amConfig -->
-        <test-method is-config="true" signature="acConfig()[pri:0, instance:Sprint_6_Negative.e_TransactionsAllActions@6150c3ec]" started-at="2024-06-10T17:01:22 IST" name="acConfig" finished-at="2024-06-10T17:01:22 IST" duration-ms="0" status="SKIP">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- acConfig -->
-      </class> <!-- Sprint_6_Negative.e_TransactionsAllActions -->
-      <class name="Sprint_6_Negative.b_UsersAllActions">
-        <test-method is-config="true" signature="bcConfig()[pri:0, instance:Sprint_6_Negative.b_UsersAllActions@3b69e7d1]" started-at="2024-06-10T16:49:29 IST" name="bcConfig" finished-at="2024-06-10T16:49:32 IST" duration-ms="3301" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- bcConfig -->
-        <test-method is-config="true" signature="bmConfig()[pri:0, instance:Sprint_6_Negative.b_UsersAllActions@3b69e7d1]" started-at="2024-06-10T16:49:32 IST" name="bmConfig" finished-at="2024-06-10T16:49:50 IST" duration-ms="17341" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- bmConfig -->
-        <test-method signature="userAllActionsTest()[pri:0, instance:Sprint_6_Negative.b_UsersAllActions@3b69e7d1]" started-at="2024-06-10T16:49:50 IST" name="userAllActionsTest" finished-at="2024-06-10T16:51:13 IST" duration-ms="83426" status="FAIL">
-          <exception class="org.openqa.selenium.NoAlertPresentException">
-            <message>
-              <![CDATA[no such alert
-  (Session info: chrome=125.0.6422.142)
-Build info: version: '4.14.1', revision: '03f8ede370'
-System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '18.0.1.1'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [86ec9e2d15dee6ad8043c9b6267046a5, getAlertText {}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 125.0.6422.142, chrome: {chromedriverVersion: 125.0.6422.141 (4b1e8393712..., userDataDir: C:\WINDOWS\TEMP\scoped_dir2...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:60692}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:60692/devtoo..., se:cdpVersion: 125.0.6422.142, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 86ec9e2d15dee6ad8043c9b6267046a5]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.openqa.selenium.NoAlertPresentException: no such alert
-  (Session info: chrome=125.0.6422.142)
-Build info: version: '4.14.1', revision: '03f8ede370'
-System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '18.0.1.1'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [86ec9e2d15dee6ad8043c9b6267046a5, getAlertText {}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 125.0.6422.142, chrome: {chromedriverVersion: 125.0.6422.141 (4b1e8393712..., userDataDir: C:\WINDOWS\TEMP\scoped_dir2...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:60692}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:60692/devtoo..., se:cdpVersion: 125.0.6422.142, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 86ec9e2d15dee6ad8043c9b6267046a5
-at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:67)
-at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
-at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:483)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:52)
-at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:200)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:175)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:602)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:675)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:679)
-at org.openqa.selenium.remote.RemoteWebDriver$RemoteTargetLocator.alert(RemoteWebDriver.java:1202)
-at objectRepository.Users_UserList_AllUsers_ParticularUserInfo_AddGoldPage.addingGold(Users_UserList_AllUsers_ParticularUserInfo_AddGoldPage.java:125)
-at Sprint_6_Negative.b_UsersAllActions.userAllActionsTest(b_UsersAllActions.java:65)
+at jdk.proxy2/jdk.proxy2.$Proxy17.click(Unknown Source)
+at Sprint_7_Positive_Negative.a_Adding_Category_In_Fms.a_addingCategorySubCategoryAndProductTest(a_Adding_Category_In_Fms.java:128)
 at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
 at java.base/java.lang.reflect.Method.invoke(Method.java:577)
 at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
@@ -222,205 +73,37 @@ at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
 at org.testng.TestRunner.privateRun(TestRunner.java:806)
 at org.testng.TestRunner.run(TestRunner.java:601)
 at org.testng.SuiteRunner.runTest(SuiteRunner.java:433)
-at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:471)
-at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:58)
-at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
-at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
-at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
-at java.base/java.lang.Thread.run(Thread.java:833)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:427)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:387)
+at org.testng.SuiteRunner.run(SuiteRunner.java:330)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
+at org.testng.TestNG.runSuites(TestNG.java:1099)
+at org.testng.TestNG.run(TestNG.java:1067)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
 ]]>
             </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.NoAlertPresentException -->
+          </exception> <!-- org.openqa.selenium.ElementNotInteractableException -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- userAllActionsTest -->
-        <test-method is-config="true" signature="amConfig()[pri:0, instance:Sprint_6_Negative.b_UsersAllActions@3b69e7d1]" started-at="2024-06-10T16:51:13 IST" name="amConfig" finished-at="2024-06-10T16:51:23 IST" duration-ms="10332" status="FAIL">
-          <exception class="org.openqa.selenium.ElementClickInterceptedException">
-            <message>
-              <![CDATA[element click intercepted: Element <button type="button" class="swal2-confirm swal2-styled swal2-default-outline" aria-label="" style="display: inline-block; background-color: rgb(99, 9, 20);">...</button> is not clickable at point (715, 457). Other element would receive the click: <div _ngcontent-wtn-c1="" class="global-loader ng-star-inserted">...</div>
-  (Session info: chrome=125.0.6422.142)
-Build info: version: '4.14.1', revision: '03f8ede370'
-System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '18.0.1.1'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [86ec9e2d15dee6ad8043c9b6267046a5, clickElement {id=f.8AD62546288CEC36A162906FCD488AC8.d.4FEB0C0F5F669A9252EBCADA8FAED7DB.e.278}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 125.0.6422.142, chrome: {chromedriverVersion: 125.0.6422.141 (4b1e8393712..., userDataDir: C:\WINDOWS\TEMP\scoped_dir2...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:60692}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:60692/devtoo..., se:cdpVersion: 125.0.6422.142, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Element: [[ChromeDriver: chrome on windows (86ec9e2d15dee6ad8043c9b6267046a5)] -> xpath: //button[.='Yes, Logout!']]
-Session ID: 86ec9e2d15dee6ad8043c9b6267046a5]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element <button type="button" class="swal2-confirm swal2-styled swal2-default-outline" aria-label="" style="display: inline-block; background-color: rgb(99, 9, 20);">...</button> is not clickable at point (715, 457). Other element would receive the click: <div _ngcontent-wtn-c1="" class="global-loader ng-star-inserted">...</div>
-  (Session info: chrome=125.0.6422.142)
-Build info: version: '4.14.1', revision: '03f8ede370'
-System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '18.0.1.1'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [86ec9e2d15dee6ad8043c9b6267046a5, clickElement {id=f.8AD62546288CEC36A162906FCD488AC8.d.4FEB0C0F5F669A9252EBCADA8FAED7DB.e.278}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 125.0.6422.142, chrome: {chromedriverVersion: 125.0.6422.141 (4b1e8393712..., userDataDir: C:\WINDOWS\TEMP\scoped_dir2...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:60692}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:60692/devtoo..., se:cdpVersion: 125.0.6422.142, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Element: [[ChromeDriver: chrome on windows (86ec9e2d15dee6ad8043c9b6267046a5)] -> xpath: //button[.='Yes, Logout!']]
-Session ID: 86ec9e2d15dee6ad8043c9b6267046a5
-at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:67)
-at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
-at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:483)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:52)
-at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:200)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:175)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:602)
-at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:224)
-at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:77)
-at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
-at java.base/java.lang.reflect.Method.invoke(Method.java:577)
-at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
-at jdk.proxy2/jdk.proxy2.$Proxy20.click(Unknown Source)
-at objectRepository.MyProfilePage.logoutOfApplication(MyProfilePage.java:48)
-at genericUtility.FMS_BaseClass.amConfig(FMS_BaseClass.java:114)
-at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
-at java.base/java.lang.reflect.Method.invoke(Method.java:577)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:69)
-at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:361)
-at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:296)
-at org.testng.internal.invokers.TestInvoker.runConfigMethods(TestInvoker.java:816)
-at org.testng.internal.invokers.TestInvoker.runAfterConfigurations(TestInvoker.java:785)
-at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:761)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
-at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
-at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:962)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
-at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
-at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-at org.testng.TestRunner.privateRun(TestRunner.java:806)
-at org.testng.TestRunner.run(TestRunner.java:601)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:433)
-at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:471)
-at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:58)
-at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
-at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
-at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
-at java.base/java.lang.Thread.run(Thread.java:833)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.ElementClickInterceptedException -->
+        </test-method> <!-- a_addingCategorySubCategoryAndProductTest -->
+        <test-method is-config="true" signature="amConfig()[pri:0, instance:Sprint_7_Positive_Negative.a_Adding_Category_In_Fms@45752059]" started-at="2024-06-13T14:26:45 IST" name="amConfig" finished-at="2024-06-13T14:26:57 IST" duration-ms="11584" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- amConfig -->
-        <test-method is-config="true" signature="bmConfig()[pri:0, instance:Sprint_6_Negative.b_UsersAllActions@3b69e7d1]" started-at="2024-06-10T16:51:23 IST" name="bmConfig" finished-at="2024-06-10T16:51:23 IST" duration-ms="0" status="SKIP">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- bmConfig -->
-        <test-method signature="userKyc()[pri:0, instance:Sprint_6_Negative.b_UsersAllActions@3b69e7d1]" started-at="2024-06-10T16:51:23 IST" name="userKyc" finished-at="2024-06-10T16:51:23 IST" duration-ms="1" status="SKIP">
-          <exception class="org.openqa.selenium.ElementClickInterceptedException">
-            <message>
-              <![CDATA[element click intercepted: Element <button type="button" class="swal2-confirm swal2-styled swal2-default-outline" aria-label="" style="display: inline-block; background-color: rgb(99, 9, 20);">...</button> is not clickable at point (715, 457). Other element would receive the click: <div _ngcontent-wtn-c1="" class="global-loader ng-star-inserted">...</div>
-  (Session info: chrome=125.0.6422.142)
-Build info: version: '4.14.1', revision: '03f8ede370'
-System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '18.0.1.1'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [86ec9e2d15dee6ad8043c9b6267046a5, clickElement {id=f.8AD62546288CEC36A162906FCD488AC8.d.4FEB0C0F5F669A9252EBCADA8FAED7DB.e.278}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 125.0.6422.142, chrome: {chromedriverVersion: 125.0.6422.141 (4b1e8393712..., userDataDir: C:\WINDOWS\TEMP\scoped_dir2...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:60692}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:60692/devtoo..., se:cdpVersion: 125.0.6422.142, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Element: [[ChromeDriver: chrome on windows (86ec9e2d15dee6ad8043c9b6267046a5)] -> xpath: //button[.='Yes, Logout!']]
-Session ID: 86ec9e2d15dee6ad8043c9b6267046a5]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element <button type="button" class="swal2-confirm swal2-styled swal2-default-outline" aria-label="" style="display: inline-block; background-color: rgb(99, 9, 20);">...</button> is not clickable at point (715, 457). Other element would receive the click: <div _ngcontent-wtn-c1="" class="global-loader ng-star-inserted">...</div>
-  (Session info: chrome=125.0.6422.142)
-Build info: version: '4.14.1', revision: '03f8ede370'
-System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '18.0.1.1'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [86ec9e2d15dee6ad8043c9b6267046a5, clickElement {id=f.8AD62546288CEC36A162906FCD488AC8.d.4FEB0C0F5F669A9252EBCADA8FAED7DB.e.278}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 125.0.6422.142, chrome: {chromedriverVersion: 125.0.6422.141 (4b1e8393712..., userDataDir: C:\WINDOWS\TEMP\scoped_dir2...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:60692}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:60692/devtoo..., se:cdpVersion: 125.0.6422.142, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Element: [[ChromeDriver: chrome on windows (86ec9e2d15dee6ad8043c9b6267046a5)] -> xpath: //button[.='Yes, Logout!']]
-Session ID: 86ec9e2d15dee6ad8043c9b6267046a5
-at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:67)
-at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
-at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:483)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:52)
-at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:200)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:175)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:602)
-at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:224)
-at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:77)
-at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
-at java.base/java.lang.reflect.Method.invoke(Method.java:577)
-at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
-at jdk.proxy2/jdk.proxy2.$Proxy20.click(Unknown Source)
-at objectRepository.MyProfilePage.logoutOfApplication(MyProfilePage.java:48)
-at genericUtility.FMS_BaseClass.amConfig(FMS_BaseClass.java:114)
-at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
-at java.base/java.lang.reflect.Method.invoke(Method.java:577)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:69)
-at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:361)
-at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:296)
-at org.testng.internal.invokers.TestInvoker.runConfigMethods(TestInvoker.java:816)
-at org.testng.internal.invokers.TestInvoker.runAfterConfigurations(TestInvoker.java:785)
-at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:761)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
-at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
-at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:962)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
-at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
-at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-at org.testng.TestRunner.privateRun(TestRunner.java:806)
-at org.testng.TestRunner.run(TestRunner.java:601)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:433)
-at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:471)
-at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:58)
-at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
-at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
-at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
-at java.base/java.lang.Thread.run(Thread.java:833)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.ElementClickInterceptedException -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- userKyc -->
-        <test-method is-config="true" signature="acConfig()[pri:0, instance:Sprint_6_Negative.b_UsersAllActions@3b69e7d1]" started-at="2024-06-10T16:51:23 IST" name="acConfig" finished-at="2024-06-10T16:51:23 IST" duration-ms="0" status="SKIP">
+        <test-method is-config="true" signature="acConfig()[pri:0, instance:Sprint_7_Positive_Negative.a_Adding_Category_In_Fms@45752059]" started-at="2024-06-13T14:26:57 IST" name="acConfig" finished-at="2024-06-13T14:26:58 IST" duration-ms="1187" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- acConfig -->
-        <test-method is-config="true" signature="amConfig()[pri:0, instance:Sprint_6_Negative.b_UsersAllActions@3b69e7d1]" started-at="2024-06-10T16:51:23 IST" name="amConfig" finished-at="2024-06-10T16:51:23 IST" duration-ms="0" status="SKIP">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- amConfig -->
-      </class> <!-- Sprint_6_Negative.b_UsersAllActions -->
-      <class name="Sprint_6_Negative.a_DashboardAllActions">
-        <test-method is-config="true" signature="bsConfig()[pri:0, instance:Sprint_6_Negative.a_DashboardAllActions@6025e1b6]" started-at="2024-06-10T16:48:27 IST" name="bsConfig" finished-at="2024-06-10T16:48:27 IST" duration-ms="8" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- bsConfig -->
-        <test-method is-config="true" signature="bcConfig()[pri:0, instance:Sprint_6_Negative.a_DashboardAllActions@6025e1b6]" started-at="2024-06-10T16:48:27 IST" name="bcConfig" finished-at="2024-06-10T16:48:32 IST" duration-ms="4307" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- bcConfig -->
-        <test-method is-config="true" signature="bmConfig()[pri:0, instance:Sprint_6_Negative.a_DashboardAllActions@6025e1b6]" started-at="2024-06-10T16:48:32 IST" name="bmConfig" finished-at="2024-06-10T16:48:49 IST" duration-ms="17459" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- bmConfig -->
-        <test-method signature="dashboardTransactionReportsTest()[pri:0, instance:Sprint_6_Negative.a_DashboardAllActions@6025e1b6]" started-at="2024-06-10T16:48:49 IST" name="dashboardTransactionReportsTest" finished-at="2024-06-10T16:49:16 IST" duration-ms="26869" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- dashboardTransactionReportsTest -->
-        <test-method is-config="true" signature="amConfig()[pri:0, instance:Sprint_6_Negative.a_DashboardAllActions@6025e1b6]" started-at="2024-06-10T16:49:16 IST" name="amConfig" finished-at="2024-06-10T16:49:28 IST" duration-ms="11695" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- amConfig -->
-        <test-method is-config="true" signature="acConfig()[pri:0, instance:Sprint_6_Negative.a_DashboardAllActions@6025e1b6]" started-at="2024-06-10T16:49:28 IST" name="acConfig" finished-at="2024-06-10T16:49:29 IST" duration-ms="1389" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- acConfig -->
-        <test-method is-config="true" signature="asConfig()[pri:0, instance:Sprint_6_Negative.a_DashboardAllActions@6025e1b6]" started-at="2024-06-10T17:01:23 IST" name="asConfig" finished-at="2024-06-10T17:01:23 IST" duration-ms="0" status="PASS">
+        <test-method is-config="true" signature="asConfig()[pri:0, instance:Sprint_7_Positive_Negative.a_Adding_Category_In_Fms@45752059]" started-at="2024-06-13T14:26:58 IST" name="asConfig" finished-at="2024-06-13T14:26:58 IST" duration-ms="1" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- asConfig -->
-      </class> <!-- Sprint_6_Negative.a_DashboardAllActions -->
-    </test> <!-- Test -->
-  </suite> <!-- Suite -->
+      </class> <!-- Sprint_7_Positive_Negative.a_Adding_Category_In_Fms -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
 </testng-results>

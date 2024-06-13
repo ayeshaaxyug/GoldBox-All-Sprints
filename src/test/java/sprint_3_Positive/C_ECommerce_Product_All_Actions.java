@@ -25,24 +25,13 @@ public class C_ECommerce_Product_All_Actions extends FMS_BaseClass {
 	
     JavaUtility jUtil = new JavaUtility();
 	String Bangles = "Bangles"+jUtil.getRandomNum();
-	String ProductName = "Ring";
-	String VaPercent = "10";
-	String Price = "35000";
-	String Size = "8";
-	String Weight = "6";
-	String Description = "Good Product";
-	String AddSize = "9";
-	String AddWeight = "4";
-	String EditSize = "5";
-	String EditWeight = "3";
-	
 	String StoneName = "Black Pearl", StoneColour = "Black", StonePrice = "2000", NoOfStones = "2";
 	String EditStoneName = "White Pearl", EditStoneColour = "White", EditPrice = "4000", EditNoOfStones = "3";
+	String ProductName = "Ring", VaPercent = "10", Price = "35000", Size = "8", Weight = "6", Description = "Good Product", AddSize = "9", AddWeight = "4", EditSize = "5", EditWeight = "3";
 	String PEditProductName = "Bangles", PEditVaPercent = "12", PEditPrice = "36000", PEditSize = "10", PEditWeight = "10", PEditDescription = "Excellent Product";
     
-	
 	@Test (groups = "sprint-3", priority = 1)
-	 public void eCommerceProductInfo() throws Exception
+	 public void eCommerceProductInfoTest() throws Exception
 	{
 		String ImagePath = eUtil.readDataFromExcel("ImagePath", 0, 1);
 		String EImagePath = eUtil.readDataFromExcel("ImagePath", 1, 1);
@@ -61,7 +50,7 @@ public class C_ECommerce_Product_All_Actions extends FMS_BaseClass {
         
         Thread.sleep(2000);
         Ecommerce_Products_AddProductsPage epapPage = new Ecommerce_Products_AddProductsPage(driver);
-        epapPage.AddingProduct(driver, ProductName, VaPercent, Price, Size, Weight, Description,ImagePath);
+        epapPage.AddingProduct(driver, ProductName, VaPercent, Price, Size, Weight, Description, ImagePath);
         
         Thread.sleep(2000);
         epPage.clickOnParticularProductWeightInfoBtn(driver, ProductName);
@@ -128,7 +117,7 @@ public class C_ECommerce_Product_All_Actions extends FMS_BaseClass {
         
         Thread.sleep(2000);
         Ecommerce_UpdateProductDetailsPage eupdPage = new Ecommerce_UpdateProductDetailsPage(driver);
-        eupdPage.editProductDetails(driver, PEditProductName, PEditVaPercent, PEditPrice, PEditSize, PEditWeight, PEditDescription,EImagePath);
+        eupdPage.editProductDetails(driver, PEditProductName, PEditVaPercent, PEditPrice, PEditSize, PEditWeight, PEditDescription, EImagePath);
         
         Thread.sleep(2000);
         epPage.clickOnParticularProductBootStrapBtn(driver, PEditProductName);

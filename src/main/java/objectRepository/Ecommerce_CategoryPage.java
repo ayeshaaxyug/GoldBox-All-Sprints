@@ -77,7 +77,7 @@ public class Ecommerce_CategoryPage {
 	
 	public void clickOnParticularCategoryBootStrapBtn(WebDriver driver, String EditCategoryName)
 	{
-		driver.findElement(By.xpath("//td[.='"+EditCategoryName+"']/../td//img[@class='table-img']/../following-sibling::td//button[.=' Edit ']/..//button[@class='mdc-switch mdc-switch--selected mdc-switch--checked']")).click();
+		driver.findElement(By.xpath("//td[.='"+EditCategoryName+"']/../td//img[@class='table-img']/../following-sibling::td//button[.=' Edit ']/..//div[@class='mdc-switch__icons']")).click();
 	}
 	
 	public void clickOnParticularCategoryDeleteBtn(WebDriver driver, String EditCategoryName)

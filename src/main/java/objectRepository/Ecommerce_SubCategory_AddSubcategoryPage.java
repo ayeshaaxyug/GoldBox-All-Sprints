@@ -70,32 +70,22 @@ public class Ecommerce_SubCategory_AddSubcategoryPage {
 	
 	//Create Business Library
 
-	public void addSubCategory(WebDriver driver, String CategoryName, String SubCategoryName, String ImagePath) throws Exception
+	public void addSubCategory(WebDriver driver, String EditCategoryName, String SubCategoryName, String ImagePath) throws Exception
 	{
 		Robot r = new Robot();
 		
 		WebDriverUtility wUtil = new WebDriverUtility();
 		
 		Thread.sleep(2000);
-		wUtil.handleDropdownByVisibleText(CategoryName, CategoryNameDrpDwn);
+		wUtil.handleDropdownByVisibleText(EditCategoryName, CategoryNameDrpDwn);
 		Thread.sleep(2000);
 		SubCategoryNameEdt.sendKeys(SubCategoryName);
 		Thread.sleep(2000);
 		wUtil.handleDropdownByIndex(SelectTypeDrpDwn, 1);
 		Thread.sleep(2000);
 		
-		
         wUtil.clickOnChooseFileOption(driver, ChooseFileBtn, ImagePath);
-		
-//        r.keyPress(KeyEvent.VK_CONTROL);
-//        r.delay(2000);
-//        StringSelection ss = new StringSelection("C:\\Users\\vikra\\OneDrive\\Desktop\\One Drive Folder\\OneDrive\\Pictures\\Saved Pictures\\Necklace.jpg");
-//        Toolkit.getDefaultToolkit().getSystemClipboard().setContents(ss, null);
-//        r.keyPress(KeyEvent.VK_CONTROL);
-//        r.keyPress(KeyEvent.VK_V);
-//        r.keyRelease(KeyEvent.VK_CONTROL);
-//        r.keyRelease(KeyEvent.VK_V);
-//        r.keyPress(KeyEvent.VK_ENTER);
+        
         Thread.sleep(2000);
         AddBtn.click();
         Thread.sleep(2000);
