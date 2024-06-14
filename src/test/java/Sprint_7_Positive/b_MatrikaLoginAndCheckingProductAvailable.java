@@ -13,7 +13,7 @@ import genericUtility.PropertyFileUtility;
 public class b_MatrikaLoginAndCheckingProductAvailable extends BaseClass_Matrika{
 
 	@Test
-	public void b_loginAndProductCheckingTest() throws Exception
+	public void b_loginAndProductAvailabilityCheckingTest() throws Exception
 	{
 		Thread.sleep(2000);
 		JavascriptExecutor jse = (JavascriptExecutor)driver;

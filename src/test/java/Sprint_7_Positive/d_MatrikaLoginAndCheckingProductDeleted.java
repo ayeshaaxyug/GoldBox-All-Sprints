@@ -8,7 +8,7 @@ import genericUtility.BaseClass_Matrika;
 public class d_MatrikaLoginAndCheckingProductDeleted extends BaseClass_Matrika{
 
 	@Test
-	public void b_loginAndProductCheckingTest() throws Exception
+	public void b_loginAndProductDeletedRnotCheckingTest() throws Exception
 	{
 		Thread.sleep(2000);
 		JavascriptExecutor jse = (JavascriptExecutor)driver;
