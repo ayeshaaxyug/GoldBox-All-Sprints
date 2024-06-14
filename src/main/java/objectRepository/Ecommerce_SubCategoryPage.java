@@ -79,7 +79,7 @@ public class Ecommerce_SubCategoryPage {
 	public void clickOnParticularSubCategoryDeleteBtn(WebDriver driver, String SubCategoryName) throws Exception
 	{
 		Thread.sleep(1000);
-		driver.findElement(By.xpath("//td[.='"+SubCategoryName+"']/following-sibling::td//button[@class='btn-sm btn-edit bg-danger']")).click();
+		driver.findElement(By.xpath("(//td[contains(.,'"+SubCategoryName+"')])[1]/following-sibling::td//button[@class='btn-sm btn-edit bg-danger']")).click();
 	}
 	
 }

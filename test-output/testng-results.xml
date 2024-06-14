@@ -1,102 +1,93 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="1" passed="0" failed="1" skipped="0">
+<testng-results ignored="2" total="5" passed="3" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2024-06-14T12:44:38 IST" name="Default suite" finished-at="2024-06-14T12:45:40 IST" duration-ms="62628">
+  <suite started-at="2024-06-14T17:50:55 IST" name="Suite" finished-at="2024-06-14T17:55:15 IST" duration-ms="260105">
     <groups>
     </groups>
-    <test started-at="2024-06-14T12:44:38 IST" name="Default test" finished-at="2024-06-14T12:45:40 IST" duration-ms="62628">
+    <test started-at="2024-06-14T17:50:55 IST" name="Test" finished-at="2024-06-14T17:55:15 IST" duration-ms="260105">
       <class name="Sprint_7_Positive.c_Deleting_CategorySubCategoryAndProduct_In_Fms">
-        <test-method is-config="true" signature="bsConfig()[pri:0, instance:Sprint_7_Positive.c_Deleting_CategorySubCategoryAndProduct_In_Fms@408d971b]" started-at="2024-06-14T12:44:38 IST" name="bsConfig" finished-at="2024-06-14T12:44:38 IST" duration-ms="9" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- bsConfig -->
-        <test-method is-config="true" signature="bcConfig()[pri:0, instance:Sprint_7_Positive.c_Deleting_CategorySubCategoryAndProduct_In_Fms@408d971b]" started-at="2024-06-14T12:44:38 IST" name="bcConfig" finished-at="2024-06-14T12:44:42 IST" duration-ms="4620" status="PASS">
+        <test-method is-config="true" signature="bcConfig()[pri:0, instance:Sprint_7_Positive.c_Deleting_CategorySubCategoryAndProduct_In_Fms@22ff4249]" started-at="2024-06-14T17:54:20 IST" name="bcConfig" finished-at="2024-06-14T17:54:24 IST" duration-ms="4117" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- bcConfig -->
-        <test-method is-config="true" signature="bmConfig()[pri:0, instance:Sprint_7_Positive.c_Deleting_CategorySubCategoryAndProduct_In_Fms@408d971b]" started-at="2024-06-14T12:44:42 IST" name="bmConfig" finished-at="2024-06-14T12:45:00 IST" duration-ms="17436" status="PASS">
+        <test-method is-config="true" signature="bmConfig()[pri:0, instance:Sprint_7_Positive.c_Deleting_CategorySubCategoryAndProduct_In_Fms@22ff4249]" started-at="2024-06-14T17:54:24 IST" name="bmConfig" finished-at="2024-06-14T17:54:41 IST" duration-ms="17280" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- bmConfig -->
-        <test-method signature="deletingCategorySubCategoryProductInFmsTest()[pri:0, instance:Sprint_7_Positive.c_Deleting_CategorySubCategoryAndProduct_In_Fms@408d971b]" started-at="2024-06-14T12:45:00 IST" name="deletingCategorySubCategoryProductInFmsTest" finished-at="2024-06-14T12:45:40 IST" duration-ms="40527" status="FAIL">
-          <exception class="org.openqa.selenium.NoSuchElementException">
-            <message>
-              <![CDATA[no such element: Unable to locate element: {"method":"xpath","selector":"//td[.='BrandName1803414']/..//td//img[@class='table-img']/../following-sibling::td//button[.=' Edit ']/..//button[@class='btn-sm btn-edit bg-danger']"}
-  (Session info: chrome=125.0.6422.142)
-For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
-Build info: version: '4.14.1', revision: '03f8ede370'
-System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '18.0.1.1'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [463b147cc160e4a5036b4a8fecdebfec, findElement {using=xpath, value=//td[.='BrandName1803414']/..//td//img[@class='table-img']/../following-sibling::td//button[.=' Edit ']/..//button[@class='btn-sm btn-edit bg-danger']}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 125.0.6422.142, chrome: {chromedriverVersion: 125.0.6422.141 (4b1e8393712..., userDataDir: C:\WINDOWS\TEMP\scoped_dir2...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:59926}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:59926/devtoo..., se:cdpVersion: 125.0.6422.142, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 463b147cc160e4a5036b4a8fecdebfec]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//td[.='BrandName1803414']/..//td//img[@class='table-img']/../following-sibling::td//button[.=' Edit ']/..//button[@class='btn-sm btn-edit bg-danger']"}
-  (Session info: chrome=125.0.6422.142)
-For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
-Build info: version: '4.14.1', revision: '03f8ede370'
-System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '18.0.1.1'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [463b147cc160e4a5036b4a8fecdebfec, findElement {using=xpath, value=//td[.='BrandName1803414']/..//td//img[@class='table-img']/../following-sibling::td//button[.=' Edit ']/..//button[@class='btn-sm btn-edit bg-danger']}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 125.0.6422.142, chrome: {chromedriverVersion: 125.0.6422.141 (4b1e8393712..., userDataDir: C:\WINDOWS\TEMP\scoped_dir2...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:59926}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:59926/devtoo..., se:cdpVersion: 125.0.6422.142, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 463b147cc160e4a5036b4a8fecdebfec
-at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:67)
-at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
-at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:483)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:52)
-at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:200)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:175)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:602)
-at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
-at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
-at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:359)
-at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:353)
-at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
-at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
-at jdk.proxy2/jdk.proxy2.$Proxy15.click(Unknown Source)
-at Sprint_7_Positive.c_Deleting_CategorySubCategoryAndProduct_In_Fms.deletingCategorySubCategoryProductInFmsTest(c_Deleting_CategorySubCategoryAndProduct_In_Fms.java:29)
-at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
-at java.base/java.lang.reflect.Method.invoke(Method.java:577)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
-at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
-at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
-at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:962)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
-at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
-at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-at org.testng.TestRunner.privateRun(TestRunner.java:806)
-at org.testng.TestRunner.run(TestRunner.java:601)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:433)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:427)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:387)
-at org.testng.SuiteRunner.run(SuiteRunner.java:330)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
-at org.testng.TestNG.runSuites(TestNG.java:1099)
-at org.testng.TestNG.run(TestNG.java:1067)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
+        <test-method signature="deletingCategorySubCategoryProductInFmsTest()[pri:0, instance:Sprint_7_Positive.c_Deleting_CategorySubCategoryAndProduct_In_Fms@22ff4249]" started-at="2024-06-14T17:54:41 IST" name="deletingCategorySubCategoryProductInFmsTest" finished-at="2024-06-14T17:55:02 IST" duration-ms="21385" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- deletingCategorySubCategoryProductInFmsTest -->
-        <test-method is-config="true" signature="asConfig()[pri:0, instance:Sprint_7_Positive.c_Deleting_CategorySubCategoryAndProduct_In_Fms@408d971b]" started-at="2024-06-14T12:45:40 IST" name="asConfig" finished-at="2024-06-14T12:45:40 IST" duration-ms="0" status="PASS">
+        <test-method is-config="true" signature="amConfig()[pri:0, instance:Sprint_7_Positive.c_Deleting_CategorySubCategoryAndProduct_In_Fms@22ff4249]" started-at="2024-06-14T17:55:02 IST" name="amConfig" finished-at="2024-06-14T17:55:14 IST" duration-ms="11611" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- amConfig -->
+        <test-method is-config="true" signature="acConfig()[pri:0, instance:Sprint_7_Positive.c_Deleting_CategorySubCategoryAndProduct_In_Fms@22ff4249]" started-at="2024-06-14T17:55:14 IST" name="acConfig" finished-at="2024-06-14T17:55:15 IST" duration-ms="1252" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- acConfig -->
+      </class> <!-- Sprint_7_Positive.c_Deleting_CategorySubCategoryAndProduct_In_Fms -->
+      <class name="Sprint_7_Positive.b_MatrikaLogin">
+        <test-method is-config="true" signature="bsConfig()[pri:0, instance:Sprint_7_Positive.b_MatrikaLogin@6025e1b6]" started-at="2024-06-14T17:50:55 IST" name="bsConfig" finished-at="2024-06-14T17:50:55 IST" duration-ms="8" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- bsConfig -->
+        <test-method is-config="true" signature="bcConfig()[pri:0, instance:Sprint_7_Positive.b_MatrikaLogin@6025e1b6]" started-at="2024-06-14T17:53:35 IST" name="bcConfig" finished-at="2024-06-14T17:53:47 IST" duration-ms="11656" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- bcConfig -->
+        <test-method is-config="true" signature="bmConfig()[pri:0, instance:Sprint_7_Positive.b_MatrikaLogin@6025e1b6]" started-at="2024-06-14T17:53:47 IST" name="bmConfig" finished-at="2024-06-14T17:54:01 IST" duration-ms="14735" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- bmConfig -->
+        <test-method signature="b_loginAndProductCheckingTest()[pri:0, instance:Sprint_7_Positive.b_MatrikaLogin@6025e1b6]" started-at="2024-06-14T17:54:01 IST" name="b_loginAndProductCheckingTest" finished-at="2024-06-14T17:54:06 IST" duration-ms="4077" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- b_loginAndProductCheckingTest -->
+        <test-method is-config="true" signature="amConfig()[pri:0, instance:Sprint_7_Positive.b_MatrikaLogin@6025e1b6]" started-at="2024-06-14T17:54:06 IST" name="amConfig" finished-at="2024-06-14T17:54:18 IST" duration-ms="12968" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- amConfig -->
+        <test-method is-config="true" signature="acConfig()[pri:0, instance:Sprint_7_Positive.b_MatrikaLogin@6025e1b6]" started-at="2024-06-14T17:54:18 IST" name="acConfig" finished-at="2024-06-14T17:54:20 IST" duration-ms="1224" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- acConfig -->
+        <test-method is-config="true" signature="asConfig()[pri:0, instance:Sprint_7_Positive.b_MatrikaLogin@6025e1b6]" started-at="2024-06-14T17:55:15 IST" name="asConfig" finished-at="2024-06-14T17:55:15 IST" duration-ms="0" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- asConfig -->
-      </class> <!-- Sprint_7_Positive.c_Deleting_CategorySubCategoryAndProduct_In_Fms -->
-    </test> <!-- Default test -->
-  </suite> <!-- Default suite -->
+      </class> <!-- Sprint_7_Positive.b_MatrikaLogin -->
+      <class name="Sprint_7_Positive.a_Adding_CategorySubCategoryProduct_In_Fms">
+        <test-method is-config="true" signature="bsConfig()[pri:0, instance:Sprint_7_Positive.a_Adding_CategorySubCategoryProduct_In_Fms@45752059]" started-at="2024-06-14T17:50:55 IST" name="bsConfig" finished-at="2024-06-14T17:50:55 IST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- bsConfig -->
+        <test-method is-config="true" signature="bcConfig()[pri:0, instance:Sprint_7_Positive.a_Adding_CategorySubCategoryProduct_In_Fms@45752059]" started-at="2024-06-14T17:50:55 IST" name="bcConfig" finished-at="2024-06-14T17:50:59 IST" duration-ms="4117" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- bcConfig -->
+        <test-method is-config="true" signature="bmConfig()[pri:0, instance:Sprint_7_Positive.a_Adding_CategorySubCategoryProduct_In_Fms@45752059]" started-at="2024-06-14T17:50:59 IST" name="bmConfig" finished-at="2024-06-14T17:51:17 IST" duration-ms="17431" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- bmConfig -->
+        <test-method signature="a_addingCategorySubCategoryAndProductTest()[pri:0, instance:Sprint_7_Positive.a_Adding_CategorySubCategoryProduct_In_Fms@45752059]" started-at="2024-06-14T17:51:17 IST" name="a_addingCategorySubCategoryAndProductTest" finished-at="2024-06-14T17:53:22 IST" duration-ms="125564" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- a_addingCategorySubCategoryAndProductTest -->
+        <test-method is-config="true" signature="amConfig()[pri:0, instance:Sprint_7_Positive.a_Adding_CategorySubCategoryProduct_In_Fms@45752059]" started-at="2024-06-14T17:53:22 IST" name="amConfig" finished-at="2024-06-14T17:53:34 IST" duration-ms="11443" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- amConfig -->
+        <test-method is-config="true" signature="acConfig()[pri:0, instance:Sprint_7_Positive.a_Adding_CategorySubCategoryProduct_In_Fms@45752059]" started-at="2024-06-14T17:53:34 IST" name="acConfig" finished-at="2024-06-14T17:53:35 IST" duration-ms="1202" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- acConfig -->
+        <test-method is-config="true" signature="asConfig()[pri:0, instance:Sprint_7_Positive.a_Adding_CategorySubCategoryProduct_In_Fms@45752059]" started-at="2024-06-14T17:55:15 IST" name="asConfig" finished-at="2024-06-14T17:55:15 IST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- asConfig -->
+      </class> <!-- Sprint_7_Positive.a_Adding_CategorySubCategoryProduct_In_Fms -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite -->
 </testng-results>

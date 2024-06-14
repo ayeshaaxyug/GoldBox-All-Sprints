@@ -42,7 +42,7 @@ public class a_Adding_CategorySubCategoryProduct_In_Fms extends FMS_BaseClass {
 		String ImagePath = eUtil.readDataFromExcel("ImagePath", 0, 1);
 		String EditCategoryName = "EditChains"+jUtil.getRandomNum();
 		String SubCategoryName = "Chains"+jUtil.getSingleRandomnumber();
-		String EditSubCategoryName = "Chains"+jUtil.getRandomNum();
+		String EditSubCategoryName = "EditChains"+jUtil.getRandomNum();
 		String BrandName = "BrandName"+jUtil.getRandomNum();
 		String EditBrandName = "BrandName"+jUtil.getRandomNum();
 		String EImagePath = eUtil.readDataFromExcel("ImagePath", 1, 1);
@@ -122,19 +122,19 @@ public class a_Adding_CategorySubCategoryProduct_In_Fms extends FMS_BaseClass {
 //        Thread.sleep(2000);
 //	    
 //        ebPage.clickOnParticularBrandBootStrapBtn(driver, EditBrandName);
-        
-        ecPage.getProductsLnk().click();
-        Thread.sleep(2000);
-        Thread.sleep(2000);
-        Thread.sleep(2000);
-        Thread.sleep(2000);
-        Thread.sleep(2000);
-        Thread.sleep(2000);
-        Thread.sleep(2000);
-        Thread.sleep(2000);
-        Thread.sleep(2000);
-        Thread.sleep(2000);
-        Thread.sleep(2000);
+//        
+//        ecPage.getProductsLnk().click();
+//        Thread.sleep(2000);
+//        Thread.sleep(2000);
+//        Thread.sleep(2000);
+//        Thread.sleep(2000);
+//        Thread.sleep(2000);
+//        Thread.sleep(2000);
+//        Thread.sleep(2000);
+//        Thread.sleep(2000);
+//        Thread.sleep(2000);
+//        Thread.sleep(2000);
+//        Thread.sleep(2000);
         
         
 	}

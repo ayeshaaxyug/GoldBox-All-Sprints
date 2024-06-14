@@ -10,7 +10,7 @@ import org.testng.annotations.Test;
 import genericUtility.BaseClass_Matrika;
 import genericUtility.PropertyFileUtility;
 
-public class b_MatrikaLogin extends BaseClass_Matrika{
+public class b_MatrikaLoginAndCheckingProductAvailable extends BaseClass_Matrika{
 
 	@Test
 	public void b_loginAndProductCheckingTest() throws Exception

@@ -13,32 +13,35 @@ import objectRepository.Ecommerce_SubCategoryPage;
 public class c_Deleting_CategorySubCategoryAndProduct_In_Fms extends FMS_BaseClass {
 
 	@Test
-	public void deletingCategorySubCategoryProductInFmsTest(String SubCateegoryName, String CateegoryName) throws Exception
+	public void deletingCategorySubCategoryProductInFmsTest() throws Exception
 	{
+		String CategoryName = "EditChains";
+		String SubCategoryName = "EditChains";
+	    
 		Thread.sleep(2000);
 		DashboardPage dbPage = new DashboardPage(driver);
 		dbPage.getEcommerceDrpDwn().click();
 		Thread.sleep(2000);
 		EcommercePage ecPage = new EcommercePage(driver);
-		ecPage.getProductsLnk().click();
-		Thread.sleep(2000);
-		Ecommerce_ProductsListPage eplPage = new Ecommerce_ProductsListPage(driver);
-		eplPage.getDeleteBtn().click();
-		Thread.sleep(2000);
-		ecPage.getBrandsLnk().click();
-		Thread.sleep(2000);
+//		ecPage.getProductsLnk().click();
+//		Thread.sleep(2000);
+//		Ecommerce_ProductsListPage eplPage = new Ecommerce_ProductsListPage(driver);
+//		eplPage.getDeleteBtn().click();
+//		Thread.sleep(2000);
+//		ecPage.getBrandsLnk().click();
+//		Thread.sleep(2000);
 //		Ecommerce_BrandsPage ebPage = new Ecommerce_BrandsPage(driver);
 //		ebPage.getDeleteBtn().click();
 		Thread.sleep(2000);
 		ecPage.getSubCategoryLnk().click();
 		Thread.sleep(2000);
 		Ecommerce_SubCategoryPage esPage = new Ecommerce_SubCategoryPage(driver);
-		esPage.clickOnParticularSubCategoryDeleteBtn(driver, SubCateegoryName);
+		esPage.clickOnParticularSubCategoryDeleteBtn(driver, SubCategoryName);
 		Thread.sleep(2000);
 		ecPage.getCategoryLnk().click();
 		Thread.sleep(2000);
 		Ecommerce_CategoryPage eccPage = new Ecommerce_CategoryPage(driver);
-		eccPage.clickOnParticularCategoryDeleteBtn(driver, CateegoryName);
+		eccPage.clickOnParticularCategoryDeleteBtn(driver, CategoryName);
 		Thread.sleep(2000);
 		Thread.sleep(2000);
 		Thread.sleep(2000);

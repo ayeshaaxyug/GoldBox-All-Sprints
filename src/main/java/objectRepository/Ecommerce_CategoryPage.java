@@ -82,7 +82,7 @@ public class Ecommerce_CategoryPage {
 	
 	public void clickOnParticularCategoryDeleteBtn(WebDriver driver, String EditCategoryName)
 	{
-		driver.findElement(By.xpath("//td[.='"+EditCategoryName+"']/../td//img[@class='table-img']/../following-sibling::td//button[.=' Edit ']/..//button/../../../button[@class='btn-sm btn-edit bg-danger']")).click();
+		driver.findElement(By.xpath("(//td[contains(.,'"+EditCategoryName+"')])[1]/../td//img[@class='table-img']/../following-sibling::td//button[.=' Edit ']/..//button/../../../button[@class='btn-sm btn-edit bg-danger']")).click();
 	}
 	
 	
