@@ -38,8 +38,6 @@ public class a_Adding_CategorySubCategoryProduct_In_Fms extends FMS_BaseClass {
 	@Test
 	public void a_addingCategorySubCategoryAndProductTest() throws Exception, IOException
 	{
-		String USERNAME = pUtility.readDataFromPropertyFile("username");
-	    String PASSWORD = pUtility.readDataFromPropertyFile("password");
 		String CategoryName = "Chains"+jUtil.getRandomNum();
 		String ImagePath = eUtil.readDataFromExcel("ImagePath", 0, 1);
 		String EditCategoryName = "EditChains"+jUtil.getRandomNum();
