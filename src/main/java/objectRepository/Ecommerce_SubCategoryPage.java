@@ -18,6 +18,10 @@ public class Ecommerce_SubCategoryPage {
     
     @FindBy(xpath ="//td[.='Gold Chains']/following-sibling::td[.='Gods Idol chains']/..//button[@class='btn-sm btn-edit bg-danger']")private WebElement DeleteBtn;
     
+    @FindBy(xpath="(//div[.=' Sub Category Updated Successfully '])[2]")private WebElement UpdateMsg;
+    
+    @FindBy(xpath="(//div[.=' Successfully Deleted '])[2]")private WebElement DeleteMsg;
+    
     @FindBy(xpath="//a[text()=' Next ']")private WebElement NextPageLnk;
     
     @FindBy(xpath="//span[text()=' Prev ']")private WebElement PreviousPageLnk;
@@ -70,16 +74,36 @@ public class Ecommerce_SubCategoryPage {
 		driver.findElement(By.xpath("//td[.='"+SubCategoryName+"']/following-sibling::td/button[.=' Edit ']")).click();
 	}
 	
-	public void clickOnParticularCategoryBootstrapBtn(WebDriver driver, String EditSubCategoryName) throws Exception
+	public void clickOnParticularSubCategoryBootstrapBtn(WebDriver driver, String EditSubCategoryName) throws Exception
 	{
 		Thread.sleep(1000);
 		driver.findElement(By.xpath("//td[.='"+EditSubCategoryName+"']/following-sibling::td//div[@class='mdc-switch__icons']")).click();
+		Thread.sleep(2000);
+		if(UpdateMsg.isDisplayed())
+		{
+			System.out.println("SubCategory Updated Successfully");
+		}
+		else
+		{
+			System.out.println("SubCategory Not Updated");
+		}
+		Thread.sleep(3000);
 	}
 	
 	public void clickOnParticularSubCategoryDeleteBtn(WebDriver driver, String SubCategoryName) throws Exception
 	{
 		Thread.sleep(1000);
 		driver.findElement(By.xpath("(//td[contains(.,'"+SubCategoryName+"')])[1]/following-sibling::td//button[@class='btn-sm btn-edit bg-danger']")).click();
+		Thread.sleep(2000);
+		if(DeleteMsg.isDisplayed())
+		{
+			System.out.println("SubCategory Deleted Successfully");
+		}
+		else
+		{
+			System.out.println("SubCategory Not Deleted");
+		}
+		Thread.sleep(3000);
 	}
 	
 }

@@ -18,6 +18,10 @@ public class Ecommerce_CategoryPage {
     
     @FindBy(xpath="//td[.='Chains437288']/../td//img[@class='table-img']/../following-sibling::td//button[.=' Edit ']/..//button/../../../button[@class='btn-sm btn-edit bg-danger']")private WebElement ActionDeleteBtn;
     
+    @FindBy(xpath="(//div[.=' Category Updated Successfully '])[2]")private WebElement UpdateMsg;
+    
+    @FindBy(xpath="(//div[.=' Successfully Deleted '])[2]")private WebElement DeleteMsg;
+    
     @FindBy(xpath="//a[text()=' Next ']")private WebElement NextPageBtn;
     
     @FindBy(xpath="//span[text()=' Prev ']")private WebElement PrevPageBtn;
@@ -75,14 +79,34 @@ public class Ecommerce_CategoryPage {
 		driver.findElement(By.xpath("//td[.='"+CategoryName+"']/../td/button[.=' Edit ']")).click();
 	}
 	
-	public void clickOnParticularCategoryBootStrapBtn(WebDriver driver, String EditCategoryName)
+	public void clickOnParticularCategoryBootStrapBtn(WebDriver driver, String EditCategoryName) throws Exception
 	{
 		driver.findElement(By.xpath("//td[.='"+EditCategoryName+"']/../td//img[@class='table-img']/../following-sibling::td//button[.=' Edit ']/..//div[@class='mdc-switch__icons']")).click();
+		Thread.sleep(2000);
+		if(UpdateMsg.isDisplayed())
+		{
+			System.out.println("Category Updated Successfully");
+		}
+		else
+		{
+			System.out.println("Category Not Updated");
+		}
+		Thread.sleep(3000);
 	}
 	
-	public void clickOnParticularCategoryDeleteBtn(WebDriver driver, String EditCategoryName)
+	public void clickOnParticularCategoryDeleteBtn(WebDriver driver, String EditCategoryName) throws Exception
 	{
 		driver.findElement(By.xpath("(//td[contains(.,'"+EditCategoryName+"')])[1]/../td//img[@class='table-img']/../following-sibling::td//button[.=' Edit ']/..//button/../../../button[@class='btn-sm btn-edit bg-danger']")).click();
+		Thread.sleep(2000);
+		if(DeleteMsg.isDisplayed())
+		{
+			System.out.println("Category Deleted Successfully");
+		}
+		else
+		{
+			System.out.println("Category Not Deleted");
+		}
+		Thread.sleep(3000);
 	}
 	
 	

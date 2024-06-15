@@ -38,7 +38,7 @@ public class a_Adding_CategorySubCategoryProduct_In_Fms extends FMS_BaseClass {
 	PropertyFileUtility pUtil = new PropertyFileUtility();
 	
 	@Test
-	public void a_addingCategorySubCategoryAndProductInFmsTest() throws Exception, IOException
+	public void a_addingCategorySubCategoryAndProductInFmsTest() throws Exception
 	{
 		String CategoryName = "Chains"+jUtil.getRandomNum();
 		String ImagePath = eUtil.readDataFromExcel("ImagePath", 0, 1);
@@ -47,16 +47,9 @@ public class a_Adding_CategorySubCategoryProduct_In_Fms extends FMS_BaseClass {
 		String EditSubCategoryName = "EditChains"+jUtil.getRandomNum();
 		String BrandName = "BrandName"+jUtil.getRandomNum();
 		String EditBrandName = "BrandName"+jUtil.getRandomNum();
-		String EImagePath = eUtil.readDataFromExcel("ImagePath", 1, 1);
+		String EditImagePath = eUtil.readDataFromExcel("ImagePath", 1, 1);
 		String ProductName = "Ring", VaPercent = "10", Price = "35000", Size = "8", Weight = "6", Description = "Good Product", AddSize = "9", AddWeight = "4", EditSize = "5", EditWeight = "3";
 		String PEditProductName = "Bangles", PEditVaPercent = "12", PEditPrice = "36000", PEditSize = "10", PEditWeight = "10", PEditDescription = "Excellent Product";
-		
-//	    Thread.sleep(2000);
-//	    LoginPage lPage = new LoginPage(driver);
-//	    Thread.sleep(1000);
-//	    lPage.loginToApplication(USERNAME, PASSWORD);
-//	    Thread.sleep(6000);
-//		System.out.println("---Login successfully---");
 		
         Thread.sleep(3000);
         
@@ -95,9 +88,9 @@ public class a_Adding_CategorySubCategoryProduct_In_Fms extends FMS_BaseClass {
         esesPage.editingSubCategory(driver, EditCategoryName, EditSubCategoryName, ImagePath);
         Thread.sleep(2000);
 	    Ecommerce_SubCategoryPage escPage = new Ecommerce_SubCategoryPage(driver);
-	    escPage.clickOnParticularCategoryBootstrapBtn(driver, EditSubCategoryName);
+	    escPage.clickOnParticularSubCategoryBootstrapBtn(driver, EditSubCategoryName);
 		Thread.sleep(2000);
-	    escPage.clickOnParticularCategoryBootstrapBtn(driver, EditSubCategoryName);
+	    escPage.clickOnParticularSubCategoryDeleteBtn(driver, EditSubCategoryName);
 	    Thread.sleep(2000);
         ecPage.getBrandsLnk().click();
         Thread.sleep(2000);

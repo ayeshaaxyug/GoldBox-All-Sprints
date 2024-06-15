@@ -20,6 +20,10 @@ public class Ecommerce_BrandsPage {
     
     @FindBy(xpath="//td[.='BrandName1803414']/..//td//img[@class='table-img']/../following-sibling::td//button[.=' Edit ']/..//button[@class='btn-sm btn-edit bg-danger']")private WebElement DeleteBtn;
     
+    @FindBy(xpath="(//div[.=' Brand Updated Successfully '])[2]")private WebElement UpdateMsg;
+    
+    @FindBy(xpath="(//div[.=' Successfully Deleted '])[2]")private WebElement DeleteMsg;
+    
     @FindBy(xpath="//a[text()=' Next ']")private WebElement NextPageLnk;
     
     @FindBy(xpath="//span[text()=' Prev ']")private WebElement PreviousPageLnk;
@@ -75,12 +79,29 @@ public class Ecommerce_BrandsPage {
 	{
 		Thread.sleep(1000);
 		driver.findElement(By.xpath("//td[.='"+BrandName+"']/..//td//img[@class='table-img']/../following-sibling::td//button[.=' Edit ']/..//div[@class='mdc-switch__shadow']"));
+		Thread.sleep(2000);
+		if(UpdateMsg.isDisplayed())
+		{
+			System.out.println("Brand Updated Successfully");
+		}
+		else
+		{
+			System.out.println("Brand Not Updated");
+		}
 	}
 	
 	public void clickOnParticularBrandDeleteBtn(WebDriver driver, String BrandName) throws Exception
 	{
 		Thread.sleep(1000);
 		driver.findElement(By.xpath("//td[.='"+BrandName+"']/..//td//img[@class='table-img']/../following-sibling::td//button[.=' Edit ']/..//button[@class='btn-sm btn-edit bg-danger']")).click();
+		if(DeleteMsg.isDisplayed())
+		{
+			System.out.println("Brand Deleted Successfully");
+		}
+		else
+		{
+			System.out.println("Brand Not Deleted");
+		}
 	}
 	
 	

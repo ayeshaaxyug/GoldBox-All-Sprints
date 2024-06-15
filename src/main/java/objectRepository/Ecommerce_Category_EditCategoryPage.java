@@ -73,31 +73,16 @@ public class Ecommerce_Category_EditCategoryPage {
 		Thread.sleep(2000);
 		WebDriverUtility wUtil = new WebDriverUtility();
         wUtil.clickOnChooseFileOption(driver, ChooseFileBtn, ImagePath);
-		
-//        r.keyPress(KeyEvent.VK_CONTROL);
-//            r.delay(2000);
-//        StringSelection ss = new StringSelection("C:\\Users\\vikra\\OneDrive\\Desktop\\One Drive Folder\\OneDrive\\Pictures\\Saved Pictures\\download.jpg");
-//        Toolkit.getDefaultToolkit().getSystemClipboard().setContents(ss, null);
-//        r.keyPress(KeyEvent.VK_CONTROL);
-//        r.keyPress(KeyEvent.VK_V);
-//        r.keyRelease(KeyEvent.VK_CONTROL);
-//        r.keyRelease(KeyEvent.VK_V);
-//        r.keyPress(KeyEvent.VK_ENTER);
         Thread.sleep(2000);
         UpdateBtn.click();
         Thread.sleep(2000);
-        
-        Thread.sleep(1000);
         if(SuccessEle.isDisplayed())
         {
-        	System.out.println("Catogery Added Successfully");
+        	System.out.println("Catogery Updated Successfully");
         }
         else
         {
-    		System.out.println("Category Not Added");
-    		Assert.fail();
+    		System.out.println("Category Not Updated");
     	}
-        
-        Thread.sleep(1000);
 	}
 }

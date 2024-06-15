@@ -76,17 +76,6 @@ public class Ecommerce_Category_AddCategoryPage {
 		
 		WebDriverUtility wUtil = new WebDriverUtility();
         wUtil.clickOnChooseFileOption(driver, ChooseFileBtn, ImagePath);
-        
-//		
-//        r.keyPress(KeyEvent.VK_CONTROL);
-//        r.delay(2000);
-//        StringSelection ss = new StringSelection("C:\\Users\\vikra\\OneDrive\\Desktop\\One Drive Folder\\OneDrive\\Pictures\\Saved Pictures\\download.jpeg");
-//        Toolkit.getDefaultToolkit().getSystemClipboard().setContents(ss, null);
-//        r.keyPress(KeyEvent.VK_CONTROL);
-//        r.keyPress(KeyEvent.VK_V);
-//        r.keyRelease(KeyEvent.VK_CONTROL);
-//        r.keyRelease(KeyEvent.VK_V);
-//        r.keyPress(KeyEvent.VK_ENTER);
         Thread.sleep(2000);
         driver.findElement(By.xpath("//button[@type='submit']")).click();
         Thread.sleep(2000);

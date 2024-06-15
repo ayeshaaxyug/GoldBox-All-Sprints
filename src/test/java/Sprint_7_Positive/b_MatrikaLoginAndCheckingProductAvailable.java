@@ -22,9 +22,13 @@ public class b_MatrikaLoginAndCheckingProductAvailable extends BaseClass_Matrika
 		jse.executeScript("window.scrollBy(0,700);");
 		Thread.sleep(2000);
 		String FirstElement = driver.findElement(By.xpath("(//div[@class='col-6 col-md-2 mb-4 ng-star-inserted'])[1]")).getText();
-		if(FirstElement.contains("EditChains"));
+		if(FirstElement.contains("EditChains"))
 		{
 			System.out.println("Product Added Successfully");
+		}
+		else
+		{
+			System.out.println("Product Not Added");
 		}
 		
 	}
