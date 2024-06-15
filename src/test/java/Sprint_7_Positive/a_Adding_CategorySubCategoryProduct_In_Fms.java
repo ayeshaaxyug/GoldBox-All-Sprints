@@ -8,6 +8,7 @@ import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.testng.annotations.Listeners;
 import org.testng.annotations.Test;
 
 import genericUtility.ExcelFileUtility;
@@ -28,6 +29,7 @@ import objectRepository.Ecommerce_SubCategory_AddSubcategoryPage;
 import objectRepository.Ecommerce_SubCategory_EditSubcategoryPage;
 import objectRepository.LoginPage;
 
+@Listeners(genericUtility.ListnersImplementationClass.class)
 public class a_Adding_CategorySubCategoryProduct_In_Fms extends FMS_BaseClass {
 
 	ExcelFileUtility eUtil = new ExcelFileUtility();
@@ -36,7 +38,7 @@ public class a_Adding_CategorySubCategoryProduct_In_Fms extends FMS_BaseClass {
 	PropertyFileUtility pUtil = new PropertyFileUtility();
 	
 	@Test
-	public void a_addingCategorySubCategoryAndProductTest() throws Exception, IOException
+	public void a_addingCategorySubCategoryAndProductInFmsTest() throws Exception, IOException
 	{
 		String CategoryName = "Chains"+jUtil.getRandomNum();
 		String ImagePath = eUtil.readDataFromExcel("ImagePath", 0, 1);

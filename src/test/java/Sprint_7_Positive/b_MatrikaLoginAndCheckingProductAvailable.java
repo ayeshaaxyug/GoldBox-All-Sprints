@@ -5,15 +5,17 @@ import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.testng.annotations.Listeners;
 import org.testng.annotations.Test;
 
 import genericUtility.BaseClass_Matrika;
 import genericUtility.PropertyFileUtility;
 
+@Listeners(genericUtility.ListnersImplementationClass.class)
 public class b_MatrikaLoginAndCheckingProductAvailable extends BaseClass_Matrika{
 
 	@Test
-	public void b_loginAndProductAvailabilityCheckingTest() throws Exception
+	public void b_loginToMatrikaAndCheckingProductIsAvailabilityTest() throws Exception
 	{
 		Thread.sleep(2000);
 		JavascriptExecutor jse = (JavascriptExecutor)driver;

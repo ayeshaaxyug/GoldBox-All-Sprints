@@ -2,13 +2,15 @@ package Sprint_7_Positive;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
+import org.testng.annotations.Listeners;
 import org.testng.annotations.Test;
 import genericUtility.BaseClass_Matrika;
 
+@Listeners(genericUtility.ListnersImplementationClass.class) 
 public class d_MatrikaLoginAndCheckingProductDeleted extends BaseClass_Matrika{
 
 	@Test
-	public void b_loginAndProductDeletedRnotCheckingTest() throws Exception
+	public void b_loginToMatrikaAndCheckingProductDeletedOrNotTest() throws Exception
 	{
 		Thread.sleep(2000);
 		JavascriptExecutor jse = (JavascriptExecutor)driver;
@@ -22,7 +24,7 @@ public class d_MatrikaLoginAndCheckingProductDeleted extends BaseClass_Matrika{
 		}
 		else 
 		{
-			System.out.println("Product Deleted Successfully");
+			System.out.println("Product Is Not Displaying In Matrika");
 		}
 	}
 	

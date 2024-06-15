@@ -1,5 +1,6 @@
 package Sprint_7_Positive;
 
+import org.testng.annotations.Listeners;
 import org.testng.annotations.Test;
 
 import genericUtility.FMS_BaseClass;
@@ -10,10 +11,11 @@ import objectRepository.Ecommerce_CategoryPage;
 import objectRepository.Ecommerce_ProductsListPage;
 import objectRepository.Ecommerce_SubCategoryPage;
 
+@Listeners(genericUtility.ListnersImplementationClass.class)
 public class c_Deleting_CategorySubCategoryAndProduct_In_Fms extends FMS_BaseClass {
 
 	@Test
-	public void deletingCategorySubCategoryProductInFmsTest() throws Exception
+	public void c_DeletingCategorySubCategoryProductInFmsTest() throws Exception
 	{
 		String CategoryName = "EditChains";
 		String SubCategoryName = "EditChains";
