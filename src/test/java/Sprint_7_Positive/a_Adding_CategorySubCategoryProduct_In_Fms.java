@@ -24,9 +24,19 @@ import objectRepository.Ecommerce_Brands_UpdateBrandPage;
 import objectRepository.Ecommerce_CategoryPage;
 import objectRepository.Ecommerce_Category_AddCategoryPage;
 import objectRepository.Ecommerce_Category_EditCategoryPage;
+import objectRepository.Ecommerce_Product_DescriptionPage;
+import objectRepository.Ecommerce_ProductsListPage;
+import objectRepository.Ecommerce_Products_AddProductSizesPage;
+import objectRepository.Ecommerce_Products_AddProductStonePage;
+import objectRepository.Ecommerce_Products_AddProductsPage;
+import objectRepository.Ecommerce_Products_ProductSizesPage;
+import objectRepository.Ecommerce_Products_ProductStonePage;
 import objectRepository.Ecommerce_SubCategoryPage;
 import objectRepository.Ecommerce_SubCategory_AddSubcategoryPage;
 import objectRepository.Ecommerce_SubCategory_EditSubcategoryPage;
+import objectRepository.Ecommerce_UpdateProductDetailsPage;
+import objectRepository.Ecommerce_UpdateProductSizesPage;
+import objectRepository.Ecommerce_UpdateProductStonePage;
 import objectRepository.LoginPage;
 
 @Listeners(genericUtility.ListnersImplementationClass.class)
@@ -49,9 +59,12 @@ public class a_Adding_CategorySubCategoryProduct_In_Fms extends FMS_BaseClass {
 		String EditBrandName = "BrandName"+jUtil.getRandomNum();
 		String EditImagePath = eUtil.readDataFromExcel("ImagePath", 1, 1);
 		String ProductName = "Ring", VaPercent = "10", Price = "35000", Size = "8", Weight = "6", Description = "Good Product", AddSize = "9", AddWeight = "4", EditSize = "5", EditWeight = "3";
-		String PEditProductName = "Bangles", PEditVaPercent = "12", PEditPrice = "36000", PEditSize = "10", PEditWeight = "10", PEditDescription = "Excellent Product";
+		String PEditProductName = "Bangles", PEditVaPercent = "12", PEditPrice = "40000", PEditSize = "10", PEditWeight = "10", PEditDescription = "Excellent Product";
+		String StoneName = "Black Pearl", StoneColour = "Black", StonePrice = "2000", NoOfStones = "2";
+		String EditStoneName = "White Pearl", EditStoneColour = "White", EditPrice = "4000", EditNoOfStones = "3";
 		
-        Thread.sleep(3000);
+		
+        Thread.sleep(10000);
         
         DashboardPage dbPage = new DashboardPage(driver);
         dbPage.getEcommerceDrpDwn().click();
@@ -74,6 +87,10 @@ public class a_Adding_CategorySubCategoryProduct_In_Fms extends FMS_BaseClass {
         Thread.sleep(2000);
         eccPage.clickOnParticularCategoryBootStrapBtn(driver, EditCategoryName);
         Thread.sleep(2000);
+        driver.navigate().refresh();
+        Thread.sleep(2000);
+        dbPage.getEcommerceDrpDwn().click();
+        Thread.sleep(2000);
         ecPage.getSubCategoryLnk().click();
         Thread.sleep(2000);
         Ecommerce_SubCategoryPage ecscPage = new Ecommerce_SubCategoryPage(driver);
@@ -90,7 +107,11 @@ public class a_Adding_CategorySubCategoryProduct_In_Fms extends FMS_BaseClass {
 	    Ecommerce_SubCategoryPage escPage = new Ecommerce_SubCategoryPage(driver);
 	    escPage.clickOnParticularSubCategoryBootstrapBtn(driver, EditSubCategoryName);
 		Thread.sleep(2000);
-	    escPage.clickOnParticularSubCategoryDeleteBtn(driver, EditSubCategoryName);
+		escPage.clickOnParticularSubCategoryBootstrapBtn(driver, EditSubCategoryName);
+		Thread.sleep(2000);
+        driver.navigate().refresh();
+        Thread.sleep(2000);
+        dbPage.getEcommerceDrpDwn().click();
 	    Thread.sleep(2000);
         ecPage.getBrandsLnk().click();
         Thread.sleep(2000);
@@ -100,37 +121,83 @@ public class a_Adding_CategorySubCategoryProduct_In_Fms extends FMS_BaseClass {
         Ecommerce_Brands_AddBrandPage eabPage = new Ecommerce_Brands_AddBrandPage(driver);
         eabPage.addingBrand(driver, BrandName, ImagePath);
         Thread.sleep(2000);
+        ebPage.clickOnParticularBrandEditBtn(driver, BrandName);
+        Thread.sleep(2000);
+        Ecommerce_Brands_UpdateBrandPage ecesPage = new Ecommerce_Brands_UpdateBrandPage(driver);
+        ecesPage.updatingBrand(driver, EditBrandName,ImagePath);
+        Thread.sleep(2000);
+        ebPage.clickOnParticularBrandBootStrapBtn(driver, EditBrandName);
+        Thread.sleep(2000);
+        ebPage.clickOnParticularBrandBootStrapBtn(driver, EditBrandName);
+        Thread.sleep(2000);
         driver.navigate().refresh();
-//        Thread.sleep(2000);
-//        
-//       // Upto here Done But Added Brand is Not Displaying
-//       
-//        ebPage.clickOnParticularBrandEditBtn(driver, BrandName);
-//        
-//        Ecommerce_Brands_UpdateBrandPage ecesPage = new Ecommerce_Brands_UpdateBrandPage(driver);
-//        ecesPage.updatingBrand(driver, EditBrandName,ImagePath);
-//        
-//        Thread.sleep(2000);
-//        
-//        ebPage.clickOnParticularBrandBootStrapBtn(driver, EditBrandName);
-//        
-//        Thread.sleep(2000);
-//	    
-//        ebPage.clickOnParticularBrandBootStrapBtn(driver, EditBrandName);
-//        
-//        ecPage.getProductsLnk().click();
-//        Thread.sleep(2000);
-//        Thread.sleep(2000);
-//        Thread.sleep(2000);
-//        Thread.sleep(2000);
-//        Thread.sleep(2000);
-//        Thread.sleep(2000);
-//        Thread.sleep(2000);
-//        Thread.sleep(2000);
-//        Thread.sleep(2000);
-//        Thread.sleep(2000);
-//        Thread.sleep(2000);
-        
+        Thread.sleep(2000);
+        dbPage.getEcommerceDrpDwn().click();
+        Thread.sleep(2000);
+        ecPage.getProductsLnk().click();
+        Thread.sleep(2000);
+        Ecommerce_ProductsListPage eplPage = new Ecommerce_ProductsListPage(driver);
+        eplPage.getAddProductBtn().click();
+        Thread.sleep(2000);
+        Ecommerce_Products_AddProductsPage epapPage = new Ecommerce_Products_AddProductsPage(driver);
+        epapPage.AddingProduct1(driver, EditCategoryName, EditSubCategoryName, EditBrandName, ProductName, VaPercent, Price, Size, Weight, Description, ImagePath);
+        Thread.sleep(2000);
+        eplPage.clickOnParticularProductWeightInfoBtn(driver, ProductName);
+        Thread.sleep(2000);
+        Ecommerce_Products_ProductSizesPage eppsPage = new Ecommerce_Products_ProductSizesPage(driver);
+        eppsPage.getAddProductSizesBtn().click();
+        Thread.sleep(2000);
+        Ecommerce_Products_AddProductSizesPage eppasizePage = new Ecommerce_Products_AddProductSizesPage(driver);
+        eppasizePage.addProductSize(EditSize, EditWeight);
+        Thread.sleep(2000);
+        eppsPage.clickOnParticularProductEditBtn(driver, ProductName, Size, Weight);
+        Thread.sleep(2000);
+        Ecommerce_UpdateProductSizesPage eupsPage = new Ecommerce_UpdateProductSizesPage(driver);
+        eupsPage.editProductSize(PEditSize, PEditWeight);
+        Thread.sleep(2000);
+        eppsPage.clickOnFrstProductBootstrapBtnInProductSizePage(driver);
+        Thread.sleep(2000);
+        eppsPage.clickOnFrstProductBootstrapBtnInProductSizePage(driver);
+        Thread.sleep(2000);
+        driver.navigate().refresh();
+        Thread.sleep(2000);
+        dbPage.getEcommerceDrpDwn().click();
+        Thread.sleep(2000);
+        ecPage.getProductsLnk().click();
+        Thread.sleep(2000);
+        eplPage.clickOnParticularProductStonesViewBtn(driver, ProductName);
+        Thread.sleep(2000);
+        Ecommerce_Products_ProductStonePage eppstonePage = new Ecommerce_Products_ProductStonePage(driver);
+        eppstonePage.getAddProductStoneBtn().click();
+        Thread.sleep(2000);
+        Ecommerce_Products_AddProductStonePage epapsPage = new Ecommerce_Products_AddProductStonePage(driver);
+        epapsPage.addingProductStone(StoneName, StoneColour, StonePrice, NoOfStones);
+        Thread.sleep(2000);
+        eplPage.clickOnParticularProductActionEdtBtn(driver, PEditProductName);
+        Thread.sleep(2000);
+        Ecommerce_UpdateProductStonePage eupStonePage = new Ecommerce_UpdateProductStonePage(driver);
+        eupStonePage.editProductStone(EditStoneName, EditStoneColour, EditPrice, EditNoOfStones);
+        Thread.sleep(2000);
+        driver.navigate().refresh();
+        Thread.sleep(2000);
+        dbPage.getEcommerceDrpDwn().click();
+        Thread.sleep(2000);
+        ecPage.getProductsLnk().click();
+        Thread.sleep(2000);
+        eplPage.clickOnParticularProductDescriptionViewBtn(driver, ProductName);
+        Thread.sleep(2000);
+        Ecommerce_Product_DescriptionPage epdPage = new Ecommerce_Product_DescriptionPage(driver);
+        epdPage.getUnderstandBtn().click();
+        Thread.sleep(2000);
+        eplPage.clickOnParticularProductActionEdtBtn(driver, ProductName);
+        Thread.sleep(2000);
+        Ecommerce_UpdateProductDetailsPage eupdPage = new Ecommerce_UpdateProductDetailsPage(driver);
+        eupdPage.editProductDetailsSprint7(driver, EditCategoryName, EditSubCategoryName, EditBrandName, PEditProductName, PEditVaPercent, PEditPrice, PEditSize, PEditWeight, PEditDescription, EditImagePath);
+        Thread.sleep(2000);
+        eplPage.clickOnParticularProductBootStrapBtn(driver, PEditProductName);
+        Thread.sleep(6000);
+        eplPage.clickOnParticularProductBootStrapBtn(driver, PEditProductName);
+        Thread.sleep(4000);
         
 	}
 	

@@ -23,7 +23,7 @@ public class D_ECommerce_Brands_All_Actions extends FMS_BaseClass {
 	@Test(groups = "sprint-3", priority = 1)
 	public void a_addingBrandTest()throws Exception
 	{
-		String BrandName = "BrandName"+jUtil.getRandomNum();
+		String BrandName = "BrandName"+jUtil.getRandomNum(); 
 		String EditBrandName = "BrandName"+jUtil.getRandomNum();
 		String ImagePath = eUtil.readDataFromExcel("ImagePath", 0, 1);
 		Thread.sleep(5000);

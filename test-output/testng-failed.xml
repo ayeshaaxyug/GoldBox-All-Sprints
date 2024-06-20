@@ -1,19 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
-<suite thread-count="1" name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
-  <test thread-count="1" name="Test(failed)">
+<suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" name="Default test(failed)">
     <classes>
       <class name="Sprint_7_Positive.c_Deleting_CategorySubCategoryAndProduct_In_Fms">
         <methods>
           <include name="asConfig"/>
           <include name="bmConfig"/>
           <include name="amConfig"/>
+          <include name="c_DeletingCategorySubCategoryProductInFmsTest"/>
           <include name="bcConfig"/>
-          <include name="deletingCategorySubCategoryProductInFmsTest"/>
           <include name="bsConfig"/>
           <include name="acConfig"/>
         </methods>
       </class> <!-- Sprint_7_Positive.c_Deleting_CategorySubCategoryAndProduct_In_Fms -->
     </classes>
-  </test> <!-- Test(failed) -->
-</suite> <!-- Failed suite [Suite] -->
+  </test> <!-- Default test(failed) -->
+</suite> <!-- Failed suite [Default suite] -->

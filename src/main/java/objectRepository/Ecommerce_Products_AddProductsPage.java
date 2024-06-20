@@ -142,6 +142,8 @@ public class Ecommerce_Products_AddProductsPage {
 		Thread.sleep(2000);
 		wUtil.handleDropdownByIndex(TypeDrpDwn, 1);
 		Thread.sleep(2000);
+		wUtil.handleDropdownByIndex(IsShownDrpDwn, 1);
+		Thread.sleep(2000);
 		PriceEdt.sendKeys(Price);
 		Thread.sleep(2000); 
 		SizeEdt.sendKeys(Size);
@@ -161,6 +163,40 @@ public class Ecommerce_Products_AddProductsPage {
 //        r.keyRelease(KeyEvent.VK_CONTROL);
 //        r.keyRelease(KeyEvent.VK_V);
 //        r.keyPress(KeyEvent.VK_ENTER);
+        Thread.sleep(2000);
+        AddBtn.click();
+        Thread.sleep(2000);
+        
+	}
+	
+	public void AddingProduct1(WebDriver driver, String EditCategory, String EditSubCategory, String EditBrand, String ProductName, String VaPercent, String Price, String Size, String Weight, String Description, String ImagePath) throws Exception
+	{
+		Thread.sleep(2000);
+		wUtil.handleDropdownByVisibleText(EditCategory , CategoryDrpDwn);
+		Thread.sleep(2000);
+		wUtil.handleDropdownByVisibleText(EditSubCategory, SubCategoryDrpDwn);
+		Thread.sleep(2000);
+		wUtil.handleDropdownByVisibleText(EditBrand , BrandNameDrpDwn);
+		Thread.sleep(2000);
+		ProductNameEdt.sendKeys(ProductName);
+		Thread.sleep(2000);
+		VaEdt.sendKeys(VaPercent);
+		Thread.sleep(2000);
+		wUtil.handleDropdownByIndex(CaratDrpDwn, 1);
+		Thread.sleep(2000);
+		wUtil.handleDropdownByIndex(TypeDrpDwn, 1);
+		Thread.sleep(2000);
+		wUtil.handleDropdownByIndex(IsShownDrpDwn, 1);
+		Thread.sleep(2000);
+		PriceEdt.sendKeys(Price);
+		Thread.sleep(2000); 
+		SizeEdt.sendKeys(Size);
+		Thread.sleep(2000);
+		WeightEdt.sendKeys(Weight);
+		Thread.sleep(2000);
+		DescriptionEdt.sendKeys(Description);
+		Thread.sleep(2000);
+		wUtil.clickOnChooseFileOption(driver, ChooseFileBtn, ImagePath);
         Thread.sleep(2000);
         AddBtn.click();
         Thread.sleep(2000);

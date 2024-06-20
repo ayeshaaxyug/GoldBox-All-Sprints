@@ -145,7 +145,7 @@ public class B_ECommerce_Sub_Category_All_Actions extends FMS_BaseClass {
 	     Thread.sleep(2000);
 	     
 	     Ecommerce_SubCategoryPage escPage = new Ecommerce_SubCategoryPage(driver);
-	     escPage.clickOnParticularCategoryBootstrapBtn(driver, SubCategoryName);
+	     escPage.clickOnParticularSubCategoryBootstrapBtn(driver, SubCategoryName);
 	     
 		 Thread.sleep(2000);
 		 

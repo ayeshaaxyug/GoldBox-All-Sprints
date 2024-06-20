@@ -8,7 +8,7 @@
           <include name="asConfig"/>
           <include name="bmConfig"/>
           <include name="amConfig"/>
-          <include name="deletingCategorySubCategoryProductInFmsTest"/>
+          <include name="c_DeletingCategorySubCategoryProductInFmsTest"/>
           <include name="bcConfig"/>
           <include name="bsConfig"/>
           <include name="acConfig"/>

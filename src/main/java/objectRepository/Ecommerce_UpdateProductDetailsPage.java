@@ -46,6 +46,12 @@ public class Ecommerce_UpdateProductDetailsPage {
     
     @FindBy(xpath="//h1[.='Update Product Details']/../following-sibling::div/following-sibling::div/button[.='Update']")private WebElement UpdateBtn;
   
+    @FindBy(xpath="(//div[.=' Invalid form details '])[2]")private WebElement InvalidFormErrorMsg;
+    
+    @FindBy(xpath="//h1[.='Update Product Details']/following-sibling::button[@aria-label='Close']")private WebElement UpdateProductPageCloseBtn;
+  
+    
+    
 	//Rule-3:Create a constructor to initilise these elements
     
 	public Ecommerce_UpdateProductDetailsPage(WebDriver driver)
@@ -117,19 +123,29 @@ public class Ecommerce_UpdateProductDetailsPage {
 		return UpdateBtn;
 	}
 	
+	public WebElement getInvalidFormErrorMsg() {
+		return InvalidFormErrorMsg;
+	}
+	
+	public WebElement getUpdateProductPageCloseBtn() {
+		return UpdateProductPageCloseBtn;
+	}
+	
+	
 	//Create Business Library
-
-	public void editProductDetails(WebDriver driver, String EditProductName, String EditVaPercent, String EditPrice, String EditSize, String EditWeight, String EditDescription, String ImagePath) throws Exception
+	
+	
+	public void editProductDetails(WebDriver driver,  String EditProductName, String EditVaPercent, String EditPrice, String EditSize, String EditWeight, String EditDescription, String ImagePath) throws Exception
 	{
 		WebDriverUtility wUtil = new WebDriverUtility();
         Robot r = new Robot();
 		
 		Thread.sleep(2000);
-		wUtil.handleDropdownByVisibleText("Bangles",CategoryDrpDwn);
+		wUtil.handleDropdownByIndex(CategoryDrpDwn, 1);
 		Thread.sleep(2000);
 		wUtil.handleDropdownByIndex(SubCategoryDrpDwn, 1);
 		Thread.sleep(2000);
-		wUtil.handleDropdownByIndex(BrandNameDrpDwn, 2);
+		wUtil.handleDropdownByIndex(BrandNameDrpDwn, 1);
 		Thread.sleep(2000);
 		ProductNameEdt.clear();
 		Thread.sleep(2000);
@@ -173,6 +189,55 @@ public class Ecommerce_UpdateProductDetailsPage {
         Thread.sleep(2000);
         UpdateBtn.click();
         Thread.sleep(2000);
+	}
+	
+	public void editProductDetailsSprint7(WebDriver driver, String EditCategoryName, String EditEditSubCategory, String EditBrandName,  String EditProductName, String EditVaPercent, String EditPrice, String EditSize, String EditWeight, String EditDescription, String ImagePath) throws Exception
+	{
+		WebDriverUtility wUtil = new WebDriverUtility();
+        Robot r = new Robot();
+		
+		Thread.sleep(2000);
+		wUtil.handleDropdownByVisibleText(EditCategoryName,CategoryDrpDwn);
+		Thread.sleep(2000);
+		wUtil.handleDropdownByVisibleText(EditEditSubCategory, SubCategoryDrpDwn);
+		Thread.sleep(2000);
+		wUtil.handleDropdownByVisibleText(EditBrandName, BrandNameDrpDwn);
+		Thread.sleep(2000);
+		ProductNameEdt.clear();
+		Thread.sleep(2000);
+		ProductNameEdt.sendKeys(EditProductName);
+		Thread.sleep(2000);
+		VaEdt.clear();
+		Thread.sleep(2000);
+		VaEdt.sendKeys(EditVaPercent);
+		Thread.sleep(2000);
+		wUtil.handleDropdownByIndex(CaratDrpDwn, 2);
+		Thread.sleep(2000);
+		wUtil.handleDropdownByIndex(TypeDrpDwn, 1);
+		Thread.sleep(2000);
+		PriceEdt.clear();
+		Thread.sleep(2000);
+		PriceEdt.sendKeys(EditPrice);
+		Thread.sleep(2000);
+		DescriptionEdt.clear();
+		Thread.sleep(2000);
+		DescriptionEdt.sendKeys(EditDescription);
+		Thread.sleep(2000);
+		wUtil.clickOnChooseFileOption(driver, ChooseFileBtn, ImagePath);
+        Thread.sleep(2000);
+        UpdateBtn.click();
+        Thread.sleep(2000);
+        try 
+        {
+			if(InvalidFormErrorMsg.isDisplayed())
+			{
+				UpdateProductPageCloseBtn.click();
+			}
+		}
+        catch (Exception e) 
+        {
+			Thread.sleep(2000);
+		}
 	}
 	
 }

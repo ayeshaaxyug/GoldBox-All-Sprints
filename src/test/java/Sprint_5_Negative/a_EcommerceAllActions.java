@@ -407,7 +407,7 @@ public class a_EcommerceAllActions extends FMS_BaseClass {
 			wUtil.takeScreenShot(driver, "j_Click On Close Btn Update SubCategory Page Should Not Close Error");
 		}
         Thread.sleep(4000);
-        esPage.clickOnParticularCategoryBootstrapBtn(driver, SubCategoryNameRandom);
+        esPage.clickOnParticularSubCategoryBootstrapBtn(driver, SubCategoryNameRandom);
         Thread.sleep(1000);
         WebElement UpdateMsg = driver.findElement(By.xpath("(//div[.=' Sub Category Updated Successfully '])[2]"));
         if(UpdateMsg.isDisplayed())

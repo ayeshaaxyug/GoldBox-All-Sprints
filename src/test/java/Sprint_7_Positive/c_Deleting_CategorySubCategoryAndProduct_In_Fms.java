@@ -20,20 +20,20 @@ public class c_Deleting_CategorySubCategoryAndProduct_In_Fms extends FMS_BaseCla
 		String CategoryName = "EditChains";
 		String SubCategoryName = "EditChains";
 	    
-		Thread.sleep(2000);
+		Thread.sleep(5000);
 		DashboardPage dbPage = new DashboardPage(driver);
 		dbPage.getEcommerceDrpDwn().click();
 		Thread.sleep(2000);
 		EcommercePage ecPage = new EcommercePage(driver);
-//		ecPage.getProductsLnk().click();
-//		Thread.sleep(2000);
-//		Ecommerce_ProductsListPage eplPage = new Ecommerce_ProductsListPage(driver);
-//		eplPage.getDeleteBtn().click();
-//		Thread.sleep(2000);
-//		ecPage.getBrandsLnk().click();
-//		Thread.sleep(2000);
-//		Ecommerce_BrandsPage ebPage = new Ecommerce_BrandsPage(driver);
-//		ebPage.getDeleteBtn().click();
+		ecPage.getProductsLnk().click();
+		Thread.sleep(2000);
+		Ecommerce_ProductsListPage eplPage = new Ecommerce_ProductsListPage(driver);
+		eplPage.getDeleteBtn().click();
+		Thread.sleep(2000);
+		ecPage.getBrandsLnk().click();
+		Thread.sleep(2000);
+		Ecommerce_BrandsPage ebPage = new Ecommerce_BrandsPage(driver);
+		ebPage.getDeleteBtn().click();
 		Thread.sleep(2000);
 		ecPage.getSubCategoryLnk().click();
 		Thread.sleep(2000);
@@ -44,10 +44,8 @@ public class c_Deleting_CategorySubCategoryAndProduct_In_Fms extends FMS_BaseCla
 		Thread.sleep(2000);
 		Ecommerce_CategoryPage eccPage = new Ecommerce_CategoryPage(driver);
 		eccPage.clickOnParticularCategoryDeleteBtn(driver, CategoryName);
-		Thread.sleep(2000);
-		Thread.sleep(2000);
-		Thread.sleep(2000);
-		Thread.sleep(2000);
+		Thread.sleep(4000);
+		
 		
 	}
 	
