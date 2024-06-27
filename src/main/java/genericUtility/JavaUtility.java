@@ -15,9 +15,9 @@ public class JavaUtility {
 		public int getRandomNum()
 		{
 			Random r = new Random();
-			int Num = r.nextInt(9999999);
+			int Num = r.nextInt(1000);
 			
-			if(Num > 9999990)
+			if(Num > 100)
 			{
 				Num++;
 			}

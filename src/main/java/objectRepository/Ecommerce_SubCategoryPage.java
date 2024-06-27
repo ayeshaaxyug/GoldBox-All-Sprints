@@ -5,6 +5,7 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
+import org.testng.Assert;
 
 public class Ecommerce_SubCategoryPage {
 
@@ -74,18 +75,36 @@ public class Ecommerce_SubCategoryPage {
 		driver.findElement(By.xpath("//td[.='"+SubCategoryName+"']/following-sibling::td/button[.=' Edit ']")).click();
 	}
 	
-	public void clickOnParticularSubCategoryBootstrapBtn(WebDriver driver, String EditSubCategoryName) throws Exception
+	public void clickOnParticularSubCategoryBootstrapBtnToDisableParticularSubCategory(WebDriver driver, String EditSubCategoryName) throws Exception
 	{
 		Thread.sleep(1000);
 		driver.findElement(By.xpath("//td[.='"+EditSubCategoryName+"']/following-sibling::td//div[@class='mdc-switch__icons']")).click();
 		Thread.sleep(2000);
 		if(UpdateMsg.isDisplayed())
 		{
-			System.out.println("SubCategory Updated Successfully");
+			System.out.println("SubCategory Disabled Successfully");
 		}
 		else
 		{
 			System.out.println("SubCategory Not Updated");
+			Assert.fail();
+		}
+		Thread.sleep(3000);
+	}
+	
+	public void clickOnParticularSubCategoryBootstrapBtnToEnableParticularSubCategory(WebDriver driver, String EditSubCategoryName) throws Exception
+	{
+		Thread.sleep(1000);
+		driver.findElement(By.xpath("//td[.='"+EditSubCategoryName+"']/following-sibling::td//div[@class='mdc-switch__icons']")).click();
+		Thread.sleep(2000);
+		if(UpdateMsg.isDisplayed())
+		{
+			System.out.println("SubCategory Enabled Successfully");
+		}
+		else
+		{
+			System.out.println("SubCategory Not Updated");
+			Assert.fail();
 		}
 		Thread.sleep(3000);
 	}
@@ -102,6 +121,7 @@ public class Ecommerce_SubCategoryPage {
 		else
 		{
 			System.out.println("SubCategory Not Deleted");
+			Assert.fail();
 		}
 		Thread.sleep(3000);
 	}

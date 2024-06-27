@@ -5,6 +5,7 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
+import org.testng.Assert;
 
 public class Ecommerce_BrandsPage {
 
@@ -75,7 +76,7 @@ public class Ecommerce_BrandsPage {
 		driver.findElement(By.xpath("//td[.='"+BrandName+"']/following-sibling::td/img[@class='table-img']/../following-sibling::td/button[.=' Edit ']")).click();
 	}
 	
-	public void clickOnParticularBrandBootStrapBtn(WebDriver driver, String BrandName) throws Exception
+	public void clickOnParticularBrandBootStrapBtnToDisable(WebDriver driver, String BrandName) throws Exception
 	{
 		Thread.sleep(1000);
 		driver.findElement(By.xpath("//td[.='"+BrandName+"']/..//td//img[@class='table-img']/../following-sibling::td//button[.=' Edit ']/..//div[@class='mdc-switch__icons']")).click();
@@ -86,7 +87,24 @@ public class Ecommerce_BrandsPage {
 		}
 		else
 		{
-			System.out.println("Brand Not Updated");
+			System.out.println("Brand Not Disabled");
+			Assert.fail();
+		}
+	}
+	
+	public void clickOnParticularBrandBootStrapBtnToEnable(WebDriver driver, String BrandName) throws Exception
+	{
+		Thread.sleep(1000);
+		driver.findElement(By.xpath("//td[.='"+BrandName+"']/..//td//img[@class='table-img']/../following-sibling::td//button[.=' Edit ']/..//div[@class='mdc-switch__icons']")).click();
+		Thread.sleep(2000);
+		if(UpdateMsg.isDisplayed())
+		{
+			System.out.println("Brand Enabled Successfully");
+		}
+		else
+		{
+			System.out.println("Brand Not Enabled");
+			Assert.fail();
 		}
 	}
 	
@@ -101,6 +119,7 @@ public class Ecommerce_BrandsPage {
 		else
 		{
 			System.out.println("Brand Not Deleted");
+			Assert.fail();
 		}
 	}
 	

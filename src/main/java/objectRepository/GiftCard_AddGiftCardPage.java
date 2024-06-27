@@ -71,7 +71,7 @@ public class GiftCard_AddGiftCardPage {
 	{
 		WebDriverUtility wUtil = new WebDriverUtility();
 		Thread.sleep(2000);
-		wUtil.handleDropdownByIndex(MerchantDrpDwn, 3);
+		wUtil.handleDropdownByVisibleText("matrika", MerchantDrpDwn);
 		Thread.sleep(2000);
 		AmountEdt.sendKeys(Amount);
 		Thread.sleep(2000);

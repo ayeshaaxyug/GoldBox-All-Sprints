@@ -83,9 +83,9 @@ public class a_Adding_CategorySubCategoryProduct_In_Fms extends FMS_BaseClass {
         Ecommerce_Category_EditCategoryPage eccecPage = new Ecommerce_Category_EditCategoryPage(driver);
         eccecPage.editCategory(driver, EditCategoryName, ImagePath);
         Thread.sleep(2000);
-        eccPage.clickOnParticularCategoryBootStrapBtn(driver, EditCategoryName);
+        eccPage.clickOnParticularCategoryBootStrapBtnToDisableParticularCategory(driver, EditCategoryName);
         Thread.sleep(2000);
-        eccPage.clickOnParticularCategoryBootStrapBtn(driver, EditCategoryName);
+        eccPage.clickOnParticularCategoryBootStrapBtnToEnableParticularCategory(driver, EditCategoryName);
         Thread.sleep(2000);
         driver.navigate().refresh();
         Thread.sleep(2000);
@@ -105,9 +105,9 @@ public class a_Adding_CategorySubCategoryProduct_In_Fms extends FMS_BaseClass {
         esesPage.editingSubCategory(driver, EditCategoryName, EditSubCategoryName, ImagePath);
         Thread.sleep(2000);
 	    Ecommerce_SubCategoryPage escPage = new Ecommerce_SubCategoryPage(driver);
-	    escPage.clickOnParticularSubCategoryBootstrapBtn(driver, EditSubCategoryName);
+	    escPage.clickOnParticularSubCategoryBootstrapBtnToDisableParticularSubCategory(driver, EditSubCategoryName);
 		Thread.sleep(2000);
-		escPage.clickOnParticularSubCategoryBootstrapBtn(driver, EditSubCategoryName);
+		escPage.clickOnParticularSubCategoryBootstrapBtnToEnableParticularSubCategory(driver, EditSubCategoryName);
 		Thread.sleep(2000);
         driver.navigate().refresh();
         Thread.sleep(2000);
@@ -126,9 +126,9 @@ public class a_Adding_CategorySubCategoryProduct_In_Fms extends FMS_BaseClass {
         Ecommerce_Brands_UpdateBrandPage ecesPage = new Ecommerce_Brands_UpdateBrandPage(driver);
         ecesPage.updatingBrand(driver, EditBrandName,ImagePath);
         Thread.sleep(2000);
-        ebPage.clickOnParticularBrandBootStrapBtn(driver, EditBrandName);
+        ebPage.clickOnParticularBrandBootStrapBtnToDisable(driver, EditBrandName);
         Thread.sleep(2000);
-        ebPage.clickOnParticularBrandBootStrapBtn(driver, EditBrandName);
+        ebPage.clickOnParticularBrandBootStrapBtnToEnable(driver, EditBrandName);
         Thread.sleep(2000);
         driver.navigate().refresh();
         Thread.sleep(2000);

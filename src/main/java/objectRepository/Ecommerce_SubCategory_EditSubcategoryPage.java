@@ -9,6 +9,7 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
+import org.testng.Assert;
 
 import genericUtility.WebDriverUtility;
 
@@ -93,7 +94,16 @@ public class Ecommerce_SubCategory_EditSubcategoryPage {
 //        r.keyPress(KeyEvent.VK_ENTER);
         Thread.sleep(2000);
         UpdateBtn.click();
-        
+        Thread.sleep(2000);
+        if(SuccessEle.isDisplayed())
+        {
+        	System.out.println("Sub Category Updated Successfully");
+        }
+        else
+        {
+			System.out.println("Sub Category Not Updated");
+			Assert.fail();
+		}
         
 
 		

@@ -59,7 +59,7 @@ public class D_ECommerce_Brands_All_Actions extends FMS_BaseClass {
         
         Thread.sleep(2000);
         
-        ebPage.clickOnParticularBrandBootStrapBtn(driver, EditBrandName);
+        ebPage.clickOnParticularBrandBootStrapBtnToDisable(driver, EditBrandName);
         
         Thread.sleep(2000);
         

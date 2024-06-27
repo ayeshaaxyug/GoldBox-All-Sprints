@@ -62,8 +62,7 @@ public class BaseClass_Matrika {
 
 		        // Assign the profile to the FirefoxOptions
 		        options.setProfile(profile);
-
-			    
+		        
 			    WebDriverManager.firefoxdriver().setup();
 				driver=new FirefoxDriver(options); 
 				System.out.println("Firefox Browser Launched Successfully");
@@ -82,8 +81,11 @@ public class BaseClass_Matrika {
 			}
 			sDriver = driver;   //To Take ScreenShot
 			wUtility.maximizeTheWindow(driver);
-			wUtility.waitUntilPageLoad(driver);
 			driver.get(URL);
+			driver.navigate().refresh();
+			wUtility.waitUntilPageLoad(driver);
+			Thread.sleep(2000);
+//			driver.navigate().refresh();
 		}
 		
 	@BeforeMethod(groups={"sprint-1","Sprint-2"})

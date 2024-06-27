@@ -5,6 +5,7 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
+import org.testng.Assert;
 
 public class Ecommerce_CategoryPage {
 
@@ -79,17 +80,34 @@ public class Ecommerce_CategoryPage {
 		driver.findElement(By.xpath("//td[.='"+CategoryName+"']/../td/button[.=' Edit ']")).click();
 	}
 	
-	public void clickOnParticularCategoryBootStrapBtn(WebDriver driver, String EditCategoryName) throws Exception
+	public void clickOnParticularCategoryBootStrapBtnToDisableParticularCategory(WebDriver driver, String EditCategoryName) throws Exception
 	{
 		driver.findElement(By.xpath("//td[.='"+EditCategoryName+"']/../td//img[@class='table-img']/../following-sibling::td//button[.=' Edit ']/..//div[@class='mdc-switch__icons']")).click();
 		Thread.sleep(2000);
 		if(UpdateMsg.isDisplayed())
 		{
-			System.out.println("Category Updated Successfully");
+			System.out.println("Category Disabled Successfully");
 		}
 		else
 		{
-			System.out.println("Category Not Updated");
+			System.out.println("Category Not Disabled");
+			Assert.fail();
+		}
+		Thread.sleep(3000);
+	}
+	
+	public void clickOnParticularCategoryBootStrapBtnToEnableParticularCategory(WebDriver driver, String EditCategoryName) throws Exception
+	{
+		driver.findElement(By.xpath("//td[.='"+EditCategoryName+"']/../td//img[@class='table-img']/../following-sibling::td//button[.=' Edit ']/..//div[@class='mdc-switch__icons']")).click();
+		Thread.sleep(2000);
+		if(UpdateMsg.isDisplayed())
+		{
+			System.out.println("Category Enabled Successfully");
+		}
+		else
+		{
+			System.out.println("Category Not Enabled");
+			Assert.fail();
 		}
 		Thread.sleep(3000);
 	}

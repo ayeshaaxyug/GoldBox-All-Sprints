@@ -168,7 +168,7 @@ public class a_EcommerceAllActions extends FMS_BaseClass {
 		Thread.sleep(2000);
         driver.navigate().refresh();
 		Thread.sleep(2000);
-		ecPage.clickOnParticularCategoryBootStrapBtn(driver, CategoryName);
+		ecPage.clickOnParticularCategoryBootStrapBtnToDisableParticularCategory(driver, CategoryName);
 		Thread.sleep(2000);
 		WebElement BootStrapbutton = driver.findElement(By.xpath("//div[@aria-label='Category Updated Successfully']"));
 		Thread.sleep(2000);
@@ -407,7 +407,7 @@ public class a_EcommerceAllActions extends FMS_BaseClass {
 			wUtil.takeScreenShot(driver, "j_Click On Close Btn Update SubCategory Page Should Not Close Error");
 		}
         Thread.sleep(4000);
-        esPage.clickOnParticularSubCategoryBootstrapBtn(driver, SubCategoryNameRandom);
+        esPage.clickOnParticularSubCategoryBootstrapBtnToDisableParticularSubCategory(driver, SubCategoryNameRandom);
         Thread.sleep(1000);
         WebElement UpdateMsg = driver.findElement(By.xpath("(//div[.=' Sub Category Updated Successfully '])[2]"));
         if(UpdateMsg.isDisplayed())
@@ -1422,7 +1422,7 @@ public class a_EcommerceAllActions extends FMS_BaseClass {
 			System.out.println("Brand Not Updated");
 		}
 		Thread.sleep(1000);
-		ebPage.clickOnParticularBrandBootStrapBtn(driver, AddBrandNewBrandName);
+		ebPage.clickOnParticularBrandBootStrapBtnToDisable(driver, AddBrandNewBrandName);
 		Thread.sleep(2000);
 		WebElement BootstrapUpdateMsg = driver.findElement(By.xpath("(//div[.=' Brand Updated Successfully '])[2]"));
 		if(BootstrapUpdateMsg.isDisplayed())
