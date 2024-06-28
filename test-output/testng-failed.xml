@@ -3,39 +3,6 @@
 <suite thread-count="1" parallel="tests" name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
   <test thread-count="1" parallel="tests" name="Test(failed)">
     <classes>
-      <class name="Sprint_7_Positive.e_Adding_Giftcard_In_FMS">
-        <methods>
-          <include name="asConfig"/>
-          <include name="bmConfig"/>
-          <include name="amConfig"/>
-          <include name="a_addingGiftCardInFmsTest"/>
-          <include name="bcConfig"/>
-          <include name="bsConfig"/>
-          <include name="acConfig"/>
-        </methods>
-      </class> <!-- Sprint_7_Positive.e_Adding_Giftcard_In_FMS -->
-      <class name="Sprint_7_Positive.f_CheckingGiftCardInMatrika">
-        <methods>
-          <include name="acConfig"/>
-          <include name="bsConfig"/>
-          <include name="amConfig"/>
-          <include name="bmConfig"/>
-          <include name="bcConfig"/>
-          <include name="b_checkingGiftCardInMatrikaTest"/>
-          <include name="asConfig"/>
-        </methods>
-      </class> <!-- Sprint_7_Positive.f_CheckingGiftCardInMatrika -->
-      <class name="Sprint_7_Positive.d_MatrikaLoginAndCheckingProductDeleted">
-        <methods>
-          <include name="acConfig"/>
-          <include name="bsConfig"/>
-          <include name="amConfig"/>
-          <include name="bmConfig"/>
-          <include name="bcConfig"/>
-          <include name="b_loginToMatrikaAndCheckingProductDeletedOrNotTest"/>
-          <include name="asConfig"/>
-        </methods>
-      </class> <!-- Sprint_7_Positive.d_MatrikaLoginAndCheckingProductDeleted -->
       <class name="Sprint_7_Positive.a_Adding_CategorySubCategoryProduct_In_Fms">
         <methods>
           <include name="asConfig"/>
@@ -58,17 +25,6 @@
           <include name="acConfig"/>
         </methods>
       </class> <!-- Sprint_7_Positive.c_Deleting_CategorySubCategoryAndProduct_In_Fms -->
-      <class name="Sprint_7_Positive.b_MatrikaLoginAndCheckingProductAvailable">
-        <methods>
-          <include name="acConfig"/>
-          <include name="bsConfig"/>
-          <include name="b_loginToMatrikaAndCheckingProductIsAvailabilityTest"/>
-          <include name="amConfig"/>
-          <include name="bmConfig"/>
-          <include name="bcConfig"/>
-          <include name="asConfig"/>
-        </methods>
-      </class> <!-- Sprint_7_Positive.b_MatrikaLoginAndCheckingProductAvailable -->
     </classes>
   </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->
