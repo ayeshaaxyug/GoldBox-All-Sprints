@@ -24,7 +24,7 @@ public class d_MatrikaLoginAndCheckingProductDeleted extends BaseClass_Matrika{
 		}
 		else 
 		{
-			System.out.println("Product Is Not Displaying In Matrika");
+			System.out.println("Product Is Deleted and Not Displaying In Matrika");
 		}
 	}
 	

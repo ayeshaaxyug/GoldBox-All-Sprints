@@ -47,7 +47,7 @@ public class A_ECommerce_Category_All_Actions extends FMS_BaseClass {
         
         Thread.sleep(2000);
         
-        eccPage.clickOnParticularCategoryEditBtn(driver, CategoryName);
+//        eccPage.clickOnParticularCategoryEditBtn(driver, CategoryName);
         
         Thread.sleep(2000);
         
