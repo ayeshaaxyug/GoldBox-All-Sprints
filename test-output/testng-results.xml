@@ -2,154 +2,154 @@
 <testng-results ignored="8" total="14" passed="6" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2024-06-28T17:57:55 IST" name="Suite" finished-at="2024-06-28T18:10:45 IST" duration-ms="769465">
+  <suite started-at="2024-06-29T11:32:50 IST" name="Suite" finished-at="2024-06-29T11:44:33 IST" duration-ms="702948">
     <groups>
     </groups>
-    <test started-at="2024-06-28T17:57:55 IST" name="Test" finished-at="2024-06-28T18:10:45 IST" duration-ms="769465">
+    <test started-at="2024-06-29T11:32:50 IST" name="Test" finished-at="2024-06-29T11:44:33 IST" duration-ms="702948">
       <class name="Sprint_7_Positive.d_MatrikaLoginAndCheckingProductDeleted">
-        <test-method is-config="true" signature="bcConfig()[pri:0, instance:Sprint_7_Positive.d_MatrikaLoginAndCheckingProductDeleted@5542c4ed]" started-at="2024-06-28T18:07:26 IST" name="bcConfig" finished-at="2024-06-28T18:08:03 IST" duration-ms="36752" status="PASS">
+        <test-method is-config="true" signature="bcConfig()[pri:0, instance:Sprint_7_Positive.d_MatrikaLoginAndCheckingProductDeleted@5542c4ed]" started-at="2024-06-29T11:41:49 IST" name="bcConfig" finished-at="2024-06-29T11:42:04 IST" duration-ms="14648" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- bcConfig -->
-        <test-method is-config="true" signature="bmConfig()[pri:0, instance:Sprint_7_Positive.d_MatrikaLoginAndCheckingProductDeleted@5542c4ed]" started-at="2024-06-28T18:08:03 IST" name="bmConfig" finished-at="2024-06-28T18:08:17 IST" duration-ms="14387" status="PASS">
+        <test-method is-config="true" signature="bmConfig()[pri:0, instance:Sprint_7_Positive.d_MatrikaLoginAndCheckingProductDeleted@5542c4ed]" started-at="2024-06-29T11:42:04 IST" name="bmConfig" finished-at="2024-06-29T11:42:19 IST" duration-ms="14450" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- bmConfig -->
-        <test-method signature="b_loginToMatrikaAndCheckingProductDeletedOrNotTest()[pri:0, instance:Sprint_7_Positive.d_MatrikaLoginAndCheckingProductDeleted@5542c4ed]" started-at="2024-06-28T18:08:17 IST" name="b_loginToMatrikaAndCheckingProductDeletedOrNotTest" finished-at="2024-06-28T18:08:21 IST" duration-ms="4071" status="PASS">
+        <test-method signature="b_loginToMatrikaAndCheckingProductDeletedOrNotTest()[pri:0, instance:Sprint_7_Positive.d_MatrikaLoginAndCheckingProductDeleted@5542c4ed]" started-at="2024-06-29T11:42:19 IST" name="b_loginToMatrikaAndCheckingProductDeletedOrNotTest" finished-at="2024-06-29T11:42:23 IST" duration-ms="4105" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- b_loginToMatrikaAndCheckingProductDeletedOrNotTest -->
-        <test-method is-config="true" signature="amConfig()[pri:0, instance:Sprint_7_Positive.d_MatrikaLoginAndCheckingProductDeleted@5542c4ed]" started-at="2024-06-28T18:08:21 IST" name="amConfig" finished-at="2024-06-28T18:08:34 IST" duration-ms="13113" status="PASS">
+        <test-method is-config="true" signature="amConfig()[pri:0, instance:Sprint_7_Positive.d_MatrikaLoginAndCheckingProductDeleted@5542c4ed]" started-at="2024-06-29T11:42:23 IST" name="amConfig" finished-at="2024-06-29T11:42:35 IST" duration-ms="12507" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- amConfig -->
-        <test-method is-config="true" signature="acConfig()[pri:0, instance:Sprint_7_Positive.d_MatrikaLoginAndCheckingProductDeleted@5542c4ed]" started-at="2024-06-28T18:08:34 IST" name="acConfig" finished-at="2024-06-28T18:08:35 IST" duration-ms="1239" status="PASS">
+        <test-method is-config="true" signature="acConfig()[pri:0, instance:Sprint_7_Positive.d_MatrikaLoginAndCheckingProductDeleted@5542c4ed]" started-at="2024-06-29T11:42:35 IST" name="acConfig" finished-at="2024-06-29T11:42:37 IST" duration-ms="1434" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- acConfig -->
       </class> <!-- Sprint_7_Positive.d_MatrikaLoginAndCheckingProductDeleted -->
       <class name="Sprint_7_Positive.c_Deleting_CategorySubCategoryAndProduct_In_Fms">
-        <test-method is-config="true" signature="bcConfig()[pri:0, instance:Sprint_7_Positive.c_Deleting_CategorySubCategoryAndProduct_In_Fms@815b41f]" started-at="2024-06-28T18:06:10 IST" name="bcConfig" finished-at="2024-06-28T18:06:19 IST" duration-ms="8740" status="PASS">
+        <test-method is-config="true" signature="bcConfig()[pri:0, instance:Sprint_7_Positive.c_Deleting_CategorySubCategoryAndProduct_In_Fms@815b41f]" started-at="2024-06-29T11:40:38 IST" name="bcConfig" finished-at="2024-06-29T11:40:42 IST" duration-ms="3435" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- bcConfig -->
-        <test-method is-config="true" signature="bmConfig()[pri:0, instance:Sprint_7_Positive.c_Deleting_CategorySubCategoryAndProduct_In_Fms@815b41f]" started-at="2024-06-28T18:06:19 IST" name="bmConfig" finished-at="2024-06-28T18:06:36 IST" duration-ms="17294" status="PASS">
+        <test-method is-config="true" signature="bmConfig()[pri:0, instance:Sprint_7_Positive.c_Deleting_CategorySubCategoryAndProduct_In_Fms@815b41f]" started-at="2024-06-29T11:40:42 IST" name="bmConfig" finished-at="2024-06-29T11:40:59 IST" duration-ms="17385" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- bmConfig -->
-        <test-method signature="c_DeletingCategorySubCategoryProductInFmsTest()[pri:0, instance:Sprint_7_Positive.c_Deleting_CategorySubCategoryAndProduct_In_Fms@815b41f]" started-at="2024-06-28T18:06:36 IST" name="c_DeletingCategorySubCategoryProductInFmsTest" finished-at="2024-06-28T18:07:13 IST" duration-ms="36712" status="PASS">
+        <test-method signature="c_DeletingCategorySubCategoryProductInFmsTest()[pri:0, instance:Sprint_7_Positive.c_Deleting_CategorySubCategoryAndProduct_In_Fms@815b41f]" started-at="2024-06-29T11:40:59 IST" name="c_DeletingCategorySubCategoryProductInFmsTest" finished-at="2024-06-29T11:41:36 IST" duration-ms="36972" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- c_DeletingCategorySubCategoryProductInFmsTest -->
-        <test-method is-config="true" signature="amConfig()[pri:0, instance:Sprint_7_Positive.c_Deleting_CategorySubCategoryAndProduct_In_Fms@815b41f]" started-at="2024-06-28T18:07:13 IST" name="amConfig" finished-at="2024-06-28T18:07:25 IST" duration-ms="11629" status="PASS">
+        <test-method is-config="true" signature="amConfig()[pri:0, instance:Sprint_7_Positive.c_Deleting_CategorySubCategoryAndProduct_In_Fms@815b41f]" started-at="2024-06-29T11:41:36 IST" name="amConfig" finished-at="2024-06-29T11:41:48 IST" duration-ms="11900" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- amConfig -->
-        <test-method is-config="true" signature="acConfig()[pri:0, instance:Sprint_7_Positive.c_Deleting_CategorySubCategoryAndProduct_In_Fms@815b41f]" started-at="2024-06-28T18:07:25 IST" name="acConfig" finished-at="2024-06-28T18:07:26 IST" duration-ms="1244" status="PASS">
+        <test-method is-config="true" signature="acConfig()[pri:0, instance:Sprint_7_Positive.c_Deleting_CategorySubCategoryAndProduct_In_Fms@815b41f]" started-at="2024-06-29T11:41:48 IST" name="acConfig" finished-at="2024-06-29T11:41:49 IST" duration-ms="1372" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- acConfig -->
       </class> <!-- Sprint_7_Positive.c_Deleting_CategorySubCategoryAndProduct_In_Fms -->
       <class name="Sprint_7_Positive.f_CheckingGiftCardInMatrika">
-        <test-method is-config="true" signature="bcConfig()[pri:0, instance:Sprint_7_Positive.f_CheckingGiftCardInMatrika@6150c3ec]" started-at="2024-06-28T18:09:54 IST" name="bcConfig" finished-at="2024-06-28T18:10:16 IST" duration-ms="21517" status="PASS">
+        <test-method is-config="true" signature="bcConfig()[pri:0, instance:Sprint_7_Positive.f_CheckingGiftCardInMatrika@6150c3ec]" started-at="2024-06-29T11:43:50 IST" name="bcConfig" finished-at="2024-06-29T11:44:03 IST" duration-ms="13339" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- bcConfig -->
-        <test-method is-config="true" signature="bmConfig()[pri:0, instance:Sprint_7_Positive.f_CheckingGiftCardInMatrika@6150c3ec]" started-at="2024-06-28T18:10:16 IST" name="bmConfig" finished-at="2024-06-28T18:10:30 IST" duration-ms="14360" status="PASS">
+        <test-method is-config="true" signature="bmConfig()[pri:0, instance:Sprint_7_Positive.f_CheckingGiftCardInMatrika@6150c3ec]" started-at="2024-06-29T11:44:03 IST" name="bmConfig" finished-at="2024-06-29T11:44:18 IST" duration-ms="14462" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- bmConfig -->
-        <test-method signature="b_checkingGiftCardInMatrikaTest()[pri:0, instance:Sprint_7_Positive.f_CheckingGiftCardInMatrika@6150c3ec]" started-at="2024-06-28T18:10:30 IST" name="b_checkingGiftCardInMatrikaTest" finished-at="2024-06-28T18:10:31 IST" duration-ms="641" status="PASS">
+        <test-method signature="b_checkingGiftCardInMatrikaTest()[pri:0, instance:Sprint_7_Positive.f_CheckingGiftCardInMatrika@6150c3ec]" started-at="2024-06-29T11:44:18 IST" name="b_checkingGiftCardInMatrikaTest" finished-at="2024-06-29T11:44:18 IST" duration-ms="582" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- b_checkingGiftCardInMatrikaTest -->
-        <test-method is-config="true" signature="amConfig()[pri:0, instance:Sprint_7_Positive.f_CheckingGiftCardInMatrika@6150c3ec]" started-at="2024-06-28T18:10:31 IST" name="amConfig" finished-at="2024-06-28T18:10:43 IST" duration-ms="12693" status="PASS">
+        <test-method is-config="true" signature="amConfig()[pri:0, instance:Sprint_7_Positive.f_CheckingGiftCardInMatrika@6150c3ec]" started-at="2024-06-29T11:44:18 IST" name="amConfig" finished-at="2024-06-29T11:44:32 IST" duration-ms="13217" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- amConfig -->
-        <test-method is-config="true" signature="acConfig()[pri:0, instance:Sprint_7_Positive.f_CheckingGiftCardInMatrika@6150c3ec]" started-at="2024-06-28T18:10:43 IST" name="acConfig" finished-at="2024-06-28T18:10:45 IST" duration-ms="1237" status="PASS">
+        <test-method is-config="true" signature="acConfig()[pri:0, instance:Sprint_7_Positive.f_CheckingGiftCardInMatrika@6150c3ec]" started-at="2024-06-29T11:44:32 IST" name="acConfig" finished-at="2024-06-29T11:44:33 IST" duration-ms="1344" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- acConfig -->
       </class> <!-- Sprint_7_Positive.f_CheckingGiftCardInMatrika -->
       <class name="Sprint_7_Positive.e_Adding_Giftcard_In_FMS">
-        <test-method is-config="true" signature="bcConfig()[pri:0, instance:Sprint_7_Positive.e_Adding_Giftcard_In_FMS@1573f9fc]" started-at="2024-06-28T18:08:35 IST" name="bcConfig" finished-at="2024-06-28T18:08:43 IST" duration-ms="7489" status="PASS">
+        <test-method is-config="true" signature="bcConfig()[pri:0, instance:Sprint_7_Positive.e_Adding_Giftcard_In_FMS@1573f9fc]" started-at="2024-06-29T11:42:37 IST" name="bcConfig" finished-at="2024-06-29T11:42:38 IST" duration-ms="1678" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- bcConfig -->
-        <test-method is-config="true" signature="bmConfig()[pri:0, instance:Sprint_7_Positive.e_Adding_Giftcard_In_FMS@1573f9fc]" started-at="2024-06-28T18:08:43 IST" name="bmConfig" finished-at="2024-06-28T18:09:00 IST" duration-ms="17307" status="PASS">
+        <test-method is-config="true" signature="bmConfig()[pri:0, instance:Sprint_7_Positive.e_Adding_Giftcard_In_FMS@1573f9fc]" started-at="2024-06-29T11:42:38 IST" name="bmConfig" finished-at="2024-06-29T11:42:56 IST" duration-ms="17394" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- bmConfig -->
-        <test-method signature="a_addingGiftCardInFmsTest()[pri:0, instance:Sprint_7_Positive.e_Adding_Giftcard_In_FMS@1573f9fc]" started-at="2024-06-28T18:09:00 IST" name="a_addingGiftCardInFmsTest" finished-at="2024-06-28T18:09:41 IST" duration-ms="41259" status="PASS">
+        <test-method signature="a_addingGiftCardInFmsTest()[pri:0, instance:Sprint_7_Positive.e_Adding_Giftcard_In_FMS@1573f9fc]" started-at="2024-06-29T11:42:56 IST" name="a_addingGiftCardInFmsTest" finished-at="2024-06-29T11:43:37 IST" duration-ms="41485" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- a_addingGiftCardInFmsTest -->
-        <test-method is-config="true" signature="amConfig()[pri:0, instance:Sprint_7_Positive.e_Adding_Giftcard_In_FMS@1573f9fc]" started-at="2024-06-28T18:09:41 IST" name="amConfig" finished-at="2024-06-28T18:09:53 IST" duration-ms="11494" status="PASS">
+        <test-method is-config="true" signature="amConfig()[pri:0, instance:Sprint_7_Positive.e_Adding_Giftcard_In_FMS@1573f9fc]" started-at="2024-06-29T11:43:37 IST" name="amConfig" finished-at="2024-06-29T11:43:49 IST" duration-ms="11459" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- amConfig -->
-        <test-method is-config="true" signature="acConfig()[pri:0, instance:Sprint_7_Positive.e_Adding_Giftcard_In_FMS@1573f9fc]" started-at="2024-06-28T18:09:53 IST" name="acConfig" finished-at="2024-06-28T18:09:54 IST" duration-ms="1259" status="PASS">
+        <test-method is-config="true" signature="acConfig()[pri:0, instance:Sprint_7_Positive.e_Adding_Giftcard_In_FMS@1573f9fc]" started-at="2024-06-29T11:43:49 IST" name="acConfig" finished-at="2024-06-29T11:43:50 IST" duration-ms="1360" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- acConfig -->
       </class> <!-- Sprint_7_Positive.e_Adding_Giftcard_In_FMS -->
       <class name="Sprint_7_Positive.a_Adding_CategorySubCategoryProduct_In_Fms">
-        <test-method is-config="true" signature="bsConfig()[pri:0, instance:Sprint_7_Positive.a_Adding_CategorySubCategoryProduct_In_Fms@6025e1b6]" started-at="2024-06-28T17:57:55 IST" name="bsConfig" finished-at="2024-06-28T17:57:55 IST" duration-ms="0" status="PASS">
+        <test-method is-config="true" signature="bsConfig()[pri:0, instance:Sprint_7_Positive.a_Adding_CategorySubCategoryProduct_In_Fms@6025e1b6]" started-at="2024-06-29T11:32:50 IST" name="bsConfig" finished-at="2024-06-29T11:32:50 IST" duration-ms="1" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- bsConfig -->
-        <test-method is-config="true" signature="bcConfig()[pri:0, instance:Sprint_7_Positive.a_Adding_CategorySubCategoryProduct_In_Fms@6025e1b6]" started-at="2024-06-28T17:57:55 IST" name="bcConfig" finished-at="2024-06-28T17:58:06 IST" duration-ms="10855" status="PASS">
+        <test-method is-config="true" signature="bcConfig()[pri:0, instance:Sprint_7_Positive.a_Adding_CategorySubCategoryProduct_In_Fms@6025e1b6]" started-at="2024-06-29T11:32:50 IST" name="bcConfig" finished-at="2024-06-29T11:32:55 IST" duration-ms="5009" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- bcConfig -->
-        <test-method is-config="true" signature="bmConfig()[pri:0, instance:Sprint_7_Positive.a_Adding_CategorySubCategoryProduct_In_Fms@6025e1b6]" started-at="2024-06-28T17:58:06 IST" name="bmConfig" finished-at="2024-06-28T17:58:24 IST" duration-ms="17383" status="PASS">
+        <test-method is-config="true" signature="bmConfig()[pri:0, instance:Sprint_7_Positive.a_Adding_CategorySubCategoryProduct_In_Fms@6025e1b6]" started-at="2024-06-29T11:32:55 IST" name="bmConfig" finished-at="2024-06-29T11:33:13 IST" duration-ms="17458" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- bmConfig -->
-        <test-method signature="a_addingCategorySubCategoryAndProductInFmsTest()[pri:0, instance:Sprint_7_Positive.a_Adding_CategorySubCategoryProduct_In_Fms@6025e1b6]" started-at="2024-06-28T17:58:24 IST" name="a_addingCategorySubCategoryAndProductInFmsTest" finished-at="2024-06-28T18:04:47 IST" duration-ms="383041" status="PASS">
+        <test-method signature="a_addingCategorySubCategoryAndProductInFmsTest()[pri:0, instance:Sprint_7_Positive.a_Adding_CategorySubCategoryProduct_In_Fms@6025e1b6]" started-at="2024-06-29T11:33:13 IST" name="a_addingCategorySubCategoryAndProductInFmsTest" finished-at="2024-06-29T11:39:36 IST" duration-ms="383442" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- a_addingCategorySubCategoryAndProductInFmsTest -->
-        <test-method is-config="true" signature="amConfig()[pri:0, instance:Sprint_7_Positive.a_Adding_CategorySubCategoryProduct_In_Fms@6025e1b6]" started-at="2024-06-28T18:04:47 IST" name="amConfig" finished-at="2024-06-28T18:04:59 IST" duration-ms="12100" status="PASS">
+        <test-method is-config="true" signature="amConfig()[pri:0, instance:Sprint_7_Positive.a_Adding_CategorySubCategoryProduct_In_Fms@6025e1b6]" started-at="2024-06-29T11:39:36 IST" name="amConfig" finished-at="2024-06-29T11:39:49 IST" duration-ms="12565" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- amConfig -->
-        <test-method is-config="true" signature="acConfig()[pri:0, instance:Sprint_7_Positive.a_Adding_CategorySubCategoryProduct_In_Fms@6025e1b6]" started-at="2024-06-28T18:04:59 IST" name="acConfig" finished-at="2024-06-28T18:05:00 IST" duration-ms="1361" status="PASS">
+        <test-method is-config="true" signature="acConfig()[pri:0, instance:Sprint_7_Positive.a_Adding_CategorySubCategoryProduct_In_Fms@6025e1b6]" started-at="2024-06-29T11:39:49 IST" name="acConfig" finished-at="2024-06-29T11:39:50 IST" duration-ms="1566" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- acConfig -->
-        <test-method is-config="true" signature="asConfig()[pri:0, instance:Sprint_7_Positive.a_Adding_CategorySubCategoryProduct_In_Fms@6025e1b6]" started-at="2024-06-28T18:10:45 IST" name="asConfig" finished-at="2024-06-28T18:10:45 IST" duration-ms="0" status="PASS">
+        <test-method is-config="true" signature="asConfig()[pri:0, instance:Sprint_7_Positive.a_Adding_CategorySubCategoryProduct_In_Fms@6025e1b6]" started-at="2024-06-29T11:44:34 IST" name="asConfig" finished-at="2024-06-29T11:44:34 IST" duration-ms="16" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- asConfig -->
       </class> <!-- Sprint_7_Positive.a_Adding_CategorySubCategoryProduct_In_Fms -->
       <class name="Sprint_7_Positive.b_MatrikaLoginAndCheckingProductAvailable">
-        <test-method is-config="true" signature="bsConfig()[pri:0, instance:Sprint_7_Positive.b_MatrikaLoginAndCheckingProductAvailable@3b69e7d1]" started-at="2024-06-28T17:57:55 IST" name="bsConfig" finished-at="2024-06-28T17:57:55 IST" duration-ms="10" status="PASS">
+        <test-method is-config="true" signature="bsConfig()[pri:0, instance:Sprint_7_Positive.b_MatrikaLoginAndCheckingProductAvailable@3b69e7d1]" started-at="2024-06-29T11:32:50 IST" name="bsConfig" finished-at="2024-06-29T11:32:50 IST" duration-ms="24" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- bsConfig -->
-        <test-method is-config="true" signature="bcConfig()[pri:0, instance:Sprint_7_Positive.b_MatrikaLoginAndCheckingProductAvailable@3b69e7d1]" started-at="2024-06-28T18:05:00 IST" name="bcConfig" finished-at="2024-06-28T18:05:38 IST" duration-ms="37551" status="PASS">
+        <test-method is-config="true" signature="bcConfig()[pri:0, instance:Sprint_7_Positive.b_MatrikaLoginAndCheckingProductAvailable@3b69e7d1]" started-at="2024-06-29T11:39:50 IST" name="bcConfig" finished-at="2024-06-29T11:40:06 IST" duration-ms="15577" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- bcConfig -->
-        <test-method is-config="true" signature="bmConfig()[pri:0, instance:Sprint_7_Positive.b_MatrikaLoginAndCheckingProductAvailable@3b69e7d1]" started-at="2024-06-28T18:05:38 IST" name="bmConfig" finished-at="2024-06-28T18:05:52 IST" duration-ms="14418" status="PASS">
+        <test-method is-config="true" signature="bmConfig()[pri:0, instance:Sprint_7_Positive.b_MatrikaLoginAndCheckingProductAvailable@3b69e7d1]" started-at="2024-06-29T11:40:06 IST" name="bmConfig" finished-at="2024-06-29T11:40:20 IST" duration-ms="14483" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- bmConfig -->
-        <test-method signature="b_loginToMatrikaAndCheckingProductIsAvailabilityTest()[pri:0, instance:Sprint_7_Positive.b_MatrikaLoginAndCheckingProductAvailable@3b69e7d1]" started-at="2024-06-28T18:05:52 IST" name="b_loginToMatrikaAndCheckingProductIsAvailabilityTest" finished-at="2024-06-28T18:05:56 IST" duration-ms="4078" status="PASS">
+        <test-method signature="b_loginToMatrikaAndCheckingProductIsAvailabilityTest()[pri:0, instance:Sprint_7_Positive.b_MatrikaLoginAndCheckingProductAvailable@3b69e7d1]" started-at="2024-06-29T11:40:20 IST" name="b_loginToMatrikaAndCheckingProductIsAvailabilityTest" finished-at="2024-06-29T11:40:24 IST" duration-ms="4097" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- b_loginToMatrikaAndCheckingProductIsAvailabilityTest -->
-        <test-method is-config="true" signature="amConfig()[pri:0, instance:Sprint_7_Positive.b_MatrikaLoginAndCheckingProductAvailable@3b69e7d1]" started-at="2024-06-28T18:05:56 IST" name="amConfig" finished-at="2024-06-28T18:06:09 IST" duration-ms="12725" status="PASS">
+        <test-method is-config="true" signature="amConfig()[pri:0, instance:Sprint_7_Positive.b_MatrikaLoginAndCheckingProductAvailable@3b69e7d1]" started-at="2024-06-29T11:40:24 IST" name="amConfig" finished-at="2024-06-29T11:40:37 IST" duration-ms="12520" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- amConfig -->
-        <test-method is-config="true" signature="acConfig()[pri:0, instance:Sprint_7_Positive.b_MatrikaLoginAndCheckingProductAvailable@3b69e7d1]" started-at="2024-06-28T18:06:09 IST" name="acConfig" finished-at="2024-06-28T18:06:10 IST" duration-ms="1294" status="PASS">
+        <test-method is-config="true" signature="acConfig()[pri:0, instance:Sprint_7_Positive.b_MatrikaLoginAndCheckingProductAvailable@3b69e7d1]" started-at="2024-06-29T11:40:37 IST" name="acConfig" finished-at="2024-06-29T11:40:38 IST" duration-ms="1399" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- acConfig -->
-        <test-method is-config="true" signature="asConfig()[pri:0, instance:Sprint_7_Positive.b_MatrikaLoginAndCheckingProductAvailable@3b69e7d1]" started-at="2024-06-28T18:10:45 IST" name="asConfig" finished-at="2024-06-28T18:10:45 IST" duration-ms="0" status="PASS">
+        <test-method is-config="true" signature="asConfig()[pri:0, instance:Sprint_7_Positive.b_MatrikaLoginAndCheckingProductAvailable@3b69e7d1]" started-at="2024-06-29T11:44:34 IST" name="asConfig" finished-at="2024-06-29T11:44:34 IST" duration-ms="0" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- asConfig -->

@@ -25,6 +25,17 @@
           <include name="acConfig"/>
         </methods>
       </class> <!-- Sprint_7_Positive.c_Deleting_CategorySubCategoryAndProduct_In_Fms -->
+      <class name="Sprint_7_Positive.b_MatrikaLoginAndCheckingProductAvailable">
+        <methods>
+          <include name="acConfig"/>
+          <include name="bsConfig"/>
+          <include name="b_loginToMatrikaAndCheckingProductIsAvailabilityTest"/>
+          <include name="amConfig"/>
+          <include name="bmConfig"/>
+          <include name="bcConfig"/>
+          <include name="asConfig"/>
+        </methods>
+      </class> <!-- Sprint_7_Positive.b_MatrikaLoginAndCheckingProductAvailable -->
     </classes>
   </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->
