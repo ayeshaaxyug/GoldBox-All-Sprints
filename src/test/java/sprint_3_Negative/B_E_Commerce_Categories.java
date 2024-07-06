@@ -321,7 +321,7 @@ public class B_E_Commerce_Categories {
 	    driver.get(URL);
 	    Thread.sleep(2000);
 	    driver.findElement(By.xpath("//input[@placeholder='Enter your email address']")).sendKeys(USERNAME, Keys.TAB, PASSWORD, Keys.ENTER);
-	    Thread.sleep(5000);
+	    Thread.sleep(20000);
         driver.findElement(By.xpath("//span[.='Ecommerce']")).click();
         Thread.sleep(2000);
         driver.findElement(By.xpath("//a[.='Category']")).click();
@@ -437,7 +437,7 @@ public class B_E_Commerce_Categories {
 	    driver.get(URL);
 	    Thread.sleep(2000);
 	    driver.findElement(By.xpath("//input[@placeholder='Enter your email address']")).sendKeys(USERNAME, Keys.TAB, PASSWORD, Keys.ENTER);
-	    Thread.sleep(3000);
+	    Thread.sleep(15000);
         driver.findElement(By.xpath("//span[.='Ecommerce']")).click();
         Thread.sleep(2000);
         driver.findElement(By.xpath("//a[.='Category']")).click();
@@ -500,7 +500,7 @@ public class B_E_Commerce_Categories {
 	    driver.get(URL);
 	    Thread.sleep(2000);
 	    driver.findElement(By.xpath("//input[@placeholder='Enter your email address']")).sendKeys(USERNAME, Keys.TAB, PASSWORD, Keys.ENTER);
-        Thread.sleep(5000);
+        Thread.sleep(15000);
         driver.findElement(By.xpath("//span[.='Ecommerce']")).click();
         Thread.sleep(2000);
         driver.findElement(By.xpath("//a[.='Category']")).click();
@@ -548,7 +548,7 @@ public class B_E_Commerce_Categories {
 	    driver.get(URL);
 	    Thread.sleep(2000);
 	    driver.findElement(By.xpath("//input[@placeholder='Enter your email address']")).sendKeys(USERNAME, Keys.TAB, PASSWORD, Keys.ENTER);
-        Thread.sleep(5000);
+        Thread.sleep(15000);
         driver.findElement(By.xpath("//span[.='Ecommerce']")).click();
         Thread.sleep(2000);
         driver.findElement(By.xpath("//a[.='Category']")).click();

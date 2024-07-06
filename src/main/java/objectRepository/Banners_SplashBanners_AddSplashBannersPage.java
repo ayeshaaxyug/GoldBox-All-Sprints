@@ -74,7 +74,7 @@ public class Banners_SplashBanners_AddSplashBannersPage {
 		public void addingSplashBanner(WebDriver driver, String FromDate, String ToDate, String Sequence) throws Exception
 		{
 			WebDriverUtility wUtil = new WebDriverUtility();
-			String ImagePath = "C:\\Users\\vikra\\OneDrive\\Desktop\\One Drive Folder\\OneDrive\\Pictures\\Saved Pictures\\Ringggggggggggg.png";
+			String ImagePath = "C:\\Users\\Admin\\Pictures\\Saved Pictures\\Screenshot (34).png";
 			Robot r = new Robot();
 			
 			Thread.sleep(2000);

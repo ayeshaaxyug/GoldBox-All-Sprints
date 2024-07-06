@@ -59,7 +59,7 @@ public class g_EventsAllActions extends FMS_BaseClass {
 		//Thread.sleep(2000);
 		
 		//3 Info 
-		
+		 
 		Thread.sleep(4000);		
 		driver.navigate().refresh();		
 		Thread.sleep(2000);
@@ -87,24 +87,25 @@ public class g_EventsAllActions extends FMS_BaseClass {
 		Thread.sleep(4000);		
 		driver.navigate().back();		
 		Thread.sleep(2000);
-		for(;;)
-		{
-			try 
-			{
-				Thread.sleep(2000);
-				eerPage.getStatusUpdateDrpDwn().click();
-				break;
-			} 
-			catch (Exception e) 
-			{
-				Thread.sleep(2000);
-				eerPage.getNextPageBtn().click();
-			}
-		}
-		Thread.sleep(3000);
-		Events_EventRequest_StatusUpdatePage eersuPage = new Events_EventRequest_StatusUpdatePage(driver);
-		eersuPage.eventStatusUpdation(driver);
-		Thread.sleep(5000);
+//		for(;;)
+//		{
+//			try 
+//			{
+//				Thread.sleep(2000);
+//				eerPage.getStatusUpdateDrpDwn().click();
+//				break;
+//			} 
+//			catch (Exception e) 
+//			{
+//				Thread.sleep(2000);
+//				eerPage.getNextPageBtn().click();
+//			}
+//		}
+//		Thread.sleep(3000);
+//		Events_EventRequest_StatusUpdatePage eersuPage = new Events_EventRequest_StatusUpdatePage(driver);
+//		eersuPage.eventStatusUpdation(driver);
+//		driver.navigate().refresh();
+//		Thread.sleep(5000);
 		
 	}
 	

@@ -56,6 +56,8 @@ public class c_Banners_SplashBanners extends FMS_BaseClass {
         Thread.sleep(2000);
         bsbPage.getStatusEnableDisableBootstrapBtn().click();
         
+        Thread.sleep(3000);
+        
 	}
 	
 	

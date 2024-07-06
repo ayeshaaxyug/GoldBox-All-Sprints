@@ -26,9 +26,11 @@ public class Ecommerce_Brands_AddBrandPage {
     
     @FindBy(xpath="//h1[.='Add Brand']/../following-sibling::div//input[@placeholder='No File Chosen']")private WebElement ChooseFileBtn;
     
+    @FindBy (xpath = "//option[.='Brand']") private WebElement BrandDropDown;
+    
     @FindBy(xpath="//h1[.='Add Brand']/../following-sibling::div/following-sibling::div/button[.='Add']")private WebElement AddBtn;
     
-    @FindBy(xpath="(//div[.=' Brand Craeted Successfully '])[2]")private WebElement SuccessMsg;
+    @FindBy(xpath="//div[@aria-label='Brand Craeted Successfully']")private WebElement SuccessMsg;
     
     @FindBy(xpath="//span[text()=' Next ']")private WebElement NextPageLnk;
     
@@ -60,7 +62,13 @@ public class Ecommerce_Brands_AddBrandPage {
 	public WebElement getAddBtn() {
 		return AddBtn;
 	}
-	
+		
+	public WebElement getBrandDropDown() {
+		return BrandDropDown;
+	}
+
+
+
 	public WebElement getSuccessMsg() {
 		return SuccessMsg;
 	}
@@ -86,6 +94,8 @@ public class Ecommerce_Brands_AddBrandPage {
 		Thread.sleep(2000);
 		WebDriverUtility wUtil = new WebDriverUtility();
         wUtil.clickOnChooseFileOption(driver, ChooseFileBtn, ImagePath);
+        Thread.sleep(2000);
+        BrandDropDown.click();
         Thread.sleep(2000);
         AddBtn.click();
         Thread.sleep(2000);

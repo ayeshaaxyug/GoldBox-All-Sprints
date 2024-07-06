@@ -15,9 +15,9 @@ public class Users_UserKyc_StatusDrpDwnPage {
     
     @FindBy(xpath="//span[.='Approved']")private WebElement ApprovedLnk;
     
-    @FindBy(xpath="(//span[.='Rejected'])[1]")private WebElement RejectedLnk;
+    @FindBy(xpath="(//span[.='Rejected'])[5]")private WebElement RejectedLnk;
     
-    @FindBy(xpath="(//span[.='Inactive'])[1]")private WebElement InactiveLnk;
+    @FindBy(xpath="(//span[.='Inactive'])[5]")private WebElement InactiveLnk;
     
 	//Rule-3:Create a constructor to initilise these elements
     
@@ -46,9 +46,11 @@ public class Users_UserKyc_StatusDrpDwnPage {
 	
 	//Business Libraries
 	
-	public void eventStatusUpdate(WebDriver driver)
+	public void eventStatusUpdate(WebDriver driver) throws Exception
 	{
 		WebDriverUtility wUtil = new WebDriverUtility();
+		
+		wUtil.scrollPageDown(4);
 		
 		wUtil.waitForElementToBeClickable(driver, RejectedLnk);
 		RejectedLnk.click();

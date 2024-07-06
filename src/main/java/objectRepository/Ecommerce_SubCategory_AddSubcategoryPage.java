@@ -22,6 +22,8 @@ public class Ecommerce_SubCategory_AddSubcategoryPage {
     
     @FindBy(xpath="//h1[.='Add SubCategory']/..//following-sibling::div//input[@placeholder='Enter SubCategory Name']")private WebElement SubCategoryNameEdt;
     
+    @FindBy(xpath = "(//option[.='Gold'])[1]") private WebElement GoldType;
+    
     @FindBy(xpath="//h1[.='Add SubCategory']/..//following-sibling::div//select[@placeholder='Select Type']")private WebElement SelectTypeDrpDwn;
     
     @FindBy(xpath="//h1[.='Add SubCategory']/..//following-sibling::div//input[@formcontrolname='image_uri']")private WebElement ChooseFileBtn;
@@ -50,6 +52,9 @@ public class Ecommerce_SubCategory_AddSubcategoryPage {
 	public WebElement getSubCategoryNameEdt() {
 		return SubCategoryNameEdt;
 	}
+	public WebElement getGoldType() {
+		return GoldType;
+	}
 
 	public WebElement getSelectTypeDrpDwn() {
 		return SelectTypeDrpDwn;
@@ -76,12 +81,15 @@ public class Ecommerce_SubCategory_AddSubcategoryPage {
 		
 		WebDriverUtility wUtil = new WebDriverUtility();
 		
-		Thread.sleep(2000);
+		Thread.sleep(3000);
 		wUtil.handleDropdownByVisibleText(EditCategoryName, CategoryNameDrpDwn);
 		Thread.sleep(2000);
 		SubCategoryNameEdt.sendKeys(SubCategoryName);
 		Thread.sleep(2000);
-		wUtil.handleDropdownByIndex(SelectTypeDrpDwn, 1);
+		
+		GoldType.click();
+		
+	//	wUtil.handleDropdownByIndex(SelectTypeDrpDwn, 1);
 		Thread.sleep(2000);
 		
         wUtil.clickOnChooseFileOption(driver, ChooseFileBtn, ImagePath);

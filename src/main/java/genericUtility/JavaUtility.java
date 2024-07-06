@@ -15,7 +15,7 @@ public class JavaUtility {
 		public int getRandomNum()
 		{
 			Random r = new Random();
-			int Num = r.nextInt(1000);
+			int Num = r.nextInt(5000);
 			
 			if(Num > 100)
 			{

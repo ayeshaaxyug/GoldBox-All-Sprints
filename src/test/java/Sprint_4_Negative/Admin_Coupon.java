@@ -59,7 +59,8 @@ public class Admin_Coupon {
 		        	System.out.println("Coupon Added sucessfully");
 				}
 			} finally {
-			//	driver.quit();
+		
+				driver.quit();
 			}
 			
 	}
@@ -307,9 +308,9 @@ public class Admin_Coupon {
 		Thread.sleep(2000);
 		driver.findElement(By.xpath("//h1[.='Add coupon']/../following-sibling::div//label[.='Coupon Amount']/..//input[@placeholder='Enter Amount']")).sendKeys("5000");
 		Thread.sleep(2000);
-		driver.findElement(By.xpath("//h1[.='Add coupon']/../following-sibling::div//label[.='From Date']/..//input[@formcontrolname='from_date']")).sendKeys("30/4/2024");
+		driver.findElement(By.xpath("//h1[.='Add coupon']/../following-sibling::div//label[.='From Date']/..//input[@formcontrolname='from_date']")).sendKeys("30/7/2024");
 		Thread.sleep(2000);
-		driver.findElement(By.xpath("//h1[.='Add coupon']/../following-sibling::div//label[.='To Date']/..//input[@formcontrolname='to_date']")).sendKeys("30/5/2024");
+		driver.findElement(By.xpath("//h1[.='Add coupon']/../following-sibling::div//label[.='To Date']/..//input[@formcontrolname='to_date']")).sendKeys("30/8/2024");
 		Thread.sleep(2000);
 		driver.findElement(By.xpath("//h1[.='Add coupon']/../following-sibling::div//label[.='Minimum Transaction Amount']/..//input[@placeholder='Enter Amount']")).clear();
 		Thread.sleep(2000);
@@ -428,9 +429,9 @@ public class Admin_Coupon {
 		Thread.sleep(2000);
 		driver.findElement(By.xpath("//h1[.='Add coupon']/../following-sibling::div//label[.='Coupon Amount']/..//input[@placeholder='Enter Amount']")).sendKeys("500");
 		Thread.sleep(2000);
-		driver.findElement(By.xpath("//h1[.='Add coupon']/../following-sibling::div//label[.='From Date']/..//input[@formcontrolname='from_date']")).sendKeys("20/5/2024");
+		driver.findElement(By.xpath("//h1[.='Add coupon']/../following-sibling::div//label[.='From Date']/..//input[@formcontrolname='from_date']")).sendKeys("20/7/2024");
 		Thread.sleep(2000);
-		driver.findElement(By.xpath("//h1[.='Add coupon']/../following-sibling::div//label[.='To Date']/..//input[@formcontrolname='to_date']")).sendKeys("20/6/2024");
+		driver.findElement(By.xpath("//h1[.='Add coupon']/../following-sibling::div//label[.='To Date']/..//input[@formcontrolname='to_date']")).sendKeys("20/8/2024");
 		Thread.sleep(2000);
 		driver.findElement(By.xpath("//h1[.='Add coupon']/../following-sibling::div//label[.='Minimum Transaction Amount']/..//input[@placeholder='Enter Amount']")).clear();
 		Thread.sleep(2000);
@@ -489,9 +490,9 @@ public class Admin_Coupon {
 		Thread.sleep(2000);
 		driver.findElement(By.xpath("//h1[.='Add coupon']/../following-sibling::div//label[.='Coupon Amount']/..//input[@placeholder='Enter Amount']")).sendKeys("5000");
 		Thread.sleep(2000);
-		driver.findElement(By.xpath("//h1[.='Add coupon']/../following-sibling::div//label[.='From Date']/..//input[@formcontrolname='from_date']")).sendKeys("18/5/2024");
+		driver.findElement(By.xpath("//h1[.='Add coupon']/../following-sibling::div//label[.='From Date']/..//input[@formcontrolname='from_date']")).sendKeys("18/7/2024");
 		Thread.sleep(2000);
-		driver.findElement(By.xpath("//h1[.='Add coupon']/../following-sibling::div//label[.='To Date']/..//input[@formcontrolname='to_date']")).sendKeys("20/6/2024");
+		driver.findElement(By.xpath("//h1[.='Add coupon']/../following-sibling::div//label[.='To Date']/..//input[@formcontrolname='to_date']")).sendKeys("20/8/2024");
 		Thread.sleep(2000);
 		driver.findElement(By.xpath("//h1[.='Add coupon']/../following-sibling::div//label[.='Minimum Transaction Amount']/..//input[@placeholder='Enter Amount']")).clear();
 		Thread.sleep(2000);
@@ -550,9 +551,9 @@ public class Admin_Coupon {
 		Thread.sleep(2000);
 		driver.findElement(By.xpath("//h1[.='Add coupon']/../following-sibling::div//label[.='Coupon Amount']/..//input[@placeholder='Enter Amount']")).sendKeys("5000");
 		Thread.sleep(2000);
-		driver.findElement(By.xpath("//h1[.='Add coupon']/../following-sibling::div//label[.='From Date']/..//input[@formcontrolname='from_date']")).sendKeys("18/5/2024");
+		driver.findElement(By.xpath("//h1[.='Add coupon']/../following-sibling::div//label[.='From Date']/..//input[@formcontrolname='from_date']")).sendKeys("18/7/2024");
 		Thread.sleep(2000);
-		driver.findElement(By.xpath("//h1[.='Add coupon']/../following-sibling::div//label[.='To Date']/..//input[@formcontrolname='to_date']")).sendKeys("20/6/2024");
+		driver.findElement(By.xpath("//h1[.='Add coupon']/../following-sibling::div//label[.='To Date']/..//input[@formcontrolname='to_date']")).sendKeys("20/8/2024");
 		Thread.sleep(2000);
 		driver.findElement(By.xpath("//h1[.='Add coupon']/../following-sibling::div//label[.='Minimum Transaction Amount']/..//input[@placeholder='Enter Amount']")).clear();
 		Thread.sleep(2000);
@@ -716,11 +717,11 @@ public class Admin_Coupon {
 		Thread.sleep(2000);
 		driver.findElement(By.xpath("//h1[.='Edit coupon']/ancestor::div[@class='modal-content']//input[@formcontrolname='from_date']")).clear();
 		Thread.sleep(2000);
-		driver.findElement(By.xpath("//h1[.='Edit coupon']/ancestor::div[@class='modal-content']//input[@formcontrolname='from_date']")).sendKeys("30/4/2024");
+		driver.findElement(By.xpath("//h1[.='Edit coupon']/ancestor::div[@class='modal-content']//input[@formcontrolname='from_date']")).sendKeys("30/7/2024");
 		Thread.sleep(2000);
 		driver.findElement(By.xpath("//h1[.='Edit coupon']/ancestor::div[@class='modal-content']//input[@formcontrolname='to_date']")).clear();
 		Thread.sleep(2000);
-		driver.findElement(By.xpath("//h1[.='Edit coupon']/ancestor::div[@class='modal-content']//input[@formcontrolname='to_date']")).sendKeys("30/5/2024");
+		driver.findElement(By.xpath("//h1[.='Edit coupon']/ancestor::div[@class='modal-content']//input[@formcontrolname='to_date']")).sendKeys("30/8/2024");
 		Thread.sleep(2000);
 		driver.findElement(By.xpath("//h1[.='Edit coupon']/ancestor::div[@class='modal-content']//input[@formcontrolname='minimum_transaction_amount']")).clear();
 		Thread.sleep(2000);
@@ -855,9 +856,9 @@ public class Admin_Coupon {
 		Thread.sleep(2000);
 		driver.findElement(By.xpath("//h1[.='Edit coupon']/../following-sibling::div//label[.='Coupon Amount']/..//input[@placeholder='Enter Amount']")).sendKeys("6000");
 		Thread.sleep(2000);
-		driver.findElement(By.xpath("//h1[.='Edit coupon']/../following-sibling::div//label[.='From Date']/../input[@formcontrolname='from_date']")).sendKeys("30/05/2024");
+		driver.findElement(By.xpath("//h1[.='Edit coupon']/../following-sibling::div//label[.='From Date']/../input[@formcontrolname='from_date']")).sendKeys("30/07/2024");
 		Thread.sleep(2000);
-		driver.findElement(By.xpath("//h1[.='Edit coupon']/../following-sibling::div//label[.='To Date']/../input[@formcontrolname='to_date']")).sendKeys("30/06/2024");
+		driver.findElement(By.xpath("//h1[.='Edit coupon']/../following-sibling::div//label[.='To Date']/../input[@formcontrolname='to_date']")).sendKeys("30/08/2024");
 		Thread.sleep(2000);
 		driver.findElement(By.xpath("//h1[.='Edit coupon']/../following-sibling::div//label[.='Minimum Transaction Amount']/../input[@placeholder='Enter Amount']")).clear();
 		Thread.sleep(2000);
@@ -985,9 +986,9 @@ public class Admin_Coupon {
 		Thread.sleep(2000);
 		driver.findElement(By.xpath("//h1[.='Edit coupon']/../following-sibling::div//label[.='Coupon Amount']/..//input[@placeholder='Enter Amount']")).sendKeys("6000");
 		Thread.sleep(2000);
-		driver.findElement(By.xpath("//h1[.='Edit coupon']/../following-sibling::div//label[.='From Date']/../input[@formcontrolname='from_date']")).sendKeys("30/05/2024");
+		driver.findElement(By.xpath("//h1[.='Edit coupon']/../following-sibling::div//label[.='From Date']/../input[@formcontrolname='from_date']")).sendKeys("30/07/2024");
 		Thread.sleep(2000);
-		driver.findElement(By.xpath("//h1[.='Edit coupon']/../following-sibling::div//label[.='To Date']/../input[@formcontrolname='to_date']")).sendKeys("30/06/2024");
+		driver.findElement(By.xpath("//h1[.='Edit coupon']/../following-sibling::div//label[.='To Date']/../input[@formcontrolname='to_date']")).sendKeys("30/08/2024");
 		Thread.sleep(2000);
 		driver.findElement(By.xpath("//h1[.='Edit coupon']/../following-sibling::div//label[.='Minimum Transaction Amount']/../input[@placeholder='Enter Amount']")).clear();
 		Thread.sleep(2000);

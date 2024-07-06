@@ -72,7 +72,7 @@ public class f_TradingAllActions extends FMS_BaseClass {
 		driver.navigate().refresh();
 		Thread.sleep(2000);
 		trdPage.getCheckBoxBtn().click();
-				
+			
 	}
 	
 }

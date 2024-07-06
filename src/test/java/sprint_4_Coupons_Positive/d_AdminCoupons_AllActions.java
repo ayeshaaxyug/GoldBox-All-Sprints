@@ -19,8 +19,8 @@ public class d_AdminCoupons_AllActions extends FMS_BaseClass {
 	{
 		String SearchValue = "Xyz";
 		
-		String CouponAmount = "2000", FromDate = "25-04-2024", ToDate = "25-05-2024", MinimumTransactionAmount = "20000", MobileNumber = "8686184458", Description = "Admin Coupon";
-		String EditCouponAmount = "4000", EditFromDate = "25-04-2024", EditToDate = "30-05-2024", EditMinimumTransactionAmount = "200000", EditMobileNumber = "9848671412", EditDescription = "Coupon";
+		String CouponAmount = "2000", FromDate = "25-07-2024", ToDate = "25-08-2024", MinimumTransactionAmount = "20000", MobileNumber = "8686184458", Description = "Admin Coupon";
+		String EditCouponAmount = "4000", EditFromDate = "25-07-2024", EditToDate = "30-08-2024", EditMinimumTransactionAmount = "200000", EditMobileNumber = "9848671412", EditDescription = "Coupon";
 		
 		Thread.sleep(2000);
 	    DashboardPage dbPage = new DashboardPage(driver);

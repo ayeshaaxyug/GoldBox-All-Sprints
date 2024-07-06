@@ -21,6 +21,8 @@ public class Ecommerce_SubCategory_EditSubcategoryPage {
     
     @FindBy(xpath="//h1[.='Update SubCategory']/../following-sibling::div//div//input[@placeholder='Enter SubCategory Name']")private WebElement SubCategoryNameEdt;
     
+    @FindBy(xpath = "(//option[.='Gold'])[1]") private WebElement GoldType;
+    
     @FindBy(xpath="//h1[.='Update SubCategory']/../following-sibling::div//select[@formcontrolname='type']")private WebElement SelectTypeDrpDwn;
     
     @FindBy(xpath="//h1[.='Update SubCategory']/../following-sibling::div//div//input[@formcontrolname='image']")private WebElement ChooseFileBtn;
@@ -48,6 +50,10 @@ public class Ecommerce_SubCategory_EditSubcategoryPage {
 
 	public WebElement getSubCategoryNameEdt() {
 		return SubCategoryNameEdt;
+	}
+	
+	public WebElement getGoldType() {
+		return GoldType;
 	}
 
 	public WebElement getSelectTypeDrpDwn() {
@@ -80,6 +86,9 @@ public class Ecommerce_SubCategory_EditSubcategoryPage {
 		Thread.sleep(2000);
 		SubCategoryNameEdt.sendKeys(SubCategoryName);
 		Thread.sleep(2000);
+		
+	//	GoldType.click();
+		
 		wUtil.handleDropdownByIndex(SelectTypeDrpDwn, 1);
 		Thread.sleep(2000);
         wUtil.clickOnChooseFileOption(driver, ChooseFileBtn, ImagePath);

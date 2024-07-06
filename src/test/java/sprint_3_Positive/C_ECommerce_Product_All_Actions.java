@@ -124,6 +124,8 @@ public class C_ECommerce_Product_All_Actions extends FMS_BaseClass {
         
         Thread.sleep(2000);
         epPage.clickOnParticularProductDeleteBtn(driver, PEditProductName);
+        
+        Thread.sleep(3000);
              
 	}
 	

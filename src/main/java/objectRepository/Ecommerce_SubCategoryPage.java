@@ -69,10 +69,10 @@ public class Ecommerce_SubCategoryPage {
 	
 	//Create Business Library
 	
-	public void clickOnParticularEditBtn(WebDriver driver, String SubCategoryName) throws Exception
+	public void clickOnParticularEditBtn(WebDriver driver, String CategoryName) throws Exception
 	{
 		Thread.sleep(1000);
-		driver.findElement(By.xpath("//td[.='"+SubCategoryName+"']/following-sibling::td/button[.=' Edit ']")).click();
+		driver.findElement(By.xpath("//td[.='"+CategoryName+"']/following-sibling::td/button[.=' Edit ']")).click();
 	}
 	
 	public void clickOnParticularSubCategoryBootstrapBtnToDisableParticularSubCategory(WebDriver driver, String EditSubCategoryName) throws Exception
@@ -109,6 +109,25 @@ public class Ecommerce_SubCategoryPage {
 		Thread.sleep(3000);
 	}
 	
+	public void clickOnParticularCategoryDeleteBtn(WebDriver driver, String CategoryName) throws Exception
+	{
+		Thread.sleep(1000);
+		//driver.findElement(By.xpath("(//td[contains(.,'"+CategoryName+"')])[1]/following-sibling::td//button[@class='btn-sm btn-edit bg-danger']")).click();
+		//Thread.sleep(2000);
+		driver.findElement(By.xpath("(//td/following-sibling::td//button[@class='btn-sm btn-edit bg-danger'])[1]")).click();
+		Thread.sleep(2000);
+
+		if(DeleteMsg.isDisplayed())
+		{
+			System.out.println("Category Deleted Successfully");
+		}
+		else
+		{
+			System.out.println("Category Not Deleted");
+			Assert.fail();
+		}
+		Thread.sleep(3000);
+	}
 	public void clickOnParticularSubCategoryDeleteBtn(WebDriver driver, String SubCategoryName) throws Exception
 	{
 		Thread.sleep(1000);

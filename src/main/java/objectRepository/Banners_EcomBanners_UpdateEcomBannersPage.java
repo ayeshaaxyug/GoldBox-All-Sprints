@@ -79,7 +79,7 @@ public class Banners_EcomBanners_UpdateEcomBannersPage {
 		public void updateEcomBanner(WebDriver driver, String FromDate, String ExpireDate, String SequenceNo) throws Exception
 		{
 			WebDriverUtility wUtil = new WebDriverUtility();
-			String ImagePath = "C:\\Users\\vikra\\OneDrive\\Desktop\\One Drive Folder\\OneDrive\\Pictures\\Saved Pictures\\download.jpg";
+			String ImagePath = "C:\\Users\\Admin\\Pictures\\Saved Pictures\\Screenshot (34).png";
 			Robot r = new Robot();
 			
 			Thread.sleep(2000);

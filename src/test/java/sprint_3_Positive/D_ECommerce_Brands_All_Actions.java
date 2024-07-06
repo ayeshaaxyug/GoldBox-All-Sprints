@@ -1,5 +1,6 @@
 package sprint_3_Positive;
 
+import org.openqa.selenium.By;
 import org.testng.annotations.Listeners;
 import org.testng.annotations.Test;
 
@@ -64,6 +65,7 @@ public class D_ECommerce_Brands_All_Actions extends FMS_BaseClass {
         Thread.sleep(2000);
         
         ebPage.clickOnParticularBrandDeleteBtn(driver, EditBrandName);
+        Thread.sleep(2000);
         
 	}
 		

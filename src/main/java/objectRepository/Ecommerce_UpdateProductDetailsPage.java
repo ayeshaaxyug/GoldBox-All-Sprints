@@ -155,8 +155,8 @@ public class Ecommerce_UpdateProductDetailsPage {
 		Thread.sleep(2000);
 		VaEdt.sendKeys(EditVaPercent);
 		Thread.sleep(2000);
-		wUtil.handleDropdownByIndex(CaratDrpDwn, 2);
-		Thread.sleep(2000);
+	//	wUtil.handleDropdownByIndex(CaratDrpDwn, 2);
+	//	Thread.sleep(2000);
 		wUtil.handleDropdownByIndex(TypeDrpDwn, 2);
 		Thread.sleep(2000);
 		PriceEdt.clear();
@@ -211,7 +211,7 @@ public class Ecommerce_UpdateProductDetailsPage {
 		Thread.sleep(2000);
 		VaEdt.sendKeys(EditVaPercent);
 		Thread.sleep(2000);
-		wUtil.handleDropdownByIndex(CaratDrpDwn, 2);
+		//wUtil.handleDropdownByIndex(CaratDrpDwn, 2);
 		Thread.sleep(2000);
 		wUtil.handleDropdownByIndex(TypeDrpDwn, 1);
 		Thread.sleep(2000);

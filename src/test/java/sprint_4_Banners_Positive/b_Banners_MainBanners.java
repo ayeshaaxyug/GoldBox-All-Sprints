@@ -51,6 +51,7 @@ public class b_Banners_MainBanners extends FMS_BaseClass {
         
         Thread.sleep(2000);
         bmbPage.enableOrDisableParticularBanner(driver);
+        Thread.sleep(3000);
 	}	
 	
  }

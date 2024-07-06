@@ -283,6 +283,9 @@ public class E_E_Commerce_Brands {
         r.keyPress(KeyEvent.VK_TAB);
         r.keyRelease(KeyEvent.VK_TAB);
         
+        driver.findElement(By.xpath("//option[.='Brand']")).click();
+        Thread.sleep(2000);
+        
         WebElement ChooseFileBtn = driver.findElement(By.xpath("//h1[.='Add Brand']/../following-sibling::div//input[@formcontrolname='image']"));
         Thread.sleep(2000);
         
@@ -377,6 +380,9 @@ public class E_E_Commerce_Brands {
         
         r.keyPress(KeyEvent.VK_TAB);
         r.keyRelease(KeyEvent.VK_TAB);
+        
+        driver.findElement(By.xpath("//option[.='Brand']")).click();
+        Thread.sleep(2000);
         
         WebElement ChooseFileBtn = driver.findElement(By.xpath("//h1[.='Add Brand']/../following-sibling::div//input[@formcontrolname='image']"));
         Thread.sleep(2000);

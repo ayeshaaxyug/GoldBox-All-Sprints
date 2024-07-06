@@ -17,7 +17,13 @@ public class Events_EventRequest_StatusUpdatePage {
     
     @FindBy(xpath="//span[.='Not Approved']")private WebElement NotApprovedLnk;
     
-    @FindBy(xpath="//span[.='Cancelled']")private WebElement CancelledLnk;
+    @FindBy(xpath="(//span[.='Cancelled'])[1]")private WebElement CancelledLnk;
+    
+    @FindBy(xpath = "(//button[.='Info'])[1]/../following-sibling::td//div[@class='mat-mdc-select-arrow ng-tns-c13-10']")private WebElement DropDownBtn;
+    
+  //  @FindBy(xpath = "(//button[.='Info'])[1]/../following-sibling::td//mat-select[@aria-haspopup='listbox']")private WebElement DropDownBtn;
+   
+   // @FindBy (xpath = "//div[@class='mat-mdc-select-trigger ng-tns-c13-20']") private WebElement DropDownBtn; 
     
     @FindBy(xpath="//span[.='Completed']")private WebElement CompletedLnk;
     
@@ -48,6 +54,10 @@ public class Events_EventRequest_StatusUpdatePage {
 		return NotApprovedLnk;
 	}
 
+	public WebElement getDropDownBtn() {
+		return DropDownBtn;
+	}
+
 
 	public WebElement getCancelledLnk() {
 		return CancelledLnk;
@@ -65,11 +75,17 @@ public class Events_EventRequest_StatusUpdatePage {
 	
 	//Create Business Libraries
 	
-	public void eventStatusUpdation(WebDriver driver)
+	public void eventStatusUpdation(WebDriver driver) throws Exception
 	{
 		WebDriverUtility wUtil = new WebDriverUtility();
+		DropDownBtn.click();
+		Thread.sleep(2000);
 		
-		wUtil.waitForElementToBeClickable(driver, CancelledLnk);
-		CancelledLnk.click();
-	}
+		wUtil.waitForElementToBeClickable(driver, CompletedLnk);
+		//CancelledLnk.clear();
+		Thread.sleep(3000);
+		CompletedLnk.click();
+		Thread.sleep(3000);
+	
+		}
 }

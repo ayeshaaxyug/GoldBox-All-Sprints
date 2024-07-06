@@ -91,7 +91,7 @@ public class Ecom_Banners {
         driver.findElement(By.xpath("//button[.='Add']")).click();
         Thread.sleep(2000);
         
-        WebElement ErrorMessage23 = driver.findElement(By.xpath("//div[@aria-label='Please Enter Sequence']"));
+        WebElement ErrorMessage23 = driver.findElement(By.xpath("(//input[@placeholder='Enter Sequence'])[1]"));
         Thread.sleep(1000);
         try {
         	if (ErrorMessage23.isDisplayed()) 
@@ -139,7 +139,7 @@ public class Ecom_Banners {
         driver.findElement(By.xpath("//button[.='Add']")).click();
         Thread.sleep(2000);
 		
-        WebElement ErrorMessage24 = driver.findElement(By.xpath("//div[@aria-label='Please Enter Sequence']"));
+        WebElement ErrorMessage24 = driver.findElement(By.xpath("(//input[@placeholder='Enter Sequence'])[1]"));
         Thread.sleep(1000);
         try {
         	if (ErrorMessage24.isDisplayed()) 
@@ -208,7 +208,7 @@ public class Ecom_Banners {
         driver.findElement(By.xpath("//button[.='Add']")).click();
         Thread.sleep(2000);
 		
-        WebElement ErrorMessage25 = driver.findElement(By.xpath("//div[@aria-label='Please Enter Sequence']"));
+        WebElement ErrorMessage25 = driver.findElement(By.xpath("(//input[@placeholder='Enter Sequence'])[1]"));
         Thread.sleep(1000);
         try {
         	if (ErrorMessage25.isDisplayed()) 
@@ -273,7 +273,7 @@ public class Ecom_Banners {
         driver.findElement(By.xpath("//button[.='Add']")).click();
         Thread.sleep(2000);
 		
-        WebElement ErrorMessage26 = driver.findElement(By.xpath("//div[@aria-label='Please Enter Sequence']"));
+        WebElement ErrorMessage26 = driver.findElement(By.xpath("(//input[@placeholder='Enter Sequence'])[1]"));
         Thread.sleep(1000);
         try {
         	if (ErrorMessage26.isDisplayed()) 
@@ -319,7 +319,7 @@ public class Ecom_Banners {
         driver.findElement(By.xpath("//button[.='Add']")).click();
         Thread.sleep(2000);
         
-        WebElement ErrorMessage27 = driver.findElement(By.xpath("//div[@aria-label='Please Enter from_date']"));
+        WebElement ErrorMessage27 = driver.findElement(By.xpath("(//input[@placeholder='Enter From Date'])[1]"));
         Thread.sleep(1000);
         try {
         	if (ErrorMessage27.isDisplayed()) 

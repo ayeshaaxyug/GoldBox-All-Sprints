@@ -1,5 +1,6 @@
 package sprint_3_Positive;
 
+import org.apache.poi.hssf.record.cf.Threshold;
 import org.testng.annotations.Listeners;
 import org.testng.annotations.Test;
 
@@ -48,7 +49,7 @@ public class B_ECommerce_Sub_Category_All_Actions extends FMS_BaseClass {
 	public void a2_adding1SubCategoryTest() throws Exception
 	{
 		
-		String CategoryName = "Necklace";;
+		String CategoryName = "Fingers";
 		String SubCategoryName = "Chains"+jUtil.getSingleRandomnumber();
 		String ImagePath = eUtil.readDataFromExcel("ImagePath", 0, 1);
 		
@@ -72,14 +73,16 @@ public class B_ECommerce_Sub_Category_All_Actions extends FMS_BaseClass {
         Ecommerce_SubCategory_AddSubcategoryPage ecscascPage = new Ecommerce_SubCategory_AddSubcategoryPage(driver);
         ecscascPage.addSubCategory(driver, CategoryName, SubCategoryName, ImagePath);
         
+        Thread.sleep(2000);
+        
 	}
 	
     @Test(groups = "sprint-3", priority = 3)
 	public void a3_editing1SubCategoryTest() throws Exception    //Pending
 	{
-    	String CategoryName = "Bangles";;
+    	String CategoryName = "Fingers";;
 		String SubCategoryName = "Bangles"+jUtil.getRandomNum();
-		String EditCategoryName = "Bangles";;
+		String EditCategoryName = "Fingers";;
 		String EditSubCategoryName = "Chains"+jUtil.getRandomNum();
 		String ImagePath = eUtil.readDataFromExcel("ImagePath", 1, 1);
 	    
@@ -118,7 +121,7 @@ public class B_ECommerce_Sub_Category_All_Actions extends FMS_BaseClass {
 	 @Test(groups = "sprint-3", priority = 4)
 	 public void a4_clickOnParticularBootStrapButtonToEnablingOrDisablingCategoryTest()throws Exception
 	 {
-		 String CategoryName = "Bangles";
+		 String CategoryName = "Fingers";
 		 String SubCategoryName = "Chains"+jUtil.getRandomNum();
 		 String ImagePath = eUtil.readDataFromExcel("ImagePath", 0, 1);
 		 
@@ -150,6 +153,8 @@ public class B_ECommerce_Sub_Category_All_Actions extends FMS_BaseClass {
 		 Thread.sleep(2000);
 		 
 		 escPage.clickOnParticularSubCategoryDeleteBtn(driver, SubCategoryName);
+		 
+		 Thread.sleep(2000);
 		 
 	 }
 	

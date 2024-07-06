@@ -19,7 +19,7 @@ public class a_Banners_E_ComBanners extends FMS_BaseClass {
 	
 	PropertyFileUtility pUtil = new PropertyFileUtility();
 	
-	String IssuedDate = "25-01-2023", ExpireDate = "25-01-2023", SequenceNo = "", SearchValue = "hbjkbjb";
+	String IssuedDate = "25-01-2023", ExpireDate = "25-01-2023", SequenceNo = "1", SearchValue = "hbjkbjb";
 	
 	@Test(groups = "sprint-4", priority = 1)
 	public void a_eComBannersAllActionsTest() throws Exception
@@ -68,6 +68,7 @@ public class a_Banners_E_ComBanners extends FMS_BaseClass {
 	    Thread.sleep(2000);
 	    bebPage.clickOnFirstBannerStatusEnableOrDisableButton(driver);
         
-	}
+	    Thread.sleep(2000);
+	    }
 
 }

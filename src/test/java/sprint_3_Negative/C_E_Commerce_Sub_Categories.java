@@ -132,8 +132,8 @@ public class C_E_Commerce_Sub_Categories{
         driver.findElement(By.xpath("//span[.='Ecommerce']")).click();
         Thread.sleep(2000);
         driver.findElement(By.xpath("//a[.='Sub Category']")).click();
-        Thread.sleep(2000);
-        driver.findElement(By.xpath("//button[.='Add SubCategory']")).click();
+        Thread.sleep(3000);
+        driver.findElement(By.xpath("//button[.='Add SubCategory ']")).click();
         Thread.sleep(2000);
         driver.findElement(By.xpath("//button[.='Add']")).click();
         Thread.sleep(2000);
@@ -179,7 +179,7 @@ public class C_E_Commerce_Sub_Categories{
         Thread.sleep(2000);
         driver.findElement(By.xpath("//a[.='Sub Category']")).click();
         Thread.sleep(2000);
-        driver.findElement(By.xpath("//button[.='Add SubCategory']")).click();
+        driver.findElement(By.xpath("//button[.='Add SubCategory ']")).click();
         Thread.sleep(2000);
         
         WebElement SubCategoryCategoryNameyDrpDwnElement = driver.findElement(By.xpath("//h1[.='Add SubCategory']/../following-sibling::div//select[@placeholder='Select Category']"));
@@ -188,7 +188,7 @@ public class C_E_Commerce_Sub_Categories{
         Select SubCategoryCategoryNameDrpDwn = new Select(SubCategoryCategoryNameyDrpDwnElement);
 
         // Select an option by visible text
-        SubCategoryCategoryNameDrpDwn.selectByVisibleText("Bangles");
+        SubCategoryCategoryNameDrpDwn.selectByVisibleText("Neck");
         
         driver.findElement(By.xpath("//button[.='Add']")).click();
         Thread.sleep(2000);
@@ -237,7 +237,7 @@ public class C_E_Commerce_Sub_Categories{
         Thread.sleep(2000);
         driver.findElement(By.xpath("//a[.='Sub Category']")).click();
         Thread.sleep(2000);
-        driver.findElement(By.xpath("//button[.='Add SubCategory']")).click();
+        driver.findElement(By.xpath("//button[.='Add SubCategory ']")).click();
         Thread.sleep(2000);
         
         WebElement SubCategoryNameyDrpDwnElement = driver.findElement(By.xpath("//h1[.='Add SubCategory']/../following-sibling::div//select[@placeholder='Select Category']"));
@@ -246,7 +246,7 @@ public class C_E_Commerce_Sub_Categories{
         Select SubCategoryNameDrpDwn = new Select(SubCategoryNameyDrpDwnElement);
 
         // Select an option by visible text
-        SubCategoryNameDrpDwn.selectByVisibleText("Bangles");
+        SubCategoryNameDrpDwn.selectByVisibleText("Neck");
         
         Thread.sleep(2000);
         driver.findElement(By.xpath("//h1[.='Add SubCategory']/../following-sibling::div//input[@placeholder='Enter SubCategory Name']")).sendKeys("Flower Bangles");
@@ -302,12 +302,12 @@ public class C_E_Commerce_Sub_Categories{
         Thread.sleep(2000);
         driver.findElement(By.xpath("//a[.='Sub Category']")).click();
         Thread.sleep(2000);
-        driver.findElement(By.xpath("//button[.='Add SubCategory']")).click();
+        driver.findElement(By.xpath("//button[.='Add SubCategory ']")).click();
         Thread.sleep(2000);
         
         WebElement CategoryNameDrpDwn = driver.findElement(By.xpath("//h1[.='Add SubCategory']/../following-sibling::div//select[@placeholder='Select Category']"));
         Select SubCategoryNameDrpDwn = new Select(CategoryNameDrpDwn);
-        SubCategoryNameDrpDwn.selectByVisibleText("Bangles");
+        SubCategoryNameDrpDwn.selectByVisibleText("Neck");
         
         Thread.sleep(2000);
         driver.findElement(By.xpath("//h1[.='Add SubCategory']/../following-sibling::div//input[@placeholder='Enter SubCategory Name']")).sendKeys(SubCategoryName);
@@ -485,17 +485,17 @@ public class C_E_Commerce_Sub_Categories{
 	    driver.get(URL);
 	    Thread.sleep(2000);
 	    driver.findElement(By.xpath("//input[@placeholder='Enter your email address']")).sendKeys(USERNAME, Keys.TAB, PASSWORD, Keys.ENTER);
-        Thread.sleep(8000);
+        Thread.sleep(15000);
         driver.findElement(By.xpath("//span[.='Ecommerce']")).click();
         Thread.sleep(2000);
         driver.findElement(By.xpath("//a[.='Sub Category']")).click();
         Thread.sleep(2000);
-        driver.findElement(By.xpath("(//td[.='Bangles']/following-sibling::td//button[.=' Edit '])[1]")).click();
+        driver.findElement(By.xpath("(//td[.='Neck']/following-sibling::td//button[.=' Edit '])[1]")).click();
         Thread.sleep(2000);
         
         WebElement SelectCategoryNameDrpDwnElement = driver.findElement(By.xpath("//h1[.='Update SubCategory']/../following-sibling::div//select[@class='enter-input ng-untouched ng-pristine ng-valid']"));
         Select CategoryNameDrpDwn = new Select(SelectCategoryNameDrpDwnElement);
-        CategoryNameDrpDwn.selectByVisibleText("Bangles");
+        CategoryNameDrpDwn.selectByVisibleText("Neck");
         Thread.sleep(2000);
         driver.findElement(By.xpath("//h1[.='Update SubCategory']/../following-sibling::div//input[@formcontrolname='subcatname']")).clear();
         Thread.sleep(2000);
@@ -541,12 +541,12 @@ public class C_E_Commerce_Sub_Categories{
 	    driver.get(URL);
 	    Thread.sleep(2000);
 	    driver.findElement(By.xpath("//input[@placeholder='Enter your email address']")).sendKeys(USERNAME, Keys.TAB, PASSWORD, Keys.ENTER);
-        Thread.sleep(8000);
+        Thread.sleep(12000);
         driver.findElement(By.xpath("//span[.='Ecommerce']")).click();
         Thread.sleep(2000);
         driver.findElement(By.xpath("//a[.='Sub Category']")).click();
         Thread.sleep(2000);
-        driver.findElement(By.xpath("(//td[.='Bangles']/following-sibling::td//button[.=' Edit '])[1]")).click();
+        driver.findElement(By.xpath("(//td[.='Neck']/following-sibling::td//button[.=' Edit '])[1]")).click();
         Thread.sleep(2000);
         
         WebElement UpdateSubCategoryCategoryNameyDrpDwnElement = driver.findElement(By.xpath("//h1[.='Update SubCategory']/../following-sibling::div//select[@class='enter-input ng-untouched ng-pristine ng-valid']"));
@@ -555,7 +555,7 @@ public class C_E_Commerce_Sub_Categories{
         Select UpdateSubCategoryNameDrpDwn = new Select(UpdateSubCategoryCategoryNameyDrpDwnElement);
 
         // Select an option by visible text
-        UpdateSubCategoryNameDrpDwn.selectByVisibleText("Bangles");
+        UpdateSubCategoryNameDrpDwn.selectByVisibleText("Neck");
         
         Thread.sleep(2000);
         WebElement SubCategoryNameEdt = driver.findElement(By.xpath("//h1[.='Update SubCategory']/../following-sibling::div//input[@placeholder='Enter SubCategory Name']"));
@@ -601,12 +601,12 @@ public class C_E_Commerce_Sub_Categories{
 	    driver.get(URL);
 	    Thread.sleep(2000);
 	    driver.findElement(By.xpath("//input[@placeholder='Enter your email address']")).sendKeys(USERNAME, Keys.TAB, PASSWORD, Keys.ENTER);
-        Thread.sleep(8000);
+        Thread.sleep(15000);
         driver.findElement(By.xpath("//span[.='Ecommerce']")).click();
         Thread.sleep(2000);
         driver.findElement(By.xpath("//a[.='Sub Category']")).click();
         Thread.sleep(2000);
-        driver.findElement(By.xpath("(//td[.='Bangles']/following-sibling::td//button[.=' Edit '])[1]/..//div[@class='mdc-form-field']")).click();
+        driver.findElement(By.xpath("(//td[.='Neck']/following-sibling::td//button[.=' Edit '])[1]/..//div[@class='mdc-form-field']")).click();
         Thread.sleep(2000);
         
         WebElement SuccessMsg = driver.findElement(By.xpath("(//div[.=' Sub Category Updated Successfully '])[2]"));
@@ -647,13 +647,13 @@ public class C_E_Commerce_Sub_Categories{
 	    driver.get(URL);
 	    Thread.sleep(2000);
 	    driver.findElement(By.xpath("//input[@placeholder='Enter your email address']")).sendKeys(USERNAME, Keys.TAB, PASSWORD, Keys.ENTER);
-        Thread.sleep(8000);
+        Thread.sleep(15000);
         driver.findElement(By.xpath("//span[.='Ecommerce']")).click();
         Thread.sleep(2000);
         driver.findElement(By.xpath("//a[.='Sub Category']")).click();
         Thread.sleep(2000);
         
-        driver.findElement(By.xpath("(//td[.='Bangles']/following-sibling::td//button[.=' Edit '])[1]/..//button[@class='btn-sm btn-edit bg-danger']")).click();
+        driver.findElement(By.xpath("(//td[.='Neck']/following-sibling::td//button[.=' Edit '])[1]/..//button[@class='btn-sm btn-edit bg-danger']")).click();
         Thread.sleep(2000);
         
         WebElement DeleteButton = driver.findElement(By.xpath("//a[.='Sub Category']"));
@@ -692,12 +692,12 @@ public class C_E_Commerce_Sub_Categories{
 	    driver.get(URL);
 	    Thread.sleep(2000);
 	    driver.findElement(By.xpath("//input[@placeholder='Enter your email address']")).sendKeys(USERNAME, Keys.TAB, PASSWORD, Keys.ENTER);
-        Thread.sleep(8000);
+        Thread.sleep(15000);
         driver.findElement(By.xpath("//span[.='Ecommerce']")).click();
         Thread.sleep(2000);
         driver.findElement(By.xpath("//a[.='Sub Category']")).click();
         Thread.sleep(2000);
-        driver.findElement(By.xpath("//button[.='Add SubCategory']")).click();
+        driver.findElement(By.xpath("//button[.='Add SubCategory ']")).click();
         Thread.sleep(2000);
         driver.findElement(By.xpath("//h1[.='Add SubCategory']/..//button[@aria-label='Close']")).click();
         Thread.sleep(2000);

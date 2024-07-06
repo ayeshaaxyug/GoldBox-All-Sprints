@@ -16,9 +16,9 @@ import objectRepository.DashboardPage;
 public class e_CouponList_AllActions extends FMS_BaseClass {
 
 	JavaUtility jUtil = new JavaUtility();
-	String CouponAmount = "300", FromDate = "25-04-2024", ToDate = "30-05-2024", MinimumTransactionAmount = "10000", Description = "Month End Sale";
+	String CouponAmount = "300", FromDate = "25-07-2024", ToDate = "30-07-2024", MinimumTransactionAmount = "10000", Description = "Month End Sale";
 	String FrommDate = jUtil.getSystemDate();
-	String EditCouponAmount = "400", EditFromDate = "25-04-2024", EditToDate = "25-05-2024", EditMinimumTransactionAmount = "20000", EditDescription = "End Sale";
+	String EditCouponAmount = "400", EditFromDate = "25-07-2024", EditToDate = "25-08-2024", EditMinimumTransactionAmount = "20000", EditDescription = "End Sale";
 	
 	@Test
 	public void couponListAllActionsTest() throws Exception

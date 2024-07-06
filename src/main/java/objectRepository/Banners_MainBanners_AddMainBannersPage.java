@@ -81,7 +81,7 @@ public class Banners_MainBanners_AddMainBannersPage {
 	public void addingMainBanner(WebDriver driver, String FromDate, String ToDate, String Sequence) throws Exception
 	{
 		WebDriverUtility wUtil = new WebDriverUtility();
-		String ImagePath = "C:\\Users\\vikra\\OneDrive\\Desktop\\One Drive Folder\\OneDrive\\Pictures\\Saved Pictures\\Necklace.jpg";
+		String ImagePath = "C:\\Users\\Admin\\Pictures\\Saved Pictures\\Screenshot (34).png";
 		Robot r = new Robot();
 		
 		Thread.sleep(2000);

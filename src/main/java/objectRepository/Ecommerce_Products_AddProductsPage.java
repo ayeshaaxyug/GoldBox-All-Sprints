@@ -31,7 +31,7 @@ public class Ecommerce_Products_AddProductsPage {
     
     @FindBy(xpath="//h1[.='Add Product Details']/../following-sibling::div//input[@placeholder='Enter VA%']")private WebElement VaEdt;
     
-    @FindBy(xpath="//h1[.='Add Product Details']/../following-sibling::div//select[@formcontrolname='carat']")private WebElement CaratDrpDwn;
+   // @FindBy(xpath="//h1[.='Add Product Details']/../following-sibling::div//select[@formcontrolname='carat']")private WebElement CaratDrpDwn;
     
     @FindBy(xpath="//h1[.='Add Product Details']/../following-sibling::div//select[@formcontrolname='type']")private WebElement TypeDrpDwn;
     
@@ -85,9 +85,9 @@ public class Ecommerce_Products_AddProductsPage {
 		return VaEdt;
 	}
 
-	public WebElement getCaratDrpDwn() {
-		return CaratDrpDwn;
-	}
+//	public WebElement getCaratDrpDwn() {
+//		return CaratDrpDwn;
+//	}
 
 	public WebElement getTypeDrpDwn() {
 		return TypeDrpDwn;
@@ -128,7 +128,7 @@ public class Ecommerce_Products_AddProductsPage {
 	public void AddingProduct(WebDriver driver, String ProductName, String VaPercent, String Price, String Size, String Weight, String Description, String ImagePath) throws Exception
 	{
 		Thread.sleep(2000);
-		wUtil.handleDropdownByVisibleText("Chain" , CategoryDrpDwn);
+		wUtil.handleDropdownByVisibleText("Fingers" , CategoryDrpDwn);
 		Thread.sleep(2000);
 		wUtil.handleDropdownByIndex(SubCategoryDrpDwn, 1);
 		Thread.sleep(2000);
@@ -138,7 +138,7 @@ public class Ecommerce_Products_AddProductsPage {
 		Thread.sleep(2000);
 		VaEdt.sendKeys(VaPercent);
 		Thread.sleep(2000);
-		wUtil.handleDropdownByIndex(CaratDrpDwn, 1);
+	//	wUtil.handleDropdownByIndex(CaratDrpDwn, 1);
 		Thread.sleep(2000);
 		wUtil.handleDropdownByIndex(TypeDrpDwn, 1);
 		Thread.sleep(2000);
@@ -182,7 +182,7 @@ public class Ecommerce_Products_AddProductsPage {
 		Thread.sleep(2000);
 		VaEdt.sendKeys(VaPercent);
 		Thread.sleep(2000);
-		wUtil.handleDropdownByIndex(CaratDrpDwn, 1);
+//		wUtil.handleDropdownByIndex(CaratDrpDwn, 1);
 		Thread.sleep(2000);
 		wUtil.handleDropdownByIndex(TypeDrpDwn, 1);
 		Thread.sleep(2000);

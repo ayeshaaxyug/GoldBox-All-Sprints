@@ -10,10 +10,12 @@ public class UpdateUserStatusPage {
 	//Finding WebElements Using @FindBy Annotations
 
     @FindBy(xpath="//input[@formcontrolname='terminate_reason']")private WebElement ReasonEdt;
-    
+  
     @FindBy(xpath="//button[.='Submit']")private WebElement SubmitBtn;
     
-    @FindBy(xpath="(//div[.=' User Details Terminated Sucessfully '])[2]")private WebElement TerminateMsg;
+    //@FindBy(xpath="(//div[.=' User Details Terminated Sucessfully '])[2]")private WebElement TerminateMsg;
+    
+    @FindBy(xpath="//div[@aria-label='User Details Terminated Sucessfully']")private WebElement TerminateMsg;
     
     
 	//Rule-3:Create a constructor to initilise these elements

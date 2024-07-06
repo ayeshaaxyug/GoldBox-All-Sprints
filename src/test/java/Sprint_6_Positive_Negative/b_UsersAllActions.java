@@ -35,7 +35,7 @@ public class b_UsersAllActions extends FMS_BaseClass {
 		String MobileNumber = eUtil.readDataFromExcel("Sprint-6 Negative", 33, 3);
 		String Reason = eUtil.readDataFromExcel("Sprint-6 Negative", 35, 6);
 		
-		
+		WebDriverUtility wu=new WebDriverUtility();
 		DashboardPage dbPage = new DashboardPage(driver);
 		dbPage.getUsersDrpDwn().click();
 		Thread.sleep(2000);
@@ -63,8 +63,12 @@ public class b_UsersAllActions extends FMS_BaseClass {
 		Thread.sleep(2000);
 		Users_UserList_AllUsers_ParticularUserInfo_AddGoldPage addGoldPage = new Users_UserList_AllUsers_ParticularUserInfo_AddGoldPage(driver);
 		addGoldPage.addingGold(driver, AddGoldAmount, MobileNumber);
+	    
+		wu.waitUntilPageLoad(driver);
+		
 		uPage.getUserListLnk().click();
 		uulauPage.clickOnActionsBootStrapBtn(driver, UserId);
+		Thread.sleep(2000);
 		UpdateUserStatusPage uusPage = new UpdateUserStatusPage(driver);
 		uusPage.givingReason(Reason);
 		Thread.sleep(5000);
@@ -92,7 +96,7 @@ public class b_UsersAllActions extends FMS_BaseClass {
 		Users_UserKyc_PanCardPage uupPage = new Users_UserKyc_PanCardPage(driver);
 		uupPage.getCloseBtn().click();
 		
-		for(;;)
+		for(;;) 
 		{
 			try 
 			{
@@ -110,8 +114,9 @@ public class b_UsersAllActions extends FMS_BaseClass {
 		
 		Thread.sleep(2000);
 		Users_UserKyc_StatusDrpDwnPage uusdPage = new Users_UserKyc_StatusDrpDwnPage(driver);
+		Thread.sleep(4000);
 		uusdPage.getRejectedLnk().click();
-		Thread.sleep(5000);
+		Thread.sleep(4000);
 	}
 	
 }

@@ -175,7 +175,7 @@ public class D_E_Commerce_Products {
 	    driver.get(URL);
 	    Thread.sleep(2000);
 	    driver.findElement(By.xpath("//input[@placeholder='Enter your email address']")).sendKeys(USERNAME, Keys.TAB, PASSWORD, Keys.ENTER);
-        Thread.sleep(8000);
+        Thread.sleep(20000);
         driver.findElement(By.xpath("//span[.='Ecommerce']")).click();
         Thread.sleep(2000);
         driver.findElement(By.xpath("//a[.='Products']")).click();
@@ -185,7 +185,7 @@ public class D_E_Commerce_Products {
         
         WebElement ProductsCategoryNameyDrpDwnElement = driver.findElement(By.xpath("//h1[.='Add Product Details']/../following-sibling::div//select[@formcontrolname='categoryname']"));
         Select ProductsCategoryNameDrpDwn = new Select(ProductsCategoryNameyDrpDwnElement);
-        ProductsCategoryNameDrpDwn.selectByVisibleText("Bangles");
+        ProductsCategoryNameDrpDwn.selectByVisibleText("Neck");
         Thread.sleep(2000);
         driver.findElement(By.xpath("//h1[.='Add Product Details']/../following-sibling::div//button[.='Add']")).click();
         Thread.sleep(2000);
@@ -226,7 +226,7 @@ public class D_E_Commerce_Products {
 	    driver.get(URL);
 	    Thread.sleep(2000);
 	    driver.findElement(By.xpath("//input[@placeholder='Enter your email address']")).sendKeys(USERNAME, Keys.TAB, PASSWORD, Keys.ENTER);
-        Thread.sleep(8000);
+        Thread.sleep(15000);
         driver.findElement(By.xpath("//span[.='Ecommerce']")).click();
         Thread.sleep(2000);
         driver.findElement(By.xpath("//a[.='Products']")).click();
@@ -240,7 +240,7 @@ public class D_E_Commerce_Products {
         Select ProductsCategoryNameDrpDwn = new Select(ProductsCategoryNameyDrpDwnElement);
 
         // Select an option by visible text
-        ProductsCategoryNameDrpDwn.selectByVisibleText("Bangles");
+        ProductsCategoryNameDrpDwn.selectByVisibleText("Neck");
         
         Thread.sleep(2000);
         
@@ -296,7 +296,7 @@ public class D_E_Commerce_Products {
 	    driver.get(URL);
 	    Thread.sleep(2000);
 	    driver.findElement(By.xpath("//input[@placeholder='Enter your email address']")).sendKeys(USERNAME, Keys.TAB, PASSWORD, Keys.ENTER);
-        Thread.sleep(8000);
+        Thread.sleep(15000);
         driver.findElement(By.xpath("//span[.='Ecommerce']")).click();
         Thread.sleep(2000);
         driver.findElement(By.xpath("//a[.='Products']")).click();
@@ -310,7 +310,7 @@ public class D_E_Commerce_Products {
         Select ProductsCategoryNameDrpDwn = new Select(ProductsCategoryNameyDrpDwnElement);
 
         // Select an option by visible text
-        ProductsCategoryNameDrpDwn.selectByVisibleText("Bangles");
+        ProductsCategoryNameDrpDwn.selectByVisibleText("Neck");
         
         Thread.sleep(2000);
         
@@ -374,7 +374,7 @@ public class D_E_Commerce_Products {
 		driver.get(URL);
 		Thread.sleep(2000);
 		driver.findElement(By.xpath("//input[@placeholder='Enter your email address']")).sendKeys(USERNAME, Keys.TAB, PASSWORD, Keys.ENTER);
-        Thread.sleep(8000);
+        Thread.sleep(15000);
         driver.findElement(By.xpath("//span[.='Ecommerce']")).click();
         Thread.sleep(2000);
         driver.findElement(By.xpath("//a[.='Products']")).click();
@@ -388,7 +388,7 @@ public class D_E_Commerce_Products {
         Select ProductsCategoryNameDrpDwn = new Select(ProductsCategoryNameyDrpDwnElement);
 
         // Select an option by visible text
-        ProductsCategoryNameDrpDwn.selectByVisibleText("Bangles");
+        ProductsCategoryNameDrpDwn.selectByVisibleText("Neck");
         
         Thread.sleep(2000);
         
@@ -457,7 +457,7 @@ public class D_E_Commerce_Products {
 	    driver.get(URL);
 	    Thread.sleep(2000);
 	    driver.findElement(By.xpath("//input[@placeholder='Enter your email address']")).sendKeys(USERNAME, Keys.TAB, PASSWORD, Keys.ENTER);
-        Thread.sleep(8000);
+        Thread.sleep(15000);
         driver.findElement(By.xpath("//span[.='Ecommerce']")).click();
         Thread.sleep(2000);
         driver.findElement(By.xpath("//a[.='Products']")).click();
@@ -471,7 +471,7 @@ public class D_E_Commerce_Products {
         Select ProductsCategoryNameDrpDwn = new Select(ProductsCategoryNameyDrpDwnElement);
 
         // Select an option by visible text
-        ProductsCategoryNameDrpDwn.selectByVisibleText("Bangles");
+        ProductsCategoryNameDrpDwn.selectByVisibleText("Neck");
         
         Thread.sleep(2000);
         
@@ -541,7 +541,7 @@ public class D_E_Commerce_Products {
 	    driver.get(URL);
 	    Thread.sleep(2000);
 	    driver.findElement(By.xpath("//input[@placeholder='Enter your email address']")).sendKeys(USERNAME, Keys.TAB, PASSWORD, Keys.ENTER);
-        Thread.sleep(8000);
+        Thread.sleep(15000);
         driver.findElement(By.xpath("//span[.='Ecommerce']")).click();
         Thread.sleep(2000);
         driver.findElement(By.xpath("//a[.='Products']")).click();
@@ -555,7 +555,7 @@ public class D_E_Commerce_Products {
         Select ProductsCategoryNameDrpDwn = new Select(ProductsCategoryNameyDrpDwnElement);
 
         // Select an option by visible text
-        ProductsCategoryNameDrpDwn.selectByVisibleText("Bangles");
+        ProductsCategoryNameDrpDwn.selectByVisibleText("Neck");
         
         Thread.sleep(2000);
         
@@ -583,15 +583,15 @@ public class D_E_Commerce_Products {
         driver.findElement(By.xpath("//h1[.='Add Product Details']/../following-sibling::div//input[@formcontrolname='va']")).sendKeys("10");
         Thread.sleep(2000);
         
-        WebElement ProductsSelectCaratyDrpDwnElement = driver.findElement(By.xpath("//h1[.='Add Product Details']/../following-sibling::div//select[@formcontrolname='carat']"));
-
-        // Create a Select object from the dropdown element
-        Select ProductsSelectCaratDrpDwn = new Select(ProductsSelectCaratyDrpDwnElement);
+//        WebElement ProductsSelectCaratyDrpDwnElement = driver.findElement(By.xpath("//h1[.='Add Product Details']/../following-sibling::div//select[@formcontrolname='carat']"));
+//
+//        // Create a Select object from the dropdown element
+//        Select ProductsSelectCaratDrpDwn = new Select(ProductsSelectCaratyDrpDwnElement);
 
         // Select an option by visible text
-        ProductsSelectCaratDrpDwn.selectByVisibleText("24 carat");
+ //      ProductsSelectCaratDrpDwn.selectByVisibleText("24 carat");
         
-        Thread.sleep(2000);
+    //    Thread.sleep(2000);
         driver.findElement(By.xpath("//h1[.='Add Product Details']/../following-sibling::div//button[.='Add']")).click();
         Thread.sleep(2000);
         
@@ -633,7 +633,7 @@ public class D_E_Commerce_Products {
 	    driver.get(URL);
 	    Thread.sleep(2000);
 	    driver.findElement(By.xpath("//input[@placeholder='Enter your email address']")).sendKeys(USERNAME, Keys.TAB, PASSWORD, Keys.ENTER);
-        Thread.sleep(8000);
+        Thread.sleep(15000);
         driver.findElement(By.xpath("//span[.='Ecommerce']")).click();
         Thread.sleep(2000);
         driver.findElement(By.xpath("//a[.='Products']")).click();
@@ -647,7 +647,7 @@ public class D_E_Commerce_Products {
         Select ProductsCategoryNameDrpDwn = new Select(ProductsCategoryNameyDrpDwnElement);
 
         // Select an option by visible text
-        ProductsCategoryNameDrpDwn.selectByVisibleText("Bangles");
+        ProductsCategoryNameDrpDwn.selectByVisibleText("Neck");
         
         Thread.sleep(2000);
         
@@ -675,15 +675,15 @@ public class D_E_Commerce_Products {
         driver.findElement(By.xpath("//h1[.='Add Product Details']/../following-sibling::div//input[@formcontrolname='va']")).sendKeys("10");
         Thread.sleep(2000);
         
-        WebElement ProductsSelectCaratDrpDwnElement = driver.findElement(By.xpath("//h1[.='Add Product Details']/../following-sibling::div//select[@formcontrolname='carat']"));
-
-        // Create a Select object from the dropdown element
-        Select ProductsSelectCaratDrpDwn = new Select(ProductsSelectCaratDrpDwnElement);
-
-        // Select an option by visible text
-        ProductsSelectCaratDrpDwn.selectByVisibleText("24 carat");
-        
-        Thread.sleep(2000);
+//        WebElement ProductsSelectCaratDrpDwnElement = driver.findElement(By.xpath("//h1[.='Add Product Details']/../following-sibling::div//select[@formcontrolname='carat']"));
+//
+//        // Create a Select object from the dropdown element
+//        Select ProductsSelectCaratDrpDwn = new Select(ProductsSelectCaratDrpDwnElement);
+//
+//        // Select an option by visible text
+//        ProductsSelectCaratDrpDwn.selectByVisibleText("24 carat");
+//        
+//        Thread.sleep(2000);
         
         WebElement ProductsSelectTypeDrpDwnElement = driver.findElement(By.xpath("//h1[.='Add Product Details']/../following-sibling::div//select[@formcontrolname='type']"));
 
@@ -735,7 +735,7 @@ public class D_E_Commerce_Products {
 	    driver.get(URL);
 	    Thread.sleep(2000);
 	    driver.findElement(By.xpath("//input[@placeholder='Enter your email address']")).sendKeys(USERNAME, Keys.TAB, PASSWORD, Keys.ENTER);
-        Thread.sleep(8000);
+        Thread.sleep(15000);
         driver.findElement(By.xpath("//span[.='Ecommerce']")).click();
         Thread.sleep(2000);
         driver.findElement(By.xpath("//a[.='Products']")).click();
@@ -749,7 +749,7 @@ public class D_E_Commerce_Products {
         Select ProductsCategoryNameDrpDwn = new Select(ProductsCategoryNameyDrpDwnElement);
 
         // Select an option by visible text
-        ProductsCategoryNameDrpDwn.selectByVisibleText("Bangles");
+        ProductsCategoryNameDrpDwn.selectByVisibleText("Neck");
         
         Thread.sleep(2000);
         
@@ -777,15 +777,15 @@ public class D_E_Commerce_Products {
         driver.findElement(By.xpath("//h1[.='Add Product Details']/../following-sibling::div//input[@formcontrolname='va']")).sendKeys("10");
         Thread.sleep(2000);
         
-        WebElement ProductsSelectCaratDrpDwnElement = driver.findElement(By.xpath("//h1[.='Add Product Details']/../following-sibling::div//select[@formcontrolname='carat']"));
-
-        // Create a Select object from the dropdown element
-        Select ProductsSelectCaratDrpDwn = new Select(ProductsSelectCaratDrpDwnElement);
-
-        // Select an option by visible text
-        ProductsSelectCaratDrpDwn.selectByVisibleText("24 carat");
-        
-        Thread.sleep(2000);
+//        WebElement ProductsSelectCaratDrpDwnElement = driver.findElement(By.xpath("//h1[.='Add Product Details']/../following-sibling::div//select[@formcontrolname='carat']"));
+//
+//        // Create a Select object from the dropdown element
+//        Select ProductsSelectCaratDrpDwn = new Select(ProductsSelectCaratDrpDwnElement);
+//
+//        // Select an option by visible text
+//        ProductsSelectCaratDrpDwn.selectByVisibleText("24 carat");
+//        
+//        Thread.sleep(2000);
         
         WebElement ProductsSelectTypeDrpDwnElement = driver.findElement(By.xpath("//h1[.='Add Product Details']/../following-sibling::div//select[@formcontrolname='type']"));
 
@@ -839,7 +839,7 @@ public class D_E_Commerce_Products {
 	    driver.get(URL);
 	    Thread.sleep(2000);
 	    driver.findElement(By.xpath("//input[@placeholder='Enter your email address']")).sendKeys(USERNAME, Keys.TAB, PASSWORD, Keys.ENTER);
-        Thread.sleep(8000);
+        Thread.sleep(15000);
         driver.findElement(By.xpath("//span[.='Ecommerce']")).click();
         Thread.sleep(2000);
         driver.findElement(By.xpath("//a[.='Products']")).click();
@@ -853,7 +853,7 @@ public class D_E_Commerce_Products {
         Select ProductsCategoryNameDrpDwn = new Select(ProductsCategoryNameyDrpDwnElement);
 
         // Select an option by visible text
-        ProductsCategoryNameDrpDwn.selectByVisibleText("Bangles");
+        ProductsCategoryNameDrpDwn.selectByVisibleText("Neck");
         
         Thread.sleep(2000);
         
@@ -881,15 +881,15 @@ public class D_E_Commerce_Products {
         driver.findElement(By.xpath("//h1[.='Add Product Details']/../following-sibling::div//input[@formcontrolname='va']")).sendKeys("10");
         Thread.sleep(2000);
         
-        WebElement ProductsSelectCaratDrpDwnElement = driver.findElement(By.xpath("//h1[.='Add Product Details']/../following-sibling::div//select[@formcontrolname='carat']"));
-
-        // Create a Select object from the dropdown element
-        Select ProductsSelectCaratDrpDwn = new Select(ProductsSelectCaratDrpDwnElement);
-
-        // Select an option by visible text
-        ProductsSelectCaratDrpDwn.selectByVisibleText("24 carat");
-        
-        Thread.sleep(2000);
+//        WebElement ProductsSelectCaratDrpDwnElement = driver.findElement(By.xpath("//h1[.='Add Product Details']/../following-sibling::div//select[@formcontrolname='carat']"));
+//
+//        // Create a Select object from the dropdown element
+//        Select ProductsSelectCaratDrpDwn = new Select(ProductsSelectCaratDrpDwnElement);
+//
+//        // Select an option by visible text
+//        ProductsSelectCaratDrpDwn.selectByVisibleText("24 carat");
+//        
+//        Thread.sleep(2000);
         
         WebElement ProductsSelectTypeDrpDwnElement = driver.findElement(By.xpath("//h1[.='Add Product Details']/../following-sibling::div//select[@formcontrolname='type']"));
 
@@ -945,7 +945,7 @@ public class D_E_Commerce_Products {
 	    driver.get(URL);
 	    Thread.sleep(2000);
 	    driver.findElement(By.xpath("//input[@placeholder='Enter your email address']")).sendKeys(USERNAME, Keys.TAB, PASSWORD, Keys.ENTER);
-        Thread.sleep(8000);
+        Thread.sleep(15000);
         driver.findElement(By.xpath("//span[.='Ecommerce']")).click();
         Thread.sleep(2000);
         driver.findElement(By.xpath("//a[.='Products']")).click();
@@ -959,7 +959,7 @@ public class D_E_Commerce_Products {
         Select ProductsCategoryNameDrpDwn = new Select(ProductsCategoryNameyDrpDwnElement);
 
         // Select an option by visible text
-        ProductsCategoryNameDrpDwn.selectByVisibleText("Bangles");
+        ProductsCategoryNameDrpDwn.selectByVisibleText("Neck");
         
         Thread.sleep(2000);
         
@@ -987,15 +987,15 @@ public class D_E_Commerce_Products {
         driver.findElement(By.xpath("//h1[.='Add Product Details']/../following-sibling::div//input[@formcontrolname='va']")).sendKeys("10");
         Thread.sleep(2000);
         
-        WebElement ProductsSelectCaratDrpDwnElement = driver.findElement(By.xpath("//h1[.='Add Product Details']/../following-sibling::div//select[@formcontrolname='carat']"));
-
-        // Create a Select object from the dropdown element
-        Select ProductsSelectCaratDrpDwn = new Select(ProductsSelectCaratDrpDwnElement);
-
-        // Select an option by visible text
-        ProductsSelectCaratDrpDwn.selectByVisibleText("24 carat");
-        
-        Thread.sleep(2000);
+//        WebElement ProductsSelectCaratDrpDwnElement = driver.findElement(By.xpath("//h1[.='Add Product Details']/../following-sibling::div//select[@formcontrolname='carat']"));
+//
+//        // Create a Select object from the dropdown element
+//        Select ProductsSelectCaratDrpDwn = new Select(ProductsSelectCaratDrpDwnElement);
+//
+//        // Select an option by visible text
+//        ProductsSelectCaratDrpDwn.selectByVisibleText("24 carat");
+//        
+//        Thread.sleep(2000);
         
         WebElement ProductsSelectTypeDrpDwnElement = driver.findElement(By.xpath("//h1[.='Add Product Details']/../following-sibling::div//select[@formcontrolname='type']"));
 
@@ -1054,7 +1054,7 @@ public class D_E_Commerce_Products {
 	    driver.get(URL);
 	    Thread.sleep(2000);
 	    driver.findElement(By.xpath("//input[@placeholder='Enter your email address']")).sendKeys(USERNAME, Keys.TAB, PASSWORD, Keys.ENTER);
-        Thread.sleep(8000);
+        Thread.sleep(15000);
         driver.findElement(By.xpath("//span[.='Ecommerce']")).click();
         Thread.sleep(2000);
         driver.findElement(By.xpath("//a[.='Products']")).click();
@@ -1068,7 +1068,7 @@ public class D_E_Commerce_Products {
         Select ProductsCategoryNameDrpDwn = new Select(ProductsCategoryNameyDrpDwnElement);
 
         // Select an option by visible text
-        ProductsCategoryNameDrpDwn.selectByVisibleText("Bangles");
+        ProductsCategoryNameDrpDwn.selectByVisibleText("Neck");
         
         Thread.sleep(2000);
         
@@ -1095,16 +1095,16 @@ public class D_E_Commerce_Products {
         Thread.sleep(2000);
         driver.findElement(By.xpath("//h1[.='Add Product Details']/../following-sibling::div//input[@formcontrolname='va']")).sendKeys("10");
         Thread.sleep(2000);
-        
-        WebElement ProductsSelectCaratDrpDwnElement = driver.findElement(By.xpath("//h1[.='Add Product Details']/../following-sibling::div//select[@formcontrolname='carat']"));
-
-        // Create a Select object from the dropdown element
-        Select ProductsSelectCaratDrpDwn = new Select(ProductsSelectCaratDrpDwnElement);
-
-        // Select an option by visible text
-        ProductsSelectCaratDrpDwn.selectByVisibleText("24 carat");
-        
-        Thread.sleep(2000);
+//        
+//        WebElement ProductsSelectCaratDrpDwnElement = driver.findElement(By.xpath("//h1[.='Add Product Details']/../following-sibling::div//select[@formcontrolname='carat']"));
+//
+//        // Create a Select object from the dropdown element
+//        Select ProductsSelectCaratDrpDwn = new Select(ProductsSelectCaratDrpDwnElement);
+//
+//        // Select an option by visible text
+//        ProductsSelectCaratDrpDwn.selectByVisibleText("24 carat");
+//        
+//        Thread.sleep(2000);
         
         WebElement ProductsSelectTypeDrpDwnElement = driver.findElement(By.xpath("//h1[.='Add Product Details']/../following-sibling::div//select[@formcontrolname='type']"));
 
@@ -1167,7 +1167,7 @@ public class D_E_Commerce_Products {
 	    driver.get(URL);
 	    Thread.sleep(2000);
 	    driver.findElement(By.xpath("//input[@placeholder='Enter your email address']")).sendKeys(USERNAME, Keys.TAB, PASSWORD, Keys.ENTER);
-        Thread.sleep(8000);
+        Thread.sleep(15000);
         driver.findElement(By.xpath("//span[.='Ecommerce']")).click();
         Thread.sleep(2000);
         driver.findElement(By.xpath("//a[.='Products']")).click();
@@ -1181,7 +1181,7 @@ public class D_E_Commerce_Products {
         Select ProductsCategoryNameDrpDwn = new Select(ProductsCategoryNameyDrpDwnElement);
 
         // Select an option by visible text
-        ProductsCategoryNameDrpDwn.selectByVisibleText("Bangles");
+        ProductsCategoryNameDrpDwn.selectByVisibleText("Neck");
         
         Thread.sleep(2000);
         
@@ -1209,15 +1209,15 @@ public class D_E_Commerce_Products {
         driver.findElement(By.xpath("//h1[.='Add Product Details']/../following-sibling::div//input[@formcontrolname='va']")).sendKeys("10");
         Thread.sleep(2000);
         
-        WebElement ProductsSelectCaratDrpDwnElement = driver.findElement(By.xpath("//h1[.='Add Product Details']/../following-sibling::div//select[@formcontrolname='carat']"));
-
-        // Create a Select object from the dropdown element
-        Select ProductsSelectCaratDrpDwn = new Select(ProductsSelectCaratDrpDwnElement);
-
-        // Select an option by visible text
-        ProductsSelectCaratDrpDwn.selectByVisibleText("24 carat");
-        
-        Thread.sleep(2000);
+//        WebElement ProductsSelectCaratDrpDwnElement = driver.findElement(By.xpath("//h1[.='Add Product Details']/../following-sibling::div//select[@formcontrolname='carat']"));
+//
+//        // Create a Select object from the dropdown element
+//        Select ProductsSelectCaratDrpDwn = new Select(ProductsSelectCaratDrpDwnElement);
+//
+//        // Select an option by visible text
+//        ProductsSelectCaratDrpDwn.selectByVisibleText("24 carat");
+//        
+//        Thread.sleep(2000);
         
         WebElement ProductsSelectTypeDrpDwnElement = driver.findElement(By.xpath("//h1[.='Add Product Details']/../following-sibling::div//select[@formcontrolname='type']"));
         
@@ -1669,7 +1669,7 @@ public class D_E_Commerce_Products {
 	    driver.get(URL);
 	    Thread.sleep(2000);
 	    driver.findElement(By.xpath("//input[@placeholder='Enter your email address']")).sendKeys(USERNAME, Keys.TAB, PASSWORD, Keys.ENTER);
-        Thread.sleep(8000);
+        Thread.sleep(15000);
         driver.findElement(By.xpath("//span[.='Ecommerce']")).click();
         Thread.sleep(2000);
         driver.findElement(By.xpath("//a[.='Products']")).click();
@@ -1718,7 +1718,7 @@ public class D_E_Commerce_Products {
 	    driver.get(URL);
 	    Thread.sleep(2000);
 	    driver.findElement(By.xpath("//input[@placeholder='Enter your email address']")).sendKeys(USERNAME, Keys.TAB, PASSWORD, Keys.ENTER);
-        Thread.sleep(8000);
+        Thread.sleep(20000);
         driver.findElement(By.xpath("//span[.='Ecommerce']")).click();
         Thread.sleep(2000);
         driver.findElement(By.xpath("//a[.='Products']")).click();
@@ -1755,6 +1755,7 @@ public class D_E_Commerce_Products {
 	@Test(groups = "Sprint-3", priority = 25)
 	public void y_product_StonePage_Adding_StoneNameTest() throws Exception
 	{
+		WebDriverUtility wu=new WebDriverUtility();
 		String URL = pUtil.readDataFromPropertyFile("url");
 		String USERNAME = pUtil.readDataFromPropertyFile("username");
 		String PASSWORD = pUtil.readDataFromPropertyFile("password");
@@ -1768,7 +1769,8 @@ public class D_E_Commerce_Products {
 	    driver.get(URL);
 	    Thread.sleep(2000);
 	    driver.findElement(By.xpath("//input[@placeholder='Enter your email address']")).sendKeys(USERNAME, Keys.TAB, PASSWORD, Keys.ENTER);
-        Thread.sleep(8000);
+        Thread.sleep(20000);
+        wu.waitUntilPageLoad(driver);
         driver.findElement(By.xpath("//span[.='Ecommerce']")).click();
         Thread.sleep(2000);
         driver.findElement(By.xpath("//a[.='Products']")).click();
@@ -1819,7 +1821,7 @@ public class D_E_Commerce_Products {
 	    driver.get(URL);
 	    Thread.sleep(2000);
 	    driver.findElement(By.xpath("//input[@placeholder='Enter your email address']")).sendKeys(USERNAME, Keys.TAB, PASSWORD, Keys.ENTER);
-        Thread.sleep(8000);
+        Thread.sleep(20000);
         driver.findElement(By.xpath("//span[.='Ecommerce']")).click();
         Thread.sleep(2000);
         driver.findElement(By.xpath("//a[.='Products']")).click();
@@ -1870,7 +1872,7 @@ public class D_E_Commerce_Products {
 	    driver.get(URL);
 	    Thread.sleep(2000);
 	    driver.findElement(By.xpath("//input[@placeholder='Enter your email address']")).sendKeys(USERNAME, Keys.TAB, PASSWORD, Keys.ENTER);
-        Thread.sleep(8000);
+        Thread.sleep(15000);
         driver.findElement(By.xpath("//span[.='Ecommerce']")).click();
         Thread.sleep(2000);
         driver.findElement(By.xpath("//a[.='Products']")).click();
@@ -1921,7 +1923,7 @@ public class D_E_Commerce_Products {
 	    driver.get(URL);
 	    Thread.sleep(2000);
 	    driver.findElement(By.xpath("//input[@placeholder='Enter your email address']")).sendKeys(USERNAME, Keys.TAB, PASSWORD, Keys.ENTER);
-        Thread.sleep(8000);
+        Thread.sleep(15000);
         driver.findElement(By.xpath("//span[.='Ecommerce']")).click();
         Thread.sleep(2000);
         driver.findElement(By.xpath("//a[.='Products']")).click();
@@ -2008,7 +2010,7 @@ public class D_E_Commerce_Products {
 	    driver.get(URL);
 	    Thread.sleep(2000);
 	    driver.findElement(By.xpath("//input[@placeholder='Enter your email address']")).sendKeys(USERNAME, Keys.TAB, PASSWORD, Keys.ENTER);
-        Thread.sleep(8000);
+        Thread.sleep(12000);
         driver.findElement(By.xpath("//span[.='Ecommerce']")).click();
         Thread.sleep(2000);
         driver.findElement(By.xpath("//a[.='Products']")).click();
@@ -2114,7 +2116,7 @@ public class D_E_Commerce_Products {
     	    {
     			w.takeScreenShot(driver, "z30_productPageActionEditButton_ClearingData3Test");
     			Thread.sleep(2000);
-    		} 
+    		} 	
     	    else 
     	    {
                 System.out.println("Updated Successfully");
@@ -2155,18 +2157,18 @@ public class D_E_Commerce_Products {
         driver.findElement(By.xpath("//h1[.='Update Product Details']/../following-sibling::div//input[@formcontrolname='va']")).clear();
         Thread.sleep(2000);
         
-        WebElement UpdateProductsSelectCaratDrpDwnElement = driver.findElement(By.xpath("//h1[.='Update Product Details']/../following-sibling::div//select[@formcontrolname='carat']"));
-
-        // Create a Select object from the dropdown element
-        Select UpdateProductsSelectCaratDrpDwn = new Select(UpdateProductsSelectCaratDrpDwnElement);
-
-        // Select an option by visible text
-        UpdateProductsSelectCaratDrpDwn.selectByVisibleText("Select Carat");
-        
-        Thread.sleep(2000);
+//        WebElement UpdateProductsSelectCaratDrpDwnElement = driver.findElement(By.xpath("//h1[.='Update Product Details']/../following-sibling::div//select[@formcontrolname='carat']"));
+//
+//        // Create a Select object from the dropdown element
+//        Select UpdateProductsSelectCaratDrpDwn = new Select(UpdateProductsSelectCaratDrpDwnElement);
+//
+//        // Select an option by visible text
+//        UpdateProductsSelectCaratDrpDwn.selectByVisibleText("Select Carat");
+//        
+//        Thread.sleep(2000);
         driver.findElement(By.xpath("//h1[.='Update Product Details']/../following-sibling::div//button[.='Update']")).click();
         Thread.sleep(1000);
-        WebElement Error = driver.findElement(By.xpath("(//div[.=' Invalid status value '])[2]"));
+        WebElement Error = driver.findElement(By.xpath("//div[.=' Product Details Updated Successfully ']"));
         Thread.sleep(1000);
         
         try {

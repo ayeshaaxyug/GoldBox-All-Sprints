@@ -75,13 +75,13 @@ public class e_TransactionsAllActions extends FMS_BaseClass {
 			
 			//3 Next & Prev Button -- ShowAll CheckBox is not responding
 			
-			Thread.sleep(4000);		
-			driver.navigate().refresh();		
-			Thread.sleep(2000);
-			tpage.getNextPageLnk().click();
-			Thread.sleep(2000);
-			tpage.getPreviousPageLnk();
-			Thread.sleep(2000);
+//			Thread.sleep(4000);		
+//			driver.navigate().refresh();		
+//			Thread.sleep(3000);
+//			tpage.getNextPageLnk().click();
+//			Thread.sleep(2000);
+//			tpage.getPreviousPageLnk();
+//			Thread.sleep(2000);
 			
 			//4 Filter Page --- FromDate
 			
@@ -148,11 +148,12 @@ public class e_TransactionsAllActions extends FMS_BaseClass {
 			Thread.sleep(2000);
 			tfPage.getSelectTxnTypeDrpDwn().click();
 			Thread.sleep(2000);
-			driver.findElement(By.xpath("//span[.='Promotion']")).click();
-			Thread.sleep(2000);
-			tfPage.getSelectTypeDrpDwn().click();
-			Thread.sleep(2000);
-			driver.findElement(By.xpath("//span[.='Debict']")).click();
+//			driver.findElement(By.xpath("//span[.='Promotion']")).click();
+//			Thread.sleep(3000);
+//			tfPage.getSelectTypeDrpDwn().click();
+//			Thread.sleep(2000);
+//			
+          	driver.findElement( By.xpath("(//span[.='Withdraw'])")).click();
 			Thread.sleep(2000);
 			tfPage.getSearchBtn().click();
 			Thread.sleep(2000);
@@ -173,11 +174,11 @@ public class e_TransactionsAllActions extends FMS_BaseClass {
 			Thread.sleep(2000);
 			tfPage.getSelectTxnTypeDrpDwn().click();
 			Thread.sleep(2000);
-			driver.findElement(By.xpath("//span[.='Transfer']")).click();
-			Thread.sleep(2000);
-			tfPage.getSelectTypeDrpDwn().click();
-			Thread.sleep(2000);
-			driver.findElement(By.xpath("//span[.='Credict']")).click();
+//			driver.findElement(By.xpath("//span[.='Transfer']")).click();
+//			Thread.sleep(2000);
+//			tfPage.getSelectTypeDrpDwn().click();
+//			Thread.sleep(2000);
+			driver.findElement(By.xpath("//span[.='Convert']")).click();
 			Thread.sleep(2000);
 			tfPage.getSearchBtn().click();
 			Thread.sleep(2000);
@@ -230,10 +231,10 @@ public class e_TransactionsAllActions extends FMS_BaseClass {
 			Thread.sleep(2000);
 			driver.findElement(By.xpath("//span[.='Buy']")).click();
 			Thread.sleep(2000);
-			tfPage.getSelectTypeDrpDwn().click();
-			Thread.sleep(2000);
-			driver.findElement(By.xpath("//span[.='Credict']")).click();
-			Thread.sleep(2000);
+//			tfPage.getSelectTypeDrpDwn().click();
+//			Thread.sleep(2000);
+//			driver.findElement(By.xpath("//span[.='Credict']")).click();
+//			Thread.sleep(2000);
 			tfPage.getMobileNumberEdt().sendKeys(MobileNumber);
 			Thread.sleep(2000);
 			tfPage.getTransactionIdEdt().sendKeys(TransactionId);

@@ -205,7 +205,8 @@ public class a_EcommerceAllActions extends FMS_BaseClass {
 	
 	@Test
 	public void SubcategoriesAllActionsTest() throws Exception {
-		
+		WebDriverUtility wu=new WebDriverUtility();
+		wu.waitUntilPageLoad(driver);
 		String SubCategorySearchValue = eUtil.readDataFromExcel("Sprint-5-Categ&Sub-Negative", 9, 1);
 		String CategoryName = eUtil.readDataFromExcel("Sprint-5-Categ&Sub-Negative", 11, 1);
 		String SubCategoryName = eUtil.readDataFromExcel("Sprint-5-Categ&Sub-Negative", 12, 1);
@@ -324,13 +325,13 @@ public class a_EcommerceAllActions extends FMS_BaseClass {
             {
     			System.out.println("SubCategory Added Successfully");
     		}
-            Thread.sleep(1000);
+            Thread.sleep(000);
             esaddsubPage.getSubCategoryNameEdt().clear();
             Thread.sleep(2000);
             esaddsubPage.getSubCategoryNameEdt().sendKeys(SubCategoryNameRandom);
     	    Thread.sleep(2000);
     		esaddsubPage.getAddBtn().click();
-    		Thread.sleep(1000);
+    		Thread.sleep(4000);
     		WebElement SuccessMsg = driver.findElement(By.xpath("(//div[.=' Subcategory Added Successfully '])[2]"));
             if(SuccessMsg.isDisplayed())
             {
@@ -348,11 +349,11 @@ public class a_EcommerceAllActions extends FMS_BaseClass {
         
         driver.navigate().refresh();
           
-  	    Thread.sleep(2000);  
+  	    Thread.sleep(5000);  
   	    esPage.clickOnParticularEditBtn(driver, SubCategoryNameRandom);
 	    Thread.sleep(2000);
 	    Ecommerce_SubCategory_EditSubcategoryPage esubeditPage = new Ecommerce_SubCategory_EditSubcategoryPage(driver);
-	    Thread.sleep(2000);
+	    Thread.sleep(5000);
 	    esubeditPage.getUpdateBtn().click();
 	    WebElement EditTypeRequired = driver.findElement(By.xpath("(//div[.=' Please Enter Type '])[2]"));
 	    Thread.sleep(2000);
@@ -372,8 +373,10 @@ public class a_EcommerceAllActions extends FMS_BaseClass {
         Thread.sleep(2000);
         esubeditPage.getUpdateBtn().click();
         Thread.sleep(1000);
-        WebElement EnterSubCategoryError = driver.findElement(By.xpath("(//div[.=' Please Enter Type '])[2]"));
+        WebElement EnterSubCategoryError = driver.findElement(By.xpath("//div[@aria-label='Please Enter Type']"));
         Thread.sleep(1000);
+        //WebElement EnterSubCategoryError = driver.findElement(By.xpath("(//div[.=' Please Enter Type '])[2]"));
+        //Thread.sleep(1000);
         if(EditTypeRequired.isDisplayed())
         {
         	wUtil.takeScreenShot(driver, "h_WithOut Giving SubCategory Name,Type While Updating Error");
@@ -383,11 +386,15 @@ public class a_EcommerceAllActions extends FMS_BaseClass {
 			System.out.println("Sub Category Updated Successfully");
 		}
         Thread.sleep(2000);
+        
+        
         wUtil.handleDropdownByVisibleText("Select Category", escascPage.getCategoryNameDrpDwn());
         Thread.sleep(2000);
         esubeditPage.getUpdateBtn().click();
+        Thread.sleep(2000);
+        WebElement EnterSubCategoryError1 = driver.findElement(By.xpath("//div[@aria-label='Please Enter Type']"));
         Thread.sleep(1000);
-        if(EnterSubCategoryError.isDisplayed())
+        if(EnterSubCategoryError1.isDisplayed())
         {
         	wUtil.takeScreenShot(driver, "i_Updating Without Giving Category, SubCategory, Type Error");
         }
@@ -395,7 +402,7 @@ public class a_EcommerceAllActions extends FMS_BaseClass {
         {
 			System.out.println("Category Updated Successfully");
 		}
-        Thread.sleep(2000);
+        Thread.sleep(8000);
         esubeditPage.getCloseBtn().click();
         WebElement UpdateSubCategoryPageError = driver.findElement(By.xpath("//h1[.='Update SubCategory']"));
         if(UpdateSubCategoryPageError.isDisplayed())
@@ -409,7 +416,9 @@ public class a_EcommerceAllActions extends FMS_BaseClass {
         Thread.sleep(4000);
         esPage.clickOnParticularSubCategoryBootstrapBtnToDisableParticularSubCategory(driver, SubCategoryNameRandom);
         Thread.sleep(1000);
-        WebElement UpdateMsg = driver.findElement(By.xpath("(//div[.=' Sub Category Updated Successfully '])[2]"));
+        //WebElement UpdateMsg = driver.findElement(By.xpath("(//div[.=' Sub Category Updated Successfully '])[2]"));
+        //WebElement UpdateMsg = driver.findElement(By.xpath("//div[.=' Sub Category Updated Successfully ']"));
+        WebElement UpdateMsg = driver.findElement(By.xpath("//div[@aria-label='Sub Category Updated Successfully']"));
         if(UpdateMsg.isDisplayed())
         {
         	wUtil.takeScreenShot(driver, "k_Clicking On Bootstrap Btn SubCategory Should Not Update Error");
@@ -418,11 +427,15 @@ public class a_EcommerceAllActions extends FMS_BaseClass {
         {
 			System.out.println("SubCategory Not Updated");
 		}
-        Thread.sleep(4000);
-        esPage.clickOnParticularSubCategoryDeleteBtn(driver, SubCategoryNameRandom);
+        Thread.sleep(6000);
+        //esPage.clickOnParticularSubCategoryDeleteBtn(driver, SubCategoryNameRandom);
+        //Thread.sleep(2000);
+        esPage.clickOnParticularCategoryDeleteBtn(driver, CategoryName);
         Thread.sleep(2000);
-        WebElement DeleteMsg = driver.findElement(By.xpath("(//div[.=' Successfully Deleted '])[2]"));
-        Thread.sleep(1000);
+        WebElement DeleteMsg = driver.findElement(By.xpath("//div[@aria-label='Successfully Deleted']"));
+        Thread.sleep(2000);
+        //WebElement DeleteMsg = driver.findElement(By.xpath("(//div[.=' Successfully Deleted '])[2]"));
+        //Thread.sleep(1000);
         if(DeleteMsg.isDisplayed())
         {
         	wUtil.takeScreenShot(driver, "l_Clicking On Delete Btn SubCategory Should Not Delete Error");
@@ -433,7 +446,7 @@ public class a_EcommerceAllActions extends FMS_BaseClass {
 		}
         
 	}
-	
+	//(//button[@class='btn-sm btn-edit bg-danger'])[1]
 	
 	
 	@Test
@@ -609,9 +622,9 @@ public class a_EcommerceAllActions extends FMS_BaseClass {
 			System.out.println("Product Added Successfully");
 		}
 		Thread.sleep(4000);
-		WebElement SelectCarat = epapPage.getCaratDrpDwn();
-		Select s4 = new Select(SelectCarat);
-		s4.selectByIndex(2);
+		//WebElement SelectCarat = epapPage.getCaratDrpDwn();
+//		Select s4 = new Select(SelectCarat);
+//		s4.selectByIndex(2);
 		Thread.sleep(2000);
 		epapPage.getAddBtn().click();
 		Thread.sleep(1000);

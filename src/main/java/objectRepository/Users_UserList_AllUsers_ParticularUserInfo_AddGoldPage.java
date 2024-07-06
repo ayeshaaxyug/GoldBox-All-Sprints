@@ -19,11 +19,14 @@ public class Users_UserList_AllUsers_ParticularUserInfo_AddGoldPage {
 
 	@FindBy(xpath="//input[@name='contact']")private WebElement PhoneNumberEdt;
 	
-	@FindBy(xpath="//button[.='Proceed']")private WebElement ProceedBtn;
-
-	@FindBy(xpath="//div[.='Netbanking']")private WebElement NetBankingLnk;
+////	(//button[.='Continue'])[2]
+//	@FindBy(xpath="//button[@name='button']")private WebElement ContinueBtn;
 	
-	@FindBy(xpath="//div[.='ICICI']")private WebElement IciciBankLnk;
+	@FindBy(xpath="//button[@name='button']")private WebElement ProceedBtn;
+
+	@FindBy(xpath="//span[.='Netbanking']")private WebElement NetBankingLnk;
+	
+	@FindBy(xpath="(//span[.='ICICI Bank'])[1]")private WebElement IciciBankLnk;
 
 	@FindBy(xpath="//button[.='Pay Now']")private WebElement PayNowBtn;
 	
@@ -60,7 +63,6 @@ public class Users_UserList_AllUsers_ParticularUserInfo_AddGoldPage {
 	public WebElement getPhoneNumberEdt() {
 		return PhoneNumberEdt;
 	}
-
 
 	public WebElement getProceedBtn() {
 		return ProceedBtn;
@@ -99,7 +101,7 @@ public class Users_UserList_AllUsers_ParticularUserInfo_AddGoldPage {
 		driver.switchTo().frame(Frame);
 		Thread.sleep(2000);
 		PhoneNumberEdt.sendKeys(MobileNumber);
-		Thread.sleep(2000);
+		Thread.sleep(2000);	
 		ProceedBtn.click();
 		Thread.sleep(2000);
 		NetBankingLnk.click();
@@ -107,7 +109,7 @@ public class Users_UserList_AllUsers_ParticularUserInfo_AddGoldPage {
 		IciciBankLnk.click();
 		Thread.sleep(2000);
 		String Parent = driver.getWindowHandle();
-		PayNowBtn.click();
+		//PayNowBtn.click();
 		Thread.sleep(1000);
 		Set<String> Childs = driver.getWindowHandles();
 		for(String ChildId : Childs)
@@ -119,11 +121,11 @@ public class Users_UserList_AllUsers_ParticularUserInfo_AddGoldPage {
 		}
 		Thread.sleep(2000);
 		SuccessBtn.click();
-		Thread.sleep(6000);
+		Thread.sleep(5000);
 		driver.switchTo().window(Parent);
-		Thread.sleep(1000);
-		driver.switchTo().alert().accept();
-		Thread.sleep(1000);
+		Thread.sleep(5000);
+//		driver.switchTo().alert().accept();
+//		Thread.sleep(1000);
 		
 	}
 }
