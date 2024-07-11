@@ -5,7 +5,7 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
-public class Roles_AddRolePage {
+public class Settings_Roles_AddRolePage {
 
 	//Finding WebElements Using @FindBy Annotations
 	
@@ -18,7 +18,7 @@ public class Roles_AddRolePage {
     
 	//Rule-3:Create a constructor to initilise these elements
     
-	public Roles_AddRolePage(WebDriver driver)
+	public Settings_Roles_AddRolePage(WebDriver driver)
 	{
 		PageFactory.initElements(driver, this);
 	}

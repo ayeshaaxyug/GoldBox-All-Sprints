@@ -5,7 +5,7 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
-public class PaymentManagement_PaymentMethodManagementListPage {
+public class Settings_PaymentManagement_PaymentMethodManagementListPage {
 
 	//Rule-1 :- Finding WebElements Using @FindBy Annotations
 
@@ -20,7 +20,7 @@ public class PaymentManagement_PaymentMethodManagementListPage {
     
 	//Rule-2:- Create a constructor to initilise these elements
     
-	public PaymentManagement_PaymentMethodManagementListPage(WebDriver driver)
+	public Settings_PaymentManagement_PaymentMethodManagementListPage(WebDriver driver)
 	{
 		PageFactory.initElements(driver, this);
 	}

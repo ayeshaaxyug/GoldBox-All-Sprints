@@ -13,6 +13,7 @@ public class UsersPage {
     
     @FindBy(xpath="//a[.='Users List']")private WebElement UserListLnk;
     	
+    @FindBy(xpath ="//a[.='Redeem Gold Users']") private WebElement ReedemGoldUsersLnk;
   
 	//Rule-3:Create a constructor to initilise these elements
     
@@ -33,6 +34,10 @@ public class UsersPage {
 		return UserListLnk;
 	}
 	
+	public WebElement getReedemGoldUsersLnk() {
+		return ReedemGoldUsersLnk;
+	}
+	
 	//Business Libraries
 	
 	public void clickOnUserKycLnk()
@@ -43,6 +48,11 @@ public class UsersPage {
 	public void clickOnUserListLnk()
 	{
 		UserListLnk.click();
+	}
+	
+	public void clickOnReedemGoldUsersLnk()
+	{
+		ReedemGoldUsersLnk.click();
 	}
 	
 }
