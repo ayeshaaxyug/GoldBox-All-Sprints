@@ -16,6 +16,7 @@ import genericUtility.JavaUtility;
 import genericUtility.WebDriverUtility;
 import objectRepository.DashboardPage;
 import objectRepository.UsersPage;
+import objectRepository.Users_ReddemGoldusers_FilterPage;
 import objectRepository.Users_RedeemGoldUsersPage;
 import objectRepository.Users_RedeemGold_RedeemGoldButtonPage;
 
@@ -35,6 +36,10 @@ public class RedeemGoldUsers extends FMS_BaseClass {
 		String EnterPaymentId = eUtil.readDataFromExcel("Sprint 8", 3, 1);
 		String UploadGstNumber = eUtil.readDataFromExcel("Sprint 8", 4, 1);
 		String ImagePaths = eUtil.readDataFromExcel("Sprint 8", 5, 1);
+		String FromDate = eUtil.readDataFromExcel("Sprint 8", 7, 1);
+		String EndDate = eUtil.readDataFromExcel("Sprint 8", 8, 1);
+		String MobileNumber = eUtil.readDataFromExcel("Sprint 8", 9, 1);
+		String TransactionId = eUtil.readDataFromExcel("Sprint 8", 10, 1);
 		
 		Thread.sleep(5000);
 		WebDriverUtility wu=new WebDriverUtility(); 
@@ -63,19 +68,44 @@ public class RedeemGoldUsers extends FMS_BaseClass {
 //	    Thread.sleep(2000);
 //	    RGRGBPage.getGstEdt().sendKeys(UploadGstNumber);
 //	    Thread.sleep(4000);
-//	    RGRGBPage.getAddImageLnk().sendKeys(ImagePaths);
+//	    RGRGBPage.getAddImageBtn().click();
 //	    Thread.sleep(3000);
-//	    RGRGBPage.getAddImageLnk1().sendKeys(ImagePaths);
-//      Thread.sleep(2000);
-//      RGRGBPage.getAddImageLnk2().sendKeys(ImagePaths);
-//	    Thread.sleep(2000);
+//	    RGRGBPage.getAddImageLnk().sendKeys(ImagePaths);
+//	    Thread.sleep(4000);
 //	    RGRGBPage.getUploadBtn().click();
-//	    Thread.sleep(2000);
+//	    Thread.sleep(6000);
 	    
 	    RGUPage.getShowAllCheckBox().click();
-	    Thread.sleep(2000);
-		
+	    Thread.sleep(4000);
+	    
+	    wUtility = new WebDriverUtility();
+		wUtility.scrollPageUp(3);
 
+		Thread.sleep(4000);
+	    RGUPage.getFilterBtn().click();
+	    Thread.sleep(2000);
+	    Users_ReddemGoldusers_FilterPage RGUFPage = new Users_ReddemGoldusers_FilterPage(driver);
+	    Thread.sleep(3000);
+	    RGUFPage.getFromDateEdt().sendKeys(FromDate);
+	    Thread.sleep(3000);
+	    RGUFPage.getEndDateEdt().sendKeys(EndDate);
+	    Thread.sleep(5000);
+	    RGUFPage.getMobileNumberEdt().sendKeys(MobileNumber);
+	    Thread.sleep(5000);
+	    RGUFPage.getTransactionIdEdt().sendKeys(TransactionId);
+	    Thread.sleep(3000);
+	    RGUFPage.getRefreshBtn().click();
+	    Thread.sleep(3000);
+	    RGUFPage.getSearchEdt().click();
+	    Thread.sleep(3000);
+	    
+	    driver.navigate().refresh();
+	    
+	    Thread.sleep(3000);
+	    RGUPage.getNextBtn().click();
+	    Thread.sleep(3000);
+	    RGUPage.getPrevBtn().click();
+	    Thread.sleep(3000);
 	}
 
 }

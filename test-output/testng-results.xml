@@ -1,41 +1,89 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
+<testng-results ignored="0" total="5" passed="5" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2024-07-11T17:05:00 IST" name="Default suite" finished-at="2024-07-11T17:06:12 IST" duration-ms="72073">
+  <suite started-at="2024-07-15T16:48:11 IST" name="Default suite" finished-at="2024-07-15T16:54:21 IST" duration-ms="370114">
     <groups>
     </groups>
-    <test started-at="2024-07-11T17:05:00 IST" name="Default test" finished-at="2024-07-11T17:06:12 IST" duration-ms="72073">
-      <class name="Sprint_8_Positive.RedeemGoldUsers">
-        <test-method is-config="true" signature="bsConfig()[pri:0, instance:Sprint_8_Positive.RedeemGoldUsers@1040be71]" started-at="2024-07-11T17:05:00 IST" name="bsConfig" finished-at="2024-07-11T17:05:00 IST" duration-ms="17" status="PASS">
+    <test started-at="2024-07-15T16:48:11 IST" name="Default test" finished-at="2024-07-15T16:54:21 IST" duration-ms="370114">
+      <class name="Sprint_8_Positive.Settings">
+        <test-method is-config="true" signature="bsConfig()[pri:0, instance:Sprint_8_Positive.Settings@3f4faf53]" started-at="2024-07-15T16:48:11 IST" name="bsConfig" finished-at="2024-07-15T16:48:11 IST" duration-ms="16" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- bsConfig -->
-        <test-method is-config="true" signature="bcConfig()[pri:0, instance:Sprint_8_Positive.RedeemGoldUsers@1040be71]" started-at="2024-07-11T17:05:01 IST" name="bcConfig" finished-at="2024-07-11T17:05:17 IST" duration-ms="16273" status="PASS">
+        <test-method is-config="true" signature="bcConfig()[pri:0, instance:Sprint_8_Positive.Settings@3f4faf53]" started-at="2024-07-15T16:48:11 IST" name="bcConfig" finished-at="2024-07-15T16:48:24 IST" duration-ms="13176" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- bcConfig -->
-        <test-method is-config="true" signature="bmConfig()[pri:0, instance:Sprint_8_Positive.RedeemGoldUsers@1040be71]" started-at="2024-07-11T17:05:17 IST" name="bmConfig" finished-at="2024-07-11T17:05:35 IST" duration-ms="17525" status="PASS">
+        <test-method is-config="true" signature="bmConfig()[pri:0, instance:Sprint_8_Positive.Settings@3f4faf53]" started-at="2024-07-15T16:48:24 IST" name="bmConfig" finished-at="2024-07-15T16:48:42 IST" duration-ms="17588" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- bmConfig -->
-        <test-method signature="RedeemGoldUsers()[pri:0, instance:Sprint_8_Positive.RedeemGoldUsers@1040be71]" started-at="2024-07-11T17:05:35 IST" name="RedeemGoldUsers" finished-at="2024-07-11T17:05:59 IST" duration-ms="23894" status="PASS">
+        <test-method signature="SettingsAppManagement()[pri:0, instance:Sprint_8_Positive.Settings@3f4faf53]" started-at="2024-07-15T16:48:42 IST" name="SettingsAppManagement" finished-at="2024-07-15T16:48:55 IST" duration-ms="13374" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- RedeemGoldUsers -->
-        <test-method is-config="true" signature="amConfig()[pri:0, instance:Sprint_8_Positive.RedeemGoldUsers@1040be71]" started-at="2024-07-11T17:05:59 IST" name="amConfig" finished-at="2024-07-11T17:06:10 IST" duration-ms="11943" status="PASS">
+        </test-method> <!-- SettingsAppManagement -->
+        <test-method is-config="true" signature="amConfig()[pri:0, instance:Sprint_8_Positive.Settings@3f4faf53]" started-at="2024-07-15T16:48:55 IST" name="amConfig" finished-at="2024-07-15T16:49:07 IST" duration-ms="11865" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- amConfig -->
-        <test-method is-config="true" signature="acConfig()[pri:0, instance:Sprint_8_Positive.RedeemGoldUsers@1040be71]" started-at="2024-07-11T17:06:11 IST" name="acConfig" finished-at="2024-07-11T17:06:12 IST" duration-ms="1584" status="PASS">
+        <test-method is-config="true" signature="bmConfig()[pri:0, instance:Sprint_8_Positive.Settings@3f4faf53]" started-at="2024-07-15T16:49:07 IST" name="bmConfig" finished-at="2024-07-15T16:49:25 IST" duration-ms="17607" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- bmConfig -->
+        <test-method signature="SettingsFmsUsers()[pri:0, instance:Sprint_8_Positive.Settings@3f4faf53]" started-at="2024-07-15T16:49:25 IST" name="SettingsFmsUsers" finished-at="2024-07-15T16:50:43 IST" duration-ms="78582" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- SettingsFmsUsers -->
+        <test-method is-config="true" signature="amConfig()[pri:0, instance:Sprint_8_Positive.Settings@3f4faf53]" started-at="2024-07-15T16:50:43 IST" name="amConfig" finished-at="2024-07-15T16:50:55 IST" duration-ms="11707" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- amConfig -->
+        <test-method is-config="true" signature="bmConfig()[pri:0, instance:Sprint_8_Positive.Settings@3f4faf53]" started-at="2024-07-15T16:50:55 IST" name="bmConfig" finished-at="2024-07-15T16:51:13 IST" duration-ms="17448" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- bmConfig -->
+        <test-method signature="SettingsOtpList()[pri:0, instance:Sprint_8_Positive.Settings@3f4faf53]" started-at="2024-07-15T16:51:13 IST" name="SettingsOtpList" finished-at="2024-07-15T16:51:35 IST" duration-ms="22409" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- SettingsOtpList -->
+        <test-method is-config="true" signature="amConfig()[pri:0, instance:Sprint_8_Positive.Settings@3f4faf53]" started-at="2024-07-15T16:51:35 IST" name="amConfig" finished-at="2024-07-15T16:51:47 IST" duration-ms="11604" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- amConfig -->
+        <test-method is-config="true" signature="bmConfig()[pri:0, instance:Sprint_8_Positive.Settings@3f4faf53]" started-at="2024-07-15T16:51:47 IST" name="bmConfig" finished-at="2024-07-15T16:52:04 IST" duration-ms="17500" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- bmConfig -->
+        <test-method signature="SettingsPaymentManagemet()[pri:0, instance:Sprint_8_Positive.Settings@3f4faf53]" started-at="2024-07-15T16:52:04 IST" name="SettingsPaymentManagemet" finished-at="2024-07-15T16:52:38 IST" duration-ms="33514" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- SettingsPaymentManagemet -->
+        <test-method is-config="true" signature="amConfig()[pri:0, instance:Sprint_8_Positive.Settings@3f4faf53]" started-at="2024-07-15T16:52:38 IST" name="amConfig" finished-at="2024-07-15T16:52:50 IST" duration-ms="12083" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- amConfig -->
+        <test-method is-config="true" signature="bmConfig()[pri:0, instance:Sprint_8_Positive.Settings@3f4faf53]" started-at="2024-07-15T16:52:50 IST" name="bmConfig" finished-at="2024-07-15T16:53:07 IST" duration-ms="17413" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- bmConfig -->
+        <test-method signature="SettingsRole()[pri:0, instance:Sprint_8_Positive.Settings@3f4faf53]" started-at="2024-07-15T16:53:07 IST" name="SettingsRole" finished-at="2024-07-15T16:54:07 IST" duration-ms="60218" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- SettingsRole -->
+        <test-method is-config="true" signature="amConfig()[pri:0, instance:Sprint_8_Positive.Settings@3f4faf53]" started-at="2024-07-15T16:54:07 IST" name="amConfig" finished-at="2024-07-15T16:54:19 IST" duration-ms="11976" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- amConfig -->
+        <test-method is-config="true" signature="acConfig()[pri:0, instance:Sprint_8_Positive.Settings@3f4faf53]" started-at="2024-07-15T16:54:19 IST" name="acConfig" finished-at="2024-07-15T16:54:21 IST" duration-ms="1606" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- acConfig -->
-        <test-method is-config="true" signature="asConfig()[pri:0, instance:Sprint_8_Positive.RedeemGoldUsers@1040be71]" started-at="2024-07-11T17:06:13 IST" name="asConfig" finished-at="2024-07-11T17:06:13 IST" duration-ms="1" status="PASS">
+        <test-method is-config="true" signature="asConfig()[pri:0, instance:Sprint_8_Positive.Settings@3f4faf53]" started-at="2024-07-15T16:54:21 IST" name="asConfig" finished-at="2024-07-15T16:54:21 IST" duration-ms="1" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- asConfig -->
-      </class> <!-- Sprint_8_Positive.RedeemGoldUsers -->
+      </class> <!-- Sprint_8_Positive.Settings -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

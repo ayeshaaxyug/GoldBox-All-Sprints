@@ -13,13 +13,11 @@ public class Users_ReddemGoldusers_FilterPage {
 	
 	  @FindBy(xpath ="//input[@placeholder='Start date']") private WebElement FromDateEdt;
 	  
-	  @FindBy(xpath ="//input[@placeholder='End date']") private WebElement ExpiteDateEdt;
-	  
-	 // @FindBy(xpath ="//span[.='Select TXN type']") private WebElement TxnTypeDrpdwn;
+	  @FindBy(xpath ="//input[@placeholder='End date']") private WebElement EndDateEdt;
 	  
 	  @FindBy(xpath ="//span[.='Select type']") private WebElement SelectTypeDrpDwn;
 	  
-	  @FindBy(xpath ="//label[.='Mobile number']") private WebElement MobileNumberEdt;
+	  @FindBy(xpath ="//input[@placeholder='Mobile number']") private WebElement MobileNumberEdt;
 	  
 	  @FindBy(xpath ="//input[@placeholder='Transaction ID']") private WebElement TransactionIdEdt;
 	  
@@ -43,15 +41,7 @@ public class Users_ReddemGoldusers_FilterPage {
 		public WebElement getFromDateEdt() {
 			return FromDateEdt;
 		}
-
-		public WebElement getExpiteDateEdt() {
-			return ExpiteDateEdt;
-		}
-
-//		public WebElement getTxnTypeDrpdwn() {
-//			return TxnTypeDrpdwn;
-//		}
-
+		
 		public WebElement getSelectTypeDrpDwn() {
 			return SelectTypeDrpDwn;
 		}
@@ -68,6 +58,10 @@ public class Users_ReddemGoldusers_FilterPage {
 			return SearchEdt;
 		}
 
+		public WebElement getEndDateEdt() {
+			return EndDateEdt;
+		}
+
 		public WebElement getRefreshBtn() {
 			return RefreshBtn;
 		}
@@ -81,10 +75,8 @@ public class Users_ReddemGoldusers_FilterPage {
 			Thread.sleep(2000);
 			FromDateEdt.click();
 			Thread.sleep(2000);
-			ExpiteDateEdt.click();
+			EndDateEdt.click();
 			Thread.sleep(2000);
-			//TxnTypeDrpdwn.click();
-			//Thread.sleep(2000);
 			SelectTypeDrpDwn.click();
 			Thread.sleep(2000);
 			MobileNumberEdt.click();

@@ -1,6 +1,7 @@
 package objectRepository;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.FindAll;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
@@ -13,12 +14,10 @@ public class Users_RedeemGold_RedeemGoldButtonPage {
 	  @FindBy(xpath ="//input[@placeholder='Enter Payment Id']") private WebElement PaymentIdEdt;
 	  
 	  @FindBy(xpath ="//input[@placeholder='Enter GST']") private WebElement GstEdt;
-	  
-	  @FindBy(xpath ="//h1[.='Upload Required Documents']/../following-sibling::div//input[@type='file']") private WebElement AddImageLnk;
-	  
-	  @FindBy(xpath ="(//input[@type='file'])[1]") private WebElement AddImageLnk1;
-	  
-	  @FindBy(xpath ="(//input[@type='file'])[2]") private WebElement AddImageLnk2;
+	   
+	  @FindBy(xpath ="//button[.='Add Image']") private WebElement AddImageBtn;
+	  	  
+	  @FindBy(xpath ="//input[@class='enter-input']") private WebElement AddImageLnk;
 
       @FindBy(xpath ="//button[.='Upload']") private WebElement UploadBtn;
 	  
@@ -46,14 +45,10 @@ public class Users_RedeemGold_RedeemGoldButtonPage {
 		public WebElement getAddImageLnk() {
 			return AddImageLnk;
 		}
-		
-	    public WebElement getAddImageLnk1() {
-				return AddImageLnk1;
-			}
-
-	    public WebElement getAddImageLnk2() {
-				return AddImageLnk2;
-			}
+		  
+	    public WebElement getAddImageBtn() {
+		return AddImageBtn;
+     	}
 
 		public WebElement getUploadBtn() {
 			return UploadBtn;
@@ -61,7 +56,7 @@ public class Users_RedeemGold_RedeemGoldButtonPage {
 
 	//Business Libraries
 		
-	    public void Users_RedeemGoldUsersPage_m(WebDriver driver)throws InterruptedException
+	    public void Users_RedeemGoldUsersPage_m(WebDriver driver, String ImagePaths)throws InterruptedException
 			{
 				Thread.sleep(2000);
 				CloseBtn.click();
@@ -70,11 +65,9 @@ public class Users_RedeemGold_RedeemGoldButtonPage {
 				Thread.sleep(2000);
 				GstEdt.click();
 				Thread.sleep(2000);
-				AddImageLnk.click();
+				AddImageBtn.click();
 				Thread.sleep(2000);
-				AddImageLnk1.click();
-				Thread.sleep(2000);
-				AddImageLnk2.click();
+				AddImageLnk.sendKeys(ImagePaths);
 				Thread.sleep(2000);
 				UploadBtn.click();
 				

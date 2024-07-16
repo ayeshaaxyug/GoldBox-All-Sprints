@@ -5,13 +5,13 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
-public class Settings_PaymentManagement_PaymentMethodManagementListPage {
+public class Settings_PaymentManagementPage {
 
 	//Rule-1 :- Finding WebElements Using @FindBy Annotations
 
     @FindBy(xpath="//button[.='Add payment method']")private WebElement AddPaymentMethodBtn;
     
-    @FindBy(xpath="(//div[@class='mdc-switch__icons'])[1]")private WebElement PaymentStatusBootStrapBtn;
+    @FindBy(xpath="(//div[@class='mdc-switch__icons'])[4]")private WebElement PaymentStatusBootStrapBtn;
 	
     @FindBy(xpath="//span[text()=' Prev ']")private WebElement PreviousPageBtn;
     
@@ -20,7 +20,7 @@ public class Settings_PaymentManagement_PaymentMethodManagementListPage {
     
 	//Rule-2:- Create a constructor to initilise these elements
     
-	public Settings_PaymentManagement_PaymentMethodManagementListPage(WebDriver driver)
+	public Settings_PaymentManagementPage(WebDriver driver)
 	{
 		PageFactory.initElements(driver, this);
 	}

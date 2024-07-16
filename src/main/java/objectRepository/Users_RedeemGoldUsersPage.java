@@ -14,13 +14,13 @@ public class Users_RedeemGoldUsersPage {
 		
 		@FindBy(xpath ="//button[.='Export to Excel']") private WebElement ExportToExcelLnk;
 		
-		@FindBy(xpath ="//a[@class='btn btn-filter']") private WebElement FilterBtn;
+		@FindBy(xpath ="//a[@id='filter_search']") private WebElement FilterBtn;
 		
 		@FindBy(xpath ="(//button[.='View'])[1]") private WebElement ViewBtn;
 		
 		@FindBy(xpath ="(//button[.='Redeem Gold'])[1]") private WebElement ReedemGoldBtn;
 		
-		@FindBy(xpath ="//span[text()=' Prev ']") private WebElement PrevBtn;
+		@FindBy(xpath ="//a[text()=' Prev ']") private WebElement PrevBtn;
 		
 		@FindBy(xpath ="//a[text()=' Next ']") private WebElement NextBtn;
 		

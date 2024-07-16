@@ -9,13 +9,15 @@ public class Settings_FmsUsersPage {
 	
 	//Finding WebElements by using @FindBy Annotation
 	
-	@FindBy(xpath ="//button[.='Add FMS User']") private WebElement FmsUsersBtn;
+	@FindBy(xpath ="//button[.='Add FMS User']") private WebElement AddFmsUsersBtn;
 	
 	@FindBy(xpath ="//input[@placeholder='Search...']") private WebElement SearchEdt;
 	
 	@FindBy(xpath ="(//button[.=' Edit '])[1]") private WebElement EditBtn;
 	
 	@FindBy(xpath ="(//button[@class='mr-2 btn-danger'])[1]") private WebElement DeleteBtn;
+	
+	@FindBy(xpath ="//button[.='Yes, Delete!']") private WebElement YesDeleteBtn;
 	
 	@FindBy(xpath ="//span[text()=' Next ']") private WebElement NextLnk;
 	
@@ -30,8 +32,8 @@ public class Settings_FmsUsersPage {
 
 	//Provide getters to access these variables
 	
-	public WebElement getFmsUsersBtn() {
-		return FmsUsersBtn;
+	public WebElement getAddFmsUsersBtn() {
+		return AddFmsUsersBtn;
 	}
 
 	public WebElement getSearchEdt() {
@@ -44,6 +46,10 @@ public class Settings_FmsUsersPage {
 
 	public WebElement getDeleteBtn() {
 		return DeleteBtn;
+	}
+	
+	public WebElement getYesDeleteBtn() {
+		return YesDeleteBtn;
 	}
 
 	public WebElement getNextLnk() {
@@ -59,13 +65,15 @@ public class Settings_FmsUsersPage {
 	public void Settings_FmsUsersPage_h(WebDriver driver)throws InterruptedException
 	{
 		Thread.sleep(2000);
-		FmsUsersBtn.click();
+		AddFmsUsersBtn.click();
 		Thread.sleep(2000);
 		SearchEdt.sendKeys(null);
 		Thread.sleep(2000);
 		EditBtn.click();
 		Thread.sleep(2000);
 		DeleteBtn.click();
+		Thread.sleep(2000);
+		YesDeleteBtn.click();
 		Thread.sleep(2000);
 		NextLnk.click();
 		Thread.sleep(2000);

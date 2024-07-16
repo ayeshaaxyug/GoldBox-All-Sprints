@@ -13,10 +13,10 @@ public class Settings_Roles_UpdateRolePage {
     
     @FindBy(xpath="//h1[.='Update Role']/../following-sibling::div//input[@placeholder='Enter role title']")private WebElement TitleEdt;
     
-    @FindBy(xpath="//h1[.='Update Role']/../following-sibling::div/button[.='Update']")private WebElement UpdateBtn;
+    @FindBy(xpath="//button[.='Update']")private WebElement UpdateBtn;
+  
     
-    
-	//Rule-3:Create a constructor to initilise these elements
+    //Rule-3:Create a constructor to initilise these elements
     
 	public Settings_Roles_UpdateRolePage(WebDriver driver)
 	{

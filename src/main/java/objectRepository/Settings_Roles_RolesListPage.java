@@ -12,16 +12,18 @@ public class Settings_Roles_RolesListPage {
     @FindBy(xpath="//input[@placeholder='Search...']")private WebElement SearchEdt;
     
     @FindBy(xpath="//button[.='Add Role']")private WebElement AddRoleBtn;
+  
+    @FindBy(xpath="(//button[.=' Edit '])[6]")private WebElement EditBtn;
     
-    //td[.='Admin']/following-sibling::td//button[.=' Edit ']
-    @FindBy(xpath="(//button[.=' Edit '])[1]")private WebElement EditBtn;
+    @FindBy(xpath="(//button[@class='mr-2 btn-danger'])[6]")private WebElement DeleteBtn;
     
-  //td[.='Admin']/following-sibling::td//button[@class='mr-2 btn-danger']
-    @FindBy(xpath="(//button[@class='mr-2 btn-danger'])[1]")private WebElement DeleteBtn;
+	@FindBy(xpath ="//button[.='Yes, Delete!']") private WebElement YesDeleteBtn;
+    
+    @FindBy(xpath ="//button[.='Cancel']") private WebElement CancleBtn;
     
     @FindBy(xpath="//a[text()=' Next ']")private WebElement NextPageBtn;
     
-    @FindBy(xpath="//span[text()=' Prev ']")private WebElement PreviousPageBtn;
+    @FindBy(xpath="//a[text()=' Prev ']")private WebElement PreviousPageBtn;
     	
   
 	//Rule-3:Create a constructor to initilise these elements
@@ -31,33 +33,35 @@ public class Settings_Roles_RolesListPage {
 		PageFactory.initElements(driver, this);
 	}
 	
-	
 	//Rule-4:Provide getters to access these variables
 
 	public WebElement getSearchEdt() {
 		return SearchEdt;
 	}
 
-
 	public WebElement getAddRoleBtn() {
 		return AddRoleBtn;
 	}
-
 
 	public WebElement getEditBtn() {
 		return EditBtn;
 	}
 
-
 	public WebElement getDeleteBtn() {
 		return DeleteBtn;
 	}
+	
+    public WebElement getYesDeleteBtn() {
+		return YesDeleteBtn;
+	}
 
+	public WebElement getCancleBtn() {
+		return CancleBtn;
+	}
 
 	public WebElement getNextPageBtn() {
 		return NextPageBtn;
 	}
-
 
 	public WebElement getPreviousPageBtn() {
 		return PreviousPageBtn;

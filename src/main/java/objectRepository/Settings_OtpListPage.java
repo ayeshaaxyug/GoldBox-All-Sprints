@@ -13,7 +13,7 @@ public class Settings_OtpListPage {
 	
 	@FindBy(xpath ="//a[text()=' Next ']") private WebElement NextPageLnk;
 	
-	@FindBy(xpath ="//span[text()=' Prev ']") private WebElement PreviousPageLnk;
+	@FindBy(xpath ="//a[text()=' Prev ']") private WebElement PreviousPageLnk;
 	
 	//Create a constructor to initilise these elements
 	

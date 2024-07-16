@@ -1,9 +1,11 @@
 package objectRepository;
 
+import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
+import org.openqa.selenium.support.ui.Select;
 
 public class Settings_EditFmsUsersPage {
 	
@@ -79,5 +81,19 @@ public class Settings_EditFmsUsersPage {
     	Thread.sleep(2000);
     	UpdateBtn.click();
     }
+    
+	public void Select (WebDriver driver) throws InterruptedException
+	{
+		Thread.sleep(2000);
+        WebElement Role = driver.findElement(By.xpath("(//select[@formcontrolname='role'])[1]"));
+
+        // Create a Select object from the dropdown element
+        Select RoleDrpDwn = new Select(Role);
+        Thread.sleep(2000);
+        // Select an option by visible text
+        RoleDrpDwn.selectByIndex(1);
+
+	}
+
 	
 }
