@@ -6,7 +6,7 @@ import org.openqa.selenium.devtools.v116.v116CdpInfo;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
-public class Users_RedeemGoldUsersPage {
+public class Redeem_RedeemGoldUsersPage {
 	
 	//Finding WebElements Using @FindBy Annotations
 	
@@ -28,7 +28,7 @@ public class Users_RedeemGoldUsersPage {
 		  
      //Create a constructor to initilise these elements
 		    
-			public Users_RedeemGoldUsersPage(WebDriver driver)
+			public Redeem_RedeemGoldUsersPage(WebDriver driver)
 			{
 				PageFactory.initElements(driver, this);
 			}

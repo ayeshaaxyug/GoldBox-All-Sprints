@@ -15,10 +15,11 @@ import genericUtility.FMS_BaseClass;
 import genericUtility.JavaUtility;
 import genericUtility.WebDriverUtility;
 import objectRepository.DashboardPage;
+import objectRepository.RedeemPage;
 import objectRepository.UsersPage;
-import objectRepository.Users_ReddemGoldusers_FilterPage;
-import objectRepository.Users_RedeemGoldUsersPage;
-import objectRepository.Users_RedeemGold_RedeemGoldButtonPage;
+import objectRepository.Redeem_ReddemGoldusers_FilterPage;
+import objectRepository.Redeem_RedeemGoldUsersPage;
+import objectRepository.Redeem_RedeemGold_RedeemGoldButtonPage;
 
 @Listeners(genericUtility.ListnersImplementationClass.class)
 
@@ -32,6 +33,8 @@ public class RedeemGoldUsers extends FMS_BaseClass {
 	public void RedeemGoldUsers() throws Exception
 	{
 		
+		Thread.sleep(10000);
+		
 		String SearchFeild = eUtil.readDataFromExcel("Sprint 8", 1, 1);
 		String EnterPaymentId = eUtil.readDataFromExcel("Sprint 8", 3, 1);
 		String UploadGstNumber = eUtil.readDataFromExcel("Sprint 8", 4, 1);
@@ -40,15 +43,19 @@ public class RedeemGoldUsers extends FMS_BaseClass {
 		String EndDate = eUtil.readDataFromExcel("Sprint 8", 8, 1);
 		String MobileNumber = eUtil.readDataFromExcel("Sprint 8", 9, 1);
 		String TransactionId = eUtil.readDataFromExcel("Sprint 8", 10, 1);
+		String TxnType = eUtil.readDataFromExcel("Sprint 8", 11, 1);
+
 		
 		Thread.sleep(5000);
+		
 		WebDriverUtility wu=new WebDriverUtility(); 
 		DashboardPage dbPage = new DashboardPage(driver);
-		dbPage.getUsersDrpDwn().click();
+		dbPage.getRedeemDrpDwn().click();
 		Thread.sleep(2000);
-		UsersPage UPage = new UsersPage(driver);
-		UPage.getReedemGoldUsersLnk().click();
-		Users_RedeemGoldUsersPage RGUPage = new Users_RedeemGoldUsersPage(driver);
+		
+		RedeemPage RPage = new RedeemPage(driver);
+		RPage.getRedeemGoldUsersLnk().click();
+		Redeem_RedeemGoldUsersPage RGUPage = new Redeem_RedeemGoldUsersPage(driver);
 		RGUPage.getSearchEdt().sendKeys(SearchFeild);
 		Thread.sleep(2000);
 		RGUPage.getSearchEdt().clear();
@@ -60,9 +67,53 @@ public class RedeemGoldUsers extends FMS_BaseClass {
 		driver.navigate().back();
 		RGUPage.getReedemGoldBtn().click();
 		Thread.sleep(2000);
-	    Users_RedeemGold_RedeemGoldButtonPage RGRGBPage = new Users_RedeemGold_RedeemGoldButtonPage(driver);
+	    Redeem_RedeemGold_RedeemGoldButtonPage RGRGBPage = new Redeem_RedeemGold_RedeemGoldButtonPage(driver);
 	    RGRGBPage.getCloseBtn().click();
 	    Thread.sleep(2000);
+	   	    
+	    RGUPage.getShowAllCheckBox().click();
+	    Thread.sleep(4000);
+	    
+	    wUtility = new WebDriverUtility();
+		wUtility.scrollPageUp(3);
+
+		Thread.sleep(4000);
+	    RGUPage.getFilterBtn().click();
+	    Thread.sleep(2000);
+	    Redeem_ReddemGoldusers_FilterPage RGUFPage = new Redeem_ReddemGoldusers_FilterPage(driver);
+	    Thread.sleep(3000);
+//	    RGUFPage.getFromDateEdt().sendKeys(FromDate);
+//	    Thread.sleep(3000);
+//	    RGUFPage.getEndDateEdt().sendKeys(EndDate);
+//	    Thread.sleep(5000);
+//	    RGUFPage.getMobileNumberEdt().sendKeys(MobileNumber);
+//	    Thread.sleep(5000);
+//	    RGUFPage.getTransactionIdEdt().sendKeys(TransactionId);
+//	    Thread.sleep(3000);
+	    
+	    RGUFPage.getTxnTypeDrpdwn().sendKeys(TxnType);
+	    Thread.sleep(3000);
+	    RGUFPage.getSearchEdt().click();
+	    Thread.sleep(3000);
+	    RGUFPage.getRefreshBtn().click();
+	    Thread.sleep(3000);
+
+	    
+	    driver.navigate().refresh();
+	    
+	    Thread.sleep(3000);
+	    RGUPage.getNextBtn().click();
+	    Thread.sleep(3000);
+	    RGUPage.getPrevBtn().click();
+	    Thread.sleep(3000);
+
+		
+		
+		
+	}
+
+}
+		
 	   
 //	    RGRGBPage.getPaymentIdEdt().sendKeys(EnterPaymentId);
 //	    Thread.sleep(2000);
@@ -74,38 +125,3 @@ public class RedeemGoldUsers extends FMS_BaseClass {
 //	    Thread.sleep(4000);
 //	    RGRGBPage.getUploadBtn().click();
 //	    Thread.sleep(6000);
-	    
-	    RGUPage.getShowAllCheckBox().click();
-	    Thread.sleep(4000);
-	    
-	    wUtility = new WebDriverUtility();
-		wUtility.scrollPageUp(3);
-
-		Thread.sleep(4000);
-	    RGUPage.getFilterBtn().click();
-	    Thread.sleep(2000);
-	    Users_ReddemGoldusers_FilterPage RGUFPage = new Users_ReddemGoldusers_FilterPage(driver);
-	    Thread.sleep(3000);
-	    RGUFPage.getFromDateEdt().sendKeys(FromDate);
-	    Thread.sleep(3000);
-	    RGUFPage.getEndDateEdt().sendKeys(EndDate);
-	    Thread.sleep(5000);
-	    RGUFPage.getMobileNumberEdt().sendKeys(MobileNumber);
-	    Thread.sleep(5000);
-	    RGUFPage.getTransactionIdEdt().sendKeys(TransactionId);
-	    Thread.sleep(3000);
-	    RGUFPage.getRefreshBtn().click();
-	    Thread.sleep(3000);
-	    RGUFPage.getSearchEdt().click();
-	    Thread.sleep(3000);
-	    
-	    driver.navigate().refresh();
-	    
-	    Thread.sleep(3000);
-	    RGUPage.getNextBtn().click();
-	    Thread.sleep(3000);
-	    RGUPage.getPrevBtn().click();
-	    Thread.sleep(3000);
-	}
-
-}

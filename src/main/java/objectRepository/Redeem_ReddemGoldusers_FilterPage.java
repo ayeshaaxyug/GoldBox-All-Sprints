@@ -5,7 +5,7 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
-public class Users_ReddemGoldusers_FilterPage {
+public class Redeem_ReddemGoldusers_FilterPage {
 	
 	//Finding WebElements Using @FindBy Annotations
 	
@@ -21,13 +21,15 @@ public class Users_ReddemGoldusers_FilterPage {
 	  
 	  @FindBy(xpath ="//input[@placeholder='Transaction ID']") private WebElement TransactionIdEdt;
 	  
+	  @FindBy(xpath ="//div[@class='mat-mdc-select-value ng-tns-c13-3']") private WebElement TxnTypeDrpdwn;
+	  
 	  @FindBy(xpath ="//button[@class='btn btn-filters ms-auto']") private WebElement SearchEdt;
 	  
 	  @FindBy(xpath ="//button[@class='btn btn-filters ms-auto bg-gold']") private WebElement RefreshBtn;
 	
 	  //Create a constructor to initilise these elements
 	    
-		public Users_ReddemGoldusers_FilterPage(WebDriver driver)
+		public Redeem_ReddemGoldusers_FilterPage(WebDriver driver)
 		{
 			PageFactory.initElements(driver, this);
 		}
@@ -53,6 +55,10 @@ public class Users_ReddemGoldusers_FilterPage {
 		public WebElement getTransactionIdEdt() {
 			return TransactionIdEdt;
 		}
+		
+		public WebElement getTxnTypeDrpdwn() {
+				return TxnTypeDrpdwn;
+	    }
 
 		public WebElement getSearchEdt() {
 			return SearchEdt;
@@ -82,6 +88,8 @@ public class Users_ReddemGoldusers_FilterPage {
 			MobileNumberEdt.click();
 			Thread.sleep(2000);
 			TransactionIdEdt.click();
+			Thread.sleep(2000);
+			TxnTypeDrpdwn.click();
 			Thread.sleep(2000);
 			SearchEdt.click();
 			Thread.sleep(2000);

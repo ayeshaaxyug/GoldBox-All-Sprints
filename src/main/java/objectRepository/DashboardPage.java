@@ -35,7 +35,9 @@ public class DashboardPage {
     
     @FindBy(xpath="//span[.='Users']")private WebElement UsersDrpDwn;
     
-    @FindBy(xpath="//span[.='Schemes']")private WebElement SchemesDrpDwn;
+    @FindBy(xpath ="//span[.='Redeem']") private WebElement RedeemDrpDwn;
+
+	@FindBy(xpath="//span[.='Schemes']")private WebElement SchemesDrpDwn;
     
     @FindBy(xpath="//span[.='Ecommerce']")private WebElement EcommerceDrpDwn;
     
@@ -59,14 +61,14 @@ public class DashboardPage {
      
   
     
-	//Rule-3:Create a constructor to initilise these elements
+	// Create a constructor to initilise these elements
     
 	public DashboardPage(WebDriver driver)
 	{
 		PageFactory.initElements(driver, this);
 	} 
 
-	//Rule-4:Provide getters to access these variables
+	// Provide getters to access these variables
 
 	public WebElement getUserNameDrpDwn() {
 		return UserNameDrpDwn;
@@ -111,6 +113,10 @@ public class DashboardPage {
 
 	public WebElement getUsersDrpDwn() {
 		return UsersDrpDwn;
+	}
+	
+    public WebElement getRedeemDrpDwn() {
+		return RedeemDrpDwn;
 	}
 
 	public WebElement getSchemesDrpDwn() {

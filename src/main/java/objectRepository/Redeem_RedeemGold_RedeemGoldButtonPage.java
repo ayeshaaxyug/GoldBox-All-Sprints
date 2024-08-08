@@ -5,7 +5,7 @@ import org.openqa.selenium.support.FindAll;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
-public class Users_RedeemGold_RedeemGoldButtonPage {
+public class Redeem_RedeemGold_RedeemGoldButtonPage {
 
 	//Finding WebElements Using @FindBy Annotations
 	
@@ -23,7 +23,7 @@ public class Users_RedeemGold_RedeemGoldButtonPage {
 	  
 	//Create a constructor to initilise these elements
 	    
-		public Users_RedeemGold_RedeemGoldButtonPage(WebDriver driver)
+		public Redeem_RedeemGold_RedeemGoldButtonPage(WebDriver driver)
 			{
 				PageFactory.initElements(driver, this);
 			}

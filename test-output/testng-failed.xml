@@ -3,17 +3,17 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="Sprint_8_Positive.Settings">
+      <class name="Sprint_8_Positive.RedeemGoldUsers">
         <methods>
-          <include name="SettingsFmsUsers"/>
           <include name="asConfig"/>
           <include name="bmConfig"/>
           <include name="amConfig"/>
           <include name="bcConfig"/>
           <include name="bsConfig"/>
           <include name="acConfig"/>
+          <include name="RedeemGoldUsers"/>
         </methods>
-      </class> <!-- Sprint_8_Positive.Settings -->
+      </class> <!-- Sprint_8_Positive.RedeemGoldUsers -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

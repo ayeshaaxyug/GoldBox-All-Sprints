@@ -11,7 +11,7 @@ public class Settings_PaymentManagementPage {
 
     @FindBy(xpath="//button[.='Add payment method']")private WebElement AddPaymentMethodBtn;
     
-    @FindBy(xpath="(//div[@class='mdc-switch__icons'])[4]")private WebElement PaymentStatusBootStrapBtn;
+    @FindBy(xpath="(//div[@class='mdc-form-field'])[3]")private WebElement PaymentStatusBootStrapBtn;
 	
     @FindBy(xpath="//span[text()=' Prev ']")private WebElement PreviousPageBtn;
     
