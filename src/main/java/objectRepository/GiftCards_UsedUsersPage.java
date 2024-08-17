@@ -7,6 +7,8 @@ import org.openqa.selenium.support.PageFactory;
 
 public class GiftCards_UsedUsersPage {
 
+	// Not available in Fms
+	
 	//Finding WebElements by using @FindBy Annotation
 	
 	@FindBy(xpath ="//input[@placeholder='Search...']") private WebElement SearchEdt;

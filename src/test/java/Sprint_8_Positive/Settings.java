@@ -1,7 +1,5 @@
 package Sprint_8_Positive;
 
-import java.io.IOException;
-
 import org.apache.poi.EncryptedDocumentException;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
@@ -33,11 +31,28 @@ public class Settings extends FMS_BaseClass{
 	JavaUtility jUtil = new JavaUtility();
 	
   @Test
-   public void SettingsOtpList() throws InterruptedException, IOException 
+   public void SettingsOtpList() throws Exception 
    {
 	   
-	    String SearchFeild = eUtil.readDataFromExcel("Sprint 8", 13, 1);
-	   
+	    String SearchFeild = eUtil.readDataFromExcel("Sprint 8", 14, 1);
+	    String Title = eUtil.readDataFromExcel("Sprint 8", 17, 1);
+	    String SearchInputFeild = eUtil.readDataFromExcel("Sprint 8", 20, 1);
+		String RoleTitle = eUtil.readDataFromExcel("Sprint 8", 21, 1);
+		String RoleTitleEdit = eUtil.readDataFromExcel("Sprint 8", 22, 1);
+	    String FmsSearchFeild = eUtil.readDataFromExcel("Sprint 8", 25, 1);
+	    String AddFullName = eUtil.readDataFromExcel("Sprint 8", 26, 1);
+	    String AddPhonenUmber = eUtil.readDataFromExcel("Sprint 8", 27, 1);
+		String AddEmail = eUtil.readDataFromExcel("Sprint 8", 28, 1);
+		String AddPassword = eUtil.readDataFromExcel("Sprint 8", 29, 1);
+		   //String Role = eUtil.readDataFromExcel("Sprint 8", 30, 1);
+	    String EditFullName = eUtil.readDataFromExcel("Sprint 8", 33, 1);
+		String EditPhonenUmber = eUtil.readDataFromExcel("Sprint 8", 34, 1);
+		String EditEmail = eUtil.readDataFromExcel("Sprint 8", 35, 1);
+		String EditPassword = eUtil.readDataFromExcel("Sprint 8", 36, 1);
+	
+		
+		// Otp List
+
 		Thread.sleep(5000);
 		WebDriverUtility wu=new WebDriverUtility(); 
 		DashboardPage dbPage = new DashboardPage(driver);
@@ -59,42 +74,21 @@ public class Settings extends FMS_BaseClass{
 		SOLPage.getNextPageLnk().click();
 		Thread.sleep(2000);
 		SOLPage.getPreviousPageLnk().click();
-	   
-   }
-   
-  @Test  
-   public void SettingsAppManagement() throws InterruptedException
-   {
-	   
 		Thread.sleep(5000);
-		WebDriverUtility wu=new WebDriverUtility(); 
-		DashboardPage dbPage = new DashboardPage(driver);
-		Thread.sleep(2000);
+		
+		// App Management
+		
+		Thread.sleep(4000);
 		dbPage.getSettingsDrpDwn().click();
-		Thread.sleep(2000);
-		SettingsPage SPage = new SettingsPage(driver);
-		Thread.sleep(2000);
+		Thread.sleep(4000);
 		SPage.getAppManagementLnk().click();
-		Thread.sleep(2000);
-		 
-   }
-   
-   @Test   
-   public void SettingsPaymentManagemet() throws InterruptedException, IOException 
-   {
-	   
-	    String Title = eUtil.readDataFromExcel("Sprint 8", 16, 1);
-	   
-		Thread.sleep(5000);
-		WebDriverUtility wu=new WebDriverUtility(); 
-		DashboardPage dbPage = new DashboardPage(driver);
-		Thread.sleep(2000);
-		dbPage.getSettingsDrpDwn().click();
-		Thread.sleep(2000);
-		SettingsPage SPage = new SettingsPage(driver);
-		Thread.sleep(2000);
+		Thread.sleep(4000);
+		
+		// Payment Management
+		
+		Thread.sleep(4000);
 		SPage.getPaymentManagementLnk().click();
-		Thread.sleep(2000);
+		Thread.sleep(4000);
 		Settings_PaymentManagementPage SPMPage = new Settings_PaymentManagementPage(driver);
 		Thread.sleep(2000);
 		SPMPage.getAddPaymentMethodBtn().click();
@@ -121,30 +115,15 @@ public class Settings extends FMS_BaseClass{
 		SAPMPage.getCloseBtn().click();
 		Thread.sleep(3000);
 		SPMPage.getPaymentStatusBootStrapBtn().click();
-		Thread.sleep(2000);
+		Thread.sleep(4000);
+
+		// Roles
 		
-   }
-   
-   @Test
-   public void SettingsRole() throws InterruptedException, IOException
-   {
-	   
-	   String SearchFeild = eUtil.readDataFromExcel("Sprint 8", 19, 1);
-	   String Title = eUtil.readDataFromExcel("Sprint 8", 20, 1);
-	   String TitleEdit = eUtil.readDataFromExcel("Sprint 8", 21, 1);
-	   
-		Thread.sleep(5000);
-		WebDriverUtility wu=new WebDriverUtility(); 
-		DashboardPage dbPage = new DashboardPage(driver);
-		Thread.sleep(2000);
-		dbPage.getSettingsDrpDwn().click();
-		Thread.sleep(2000);
-		SettingsPage SPage = new SettingsPage(driver);
-		Thread.sleep(2000);
+		Thread.sleep(4000);
 		SPage.getRolesLnk().click();
 		Thread.sleep(2000);
 		Settings_Roles_RolesListPage SRLPage = new Settings_Roles_RolesListPage(driver);
-		SRLPage.getSearchEdt().sendKeys(SearchFeild);
+		SRLPage.getSearchEdt().sendKeys(SearchInputFeild);
 		Thread.sleep(2000);
 		SRLPage.getSearchEdt().clear();
 		Thread.sleep(3000);
@@ -154,30 +133,10 @@ public class Settings extends FMS_BaseClass{
 		Thread.sleep(2000);
 		Settings_Roles_AddRolePage SARPage = new Settings_Roles_AddRolePage(driver);
 		Thread.sleep(2000);
-		SARPage.getTitleEdt().sendKeys(Title);
+		SARPage.getTitleEdt().sendKeys(RoleTitle);
 		Thread.sleep(5000);
 		SARPage.getAddBtn().click();
-		Thread.sleep(2000);
-		
-		/*
-		 
-		WebElement AdminTitle = driver.findElement(By.xpath("//div[@aria-label='Admin Type Already Exist. Please Try Again']"));
-		Thread.sleep(2000);
-		if (AdminTitle.isDisplayed()) 
-		{
-		   System.out.println("Already Exists");
-		} 
-		else 
-		{
-            System.out.println("Add Admin");
-		}
-
-		Thread.sleep(2000);
-		SARPage.getCloseBtn().click();
-		
-		*/
-		
-		Thread.sleep(2000);
+		Thread.sleep(4000);
 		driver.navigate().refresh();
 		Thread.sleep(2000);
 		SRLPage.getNextPageBtn().click();
@@ -188,7 +147,7 @@ public class Settings extends FMS_BaseClass{
 		Thread.sleep(2000);
 		SERPage.getTitleEdt().clear();
 		Thread.sleep(2000);
-		SERPage.getTitleEdt().sendKeys(TitleEdit);
+		SERPage.getTitleEdt().sendKeys(RoleTitleEdit);
 		Thread.sleep(2000);
 		SERPage.getUpdateBtn().click();
 		Thread.sleep(2000);
@@ -197,34 +156,16 @@ public class Settings extends FMS_BaseClass{
 		SRLPage.getYesDeleteBtn().click();
 		Thread.sleep(2000);	
 		SRLPage.getPreviousPageBtn().click();
-		Thread.sleep(2000);
-		
-   }
-   
-   @Test
-   public void SettingsFmsUsers() throws InterruptedException, IOException 
-   {
-	   
-	   String SearchFeild = eUtil.readDataFromExcel("Sprint 8", 24, 1);
-	   String AddFullName = eUtil.readDataFromExcel("Sprint 8", 25, 1);
-	   String AddPhonenUmber = eUtil.readDataFromExcel("Sprint 8", 26, 1);
-	   String AddEmail = eUtil.readDataFromExcel("Sprint 8", 27, 1);
-	   String AddPassword = eUtil.readDataFromExcel("Sprint 8", 28, 1);
-	   //String Role = eUtil.readDataFromExcel("Sprint 8", 29, 1);
-	   String EditFullName = eUtil.readDataFromExcel("Sprint 8", 32, 1);
-	   String EditPhonenUmber = eUtil.readDataFromExcel("Sprint 8", 33, 1);
-	   String EditEmail = eUtil.readDataFromExcel("Sprint 8", 34, 1);
-	   String EditPassword = eUtil.readDataFromExcel("Sprint 8", 35, 1);
-	
-	  
 		Thread.sleep(5000);
-		WebDriverUtility wu=new WebDriverUtility(); 
-		DashboardPage dbPage = new DashboardPage(driver);
-		Thread.sleep(2000);
-		dbPage.getSettingsDrpDwn().click();
-		Thread.sleep(2000);
-		SettingsPage SPage = new SettingsPage(driver);
-		Thread.sleep(2000);
+		
+		// Fms Users
+		
+		Thread.sleep(5000);
+		
+	    wUtility = new WebDriverUtility();
+		wUtility.scrollPageUp(5);
+		
+		Thread.sleep(4000);
 		SPage.getFmsUsersLnk().click();
 		Thread.sleep(2000);
 		Settings_FmsUsersPage SFUPage = new Settings_FmsUsersPage(driver);
@@ -280,9 +221,7 @@ public class Settings extends FMS_BaseClass{
 		Thread.sleep(2000);	
 		SFUPage.getYesDeleteBtn().click();
 		Thread.sleep(2000);	
-		driver.navigate().refresh();		
-		Thread.sleep(2000);
-
-  }
-   
+		
+		
+   }
 }

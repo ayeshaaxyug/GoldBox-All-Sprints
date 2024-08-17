@@ -33,7 +33,9 @@ public class DashboardPage {
     
     @FindBy(xpath="//input[@placeholder='Start date']")private WebElement StartDateEdt;
     
-    @FindBy(xpath="//span[.='Users']")private WebElement UsersDrpDwn;
+    @FindBy(xpath ="//span[.='Gold Prices']") private WebElement GoldPricesLnk;
+    
+	@FindBy(xpath="//span[.='Users']")private WebElement UsersDrpDwn;
     
     @FindBy(xpath ="//span[.='Redeem']") private WebElement RedeemDrpDwn;
 
@@ -109,6 +111,10 @@ public class DashboardPage {
 	
 	public WebElement getStartDateEdt() {
 		return StartDateEdt;
+	}
+	
+    public WebElement getGoldPricesLnk() {
+		return GoldPricesLnk;
 	}
 
 	public WebElement getUsersDrpDwn() {

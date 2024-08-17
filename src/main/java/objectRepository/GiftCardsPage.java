@@ -11,6 +11,8 @@ public class GiftCardsPage {
 
     @FindBy(xpath="//a[text()='All Gift cards']")private WebElement AllGiftCardsLnk;
     
+    @FindBy(xpath="//a[.='Merchants']")private WebElement MerchantsLnk;
+    
     
 	//Rule-2:- Create a constructor to initilise these elements
     
@@ -26,7 +28,21 @@ public class GiftCardsPage {
 		return AllGiftCardsLnk;
 	}
 
+	public WebElement getMerchantsLnk() {
+		return MerchantsLnk;
+	}
 	
 	// Rule-4 :- Create Business Library
+	
+	public void GiftCardsPage(WebDriver driver) throws InterruptedException
+	{
+
+		Thread.sleep(2000);
+		AllGiftCardsLnk.click();
+		Thread.sleep(2000);
+		MerchantsLnk.click();
+		
+	}
+	
 	
 }

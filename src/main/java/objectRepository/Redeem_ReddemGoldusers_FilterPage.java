@@ -21,7 +21,13 @@ public class Redeem_ReddemGoldusers_FilterPage {
 	  
 	  @FindBy(xpath ="//input[@placeholder='Transaction ID']") private WebElement TransactionIdEdt;
 	  
-	  @FindBy(xpath ="//div[@class='mat-mdc-select-value ng-tns-c13-3']") private WebElement TxnTypeDrpdwn;
+	  @FindBy(xpath ="//span[.='Select TXN type']") private WebElement TxnTypeDrpdwn;
+	  
+	  @FindBy(xpath ="//span[.='Redeemed']") private WebElement RedeemedLnk;
+	  
+	  @FindBy(xpath ="(//button[.='Redeem Gold'])[1]") private WebElement RedeemGoldBtn;
+	  
+	  @FindBy(xpath ="(//button[.='View'])[1]") private WebElement ViewBtn;
 	  
 	  @FindBy(xpath ="//button[@class='btn btn-filters ms-auto']") private WebElement SearchEdt;
 	  
@@ -34,7 +40,7 @@ public class Redeem_ReddemGoldusers_FilterPage {
 			PageFactory.initElements(driver, this);
 		}
 
-        //Provide getters to access these variables
+      //Provide getters to access these variables
 	
 		public WebElement getCloseBtn() {
 			return CloseBtn;
@@ -59,6 +65,18 @@ public class Redeem_ReddemGoldusers_FilterPage {
 		public WebElement getTxnTypeDrpdwn() {
 				return TxnTypeDrpdwn;
 	    }
+		
+		public WebElement getRedeemedLnk() {
+				return RedeemedLnk;
+	    }
+		
+	    public WebElement getRedeemGoldBtn() {
+				return RedeemGoldBtn;
+		}
+
+		public WebElement getViewBtn() {
+				return ViewBtn;
+		}
 
 		public WebElement getSearchEdt() {
 			return SearchEdt;
@@ -72,7 +90,7 @@ public class Redeem_ReddemGoldusers_FilterPage {
 			return RefreshBtn;
 		}
 
-		//Business Libraries
+	 //Business Libraries
 		
 		public void Users_RedeemGoldUsersPage_m(WebDriver driver)throws InterruptedException
 		{
@@ -91,7 +109,13 @@ public class Redeem_ReddemGoldusers_FilterPage {
 			Thread.sleep(2000);
 			TxnTypeDrpdwn.click();
 			Thread.sleep(2000);
+			RedeemedLnk.click();
+			Thread.sleep(2000);
 			SearchEdt.click();
+			Thread.sleep(2000);
+			RedeemGoldBtn.click();
+			Thread.sleep(2000);
+			ViewBtn.click();
 			Thread.sleep(2000);
 			RefreshBtn.click();
 		

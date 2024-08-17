@@ -9,13 +9,11 @@ public class UsersPage {
 
 	//Finding WebElements Using @FindBy Annotations
 
-    @FindBy(xpath="//a[.='User KYC']")private WebElement UserKycLnk;
+    @FindBy(xpath="//a[.='User KYC']")private WebElement UserKycLnk;    
+    @FindBy(xpath="//a[.='Users List']")private WebElement UserListLnk;    	
+    @FindBy(xpath ="//a[.='Penalty Users']") private WebElement PenaltyUsersLnk;
     
-    @FindBy(xpath="//a[.='Users List']")private WebElement UserListLnk;
-    	
-    @FindBy(xpath ="//a[.='Redeem Gold Users']") private WebElement ReedemGoldUsersLnk;
-  
-	//Rule-3:Create a constructor to initilise these elements
+	// Create a constructor to initilise these elements
     
 	public UsersPage(WebDriver driver)
 	{
@@ -23,10 +21,15 @@ public class UsersPage {
 	}
     
 
-	//Rule-4:Provide getters to access these variables
+	// Provide getters to access these variables
 
 	public WebElement getUserKycLnk() {
 		return UserKycLnk;
+	}
+
+
+	public WebElement getPenaltyUsersLnk() {
+		return PenaltyUsersLnk;
 	}
 
 
@@ -34,9 +37,6 @@ public class UsersPage {
 		return UserListLnk;
 	}
 	
-	public WebElement getReedemGoldUsersLnk() {
-		return ReedemGoldUsersLnk;
-	}
 	
 	//Business Libraries
 	
@@ -52,7 +52,7 @@ public class UsersPage {
 	
 	public void clickOnReedemGoldUsersLnk()
 	{
-		ReedemGoldUsersLnk.click();
+		PenaltyUsersLnk.click();
 	}
 	
 }
