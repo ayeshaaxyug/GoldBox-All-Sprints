@@ -19,7 +19,7 @@ public class dSprint_1_UserSchemeSubscription_Demo_User extends User_BaseClass{
 	
 	String Msg = "Transaction Complete";
 	
-//	@Test(priority = 4,groups = "sprint-1")
+	@Test(priority = 4,groups = "sprint-1")
 	public void userSchemeSubscriptionUsingBookingAccountTest() throws Exception
 	{
         Thread.sleep(2000);

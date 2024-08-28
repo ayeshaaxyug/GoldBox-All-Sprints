@@ -2,40 +2,40 @@
 <testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2024-08-16T12:10:07 IST" name="Default suite" finished-at="2024-08-16T12:12:20 IST" duration-ms="132979">
+  <suite started-at="2024-08-26T18:00:25 IST" name="Default suite" finished-at="2024-08-26T18:02:39 IST" duration-ms="133620">
     <groups>
     </groups>
-    <test started-at="2024-08-16T12:10:07 IST" name="Default test" finished-at="2024-08-16T12:12:20 IST" duration-ms="132979">
-      <class name="Sprint_9_Positive.Merchants">
-        <test-method is-config="true" signature="bsConfig()[pri:0, instance:Sprint_9_Positive.Merchants@45d84a20]" started-at="2024-08-16T12:10:07 IST" name="bsConfig" finished-at="2024-08-16T12:10:07 IST" duration-ms="13" status="PASS">
+    <test started-at="2024-08-26T18:00:25 IST" name="Default test" finished-at="2024-08-26T18:02:39 IST" duration-ms="133620">
+      <class name="Sprint_10_Positive.Schemes">
+        <test-method is-config="true" signature="bsConfig()[pri:0, instance:Sprint_10_Positive.Schemes@304bb45b]" started-at="2024-08-26T18:00:25 IST" name="bsConfig" finished-at="2024-08-26T18:00:25 IST" duration-ms="11" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- bsConfig -->
-        <test-method is-config="true" signature="bcConfig()[pri:0, instance:Sprint_9_Positive.Merchants@45d84a20]" started-at="2024-08-16T12:10:07 IST" name="bcConfig" finished-at="2024-08-16T12:10:17 IST" duration-ms="9674" status="PASS">
+        <test-method is-config="true" signature="bcConfig()[pri:0, instance:Sprint_10_Positive.Schemes@304bb45b]" started-at="2024-08-26T18:00:26 IST" name="bcConfig" finished-at="2024-08-26T18:00:37 IST" duration-ms="10943" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- bcConfig -->
-        <test-method is-config="true" signature="bmConfig()[pri:0, instance:Sprint_9_Positive.Merchants@45d84a20]" started-at="2024-08-16T12:10:17 IST" name="bmConfig" finished-at="2024-08-16T12:10:35 IST" duration-ms="17528" status="PASS">
+        <test-method is-config="true" signature="bmConfig()[pri:0, instance:Sprint_10_Positive.Schemes@304bb45b]" started-at="2024-08-26T18:00:37 IST" name="bmConfig" finished-at="2024-08-26T18:00:54 IST" duration-ms="17500" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- bmConfig -->
-        <test-method signature="Merchants()[pri:0, instance:Sprint_9_Positive.Merchants@45d84a20]" started-at="2024-08-16T12:10:35 IST" name="Merchants" finished-at="2024-08-16T12:12:05 IST" duration-ms="90766" status="PASS">
+        <test-method signature="SchemesUpdated()[pri:0, instance:Sprint_10_Positive.Schemes@304bb45b]" started-at="2024-08-26T18:00:54 IST" name="SchemesUpdated" finished-at="2024-08-26T18:02:26 IST" duration-ms="91396" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- Merchants -->
-        <test-method is-config="true" signature="amConfig()[pri:0, instance:Sprint_9_Positive.Merchants@45d84a20]" started-at="2024-08-16T12:12:05 IST" name="amConfig" finished-at="2024-08-16T12:12:18 IST" duration-ms="12809" status="PASS">
+        </test-method> <!-- SchemesUpdated -->
+        <test-method is-config="true" signature="amConfig()[pri:0, instance:Sprint_10_Positive.Schemes@304bb45b]" started-at="2024-08-26T18:02:26 IST" name="amConfig" finished-at="2024-08-26T18:02:37 IST" duration-ms="11732" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- amConfig -->
-        <test-method is-config="true" signature="acConfig()[pri:0, instance:Sprint_9_Positive.Merchants@45d84a20]" started-at="2024-08-16T12:12:18 IST" name="acConfig" finished-at="2024-08-16T12:12:20 IST" duration-ms="1805" status="PASS">
+        <test-method is-config="true" signature="acConfig()[pri:0, instance:Sprint_10_Positive.Schemes@304bb45b]" started-at="2024-08-26T18:02:37 IST" name="acConfig" finished-at="2024-08-26T18:02:39 IST" duration-ms="1624" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- acConfig -->
-        <test-method is-config="true" signature="asConfig()[pri:0, instance:Sprint_9_Positive.Merchants@45d84a20]" started-at="2024-08-16T12:12:20 IST" name="asConfig" finished-at="2024-08-16T12:12:20 IST" duration-ms="1" status="PASS">
+        <test-method is-config="true" signature="asConfig()[pri:0, instance:Sprint_10_Positive.Schemes@304bb45b]" started-at="2024-08-26T18:02:39 IST" name="asConfig" finished-at="2024-08-26T18:02:39 IST" duration-ms="6" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- asConfig -->
-      </class> <!-- Sprint_9_Positive.Merchants -->
+      </class> <!-- Sprint_10_Positive.Schemes -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

@@ -165,6 +165,7 @@ public class Settings extends FMS_BaseClass{
 	    wUtility = new WebDriverUtility();
 		wUtility.scrollPageUp(5);
 		
+		dbPage.getSettingsDrpDwn().click();
 		Thread.sleep(4000);
 		SPage.getFmsUsersLnk().click();
 		Thread.sleep(2000);
