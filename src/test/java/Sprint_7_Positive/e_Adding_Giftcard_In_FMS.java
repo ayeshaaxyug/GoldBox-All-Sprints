@@ -4,6 +4,7 @@ import org.testng.annotations.Test;
 
 import genericUtility.FMS_BaseClass;
 import genericUtility.JavaUtility;
+import genericUtility.WebDriverUtility;
 import objectRepository.DashboardPage;
 import objectRepository.GiftCard_AddGiftCardPage;
 import objectRepository.GiftCardsPage;
@@ -15,11 +16,15 @@ public class e_Adding_Giftcard_In_FMS extends FMS_BaseClass {
 	static int RanNum = jUtil.getRandomNum();
 	public static String Amount = Integer.toString(RanNum);
 	
+	//Fail
+	
 	@Test
 	public void a_addingGiftCardInFmsTest() throws Exception
 	{
 		
-//		String Amount = Integer.toString(RanNum);
+		WebDriverUtility wUtil = new WebDriverUtility();
+		
+		String Amount = Integer.toString(RanNum);
 		System.out.println("1:"+Amount);
 		
 		String SecretKey = "JawyvLMBWlr7HflOw", Quantity = "1";
@@ -48,7 +53,6 @@ public class e_Adding_Giftcard_In_FMS extends FMS_BaseClass {
 		Thread.sleep(2000);
 		
 	}
-	
-	
+		
 	
 }

@@ -13,18 +13,20 @@ import objectRepository.DashboardPage;
 import objectRepository.TradingPage;
 
 @Listeners(genericUtility.ListnersImplementationClass.class)
-public class f_TradingAllActions extends FMS_BaseClass {
+public class e_TradingAllActions extends FMS_BaseClass {
 
 	WebDriverUtility wUtility = new WebDriverUtility();
 	JavaUtility jUtility = new JavaUtility();
 	ExcelFileUtility eUtility = new ExcelFileUtility();
 //	PropertyFileUtility pUtility = new PropertyFileUtility();
+
+    //Pass	
 	
 	@Test
 	public void TradingAllActionsTest()throws Exception
 	{
-		String SearchValue = eUtility.readDataFromExcel("Sprint-6 Negative", 37, 1);
-		String SearchValue1 = eUtility.readDataFromExcel("Sprint-6 Negative", 37, 2);
+		String SearchValue = eUtility.readDataFromExcel("Sprint 6 Negative", 37, 1);
+		String SearchValue1 = eUtility.readDataFromExcel("Sprint 6 Negative", 37, 2);
 		
 		//1 SearchFeild
 		

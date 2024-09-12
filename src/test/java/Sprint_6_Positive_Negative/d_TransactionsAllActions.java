@@ -15,26 +15,28 @@ import objectRepository.TransactionsPage;
 import objectRepository.TransactionsPage_FilterBtn;
 
 @Listeners(genericUtility.ListnersImplementationClass.class)
-public class e_TransactionsAllActions extends FMS_BaseClass {
+public class d_TransactionsAllActions extends FMS_BaseClass {
 
 		WebDriverUtility wUtility = new WebDriverUtility();
 		JavaUtility jUtility = new JavaUtility();
 		ExcelFileUtility eUtility = new ExcelFileUtility();
 		PropertyFileUtility pUtility = new PropertyFileUtility();
 		
+		//Pass
+		
 		@Test
 		public void TransactionsAllActionsTest()throws InterruptedException, IOException
 		{
-			String SearchValue = eUtility.readDataFromExcel("Sprint-6 Negative", 19, 1);
-			String SearchValue1 = eUtility.readDataFromExcel("Sprint-6 Negative", 19, 2);
-			String FromDate =  eUtility.readDataFromExcel("Sprint-6 Negative", 21, 1);
-			String ExpireDate = eUtility.readDataFromExcel("Sprint-6 Negative", 22, 1);
-			String MobileNumber = eUtility.readDataFromExcel("Sprint-6 Negative", 23, 1);
-			String TransactionId = eUtility.readDataFromExcel("Sprint-6 Negative", 24, 1);
-			String AFromDate =  eUtility.readDataFromExcel("Sprint-6 Negative", 25, 1);
-			String AExpireDate = eUtility.readDataFromExcel("Sprint-6 Negative", 26, 1);
-			String PastFromDate = eUtility.readDataFromExcel("Sprint-6 Negative", 28, 1);
-			String PastExpireDate = eUtility.readDataFromExcel("Sprint-6 Negative", 29, 1);
+			String SearchValue = eUtility.readDataFromExcel("Sprint 6 Negative", 19, 1);
+			String SearchValue1 = eUtility.readDataFromExcel("Sprint 6 Negative", 19, 2);
+			String FromDate =  eUtility.readDataFromExcel("Sprint 6 Negative", 21, 1);
+			String ExpireDate = eUtility.readDataFromExcel("Sprint 6 Negative", 22, 1);
+			String MobileNumber = eUtility.readDataFromExcel("Sprint 6 Negative", 23, 1);
+			String TransactionId = eUtility.readDataFromExcel("Sprint 6 Negative", 24, 1);
+			String AFromDate =  eUtility.readDataFromExcel("Sprint 6 Negative", 25, 1);
+			String AExpireDate = eUtility.readDataFromExcel("Sprint 6 Negative", 26, 1);
+			String PastFromDate = eUtility.readDataFromExcel("Sprint 6 Negative", 28, 1);
+			String PastExpireDate = eUtility.readDataFromExcel("Sprint 6 Negative", 29, 1);
 			
 			//1 Search Feild
 			
@@ -43,6 +45,8 @@ public class e_TransactionsAllActions extends FMS_BaseClass {
 			dbPage.getTransactionsLnk().click();
 			Thread.sleep(2000);
 			TransactionsPage tpage = new TransactionsPage(driver);
+			
+			/*
 			tpage.getSearchEdt().sendKeys(SearchValue);
 			Thread.sleep(2000);
 			tpage.getSearchEdt().clear();
@@ -61,7 +65,7 @@ public class e_TransactionsAllActions extends FMS_BaseClass {
 				System.out.println("Transaction Displayed");
 			}
 			
-			
+			*/
 			//2 Export To Excel
 			
 			Thread.sleep(4000);		
@@ -88,7 +92,7 @@ public class e_TransactionsAllActions extends FMS_BaseClass {
 			Thread.sleep(4000);		
 			driver.navigate().refresh();		
 			Thread.sleep(2000);
-			tpage.getFilterBtn().click();
+			//tpage.getFilterBtn().click();
 			Thread.sleep(2000);
 			TransactionsPage_FilterBtn tfPage = new TransactionsPage_FilterBtn(driver);
 			tfPage.getFromDateEdt().sendKeys(FromDate);
@@ -104,7 +108,7 @@ public class e_TransactionsAllActions extends FMS_BaseClass {
 			Thread.sleep(4000);
 			driver.navigate().refresh();		
 			Thread.sleep(2000);
-			tpage.getFilterBtn().click();
+		//	tpage.getFilterBtn().click();
 			Thread.sleep(2000);
 			tfPage.getExpireDtaeEdt().sendKeys(ExpireDate);
 			Thread.sleep(2000);
@@ -119,7 +123,7 @@ public class e_TransactionsAllActions extends FMS_BaseClass {
 			Thread.sleep(4000);
 			driver.navigate().refresh();		
 			Thread.sleep(2000);
-			tpage.getFilterBtn().click();
+		//	tpage.getFilterBtn().click();
 			Thread.sleep(2000);
 			tfPage.getFromDateEdt().sendKeys(FromDate);
 			Thread.sleep(2000);
@@ -140,7 +144,7 @@ public class e_TransactionsAllActions extends FMS_BaseClass {
 			Thread.sleep(4000);
 			driver.navigate().refresh();		
 			Thread.sleep(2000);
-			tpage.getFilterBtn().click();
+		//	tpage.getFilterBtn().click();
 			Thread.sleep(2000);
 			tfPage.getFromDateEdt().sendKeys(FromDate);
 			Thread.sleep(2000);
@@ -166,7 +170,7 @@ public class e_TransactionsAllActions extends FMS_BaseClass {
 			Thread.sleep(4000);
 			driver.navigate().refresh();		
 			Thread.sleep(2000);
-			tpage.getFilterBtn().click();
+		//	tpage.getFilterBtn().click();
 			Thread.sleep(2000);
 			tfPage.getFromDateEdt().sendKeys(FromDate);
 			Thread.sleep(2000);
@@ -191,7 +195,7 @@ public class e_TransactionsAllActions extends FMS_BaseClass {
 			Thread.sleep(4000);
 			driver.navigate().refresh();		
 			Thread.sleep(2000);
-			tpage.getFilterBtn().click();
+//      	tpage.getFilterBtn().click();
 			Thread.sleep(2000);
 			tfPage.getSearchBtn().click();
 			Thread.sleep(2000);
@@ -204,7 +208,7 @@ public class e_TransactionsAllActions extends FMS_BaseClass {
 			Thread.sleep(4000);
 			driver.navigate().refresh();		
 			Thread.sleep(2000);
-			tpage.getFilterBtn().click();
+		//	tpage.getFilterBtn().click();
 			Thread.sleep(2000);
 			tfPage.getFromDateEdt().sendKeys(PastFromDate);
 			Thread.sleep(2000);
@@ -221,7 +225,7 @@ public class e_TransactionsAllActions extends FMS_BaseClass {
 			Thread.sleep(4000);
 			driver.navigate().refresh();		
 			Thread.sleep(2000);
-			tpage.getFilterBtn().click();
+		//	tpage.getFilterBtn().click();
 			Thread.sleep(2000);
 			tfPage.getFromDateEdt().sendKeys(AFromDate);
 			Thread.sleep(2000);

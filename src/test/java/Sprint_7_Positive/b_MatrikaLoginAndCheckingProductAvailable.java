@@ -14,6 +14,8 @@ import genericUtility.PropertyFileUtility;
 @Listeners(genericUtility.ListnersImplementationClass.class)
 public class b_MatrikaLoginAndCheckingProductAvailable extends BaseClass_Matrika{
 
+	//Pass
+	
 	@Test
 	public void b_loginToMatrikaAndCheckingProductIsAvailabilityTest() throws Exception
 	{

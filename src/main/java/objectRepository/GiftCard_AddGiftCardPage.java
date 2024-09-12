@@ -19,6 +19,8 @@ public class GiftCard_AddGiftCardPage {
     
     @FindBy(xpath="//input[@placeholder='Please enter secret key']")private WebElement SecretKeyEdt;
     
+    @FindBy(xpath="//select[@formcontrolname='gift_card_type']")private WebElement SelectTypeDrpDwn;
+        
     @FindBy(xpath="//input[@placeholder='Please enter quantity']")private WebElement QuantityEdt;
     
     @FindBy(xpath="//button[.='Add']")private WebElement AddBtn;
@@ -54,6 +56,9 @@ public class GiftCard_AddGiftCardPage {
 		return SecretKeyEdt;
 	}
 
+	public WebElement getSelectTypeDrpDwn() {
+		return SelectTypeDrpDwn;
+	}
 
 	public WebElement getQuantityEdt() {
 		return QuantityEdt;
@@ -67,7 +72,7 @@ public class GiftCard_AddGiftCardPage {
 	
 	// Rule-4 :- Create Business Library
     
-	public void addingGiftcard(String Amount, String SecretKey, String Quantity) throws Exception 
+	public void addingGiftcard(String Amount, String SecretKey, String Quantity ) throws Exception 
 	{
 		WebDriverUtility wUtil = new WebDriverUtility();
 		Thread.sleep(2000);
@@ -76,6 +81,8 @@ public class GiftCard_AddGiftCardPage {
 		AmountEdt.sendKeys(Amount);
 		Thread.sleep(2000);
 		SecretKeyEdt.sendKeys(SecretKey);
+		Thread.sleep(2000);
+		wUtil.handleDropdownByVisibleText("Online", SelectTypeDrpDwn);
 		Thread.sleep(2000);
 		QuantityEdt.sendKeys(Quantity);
 		Thread.sleep(2000);

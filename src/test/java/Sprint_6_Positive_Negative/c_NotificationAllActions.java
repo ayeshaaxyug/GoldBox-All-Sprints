@@ -18,25 +18,27 @@ import objectRepository.Notification_MessageViewPage;
 import objectRepository.Notification_UpdateNotificationPage;
 
 @Listeners(genericUtility.ListnersImplementationClass.class)
-public class d_NotificationAllActions extends FMS_BaseClass {
+public class c_NotificationAllActions extends FMS_BaseClass {
 
 	ExcelFileUtility eUtil = new ExcelFileUtility();
 	PropertyFileUtility pUtil = new PropertyFileUtility();
 	WebDriverUtility wUtil = new WebDriverUtility();
 	JavaUtility jUtil = new JavaUtility();
 	
+	//Pass
+	
 	@Test
 	public void notificationsAllActionsTest() throws Exception
 	{
-		String NotificationSearchValue = eUtil.readDataFromExcel("Sprint-6 Negative", 6, 1);
-		String NotificationSearchValue1 = eUtil.readDataFromExcel("Sprint-6 Negative", 6, 2);
-		String Title = eUtil.readDataFromExcel("Sprint-6 Negative", 9, 1);
-		String Message = eUtil.readDataFromExcel("Sprint-6 Negative", 10, 1);
-		String Type = eUtil.readDataFromExcel("Sprint-6 Negative", 11, 1);
+		String NotificationSearchValue = eUtil.readDataFromExcel("Sprint 6 Negative", 6, 1);
+		String NotificationSearchValue1 = eUtil.readDataFromExcel("Sprint 6 Negative", 6, 2);
+		String Title = eUtil.readDataFromExcel("Sprint 6 Negative", 9, 1);
+		String Message = eUtil.readDataFromExcel("Sprint 6 Negative", 10, 1);
+		String Type = eUtil.readDataFromExcel("Sprint 6 Negative", 11, 1);
 		
-		String UpdateTitle = eUtil.readDataFromExcel("Sprint-6 Negative", 14, 1);
-		String UpdateMessage = eUtil.readDataFromExcel("Sprint-6 Negative", 15, 1);
-		String UpdateType = eUtil.readDataFromExcel("Sprint-6 Negative", 16, 1);
+		String UpdateTitle = eUtil.readDataFromExcel("Sprint 6 Negative", 14, 1);
+		String UpdateMessage = eUtil.readDataFromExcel("Sprint 6 Negative", 15, 1);
+		String UpdateType = eUtil.readDataFromExcel("Sprint 6 Negative", 16, 1);
 		 
 		
 		Thread.sleep(5000);

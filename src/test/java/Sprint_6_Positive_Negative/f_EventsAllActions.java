@@ -14,17 +14,19 @@ import objectRepository.Events_EventsRequestsPage;
 import objectRepository.Events_EventsRequests_EventDetailsPage;
 
 @Listeners(genericUtility.ListnersImplementationClass.class)
-public class g_EventsAllActions extends FMS_BaseClass {
+public class f_EventsAllActions extends FMS_BaseClass {
 
 	WebDriverUtility wUtility = new WebDriverUtility();
 	JavaUtility jUtility = new JavaUtility();
 	ExcelFileUtility eUtility = new ExcelFileUtility();
 	
+	//Pass
+	
 	@Test
 	public void eventsAllActionsTest() throws Exception
 	{
-		String SearchValue = eUtility.readDataFromExcel("Sprint-6 Negative", 40, 1);
-		String SearchValue1 = eUtility.readDataFromExcel("Sprint-6 Negative", 40, 2);
+		String SearchValue = eUtility.readDataFromExcel("Sprint 6 Negative", 40, 1);
+		String SearchValue1 = eUtility.readDataFromExcel("Sprint 6 Negative", 40, 2);
 		//1 Search Feild
 		
 		Thread.sleep(4000);

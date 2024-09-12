@@ -14,13 +14,13 @@ import objectRepository.Ecommerce_SubCategoryPage;
 @Listeners(genericUtility.ListnersImplementationClass.class)
 public class c_Deleting_CategorySubCategoryAndProduct_In_Fms extends FMS_BaseClass {
 
+	//Fail
+	
 	@Test
 	public void c_DeletingCategorySubCategoryProductInFmsTest() throws Exception
 	{
-		String CategoryName = "EditChains";
-		String SubCategoryName = "EditChains";
-	    
-		Thread.sleep(5000);
+		String CategoryName = "Nose Pins";
+		String SubCategoryName = "sddsd";
 		DashboardPage dbPage = new DashboardPage(driver);
 		dbPage.getEcommerceDrpDwn().click();
 		Thread.sleep(2000);

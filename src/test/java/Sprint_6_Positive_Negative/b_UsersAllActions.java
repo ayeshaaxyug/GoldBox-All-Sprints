@@ -25,6 +25,8 @@ public class b_UsersAllActions extends FMS_BaseClass {
 	ExcelFileUtility eUtil = new ExcelFileUtility();
 	JavaUtility jUtil = new JavaUtility();
 	
+	//Pass
+	
 	@Test
 	public void userAllActionsTest() throws Exception
 	{
@@ -63,13 +65,22 @@ public class b_UsersAllActions extends FMS_BaseClass {
 		Thread.sleep(2000);
 		Users_UserList_AllUsers_ParticularUserInfo_AddGoldPage addGoldPage = new Users_UserList_AllUsers_ParticularUserInfo_AddGoldPage(driver);
 		addGoldPage.addingGold(driver, AddGoldAmount, MobileNumber);
+		Thread.sleep(2000);
 	    
 		wu.waitUntilPageLoad(driver);
+		Thread.sleep(2000);
 		
+		driver.navigate().refresh();
+		Thread.sleep(2000);
+		
+		dbPage.getUsersDrpDwn().click();
+		Thread.sleep(2000);
 		uPage.getUserListLnk().click();
+		Thread.sleep(2000);
 		uulauPage.clickOnActionsBootStrapBtn(driver, UserId);
 		Thread.sleep(2000);
 		UpdateUserStatusPage uusPage = new UpdateUserStatusPage(driver);
+		Thread.sleep(2000);
 		uusPage.givingReason(Reason);
 		Thread.sleep(5000);
 	}
@@ -115,7 +126,7 @@ public class b_UsersAllActions extends FMS_BaseClass {
 		Thread.sleep(2000);
 		Users_UserKyc_StatusDrpDwnPage uusdPage = new Users_UserKyc_StatusDrpDwnPage(driver);
 		Thread.sleep(4000);
-		uusdPage.getRejectedLnk().click();
+		uusdPage.getApprovedLnk().click();
 		Thread.sleep(4000);
 	}
 	

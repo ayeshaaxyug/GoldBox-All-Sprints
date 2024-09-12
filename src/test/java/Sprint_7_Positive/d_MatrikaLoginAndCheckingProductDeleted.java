@@ -9,6 +9,8 @@ import genericUtility.BaseClass_Matrika;
 @Listeners(genericUtility.ListnersImplementationClass.class) 
 public class d_MatrikaLoginAndCheckingProductDeleted extends BaseClass_Matrika{
 
+	//Pass
+	
 	@Test
 	public void b_loginToMatrikaAndCheckingProductDeletedOrNotTest() throws Exception
 	{
