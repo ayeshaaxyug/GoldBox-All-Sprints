@@ -13,8 +13,8 @@ public class ZSchemes_MGPPaymentPage
 
 	//Finding WebElements Using @FindBy Annotations
 	
-	@FindBy(xpath ="//h3[.='Contact details']/..//div//input[@placeholder='Mobile number']") private WebElement PhoneNumberEdt;
-	@FindBy(xpath ="//button[.='Continue']") private WebElement ContinueBtn;
+//	@FindBy(xpath ="//h3[.='Contact details']/..//div//input[@placeholder='Mobile number']") private WebElement PhoneNumberEdt;
+//	@FindBy(xpath ="//button[.='Continue']") private WebElement ContinueBtn;
 
 	@FindBy(xpath ="//span[.='UPI']") private WebElement UpiLnk;
 	@FindBy(xpath ="//h3[.='UPI ID / Number']/..//input[@placeholder='example@okhdfcbank']") private WebElement UpiNameEdt;
@@ -32,7 +32,7 @@ public class ZSchemes_MGPPaymentPage
 	public WebElement getIframe() {
 		return iframe;
 	}
-
+/*
 	public WebElement getPhoneNumberEdt() {
 		return PhoneNumberEdt;
 	}
@@ -40,6 +40,7 @@ public class ZSchemes_MGPPaymentPage
 	public WebElement getContinueBtn() {
 		return ContinueBtn;
 	}
+	*/
 
 	public WebElement getUpiLnk() {
 		return UpiLnk;
@@ -60,11 +61,19 @@ public class ZSchemes_MGPPaymentPage
 
 	driver.switchTo().frame(iframe); // Switch to iframe
 	Thread.sleep(2000);
-
+	
+	
+    /*
+    
 	Thread.sleep(2000);
 	PhoneNumberEdt.sendKeys("6309631698");
 	Thread.sleep(2000);
 	ContinueBtn.click();
+	Thread.sleep(2000);
+	
+	*/
+	
+	
 	Thread.sleep(2000);
 	UpiLnk.click();
 	Thread.sleep(2000);

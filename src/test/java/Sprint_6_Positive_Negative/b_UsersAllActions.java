@@ -28,12 +28,12 @@ public class b_UsersAllActions extends FMS_BaseClass {
 	@Test
 	public void userAllActionsTest() throws Exception
 	{
-		String UserListAllUserSearchValue = eUtil.readDataFromExcel("Sprint-6 Negative", 32, 1);
-		String UserId = eUtil.readDataFromExcel("Sprint-6 Negative", 33, 1);
-		String ReferredUserListSearchValue = eUtil.readDataFromExcel("Sprint-6 Negative", 34, 1);
-		String AddGoldAmount = eUtil.readDataFromExcel("Sprint-6 Negative", 32, 3);
-		String MobileNumber = eUtil.readDataFromExcel("Sprint-6 Negative", 33, 3);
-		String Reason = eUtil.readDataFromExcel("Sprint-6 Negative", 35, 6);
+		String UserListAllUserSearchValue = eUtil.readDataFromExcel("Sprint 6 Negative", 32, 1);
+		String UserId = eUtil.readDataFromExcel("Sprint 6 Negative", 33, 1);
+		String ReferredUserListSearchValue = eUtil.readDataFromExcel("Sprint 6 Negative", 34, 1);
+		String AddGoldAmount = eUtil.readDataFromExcel("Sprint 6 Negative", 32, 3);
+		String MobileNumber = eUtil.readDataFromExcel("Sprint 6 Negative", 33, 3);
+		String Reason = eUtil.readDataFromExcel("Sprint 6 Negative", 35, 6);
 		
 		WebDriverUtility wu=new WebDriverUtility();
 		DashboardPage dbPage = new DashboardPage(driver);

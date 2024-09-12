@@ -13,7 +13,7 @@ public class Settings_Roles_RolesListPage {
     
     @FindBy(xpath="//button[.='Add Role']")private WebElement AddRoleBtn;
   
-    @FindBy(xpath="(//button[.=' Edit '])[3]")private WebElement EditBtn;
+    @FindBy(xpath="(//button[.=' Edit '])[2]")private WebElement EditBtn;
     
     @FindBy(xpath="(//button[@class='mr-2 btn-danger'])[3]")private WebElement DeleteBtn;
     

@@ -44,7 +44,7 @@ public class Settings extends FMS_BaseClass{
 	    String AddPhonenUmber = eUtil.readDataFromExcel("Sprint 8", 27, 1);
 		String AddEmail = eUtil.readDataFromExcel("Sprint 8", 28, 1);
 		String AddPassword = eUtil.readDataFromExcel("Sprint 8", 29, 1);
-		   //String Role = eUtil.readDataFromExcel("Sprint 8", 30, 1);
+	    //String Role = eUtil.readDataFromExcel("Sprint 8", 30, 1);
 	    String EditFullName = eUtil.readDataFromExcel("Sprint 8", 33, 1);
 		String EditPhonenUmber = eUtil.readDataFromExcel("Sprint 8", 34, 1);
 		String EditEmail = eUtil.readDataFromExcel("Sprint 8", 35, 1);

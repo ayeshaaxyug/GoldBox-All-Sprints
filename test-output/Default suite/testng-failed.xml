@@ -3,17 +3,17 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="Sprint_10_Positive.Schemes">
+      <class name="Sprint_5_Negative.a_EcommerceAllActions">
         <methods>
           <include name="asConfig"/>
           <include name="bmConfig"/>
+          <include name="categoriesAllActionsTest"/>
           <include name="amConfig"/>
           <include name="bcConfig"/>
-          <include name="SchemesUpdated"/>
           <include name="bsConfig"/>
           <include name="acConfig"/>
         </methods>
-      </class> <!-- Sprint_10_Positive.Schemes -->
+      </class> <!-- Sprint_5_Negative.a_EcommerceAllActions -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

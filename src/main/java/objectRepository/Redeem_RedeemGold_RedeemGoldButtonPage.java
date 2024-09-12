@@ -9,7 +9,7 @@ public class Redeem_RedeemGold_RedeemGoldButtonPage {
 
 	//Finding WebElements Using @FindBy Annotations
 	
-	  @FindBy(xpath ="//button[@aria-label='Close']") private WebElement CloseBtn;
+	  @FindBy(xpath ="//h1[.='Upload Required Documents']/..//button[@aria-label='Close']") private WebElement CloseBtn;
 	  
 	  @FindBy(xpath ="//input[@placeholder='Enter Payment Id']") private WebElement PaymentIdEdt;
 	  

@@ -13,7 +13,7 @@ public class Ecommerce_CategoryPage {
     
     @FindBy(xpath="//button[@data-bs-target='#addcategory']")private WebElement AddCategoryBtn;
     
-    @FindBy(xpath="//td[.='bangle']/../td/button[.=' Edit ']")private WebElement ActionEditBtn;
+    @FindBy(xpath="(//button[.=' Edit '])[1]")private WebElement ActionEditBtn;
     
     @FindBy(xpath="//td[.='Chains9723313']/../td//img[@class='table-img']/../following-sibling::td//button[.=' Edit ']/..//button[@class='mdc-switch mdc-switch--selected mdc-switch--checked']")private WebElement ActionEnableDisableBootStrapBtn;
     

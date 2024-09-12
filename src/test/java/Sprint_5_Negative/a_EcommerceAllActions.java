@@ -45,12 +45,17 @@ public class a_EcommerceAllActions extends FMS_BaseClass {
 	ExcelFileUtility eUtil = new ExcelFileUtility();
 	PropertyFileUtility pUtil = new PropertyFileUtility();
 	
+	
+	
 	@Test
 	public void categoriesAllActionsTest() throws Exception
 	{
-		String CategorySearchValue = eUtil.readDataFromExcel("Sprint-5-Categ&Sub-Negative", 2, 1);
-		String CategoryName = eUtil.readDataFromExcel("Sprint-5-Categ&Sub-Negative", 4, 1);
-		String ImagePath = eUtil.readDataFromExcel("ImagePath", 0, 1);
+		
+		// Pass
+		
+		String CategorySearchValue = eUtil.readDataFromExcel("Sprint-5-Categ&Sub-Negative New", 3, 1);
+		String CategoryName = eUtil.readDataFromExcel("Sprint-5-Categ&Sub-Negative New", 5, 1);
+		String AddImagePath = eUtil.readDataFromExcel("ImagePath", 0, 1);
 	
 		Thread.sleep(4000);
 		
@@ -87,21 +92,27 @@ public class a_EcommerceAllActions extends FMS_BaseClass {
 		ecaddPage.getEnterNameEdt().sendKeys(CategoryName);
 		Thread.sleep(2000);
 		ecaddPage.getAddBtn().click();
-		WebElement AllFeildsError = driver.findElement(By.xpath("//div[@aria-label='All fields are required']"));
+		WebElement AllFeildsError = driver.findElement(By.xpath("//button[.='Add']"));
+		
 		Thread.sleep(1000);
 		if (AllFeildsError.isDisplayed()) 
 		{
-			wUtil.takeScreenShot(driver, "b_Adding Category By Giving Only Category Name Error");
-		} 
+			wUtil.takeScreenShot(driver, "Add Button is displayed");
+		}
 		else 
 		{
             System.out.println("Category Added Successfully");
 		}
 		Thread.sleep(4000);
 		
+	    
+		//div[@aria-label='All fields are required']
+		 //b_Adding Category By Giving Only Category Name Error 
+		 
+		
 		//3
 		
-		wUtil.clickOnChooseFileOption(driver, ecaddPage.getChooseFileBtn(), ImagePath); 
+		wUtil.clickOnChooseFileOption(driver, ecaddPage.getChooseFileBtn(), AddImagePath); 
 		Thread.sleep(2000);
 		ecaddPage.getAddBtn().click();
 		Thread.sleep(2000);
@@ -152,10 +163,10 @@ public class a_EcommerceAllActions extends FMS_BaseClass {
 		Thread.sleep(1000);
 		ecaddPage.getAddBtn().click();
 		Thread.sleep(1000);
-		WebElement AllFeildsRequiredAdd = driver.findElement(By.xpath("//div[@aria-label='All fields are required']"));
+		WebElement AllFeildsRequiredAdd = driver.findElement(By.xpath("//button[.='Add']"));
 		if (AllFeildsRequiredAdd.isDisplayed()) 
 		{
-			wUtil.takeScreenShot(driver, "e_Category Adding Without Giving Any Details Error Test");
+			wUtil.takeScreenShot(driver, "Add Button is Displayed");
 		} 
 		else 
 		{
@@ -163,14 +174,19 @@ public class a_EcommerceAllActions extends FMS_BaseClass {
 		}
 		Thread.sleep(4000);
 		
+		
+		 //div[@aria-label='All fields are required']
+		 // e_Category Adding Without Giving Any Details Error Test
+		 
+		
 		//6
 		
 		Thread.sleep(2000);
         driver.navigate().refresh();
 		Thread.sleep(2000);
 		ecPage.clickOnParticularCategoryBootStrapBtnToDisableParticularCategory(driver, CategoryName);
-		Thread.sleep(2000);
-		WebElement BootStrapbutton = driver.findElement(By.xpath("//div[@aria-label='Category Updated Successfully']"));
+		Thread.sleep(1000);
+		WebElement BootStrapbutton = driver.findElement(By.xpath("(//div[@class='mdc-switch__handle'])[1]"));
 		Thread.sleep(2000);
 		if (BootStrapbutton.isDisplayed()) 
 		{
@@ -188,8 +204,8 @@ public class a_EcommerceAllActions extends FMS_BaseClass {
 		Thread.sleep(2000);
 		ecPage.clickOnParticularCategoryDeleteBtn(driver, CategoryName);
 		Thread.sleep(2000);
-		WebElement DeleteMsg = driver.findElement(By.xpath("//div[@aria-label='Successfully Deleted']"));
-		Thread.sleep(1000);
+		WebElement DeleteMsg = driver.findElement(By.xpath("(//button[@class='btn-sm btn-edit bg-danger'])[1]"));
+		Thread.sleep(2000);
 		if (DeleteMsg.isDisplayed()) 
 		{
 			wUtil.takeScreenShot(driver, "g_Category Should Not Delete");
@@ -207,12 +223,14 @@ public class a_EcommerceAllActions extends FMS_BaseClass {
 	public void SubcategoriesAllActionsTest() throws Exception {
 		WebDriverUtility wu=new WebDriverUtility();
 		wu.waitUntilPageLoad(driver);
-		String SubCategorySearchValue = eUtil.readDataFromExcel("Sprint-5-Categ&Sub-Negative", 9, 1);
-		String CategoryName = eUtil.readDataFromExcel("Sprint-5-Categ&Sub-Negative", 11, 1);
-		String SubCategoryName = eUtil.readDataFromExcel("Sprint-5-Categ&Sub-Negative", 12, 1);
-		String SubCategoryNameRandom = eUtil.readDataFromExcel("Sprint-5-Categ&Sub-Negative", 12, 1)+jUtil.getRandomNum();
-		String SelectType = eUtil.readDataFromExcel("Sprint-5-Categ&Sub-Negative", 13, 1);
-		String ImagePath = eUtil.readDataFromExcel("ImagePath", 0, 1);
+		
+
+		String SubCategorySearchValue = eUtil.readDataFromExcel("Sprint-5-Categ&Sub-Negative New", 10, 1);
+		String CategoryName = eUtil.readDataFromExcel("Sprint-5-Categ&Sub-Negative New", 12, 1);
+		String SubCategoryName = eUtil.readDataFromExcel("Sprint-5-Categ&Sub-Negative New", 13, 1);
+		String SubCategoryNameRandom = eUtil.readDataFromExcel("Sprint-5-Categ&Sub-Negative New", 12, 1);
+		String SelectType = eUtil.readDataFromExcel("Sprint-5-Categ&Sub-Negative New", 14, 1);
+		String AddImagePath = eUtil.readDataFromExcel("ImagePath", 0, 1);
 		
 		//1
 		Thread.sleep(2000);
@@ -246,17 +264,22 @@ public class a_EcommerceAllActions extends FMS_BaseClass {
 		Ecommerce_SubCategory_AddSubcategoryPage esaddsubPage = new Ecommerce_SubCategory_AddSubcategoryPage(driver);
 		esaddsubPage.getAddBtn().click();
 		Thread.sleep(1000);
-		WebElement ImageRequiredError = driver.findElement(By.xpath("//div[@aria-label='Image is required']"));
+		WebElement ImageRequiredError = driver.findElement(By.xpath("//button[.='Add']"));
 		Thread.sleep(1000);
 		if (ImageRequiredError.isDisplayed()) 
 		{
-			wUtil.takeScreenShot(driver, "b_Adding SubCategory Without Giving Any Details Error");
+			wUtil.takeScreenShot(driver, "Add Button is Displayed");
 		} 
 		else 
 		{
             System.out.println("SubCategory Added Successfully");
 		}
 		Thread.sleep(4000);
+		
+		
+		//div[@aria-label='Image is required']
+		// b_Adding SubCategory Without Giving Any Details Error
+		 
 		
 		//3
 	    
@@ -265,17 +288,22 @@ public class a_EcommerceAllActions extends FMS_BaseClass {
 		wUtil.handleDropdownByVisibleText(CategoryName, escascPage.getCategoryNameDrpDwn());
 		Thread.sleep(2000);
 		esaddsubPage.getAddBtn().click();
-		WebElement ImageRequiredError1 = driver.findElement(By.xpath("(//div[.=' Image is required '])[2]"));
+		WebElement ImageRequiredError1 = driver.findElement(By.xpath("//button[.='Add']"));
 		Thread.sleep(1000);
 		if (ImageRequiredError1.isDisplayed()) 
 		{
-			wUtil.takeScreenShot(driver, "c_SubCategory Adding By Giving Only Category DrpDwn Error");
+			wUtil.takeScreenShot(driver, "Add Button is Displayed");
 		} 
 		else 
 		{
             System.out.println("SubCategory Added Successfully");
 		}
 		Thread.sleep(2000);
+		
+		
+		//(//div[.=' Image is required '])[2]
+		// c_SubCategory Adding By Giving Only Category DrpDwn Error
+		 
 		
 		//4
 		
@@ -285,14 +313,14 @@ public class a_EcommerceAllActions extends FMS_BaseClass {
 		Thread.sleep(1000);
 		if (ImageRequiredError1.isDisplayed()) 
 		{
-			wUtil.takeScreenShot(driver, "d_SubCategory Adding By Giving Category, SubCategory Names Error");
+			wUtil.takeScreenShot(driver, "Add Button is Displayed");
 		} 
 		else 
 		{
             System.out.println("Category Added Successfully");
 		}
         Thread.sleep(2000);   
-        wUtil.clickOnChooseFileOption(driver, esaddsubPage.getChooseFileBtn(), ImagePath);  
+        wUtil.clickOnChooseFileOption(driver, esaddsubPage.getChooseFileBtn(), AddImagePath);  
         Thread.sleep(2000);  
         esaddsubPage.getAddBtn().click();  
         WebElement EnterTypeError = driver.findElement(By.xpath("//div[@aria-label='Please Enter Type']"));  
@@ -307,6 +335,11 @@ public class a_EcommerceAllActions extends FMS_BaseClass {
   		}
           
         Thread.sleep(2000);  
+        
+        
+         // d_SubCategory Adding By Giving Category, SubCategory Names Error
+         
+        
           
         //5
         
@@ -446,46 +479,39 @@ public class a_EcommerceAllActions extends FMS_BaseClass {
 		}
         
 	}
-	//(//button[@class='btn-sm btn-edit bg-danger'])[1]
 	
 	
 	@Test
 	public void productsAllActionsTest() throws Exception
 	{
 		String ProductSearchValue = eUtil.readDataFromExcel("Sprint-5 Negative", 23, 1);
-//		String AddProductCategoryName = eUtil.readDataFromExcel("Sprint-5 Negative", 26, 1);
-//		String AddProductSubCategoryName = eUtil.readDataFromExcel("Sprint-5 Negative", 27, 1);
-//		String AddProductSelectBrand = eUtil.readDataFromExcel("Sprint-5 Negative", 28, 1);
 		String AddProductProductName = eUtil.readDataFromExcel("Sprint-5 Negative", 29, 1);
 		String AddProductEnterVA = eUtil.readDataFromExcel("Sprint-5 Negative", 30, 1);
-//		String AddProductSelectCarat = eUtil.readDataFromExcel("Sprint-5 Negative", 31, 1);
-//		String AddProductSelectType = eUtil.readDataFromExcel("Sprint-5 Negative", 32, 1);
 		String AddProductEnterPrice = eUtil.readDataFromExcel("Sprint-5 Negative", 33, 1);
 		String AddProductEnterSize = eUtil.readDataFromExcel("Sprint-5 Negative", 34, 1);
 		String AddProductEnterWeight = eUtil.readDataFromExcel("Sprint-5 Negative", 35, 1);
 		String AddProductDescription = eUtil.readDataFromExcel("Sprint-5 Negative", 36, 1);
 		String ImagePath = eUtil.readDataFromExcel("ImagePath", 0, 1);
-		
 		String ProductSizeSearchValue = eUtil.readDataFromExcel("Sprint-5 Negative", 26, 4);
-		
 		String AddProductSize = eUtil.readDataFromExcel("Sprint-5 Negative", 28, 4);
-		String AddProductWeight = eUtil.readDataFromExcel("Sprint-5 Negative", 29, 4);
-		
-//		String UpdateProductSize = eUtil.readDataFromExcel("Sprint-5 Negative", 31, 4);
-//		String UpdateProductWeight = eUtil.readDataFromExcel("Sprint-5 Negative", 32, 4);
-		
+		String AddProductWeight = eUtil.readDataFromExcel("Sprint-5 Negative", 29, 4);	
 		String ProductStoneSearchValue = eUtil.readDataFromExcel("Sprint-5 Negative", 26, 7);
-		
 		String AddProductStoneName = eUtil.readDataFromExcel("Sprint-5 Negative", 28, 7);
 		String AddProductStoneColour = eUtil.readDataFromExcel("Sprint-5 Negative", 29, 7);
 		String AddProductStonePrice = eUtil.readDataFromExcel("Sprint-5 Negative", 30, 7);
 		String AddProductNoOfStones = eUtil.readDataFromExcel("Sprint-5 Negative", 31, 7);
 		
+//		String AddProductCategoryName = eUtil.readDataFromExcel("Sprint-5 Negative", 26, 1);
+//		String AddProductSubCategoryName = eUtil.readDataFromExcel("Sprint-5 Negative", 27, 1);
+//		String AddProductSelectBrand = eUtil.readDataFromExcel("Sprint-5 Negative", 28, 1);
+//		String AddProductSelectCarat = eUtil.readDataFromExcel("Sprint-5 Negative", 31, 1);
+//		String AddProductSelectType = eUtil.readDataFromExcel("Sprint-5 Negative", 32, 1);
+//		String UpdateProductSize = eUtil.readDataFromExcel("Sprint-5 Negative", 31, 4);
+//		String UpdateProductWeight = eUtil.readDataFromExcel("Sprint-5 Negative", 32, 4);
 //		String UpdateProductStoneName = eUtil.readDataFromExcel("Sprint-5 Negative", 33, 7);
 //		String UpdateProductStoneColour = eUtil.readDataFromExcel("Sprint-5 Negative", 34, 7);
 //		String UpdateProductStonePrice = eUtil.readDataFromExcel("Sprint-5 Negative", 35, 7);
-//		String UpdateProductNoOfStones = eUtil.readDataFromExcel("Sprint-5 Negative", 36, 7);
-		
+//		String UpdateProductNoOfStones = eUtil.readDataFromExcel("Sprint-5 Negative", 36, 7);		
 //		String UpdateProductCategoryName = eUtil.readDataFromExcel("Sprint-5 Negative", 26, 10);
 //		String UpdateProductSubCategoryName = eUtil.readDataFromExcel("Sprint-5 Negative", 27, 10);
 //		String UpdateProductSelectBrand = eUtil.readDataFromExcel("Sprint-5 Negative", 28, 10);
@@ -497,8 +523,8 @@ public class a_EcommerceAllActions extends FMS_BaseClass {
 //		String UpdateProductEnterSize = eUtil.readDataFromExcel("Sprint-5 Negative", 34, 10);
 //		String UpdateProductEnterWeight = eUtil.readDataFromExcel("Sprint-5 Negative", 35, 10);
 //		String UpdateProductDescription = eUtil.readDataFromExcel("Sprint-5 Negative", 36, 10);
-//		String UpdateImagePath = eUtil.readDataFromExcel("ImagePath", 1, 1);
-		
+//		String UpdateImagePath = eUtil.readDat
+
 		
 		DashboardPage dbPage = new DashboardPage(driver);
 		dbPage.getEcommerceDrpDwn().click();
@@ -522,7 +548,7 @@ public class a_EcommerceAllActions extends FMS_BaseClass {
 		eplPage.getSearchEdt().clear();
 		Thread.sleep(1000);
 		eplPage.getAddProductBtn().click();
-		WebElement AddProductPage = driver.findElement(By.xpath("//h1[.='Add Product Details']"));
+		WebElement AddProductPage = driver.findElement(By.xpath("//div[@aria-label='Category Name is required.']"));
 		Thread.sleep(1000);
 		if(AddProductPage.isDisplayed())
 		{
@@ -538,7 +564,10 @@ public class a_EcommerceAllActions extends FMS_BaseClass {
 		Select s1 = new Select(CategoryDrpDwn);
 		s1.selectByVisibleText("Nosepin");
 		Thread.sleep(1000);
-	    
+	
+		//h1[.='Add Product Details']	    
+		//div[@aria-label='Validation Error']
+		
 		
 		
 //		WebElement SubCategoriesNotFoundError = driver.findElement(By.xpath("(//div[.=' SubCategories not found please add '])[2]"));
@@ -622,7 +651,7 @@ public class a_EcommerceAllActions extends FMS_BaseClass {
 			System.out.println("Product Added Successfully");
 		}
 		Thread.sleep(4000);
-		//WebElement SelectCarat = epapPage.getCaratDrpDwn();
+//      WebElement SelectCarat = epapPage.getCaratDrpDwn();
 //		Select s4 = new Select(SelectCarat);
 //		s4.selectByIndex(2);
 		Thread.sleep(2000);
@@ -1114,6 +1143,9 @@ public class a_EcommerceAllActions extends FMS_BaseClass {
 		if(UpdateProductDetailsPage.isDisplayed())
 		{
 			wUtil.takeScreenShot(driver, "z1n_Clicking On Edit Button Update Product Details Page Should Not Open");
+			
+			
+			
 		}
 		else
 		{
@@ -1616,12 +1648,5 @@ public class a_EcommerceAllActions extends FMS_BaseClass {
 		Thread.sleep(4000);
 	
 	}
-	
-	
-	
+		
 }
-
-
-
-
-

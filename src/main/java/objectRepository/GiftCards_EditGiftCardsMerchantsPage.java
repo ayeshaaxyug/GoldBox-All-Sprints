@@ -10,21 +10,21 @@ public class GiftCards_EditGiftCardsMerchantsPage
 
 	//Finding WebElements by using @FindBy Annotation
 	
-	@FindBy(xpath="(//input[@placeholder='Enter Merchant Name'])[1]")private WebElement MerchantsEditMerchantsNameEdt;
+	@FindBy(xpath="//h1[.='Update Merchant']/../following-sibling::div//input[@placeholder='Enter Merchant Name']")private WebElement MerchantsEditMerchantsNameEdt;
 	
-	@FindBy(xpath ="(//input[@formcontrolname='joinedon'])[1]") private WebElement MerchantEditJoinedDateEdt;
+	@FindBy(xpath ="//h1[.='Update Merchant']/../following-sibling::div//input[@formcontrolname='joinedon']") private WebElement MerchantEditJoinedDateEdt;
 	
-	@FindBy(xpath="(//input[@formcontrolname='email'])[1]")private WebElement MerchantEditEmailEdt;
+	@FindBy(xpath="//h1[.='Update Merchant']/../following-sibling::div//input[@placeholder='Enter Email']")private WebElement MerchantEditEmailEdt;
 	
-	@FindBy(xpath ="(//input[@formcontrolname='address'])[1]") private WebElement MerchantEditAddressEdt;
+	@FindBy(xpath ="//h1[.='Update Merchant']/../following-sibling::div//input[@placeholder='Enter Address']") private WebElement MerchantEditAddressEdt;
 
-	@FindBy(xpath="(//input[@formcontrolname='gc_expiry_time'])[1]")private WebElement MerchantEditGcExpiryTimeEdt;
+	@FindBy(xpath="//h1[.='Update Merchant']/../following-sibling::div//input[@placeholder='Enter GC Expiry Time']")private WebElement MerchantEditGcExpiryTimeEdt;
 	
-	@FindBy(xpath="(//input[@formcontrolname='phonenumber'])[1]")private WebElement MerchantEditPhoneNumberEdt;
+	@FindBy(xpath="//h1[.='Update Merchant']/../following-sibling::div//input[@placeholder='Enter phone number']")private WebElement MerchantEditPhoneNumberEdt;
 	
 	@FindBy(xpath ="//button[.='Update']") private WebElement MerchantEditUpdateBtn;
 	
-	@FindBy(xpath="(//button[@class='btn-close'])[1]")private WebElement MerchantEditCloseBtn;
+	@FindBy(xpath="//h1[.='Update Merchant']/..//button[@aria-label='Close']")private WebElement MerchantEditCloseBtn;
 	
 	//Create a constructor to initilise these elements
 	
@@ -43,7 +43,7 @@ public class GiftCards_EditGiftCardsMerchantsPage
 		return MerchantEditJoinedDateEdt;
 	}
 
-	public WebElement getMerchantEditEdt() {
+	public WebElement getMerchantEditEmailEdt() {
 		return MerchantEditEmailEdt;
 	}
 

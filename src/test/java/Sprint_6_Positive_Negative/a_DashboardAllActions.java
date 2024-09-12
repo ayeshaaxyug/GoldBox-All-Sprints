@@ -16,6 +16,8 @@ public class a_DashboardAllActions extends FMS_BaseClass {
 	ExcelFileUtility eUtil = new ExcelFileUtility();
 	JavaUtility jUtil = new JavaUtility();
 	
+	//Pass
+	
 	@Test
 	public void dashboardTransactionReportsTest() throws Exception
 	{

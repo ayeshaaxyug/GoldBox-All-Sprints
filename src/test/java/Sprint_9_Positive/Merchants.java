@@ -47,7 +47,6 @@ public class Merchants extends FMS_BaseClass
 		String MerchantEditGcExpiryTimeEdt = eUtil.readDataFromExcel("Sprint 9", 33, 1);
 		String MerchantEditPhoneNumberEdt = eUtil.readDataFromExcel("Sprint 9", 34, 1);
 		
-	
 		WebDriverUtility wu=new WebDriverUtility(); 
 		Thread.sleep(4000);
 		DashboardPage DBPage = new DashboardPage(driver);
