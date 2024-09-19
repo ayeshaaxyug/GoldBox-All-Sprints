@@ -45,13 +45,11 @@ public class a_EcommerceAllActions extends FMS_BaseClass {
 	ExcelFileUtility eUtil = new ExcelFileUtility();
 	PropertyFileUtility pUtil = new PropertyFileUtility();
 	
-	
+	// Pass
 	
 	@Test
 	public void categoriesAllActionsTest() throws Exception
 	{
-		
-		// Pass
 		
 		String CategorySearchValue = eUtil.readDataFromExcel("Sprint-5-Categ&Sub-Negative New", 3, 1);
 		String CategoryName = eUtil.readDataFromExcel("Sprint-5-Categ&Sub-Negative New", 5, 1);
@@ -105,11 +103,9 @@ public class a_EcommerceAllActions extends FMS_BaseClass {
 		}
 		Thread.sleep(4000);
 		
-	    
 		//div[@aria-label='All fields are required']
-		 //b_Adding Category By Giving Only Category Name Error 
+		//b_Adding Category By Giving Only Category Name Error 
 		 
-		
 		//3
 		
 		wUtil.clickOnChooseFileOption(driver, ecaddPage.getChooseFileBtn(), AddImagePath); 
@@ -174,10 +170,8 @@ public class a_EcommerceAllActions extends FMS_BaseClass {
 		}
 		Thread.sleep(4000);
 		
-		
-		 //div[@aria-label='All fields are required']
-		 // e_Category Adding Without Giving Any Details Error Test
-		 
+		//div[@aria-label='All fields are required']
+		// e_Category Adding Without Giving Any Details Error Test
 		
 		//6
 		
@@ -218,6 +212,7 @@ public class a_EcommerceAllActions extends FMS_BaseClass {
 		
 }
 	
+	//Fail
 	
 	@Test
 	public void SubcategoriesAllActionsTest() throws Exception {
@@ -233,6 +228,7 @@ public class a_EcommerceAllActions extends FMS_BaseClass {
 		String AddImagePath = eUtil.readDataFromExcel("ImagePath", 0, 1);
 		
 		//1
+		
 		Thread.sleep(2000);
         DashboardPage dbPage = new DashboardPage(driver);
 		dbPage.getEcommerceDrpDwn().click();
@@ -275,12 +271,10 @@ public class a_EcommerceAllActions extends FMS_BaseClass {
             System.out.println("SubCategory Added Successfully");
 		}
 		Thread.sleep(4000);
-		
-		
+				
 		//div[@aria-label='Image is required']
 		// b_Adding SubCategory Without Giving Any Details Error
-		 
-		
+		 		
 		//3
 	    
 		Thread.sleep(1000);
@@ -299,12 +293,10 @@ public class a_EcommerceAllActions extends FMS_BaseClass {
             System.out.println("SubCategory Added Successfully");
 		}
 		Thread.sleep(2000);
-		
-		
+				
 		//(//div[.=' Image is required '])[2]
 		// c_SubCategory Adding By Giving Only Category DrpDwn Error
-		 
-		
+		 		
 		//4
 		
 		esaddsubPage.getSubCategoryNameEdt().sendKeys(SubCategoryName);
@@ -336,11 +328,8 @@ public class a_EcommerceAllActions extends FMS_BaseClass {
           
         Thread.sleep(2000);  
         
-        
-         // d_SubCategory Adding By Giving Category, SubCategory Names Error
+        // d_SubCategory Adding By Giving Category, SubCategory Names Error
          
-        
-          
         //5
         
         Select s2 = new Select(esaddsubPage.getSelectTypeDrpDwn());
@@ -400,7 +389,7 @@ public class a_EcommerceAllActions extends FMS_BaseClass {
    		} 
         Thread.sleep(2000);
 	       
-           //8
+        //8
            
         esubeditPage.getSubCategoryNameEdt().clear();
         Thread.sleep(2000);
@@ -408,8 +397,10 @@ public class a_EcommerceAllActions extends FMS_BaseClass {
         Thread.sleep(1000);
         WebElement EnterSubCategoryError = driver.findElement(By.xpath("//div[@aria-label='Please Enter Type']"));
         Thread.sleep(1000);
+        
         //WebElement EnterSubCategoryError = driver.findElement(By.xpath("(//div[.=' Please Enter Type '])[2]"));
         //Thread.sleep(1000);
+        
         if(EditTypeRequired.isDisplayed())
         {
         	wUtil.takeScreenShot(driver, "h_WithOut Giving SubCategory Name,Type While Updating Error");
@@ -419,7 +410,6 @@ public class a_EcommerceAllActions extends FMS_BaseClass {
 			System.out.println("Sub Category Updated Successfully");
 		}
         Thread.sleep(2000);
-        
         
         wUtil.handleDropdownByVisibleText("Select Category", escascPage.getCategoryNameDrpDwn());
         Thread.sleep(2000);
@@ -449,8 +439,10 @@ public class a_EcommerceAllActions extends FMS_BaseClass {
         Thread.sleep(4000);
         esPage.clickOnParticularSubCategoryBootstrapBtnToDisableParticularSubCategory(driver, SubCategoryNameRandom);
         Thread.sleep(1000);
+        
         //WebElement UpdateMsg = driver.findElement(By.xpath("(//div[.=' Sub Category Updated Successfully '])[2]"));
         //WebElement UpdateMsg = driver.findElement(By.xpath("//div[.=' Sub Category Updated Successfully ']"));
+        
         WebElement UpdateMsg = driver.findElement(By.xpath("//div[@aria-label='Sub Category Updated Successfully']"));
         if(UpdateMsg.isDisplayed())
         {
@@ -461,14 +453,18 @@ public class a_EcommerceAllActions extends FMS_BaseClass {
 			System.out.println("SubCategory Not Updated");
 		}
         Thread.sleep(6000);
+        
         //esPage.clickOnParticularSubCategoryDeleteBtn(driver, SubCategoryNameRandom);
         //Thread.sleep(2000);
+        
         esPage.clickOnParticularCategoryDeleteBtn(driver, CategoryName);
         Thread.sleep(2000);
         WebElement DeleteMsg = driver.findElement(By.xpath("//div[@aria-label='Successfully Deleted']"));
         Thread.sleep(2000);
+        
         //WebElement DeleteMsg = driver.findElement(By.xpath("(//div[.=' Successfully Deleted '])[2]"));
         //Thread.sleep(1000);
+        
         if(DeleteMsg.isDisplayed())
         {
         	wUtil.takeScreenShot(driver, "l_Clicking On Delete Btn SubCategory Should Not Delete Error");
@@ -480,6 +476,7 @@ public class a_EcommerceAllActions extends FMS_BaseClass {
         
 	}
 	
+	//Fail
 	
 	@Test
 	public void productsAllActionsTest() throws Exception
@@ -524,7 +521,6 @@ public class a_EcommerceAllActions extends FMS_BaseClass {
 //		String UpdateProductEnterWeight = eUtil.readDataFromExcel("Sprint-5 Negative", 35, 10);
 //		String UpdateProductDescription = eUtil.readDataFromExcel("Sprint-5 Negative", 36, 10);
 //		String UpdateImagePath = eUtil.readDat
-
 		
 		DashboardPage dbPage = new DashboardPage(driver);
 		dbPage.getEcommerceDrpDwn().click();
@@ -567,9 +563,7 @@ public class a_EcommerceAllActions extends FMS_BaseClass {
 	
 		//h1[.='Add Product Details']	    
 		//div[@aria-label='Validation Error']
-		
-		
-		
+				
 //		WebElement SubCategoriesNotFoundError = driver.findElement(By.xpath("(//div[.=' SubCategories not found please add '])[2]"));
 //		for(int i=2;i<=10;i++)
 //        {
@@ -581,7 +575,6 @@ public class a_EcommerceAllActions extends FMS_BaseClass {
 //				r.keyRelease((KeyEvent.VK_DOWN));
 //			}            
 //        }
-		
 		
 		Thread.sleep(2000);
 		epapPage.getAddBtn().click();
@@ -651,9 +644,11 @@ public class a_EcommerceAllActions extends FMS_BaseClass {
 			System.out.println("Product Added Successfully");
 		}
 		Thread.sleep(4000);
+		
 //      WebElement SelectCarat = epapPage.getCaratDrpDwn();
 //		Select s4 = new Select(SelectCarat);
 //		s4.selectByIndex(2);
+		
 		Thread.sleep(2000);
 		epapPage.getAddBtn().click();
 		Thread.sleep(1000);
@@ -821,8 +816,10 @@ public class a_EcommerceAllActions extends FMS_BaseClass {
 		epapsizePage.getProductWeightEdt().sendKeys(AddProductWeight);
 		Thread.sleep(2000);
 		epapsizePage.getAddBtn().click();
-	    Thread.sleep(1000);//
+	    Thread.sleep(1000);
+	    
 //		WebElement SizeAlreadyExistError = driver.findElement(By.xpath("(//div[.=' Size is Already Existed for this Product '])[2]"));
+	    
 	    WebElement SuccessMsg55 = driver.findElement(By.xpath("(//div[.=' Product Size Added Successfully '])[2]"));
 	    		
 		if(SuccessMsg55.isDisplayed())
@@ -873,7 +870,10 @@ public class a_EcommerceAllActions extends FMS_BaseClass {
 		Thread.sleep(1000);
 		WebElement ClearSizeAndWeightSuccessMsg = driver.findElement(By.xpath("(//div[.='  Product Size Updated Successfully '])[2]"));
 		Thread.sleep(1000);
-		if(ClearSizeAndWeightSuccessMsg.isDisplayed())        //(//div[.=' Please Enter Size '])[2]
+		if(ClearSizeAndWeightSuccessMsg.isDisplayed())        
+			
+		//(//div[.=' Please Enter Size '])[2]
+			
 		{
 			wUtil.takeScreenShot(driver, "w_Clearing Size And Weight While Updating Size Successfull Error");
 		}
@@ -1143,9 +1143,6 @@ public class a_EcommerceAllActions extends FMS_BaseClass {
 		if(UpdateProductDetailsPage.isDisplayed())
 		{
 			wUtil.takeScreenShot(driver, "z1n_Clicking On Edit Button Update Product Details Page Should Not Open");
-			
-			
-			
 		}
 		else
 		{
@@ -1331,8 +1328,7 @@ public class a_EcommerceAllActions extends FMS_BaseClass {
 		
 	}
 	
-	
-	
+    // Fail
 	
 	@Test
 	public void brandsAllActionsTest() throws Exception
@@ -1394,7 +1390,7 @@ public class a_EcommerceAllActions extends FMS_BaseClass {
 		ebabPage.getChooseFileBtn().sendKeys(ImagePath);
 		Thread.sleep(1000);
 		ebabPage.getAddBtn().click();
-		WebElement BrandNameAlreadyExistError = driver.findElement(By.xpath("(//div[.=' Brand Name is Already Existed '])[2]"));
+		WebElement BrandNameAlreadyExistError = driver.findElement(By.xpath("//div[@aria-label='All fields are required']"));
 		if(BrandNameAlreadyExistError.isDisplayed())
 		{
 			wUtil.takeScreenShot(driver, "d_Adding Brand By Giving Already Existing Brand Name Error");
@@ -1410,7 +1406,7 @@ public class a_EcommerceAllActions extends FMS_BaseClass {
 		Thread.sleep(2000);
 		ebabPage.getAddBtn().click();
 		Thread.sleep(1000);
-		WebElement BrandCreatedSuccessfullyMsg = driver.findElement(By.xpath("(//div[.=' Brand Craeted Successfully '])[2]"));
+		WebElement BrandCreatedSuccessfullyMsg = driver.findElement(By.xpath("//div[@aria-label='All fields are required']"));
 		if(BrandCreatedSuccessfullyMsg.isDisplayed())
 		{
 			wUtil.takeScreenShot(driver, "e_Adding Brand By Giving All Valid Data Success Msg");
@@ -1493,9 +1489,12 @@ public class a_EcommerceAllActions extends FMS_BaseClass {
 		
 	}
 	
+	// Pass
+	
 	@Test
 	public void ecommerce_Orders_NegativeTest () throws Exception
 	{
+		
 		String CategorySearchValue = eUtility.readDataFromExcel("Sprint-5-Categ&Sub-Negative", 20, 1);
         String StartDate = eUtility.readDataFromExcel("Sprint-5-Categ&Sub-Negative", 20, 1);
         String EndDate = eUtility.readDataFromExcel("Sprint-5-Categ&Sub-Negative", 21, 1);
@@ -1529,23 +1528,14 @@ public class a_EcommerceAllActions extends FMS_BaseClass {
 		//2
 		
 		eoPage.getSearchEdt().clear();
-		
         Thread.sleep(2000);
-		
 		eoPage.getFilterBtn().click();
-		
 		Ecommerce_EcommerceOrders_FilterPage eeoPage = new Ecommerce_EcommerceOrders_FilterPage(driver);
-		
 		eeoPage.getStartDateEdt().sendKeys(StartDate);
-		
 		Thread.sleep(2000);
-		
 		eeoPage.getEndDateEdt().sendKeys(EndDate);
-		
 		eeoPage.getSearchBtn().click();
-		
-         WebElement FilterError = driver.findElement(By.xpath("//h5[.='No records found']"));
-		
+        WebElement FilterError = driver.findElement(By.xpath("//h5[.='No records found']"));		
 		Thread.sleep(2000);
 		
 		if (FilterError.isDisplayed())
@@ -1556,16 +1546,14 @@ public class a_EcommerceAllActions extends FMS_BaseClass {
 		{
             System.out.println("Results Found");
 		}
+		
 		Thread.sleep(6000);
 	
 		//3
 		
 		eeoPage.getMobileNumberEdt().sendKeys(MobileNumber);
-		
 		eeoPage.getSearchBtn().click();
-		
         WebElement MobileNumberError = driver.findElement(By.xpath("//div[@aria-label='No results found']"));
-		
 		Thread.sleep(2000);
 		
 		if (MobileNumberError.isDisplayed()) 
@@ -1588,9 +1576,7 @@ public class a_EcommerceAllActions extends FMS_BaseClass {
 		r.keyRelease(KeyEvent.VK_ENTER);
 		
 		eeoPage.getSearchBtn().click();
-		
         WebElement ErrorFounded = driver.findElement(By.xpath("//div[@aria-label='No results found']"));
-		
 		Thread.sleep(2000);
 		
 		if (ErrorFounded.isDisplayed()) 
@@ -1605,6 +1591,8 @@ public class a_EcommerceAllActions extends FMS_BaseClass {
 			
 	}
 	
+	// Pass
+	
 	@Test
 	public void ECommerce_Transactions_NegativeTest() throws Exception
 	{
@@ -1618,23 +1606,14 @@ public class a_EcommerceAllActions extends FMS_BaseClass {
 //		String TransactionID = eUtility.readDataFromExcel("Sprint-5-Categ&Sub-Negative", 32, 1);
 		
         Thread.sleep(2000);
-        
         DashboardPage dbPage = new DashboardPage(driver);
-	
 		dbPage.getEcommerceDrpDwn().click();
-		
 		EcommercePage ePage = new EcommercePage(driver);
-		
 		ePage.getEcomTransactionsLnk().click();
-		
 		Ecommerce_Ecom_TransactionsPage etPage = new Ecommerce_Ecom_TransactionsPage(driver);
-		
 		etPage.getSearchEdt().sendKeys(CategorySearchValue);
-		
         Thread.sleep(2000);
-		
 		WebElement EcomTransactions = driver.findElement(By.xpath("//h4[.='Ecommerce Transactions']"));
-		
 		Thread.sleep(2000);
 		
 		if (EcomTransactions.isDisplayed()) 

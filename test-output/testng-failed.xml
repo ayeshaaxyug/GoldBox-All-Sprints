@@ -3,17 +3,17 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="Sprint_7_Positive.e_Adding_Giftcard_In_FMS">
+      <class name="Sprint_5_Negative.b_CouponsAllActions">
         <methods>
           <include name="asConfig"/>
+          <include name="b_adminCouponAllActionTest"/>
           <include name="bmConfig"/>
           <include name="amConfig"/>
-          <include name="a_addingGiftCardInFmsTest"/>
           <include name="bcConfig"/>
           <include name="bsConfig"/>
           <include name="acConfig"/>
         </methods>
-      </class> <!-- Sprint_7_Positive.e_Adding_Giftcard_In_FMS -->
+      </class> <!-- Sprint_5_Negative.b_CouponsAllActions -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

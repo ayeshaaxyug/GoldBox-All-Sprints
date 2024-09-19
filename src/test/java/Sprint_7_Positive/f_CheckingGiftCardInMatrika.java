@@ -15,6 +15,8 @@ public class f_CheckingGiftCardInMatrika extends BaseClass_Matrika {
 
 	WebDriverUtility wUtil = new WebDriverUtility();
 	
+	// Pass
+	
 	@Test
 	public void b_checkingGiftCardInMatrikaTest()
 	{

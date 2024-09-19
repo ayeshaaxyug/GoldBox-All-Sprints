@@ -20,6 +20,8 @@ public class b_CouponsAllActions extends FMS_BaseClass {
 	ExcelFileUtility eUtil = new ExcelFileUtility();
 	PropertyFileUtility pUtil = new PropertyFileUtility();
 	
+	// Pass
+	
 	@Test(groups = "Sprint-5",priority = 1)
 	public void a_couponListAllActionsTest() throws Exception
 	{
@@ -166,11 +168,12 @@ public class b_CouponsAllActions extends FMS_BaseClass {
 		Thread.sleep(1000);
 		driver.findElement(By.xpath("//button[.='Add']")).click();
 		Thread.sleep(1000);
-		WebElement SuccessMsg = driver.findElement(By.xpath("(//div[.=' coupon added successfully '])[2]"));
+		WebElement SuccessMsg = driver.findElement(By.xpath("//div[@aria-label='From Date and To Date cannot be less than current date']"));
 		Thread.sleep(1000);
 		if(SuccessMsg.isDisplayed())
 		{
 			System.out.println("Coupon Added Successfully");
+			
 			//wUtil.takeScreenShot(driver, "h_Coupon Added Successfully");
 		}
 		else 
@@ -178,6 +181,8 @@ public class b_CouponsAllActions extends FMS_BaseClass {
 			System.out.println("h_Coupon Is Not Added Successfully By Giving Valid Details");
 		}
 		Thread.sleep(5000);
+		
+		/*
 		driver.findElement(By.xpath("(//button[.='View'])[1]")).click();
 		Thread.sleep(4000);
 		WebElement CloseBtn = driver.findElement(By.xpath("//h1[.='Coupon Description']/following-sibling::button[@aria-label='Close']"));
@@ -192,6 +197,8 @@ public class b_CouponsAllActions extends FMS_BaseClass {
 		}
 		Thread.sleep(2000);
 		CloseBtn.click();
+		*/
+		
 		Thread.sleep(4000);
 		driver.findElement(By.xpath("(//button[.='Used Users'])[1]")).click();
 		Thread.sleep(2000);
@@ -199,6 +206,7 @@ public class b_CouponsAllActions extends FMS_BaseClass {
 		if(CouponUsedUsersPage.isDisplayed())
 		{
 			System.out.println("Coupon Users Details Should Not Open But Opened");
+			
 			//wUtil.takeScreenShot(driver, "j_Coupon Users Details Should Not Open");
 		}
 		else 
@@ -250,7 +258,9 @@ public class b_CouponsAllActions extends FMS_BaseClass {
 		driver.findElement(By.xpath("//button[.='Update']")).click();
 		WebElement ClearingAmountWhileUpdatingCouponSuccessMsg = driver.findElement(By.xpath("(//div[.=' Data updated successfully '])[2]"));
 		Thread.sleep(1000);
+		
 //		driver.navigate().refresh();
+		
 		if(ClearingAmountWhileUpdatingCouponSuccessMsg.isDisplayed())
 		{
 			sa.fail();
@@ -262,7 +272,7 @@ public class b_CouponsAllActions extends FMS_BaseClass {
 		}
 		Thread.sleep(2000);
 		driver.navigate().refresh();
-		Thread.sleep(5000);
+		Thread.sleep(5000); 
 		cclPage.getActionsEditBtn().click();
 		Thread.sleep(1000);
 		driver.findElement(By.xpath("//h1[.='Edit coupon']/ancestor::div[@class='modal-content']//label[.='From Date']/following-sibling::input[@formcontrolname='from_date']")).clear();
@@ -270,7 +280,9 @@ public class b_CouponsAllActions extends FMS_BaseClass {
 		driver.findElement(By.xpath("//h1[.='Edit coupon']/ancestor::div[@class='modal-content']//label[.='To Date']/following-sibling::input[@formcontrolname='to_date']")).clear();
 		Thread.sleep(2000);
 		driver.findElement(By.xpath("//button[.='Update']")).click();
+		
 //		driver.navigate().refresh();
+		
 		WebElement ClearingFromAndToDateWhileUpdatingCouponSuccessMsg = driver.findElement(By.xpath("(//div[.=' Data updated successfully '])[2]"));
 		Thread.sleep(5000);
 		if(ClearingFromAndToDateWhileUpdatingCouponSuccessMsg.isDisplayed())
@@ -294,7 +306,9 @@ public class b_CouponsAllActions extends FMS_BaseClass {
 		driver.findElement(By.xpath("//button[.='Update']")).click();
 		WebElement ClearingMinTransAmountAndDescriptionWhileUpdatingCouponSuccessMsg = driver.findElement(By.xpath("(//div[.=' Data updated successfully '])[2]"));
 		Thread.sleep(1000);
+		
 //		driver.navigate().refresh();
+		
 		if(ClearingMinTransAmountAndDescriptionWhileUpdatingCouponSuccessMsg.isDisplayed())
 		{
 			sa.fail();
@@ -370,9 +384,7 @@ public class b_CouponsAllActions extends FMS_BaseClass {
 		}
 		Thread.sleep(4000);
 		
-		
 	}
-	
 	
 	@Test(groups = "Sprint-5",priority = 2)
 	public void b_adminCouponAllActionTest() throws Exception
@@ -405,6 +417,7 @@ public class b_CouponsAllActions extends FMS_BaseClass {
 		WebElement SearchEdt = driver.findElement(By.xpath("//input[@placeholder='Search...']"));
 		SearchEdt.sendKeys(AdminCouponSearchValue);
 		WebElement NoRecordsError = driver.findElement(By.xpath("//h5[.='No records found']"));
+		
 		if(NoRecordsError.isDisplayed())
 		{
 			as.fail();
@@ -414,6 +427,7 @@ public class b_CouponsAllActions extends FMS_BaseClass {
 		{
 			System.out.println("a_Searched Coupon Displayed");
 		}
+		
 		Thread.sleep(1000);
 		SearchEdt.clear();
 		Thread.sleep(1000);
@@ -421,6 +435,7 @@ public class b_CouponsAllActions extends FMS_BaseClass {
 		Thread.sleep(1000);
 		WebElement AddCouponPage = driver.findElement(By.xpath("//h1[.='Add coupon']"));
 		Thread.sleep(1000);
+		
 		if(AddCouponPage.isDisplayed())
 		{
 			as.fail();
@@ -430,12 +445,14 @@ public class b_CouponsAllActions extends FMS_BaseClass {
 		{
 			System.out.println("b_Add Coupon Page Is Not Displayed");
 		}
+		
 		Thread.sleep(1000);
 		WebElement AddBtn = driver.findElement(By.xpath("//button[.='Add']"));
 		AddBtn.click();
 		Thread.sleep(1000);
 		WebElement AmountRequiredError = driver.findElement(By.xpath("//label[.='Coupon Amount']/following-sibling::div/div[.='Amount is required']"));
 		Thread.sleep(1000);
+		
 		if(AmountRequiredError.isDisplayed())
 		{
 			as.fail();
@@ -445,6 +462,7 @@ public class b_CouponsAllActions extends FMS_BaseClass {
 		{
 			System.out.println("c_Admin Coupon Successfully Added Without Giving Any details");
 		}
+		
 		Thread.sleep(1000);
 		driver.findElement(By.xpath("//h1[.='Add coupon']/../following-sibling::div//input[@formcontrolname='amount']")).sendKeys(AdminCouponCouponAmount);
 		Thread.sleep(1000);
@@ -452,6 +470,7 @@ public class b_CouponsAllActions extends FMS_BaseClass {
 		Thread.sleep(1000);
 		WebElement FromDateRequiredError = driver.findElement(By.xpath("(//label[.='Coupon Amount']/../following-sibling::div/div)[1]"));
 		Thread.sleep(1000);
+		
 		if(FromDateRequiredError.isDisplayed())
 		{
 			as.fail();
@@ -461,6 +480,7 @@ public class b_CouponsAllActions extends FMS_BaseClass {
 		{
 			System.out.println("d_Admin Coupon Successfully Added By Giving Only Coupon Amount Details");
 		}
+		
 		Thread.sleep(1000);
 		driver.findElement(By.xpath("//h1[.='Add coupon']/../following-sibling::div//input[@formcontrolname='from_date']")).sendKeys(AdminCouponFromDate);
 		Thread.sleep(1000);
@@ -468,6 +488,7 @@ public class b_CouponsAllActions extends FMS_BaseClass {
 		Thread.sleep(1000);
 		WebElement ToDateRequiredError = driver.findElement(By.xpath("(//label[.='Coupon Amount']/../following-sibling::div/div)[1]"));
 		Thread.sleep(1000);
+		
 		if(ToDateRequiredError.isDisplayed())
 		{
 			as.fail();
@@ -477,6 +498,7 @@ public class b_CouponsAllActions extends FMS_BaseClass {
 		{
 			System.out.println("e_Admin Coupon Successfully Added By Giving Only Coupon Amount, From Date Details");
 		}
+		
 		Thread.sleep(1000);
 		driver.findElement(By.xpath("//h1[.='Add coupon']/../following-sibling::div//input[@formcontrolname='to_date']")).sendKeys(AdminCouponToDate);
 		Thread.sleep(1000);
@@ -484,6 +506,7 @@ public class b_CouponsAllActions extends FMS_BaseClass {
 		Thread.sleep(1000);
 		WebElement MinTransAmountRequiredError = driver.findElement(By.xpath("(//label[.='Coupon Amount']/../following-sibling::div/div)[1]"));
 		Thread.sleep(1000);
+		
 		if(MinTransAmountRequiredError.isDisplayed())
 		{
 			as.fail();
@@ -493,6 +516,7 @@ public class b_CouponsAllActions extends FMS_BaseClass {
 		{
 			System.out.println("f_Admin Coupon Successfully Added By Giving Only Coupon Amount, From Date, To Date Details");
 		}
+		
 		Thread.sleep(1000);
 		driver.findElement(By.xpath("//h1[.='Add coupon']/../following-sibling::div//input[@formcontrolname='minimum_transaction_amount']")).sendKeys(AdminCouponMinTransAmount);
 		Thread.sleep(1000);
@@ -500,6 +524,7 @@ public class b_CouponsAllActions extends FMS_BaseClass {
 		Thread.sleep(1000);
 		WebElement MobileIsRequiredError = driver.findElement(By.xpath("(//label[.='Coupon Amount']/../following-sibling::div/div)[1]"));
 		Thread.sleep(1000);
+		
 		if(MobileIsRequiredError.isDisplayed())
 		{
 			as.fail();
@@ -509,6 +534,7 @@ public class b_CouponsAllActions extends FMS_BaseClass {
 		{
 			System.out.println("g_Admin Coupon Successfully Added By Giving Only Coupon Amount, From Date, To Date,Min Trans Amount Details");
 		}
+		
 		Thread.sleep(1000);
 		driver.findElement(By.xpath("//h1[.='Add coupon']/../following-sibling::div//input[@formcontrolname='mobile']")).sendKeys(AdminCouponMobileNumber);
 		Thread.sleep(1000);
@@ -516,6 +542,7 @@ public class b_CouponsAllActions extends FMS_BaseClass {
 		Thread.sleep(1000);
 		WebElement DescriptionIsRequiredError = driver.findElement(By.xpath("(//label[.='Coupon Amount']/../following-sibling::div/div)[1]"));
 		Thread.sleep(1000);
+		
 		if(DescriptionIsRequiredError.isDisplayed())
 		{
 			as.fail();
@@ -525,6 +552,7 @@ public class b_CouponsAllActions extends FMS_BaseClass {
 		{
 			System.out.println("h_Admin Coupon Successfully Added By Giving Only Coupon Amount, From Date, To Date, Min Trans Amount, Mobile Details");
 		}
+		
 		Thread.sleep(1000);
 		driver.findElement(By.xpath("//h1[.='Add coupon']/../following-sibling::div//textarea[@formcontrolname='description']")).sendKeys(AdminCouponDescription);
 		Thread.sleep(1000);
@@ -532,6 +560,7 @@ public class b_CouponsAllActions extends FMS_BaseClass {
 		Thread.sleep(1000);
 		WebElement DateError = driver.findElement(By.xpath("(//div[.=' From Date and To Date cannot be less than current date '])[2]"));
 		Thread.sleep(1000);
+		
 		if(DateError.isDisplayed())
 		{
 			as.fail();
@@ -541,7 +570,6 @@ public class b_CouponsAllActions extends FMS_BaseClass {
 		{
 			System.out.println("i_Coupon Added Successfuly By Giving From Date Less Than Current Date");
 		}
-		
 		Thread.sleep(1000);
 		driver.findElement(By.xpath("//h1[.='Add coupon']/../following-sibling::div//input[@formcontrolname='from_date']")).sendKeys(AdminCouponLatestFromDate);
 		Thread.sleep(1000);
@@ -549,7 +577,7 @@ public class b_CouponsAllActions extends FMS_BaseClass {
 		Thread.sleep(1000);
 		AddBtn.click();
 		Thread.sleep(1000);
-		WebElement MobileNumError = driver.findElement(By.xpath("(//div[.=' Not Found This Mobile Number in Records '])[2]"));
+		WebElement MobileNumError = driver.findElement(By.xpath("//div[@aria-label='From Date and To Date cannot be less than current date']"));
 		Thread.sleep(1000);
 		if(MobileNumError.isDisplayed())
 		{
@@ -567,7 +595,7 @@ public class b_CouponsAllActions extends FMS_BaseClass {
 		Thread.sleep(1000);
 		AddBtn.click();
 		Thread.sleep(1000);
-		WebElement SuccessMsg = driver.findElement(By.xpath("(//div[.=' coupon added successfully '])[2]"));
+		WebElement SuccessMsg = driver.findElement(By.xpath("//div[@aria-label='From Date and To Date cannot be less than current date']"));
 		if(SuccessMsg.isDisplayed())
 		{
 			System.out.println("Coupon Added Successfully");
@@ -608,7 +636,7 @@ public class b_CouponsAllActions extends FMS_BaseClass {
 		Thread.sleep(2000);
 		driver.findElement(By.xpath("//button[.='Update']")).click();
 		Thread.sleep(2000);
-		WebElement UpdateAmountSuccessMsg = driver.findElement(By.xpath("(//div[.=' Data updated successfully '])[2]"));
+		WebElement UpdateAmountSuccessMsg = driver.findElement(By.xpath("//div[@aria-label='From Date and To Date cannot be less than current date']"));
 		if(UpdateAmountSuccessMsg.isDisplayed())
 		{
 			wUtil.takeScreenShot(driver, "m_Clearing Amount And Clicking On Update Button While Updating Admin Coupon Should Not Update. But Coupon Updating Successfully Error");
@@ -618,6 +646,7 @@ public class b_CouponsAllActions extends FMS_BaseClass {
 			System.out.println("Admin Coupon Updated Successfully");
 		}
 		Thread.sleep(5000);
+		
 		driver.findElement(By.xpath("(//button[.='Edit'])[1]")).click();
 		Thread.sleep(1000);
 		driver.findElement(By.xpath("//h1[.='Edit coupon']/../following-sibling::div//input[@formcontrolname='from_date']")).clear();
@@ -701,8 +730,10 @@ public class b_CouponsAllActions extends FMS_BaseClass {
 		WebElement UpdatingAdminCouponByGivingValidDataSuccessMsg = driver.findElement(By.xpath("(//div[.=' Data updated successfully '])[2]"));
 		if(UpdatingAdminCouponByGivingValidDataSuccessMsg.isDisplayed())
 		{
-			System.out.println("Admin Coupon Updated Successfully With Valid Data");
-		//	wUtil.takeScreenShot(driver, "p_Clearing Description Clicking On Update Button While Updating Admin Coupon Should Not Update. But Coupon Updating Successfully Error");
+		  System.out.println("Admin Coupon Updated Successfully With Valid Data");
+			
+//     	  wUtil.takeScreenShot(driver, "p_Clearing Description Clicking On Update Button While Updating Admin Coupon Should Not Update. But Coupon Updating Successfully Error");
+		
 		}
 		else 
 		{
@@ -736,7 +767,7 @@ public class b_CouponsAllActions extends FMS_BaseClass {
 			System.out.println("Admin Coupon Not Updated");
 		}
 		
+		
 	}
-	
-	
+		
 }

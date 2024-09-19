@@ -43,8 +43,6 @@ public class Ecommerce_Brands_AddBrandPage {
 		PageFactory.initElements(driver, this);
 	}
 
-		
-	
 	//Rule-4 :- Provide getters to access these variables
 
 	public WebElement getCloseBtn() {
@@ -80,8 +78,6 @@ public class Ecommerce_Brands_AddBrandPage {
 	public WebElement getPreviousPageLnk() {
 		return PreviousPageLnk;
 	}
-
-
 	
 	// Create Business Library
     
