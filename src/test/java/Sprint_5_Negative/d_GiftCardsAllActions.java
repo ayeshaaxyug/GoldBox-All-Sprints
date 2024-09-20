@@ -20,6 +20,8 @@ public class d_GiftCardsAllActions extends FMS_BaseClass {
 	WebDriverUtility wUtil = new WebDriverUtility();
 	JavaUtility jUtil = new JavaUtility();
 	
+	// Fail
+	
 	@Test(groups = "Sprint-5",priority = 1)
 	public void a_giftCardsAllActionsTest() throws Exception
 	{

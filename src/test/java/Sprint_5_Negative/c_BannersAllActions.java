@@ -33,6 +33,8 @@ public class c_BannersAllActions extends FMS_BaseClass {
 	ExcelFileUtility eUtil = new ExcelFileUtility();
 	PropertyFileUtility pUtil = new PropertyFileUtility();
 	
+	// Pass
+	
 	@Test(groups = "Sprint-5",priority = 1)
 	public void mainBannersAllActionsTest() throws InterruptedException, Exception, IOException
 	{
@@ -270,6 +272,8 @@ public class c_BannersAllActions extends FMS_BaseClass {
 		}
 	}
 	
+	// Fail
+	
 	@Test(groups = "Sprint-5",priority = 2)
 	public void splashBannersTest() throws Exception, IOException
 	{
@@ -505,6 +509,8 @@ public class c_BannersAllActions extends FMS_BaseClass {
 		}
 		
 	}
+	
+	// Pass
 	
 	@Test(groups = "Sprint-5",priority = 3)
 	public void eComBannersAllActionsTest() throws Exception, IOException

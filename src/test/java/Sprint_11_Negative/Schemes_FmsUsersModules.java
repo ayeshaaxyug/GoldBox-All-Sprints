@@ -374,8 +374,6 @@ public class Schemes_FmsUsersModules extends FMS_BaseClass
 		driver.navigate().refresh();
 		Thread.sleep(2000);
 		
-		
-		
 		//14
 
 		Thread.sleep(2000);
@@ -405,8 +403,7 @@ public class Schemes_FmsUsersModules extends FMS_BaseClass
 		driver.navigate().refresh();
 		Thread.sleep(2000);
 		
-		
-       //16
+        //16
 	
 		Thread.sleep(2000);
 	    DBPage.getSchemesDrpDwn().click();
@@ -732,7 +729,7 @@ public class Schemes_FmsUsersModules extends FMS_BaseClass
 		SEFUPage.getUpdateBtn().click();
 		Thread.sleep(2000);		
 
-		WebElement EditFmsUserName = driver.findElement(By.xpath("//div[@aria-label='All fields required']"));
+		WebElement EditFmsUserName = driver.findElement(By.xpath("//div[.=' All fields required ']"));
 		Thread.sleep(2000);
 		if (EditFmsUserName.isDisplayed()) 
 		{
@@ -833,53 +830,54 @@ public class Schemes_FmsUsersModules extends FMS_BaseClass
 	
 }
 
-//12
+
 /*
-Thread.sleep(2000);
-ZSSLPage.getSchemeListEditBtn().click();
-Thread.sleep(2000);
-ZSSLESPage.getEditCountryDrpDwn().sendKeys();
-Thread.sleep(3000);
-ZSSLESPage.getUpdateBtn().click();
-Thread.sleep(2000);
+ 
+        //12
+        Thread.sleep(2000);
+        ZSSLPage.getSchemeListEditBtn().click();
+        Thread.sleep(2000);
+        ZSSLESPage.getEditCountryDrpDwn().sendKeys();
+        Thread.sleep(3000);
+        ZSSLESPage.getUpdateBtn().click(); 
+        Thread.sleep(2000); 
 
-WebElement Country = driver.findElement(By.xpath("//div[@aria-label='Please Enter Country']"));
-Thread.sleep(2000);
-if (Country.isDisplayed()) 
-{
-	wUtil.takeScreenShot(driver, "Please Enetr Country Name");
-} 
-else 
-{
-    System.out.println("Scheme Updated Successfully");
-}
+        WebElement Country = driver.findElement(By.xpath("//div[@aria-label='Please Enter Country']"));
+        Thread.sleep(2000);
+        if (Country.isDisplayed()) 
+        {
+	    wUtil.takeScreenShot(driver, "Please Enetr Country Name");
+        } 
+        else 
+        {
+        System.out.println("Scheme Updated Successfully");
+        }
 
-Thread.sleep(8000);
+        Thread.sleep(8000);
 
-//13
+        //13
 
-Thread.sleep(2000);
-ZSSLPage.getSchemeListEditBtn().click();
-Thread.sleep(2000);
-ZSSLESPage.getEditCalculationDrpDwn().clear();
-Thread.sleep(3000);
-ZSSLESPage.getUpdateBtn().click();
-Thread.sleep(2000);
+        Thread.sleep(2000);
+        ZSSLPage.getSchemeListEditBtn().click();
+        Thread.sleep(2000);
+        ZSSLESPage.getEditCalculationDrpDwn().clear();
+        Thread.sleep(3000);
+        ZSSLESPage.getUpdateBtn().click();
+        Thread.sleep(2000);
 
-WebElement Calculation = driver.findElement(By.xpath("//div[@aria-label='Please Enter Scheme Calculation Type']"));
-Thread.sleep(2000);
-if (Calculation.isDisplayed()) 
-{
-	wUtil.takeScreenShot(driver, "Please Enetr Calculation");
-} 
-else 
-{
-    System.out.println("Scheme Updated Successfully");
-}
+        WebElement Calculation = driver.findElement(By.xpath("//div[@aria-label='Please Enter Scheme Calculation Type']"));
+        Thread.sleep(2000);
+        if (Calculation.isDisplayed()) 
+        {
+	    wUtil.takeScreenShot(driver, "Please Enetr Calculation");
+        } 
+        else 
+        {
+           System.out.println("Scheme Updated Successfully");
+        }
 
-Thread.sleep(8000);
+        Thread.sleep(8000);
 
-	
 		//15
 				
 		Thread.sleep(2000);
