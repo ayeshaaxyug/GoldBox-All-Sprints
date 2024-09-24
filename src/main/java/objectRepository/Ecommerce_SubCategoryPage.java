@@ -17,7 +17,13 @@ public class Ecommerce_SubCategoryPage {
     
     @FindBy(xpath="//td[.='bangle']/following-sibling::td[.='Rose Gold Bangle']/../td/button[.=' Edit ']/..//div[@class='mdc-switch__ripple']")private WebElement ActionEnableDisableBootStrapBtn;
     
-    @FindBy(xpath ="//td[.='Gold Chains']/following-sibling::td[.='Gods Idol chains']/..//button[@class='btn-sm btn-edit bg-danger']")private WebElement DeleteBtn;
+    @FindBy(xpath ="//td[.='Gold Chains']/following-sibling::td[.='Gods Idol chains']/..//button[@class='btn-sm btn-edit bg-danger']")private WebElement ActionDeleteBtn;
+    
+    @FindBy(xpath ="(//button[.=' Edit '])[1]")private WebElement EditBtn;
+
+    @FindBy(xpath ="(//div[@class='mdc-switch__track'])[1]")private WebElement BootStrapBtn;
+
+    @FindBy(xpath ="(//button[@class='btn-sm btn-edit bg-danger'])[1]")private WebElement DeleteBtn;
     
     @FindBy(xpath="(//div[.=' Sub Category Updated Successfully '])[2]")private WebElement UpdateMsg;
     

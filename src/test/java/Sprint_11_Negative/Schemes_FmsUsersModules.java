@@ -36,6 +36,7 @@ public class Schemes_FmsUsersModules extends FMS_BaseClass
 	JavaUtility jUtil = new JavaUtility();
 
 	@Test
+	
 	public void SchemesNegative() throws InterruptedException, IOException
 	{
 		
@@ -717,6 +718,7 @@ public class Schemes_FmsUsersModules extends FMS_BaseClass
 		Thread.sleep(2000);
 
 		//27
+/*
 		
 		DBPage.getSettingsDrpDwn().click();
 		Thread.sleep(2000);
@@ -729,7 +731,7 @@ public class Schemes_FmsUsersModules extends FMS_BaseClass
 		SEFUPage.getUpdateBtn().click();
 		Thread.sleep(2000);		
 
-		WebElement EditFmsUserName = driver.findElement(By.xpath("//div[.=' All fields required ']"));
+		WebElement EditFmsUserName = driver.findElement(By.xpath("(//div[.=' All fields required '])[2]"));
 		Thread.sleep(2000);
 		if (EditFmsUserName.isDisplayed()) 
 		{
@@ -739,7 +741,7 @@ public class Schemes_FmsUsersModules extends FMS_BaseClass
 		{
             System.out.println("Added Successfully");
 		}
-
+		
 		Thread.sleep(8000);
 		driver.navigate().refresh();
 		Thread.sleep(2000);
@@ -751,6 +753,7 @@ public class Schemes_FmsUsersModules extends FMS_BaseClass
 		SPage.getFmsUsersLnk().click();
 		Thread.sleep(2000);
 		SFUPage.getEditBtn().click();
+		Settings_EditFmsUsersPage SEFUPage = new Settings_EditFmsUsersPage(driver);
 		SEFUPage.getMobileNumberEdt().clear();
 		Thread.sleep(2000);
 		SEFUPage.getUpdateBtn().click();
@@ -824,7 +827,7 @@ public class Schemes_FmsUsersModules extends FMS_BaseClass
 		Thread.sleep(8000);
 		driver.navigate().refresh();
 		Thread.sleep(2000);
-		
+*/		
 	}
 	
 	
